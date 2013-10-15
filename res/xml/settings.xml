@@ -9,7 +9,6 @@
             android:title="@string/learn_facebook" >
         </CheckBoxPreference>
         <com.cs4274.news_butler.CustomPreference
-            android:defaultValue=""
             android:key="learn_facebook"
             android:dependency ="enable_facebook"
             android:summary="@string/learn_facebook_summary"
