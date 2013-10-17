@@ -4,5 +4,11 @@
     <string name="app_name">News Butler</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Pung Pung Pung</string>
+	<string name="action_search">Search</string>
+	<string name="action_refresh">Refresh</string>
+	<string name="action_settings">Settings</string>
+	<string name="pref_title">Learn From</string>
+	<string name="learn_facebook">Facebook</string>
+	<string name="learn_facebook_summary">Summary</string>
 
 </resources>
