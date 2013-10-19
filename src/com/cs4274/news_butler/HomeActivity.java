@@ -68,7 +68,8 @@ public class HomeActivity extends Activity {
 	// This method is invoked when the button getSMS is called
 	// When merging together with UI, just place this method in the onClickListener or use XML to activate this method
 	public void getSMS(View v) {
-		new readSMSTask().execute();		
+		//new readSMSTask().execute();
+		new indexSourcesTask().execute();
 	}
 	
 	// This method is invoked when the button getGmail is called
@@ -196,7 +197,7 @@ public class HomeActivity extends Activity {
 		userToken = null;
 	}
 	
-	private class OnTokenAcquired implements AccountManagerCallback<Bundle> {
+	public class OnTokenAcquired implements AccountManagerCallback<Bundle> {
 		Context context = getApplicationContext();
 		
 		@Override

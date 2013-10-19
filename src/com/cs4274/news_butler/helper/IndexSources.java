@@ -41,7 +41,7 @@ public class IndexSources {
 	private static File indexDir;
 	public static final String FIELD_PATH = "path";
 	public static final String FIELD_CONTENTS = "contents";
-	private static final float topTermCutoff = (float) 0.3;
+	private static final float topTermCutoff = 0;
 	private static Analyzer analyzer; 
 	private static boolean create = true;
 

@@ -536,6 +536,18 @@ public class StopWords {
 		   "play",
 		   "home",
 		   "meet",
-		   "email"
+		   "email",
+		   "test",
+		   "win",
+		   "0",
+		   "1",
+		   "2",
+		   "3",
+		   "4",
+		   "5",
+		   "6",
+		   "7",
+		   "8",
+		   "9"		   
 		   };
 }

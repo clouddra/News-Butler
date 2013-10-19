@@ -8,5 +8,8 @@
 	<string name="pref_title">Learn From</string>
 	<string name="learn_facebook">Facebook</string>
 	<string name="learn_facebook_summary">Summary</string>
-
+	<string name="learn_sms_summary"></string>
+	<string name="learn_sms">SMS</string>
+	<string name="learn_gmail_summary"></string>
+	<string name="learn_gmail">Gmail</string>
 </resources>
