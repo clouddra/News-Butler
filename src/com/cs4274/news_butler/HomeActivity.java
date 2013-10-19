@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 
+
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -67,7 +68,7 @@ public class HomeActivity extends Activity {
 	// This method is invoked when the button getSMS is called
 	// When merging together with UI, just place this method in the onClickListener or use XML to activate this method
 	public void getSMS(View v) {
-		new readSMSTask().execute();
+		new readSMSTask().execute();		
 	}
 	
 	// This method is invoked when the button getGmail is called
@@ -270,8 +271,9 @@ public class HomeActivity extends Activity {
 		
 		try {
              FileOutputStream fos = new FileOutputStream(myExternalFile);
-             while (iterator.hasNext()) {				
-            	 fos.write(iterator.next().getBytes());
+             while (iterator.hasNext()) {		
+            	 String text = iterator.next().replaceAll("[0-9]","");
+            	 fos.write(text.getBytes());
             	 fos.write(nextLine.getBytes());
             }             
              fos.close();

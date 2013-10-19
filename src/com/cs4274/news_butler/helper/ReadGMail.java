@@ -25,6 +25,7 @@ public class ReadGMail {
 	
 	private String GmailSourceFile = "Gmail.txt";
 	private String filepath;
+	private static int NO_OF_EMAILS_TO_LEARN = 50;
 	File myFile;
 	
 	
@@ -38,6 +39,7 @@ public class ReadGMail {
 		@Override
 		protected Message[] doInBackground(String... credentials) {			
 			Message[] messageReverse = null;
+			int emailNumber = 0;
 			try {
 				
 				// This is using a patched JavaMail for Android			
@@ -51,21 +53,21 @@ public class ReadGMail {
 		        IMAPFolder folder = (IMAPFolder) store.getFolder("[Gmail]/Sent Mail"); 
 	            folder.open(Folder.READ_ONLY); 
 	            int end = folder.getMessageCount();
-				int start = end - 20 + 1;
-	            Message[] msgs = folder.getMessages(start, end); 
-	            messageReverse = reverseMessageOrder(msgs);
-	            //FetchProfile fp = new FetchProfile(); 
-	            //fp.add(FetchProfile.Item.ENVELOPE); 
-	            //folder.fetch(msgs, fp); 	            
 	            
-	            /*
-	            for (int i=0;i<messageReverse.length;i++) {  
-	            	String body = getBody(messageReverse[i]);
-	            	System.out.println(body);
-	            }	        
-		        
-		        */
-	            exportGmail(messageReverse);	
+	            if (end > NO_OF_EMAILS_TO_LEARN) {
+	            	emailNumber = NO_OF_EMAILS_TO_LEARN;
+	            }
+	            else {
+	            	emailNumber = end;
+	            }
+	            
+					int start = end - emailNumber + 1;
+		            Message[] msgs = folder.getMessages(start, end); 
+		            messageReverse = reverseMessageOrder(msgs);	            
+		            
+		            
+		            exportGmail(messageReverse);	
+	            
 		    } catch (Exception e) {	 
 	            e.printStackTrace();
 		    } 
@@ -159,7 +161,7 @@ public class ReadGMail {
 		try {
              FileOutputStream fos = new FileOutputStream(myFile);
              for (int i=0;i<result.length;i++) {  
-             	String body = getBody(result[i]);
+             	String body = getBody(result[i]).replaceAll("[0-9]","");
              	fos.write(body.getBytes());
              	fos.write(nextLine.getBytes());
              }
@@ -171,9 +173,11 @@ public class ReadGMail {
         			 
 		 	 
 	}
-	
-	// AsyncTask to index the sources
-		public class indexSourcesTask extends AsyncTask <Void,Void,Void> {
+	/*
+	 * AsyncTask to index the sources
+	 */
+	 
+	public class indexSourcesTask extends AsyncTask <Void,Void,Void> {
 			
 			@Override
 			protected Void doInBackground(Void... params) {	

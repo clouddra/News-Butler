@@ -50,7 +50,6 @@ import android.app.ActionBar;
 import android.content.Intent;
 
 import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
-
 /**
  * This sample shows how to use ActionBar-PullToRefresh with a
  * {@link android.widget.ListView ListView}, and manually creating (and

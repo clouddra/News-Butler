@@ -5,10 +5,13 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
@@ -21,6 +24,7 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.IndexWriterConfig.OpenMode;
 import org.apache.lucene.index.Term;
+import org.apache.lucene.index.TermDocs;
 import org.apache.lucene.index.TermEnum;
 
 import org.apache.lucene.store.Directory;
@@ -30,13 +34,14 @@ import org.apache.lucene.util.Version;
 
 import com.cs4274.news_butler.util.ByValueComparator;
 import com.cs4274.news_butler.util.ReverseComparator;
+import com.cs4274.news_butler.util.StopWords;
 
 
 public class IndexSources {
 	private static File indexDir;
 	public static final String FIELD_PATH = "path";
 	public static final String FIELD_CONTENTS = "contents";
-	private static final float topTermCutoff = 0;
+	private static final float topTermCutoff = (float) 0.3;
 	private static Analyzer analyzer; 
 	private static boolean create = true;
 
@@ -53,9 +58,12 @@ public class IndexSources {
 		if (!indexDir.exists())
 			indexDir.mkdirs();
 		
-		analyzer = new EnglishAnalyzer(Version.LUCENE_36);
-		//analyzer = new SnowballAnalyzer(Version.LUCENE_CURRENT,"English", importStopWords());
+		Set<String> set = new HashSet<String>(Arrays.asList(StopWords.SMART_STOP_WORDS));
+		analyzer = new EnglishAnalyzer(Version.LUCENE_36,set);
+		
 		IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_36, analyzer);
+		
+		// Only create the index for the first time and subsequent learning will update the index
 		if (create){
 			config.setOpenMode(OpenMode.CREATE);
 			create = false;
@@ -75,10 +83,9 @@ public class IndexSources {
 					&& file.length() > 0.0 && file.isFile() && file.getName().endsWith(suffix)) {
 				
 				Document document = new Document();
-	
-				document.add(new Field("filename",file.getName(), Field.Store.YES, Field.Index.ANALYZED));
+				
 				document.add(new Field("content", new FileReader(file)));
-				//document.add(new Field("text",path, Field.Store.YES, Index.ANALYZED));
+				document.add(new Field("filename",file.getName(), Field.Store.YES, Field.Index.ANALYZED));
 									
 				if (document != null)
 					indexWriter.addDocument(document);
@@ -87,20 +94,7 @@ public class IndexSources {
 		
 		indexWriter.close();
 	}
-	/*
-	private static CharArraySet importStopWords() {
-		int length = SMART_STOP_WORDS.length;
-		CharArraySet stopWords = new CharArraySet(Version.LUCENE_CURRENT,length, false);
-		
-		System.out.println("Number of stop words:" + length);
-		
-		for (int i=0;i<length;i++) {
-			stopWords.add(SMART_STOP_WORDS[i]);
-		}
-		return stopWords;
-		
-	}
-	*/
+
 	public static void computeTopTermQuery() throws Exception {
 		  Directory directory = FSDirectory.open(indexDir); 
 		  
@@ -112,8 +106,12 @@ public class IndexSources {
 		    while (terms.next()) {
 		      Term term = terms.term();
 		      String termText = term.text();
-		      int frequency = reader.docFreq(term);
-		      frequencyMap.put(termText, frequency);
+		      TermDocs td = reader.termDocs(new Term("content", termText));
+		      int frequency = 0;
+		      while (td.next()) {
+		         frequency += td.freq();
+		      }
+		      frequencyMap.put(termText, frequency);		   
 		      termlist.add(termText);
 		    }
 		    reader.close();
@@ -146,113 +144,25 @@ public class IndexSources {
 		      termBuf.append(topTerm).
 		        append("(").
 		        append(frequencyMap.get(topTerm)).
-		        append(");");
+		        append(")\n");
 		      
-		    }
+		    }	
 		    
-		    exportResult(termBuf);
-		    
-		    //System.out.println(">>> top terms: " + termBuf.toString());
-		    
+		    exportResult(termBuf);		    
 		  }
-	/*
-	private static String SMART_STOP_WORDS[] =
-		{
-		   "a",
-		   "able",
-		   "about",
-		   "they",
-		   "think",
-		   "third",
-		   "this",
-		   "thorough",
-		   "thoroughly",
-		   "those",
-		   "though",
-		   "three",
-		   "through",
-		   "throughout",
-		   "thru",
-		   "thus",
-		   "to",
-		   "together",
-		   "too",
-		   "took",
-		   "toward",
-		   "towards",
-		   "tried",
-		   "tries",
-		   "truly",
-		   "try",
-		   "trying",
-		   "twice",
-		   "two",
-		   "u",
-		   "un",
-		   "upon",
-		   "us",
-		   "use",
-		   "used",
-		   "useful",
-		   "uses",
-		   "using",
-		   "usually",
-		   "uucp",
-		   "v",
-		   "value",
-		   "various",
-		   "very",
-		   "via",
-		   "viz",
-		   "vs",
-		   "w",
-		   "want",
-		   "wants",
-		   "was",
-		   "way",
-		   "we",
-		   "welcome",
-		   "well",
-		   "went",
-		   "were",
-		   "what",
-		   "whatever",
-		   "when",
-		   "whence",
-		   "whoever",
-		   "whole",
-		   "whom",
-		   "whose",
-		   "why",
-		   "will",
-		   "willing",
-		   "wish",
-		   "with",
-		   "within",
-		   "without",
-		   "wonder",
-		   "would",
-		   "x",
-		   "y",
-		   "yes",
-		   "yet",
-		   "you",
-		   "your",
-		   "z",
-		   "zero"
-		};
-	*/
+	
 	private static void exportResult(StringBuilder termBuf) {		
 		 try {
 			 File exportFile = new File(indexDir,"results.txt");
-             FileOutputStream fos = new FileOutputStream(exportFile);
+            FileOutputStream fos = new FileOutputStream(exportFile);
 		
-             fos.write(termBuf.toString().getBytes());                
-             fos.close();
-         } catch (IOException e) {
-             e.printStackTrace();
-         }
+            fos.write(termBuf.toString().getBytes());                
+            fos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
 	}
 	
+
 }
