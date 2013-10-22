@@ -548,6 +548,12 @@ public class StopWords {
 		   "6",
 		   "7",
 		   "8",
-		   "9"		   
+		   "9",
+		   "i'm",
+		   "don't",
+		   "http",
+		   "gmail",
+		   "sms",
+		   "pm"
 		   };
 }

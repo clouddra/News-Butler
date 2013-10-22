@@ -19,6 +19,7 @@ import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 
+import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
@@ -29,62 +30,102 @@ import org.apache.lucene.index.TermEnum;
 
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.store.LockObtainFailedException;
 
 import org.apache.lucene.util.Version;
 
+import com.cs4274.news_butler.SettingsActivity;
 import com.cs4274.news_butler.util.ByValueComparator;
 import com.cs4274.news_butler.util.ReverseComparator;
 import com.cs4274.news_butler.util.StopWords;
 
 
 public class IndexSources {
-	private static File indexDir;
+	//private static File indexDir;
 	public static final String FIELD_PATH = "path";
-	public static final String FIELD_CONTENTS = "contents";
-	private static final float topTermCutoff = 0;
+	public static final String FIELD_CONTENTS = "content";
+	public static final String USER_INDEX = "USER_INDEX";
+	public static final String ARTICLE_INDEX = "ARTICLE_INDEX";
+	private static final float topTermCutoff = (float) 0.1;
 	private static Analyzer analyzer; 
-	private static boolean create = true;
 
 
 	public IndexSources(String fileDir) {}
 	
 	
-	public static void createIndex(String fileDir, String suffix)throws Exception {
-		System.out.println("The file directory is :" +fileDir);
+	public static void createIndex(String appDir, String type, String content)throws Exception {
+		File indexDir;	
+		Set<String> set = new HashSet<String>(Arrays.asList(StopWords.SMART_STOP_WORDS));
+		analyzer = new EnglishAnalyzer(Version.LUCENE_36,set);
 		
-		indexDir = new File(fileDir+"/index/");
+		IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_36, analyzer);		
 		
-		System.out.println("The INDEX directory is :" + indexDir);
-		if (!indexDir.exists())
-			indexDir.mkdirs();
+		// rebuild everytime when learning user’s preference (delete entire index folder)
+		if (type.equalsIgnoreCase(SettingsActivity.USER)) {
+			config.setOpenMode(OpenMode.CREATE);
+			indexDir = new File(appDir + "/" + USER_INDEX + "/");
+			if (indexDir.exists()) {
+				delete(indexDir);
+			} 
+			else {
+				indexDir.mkdir();
+			}
+			
+			indexHelper(indexDir,config,content);
+			
+		}
 		
+		// each domain will have its own index
+		else if (type.equalsIgnoreCase(SettingsActivity.ARTICLE)){
+			File dir = new File(appDir);
+			String[] directory = dir.list();
+			
+			for (String eachDir : directory) {
+				if (!eachDir.equalsIgnoreCase(ARTICLE_INDEX)) {					
+					if (!eachDir.equalsIgnoreCase(USER_INDEX)) {
+					indexDir = new File(appDir+"/"+ ARTICLE_INDEX + "/" + eachDir + "_index/");				
+					
+					if (!indexDir.exists()) 
+						indexDir.mkdirs();
+					System.out.println("Articles Index Directory: " + indexDir);
+					indexHelper(appDir+"/"+eachDir+"/",indexDir);		
+					}
+				}
+			}
+			
+			
+		}			
+		
+		
+	}
+	
+	// Helper method for indexing articles
+	private static void indexHelper(String sourceDir,File indexDir) throws CorruptIndexException, LockObtainFailedException, IOException{
 		Set<String> set = new HashSet<String>(Arrays.asList(StopWords.SMART_STOP_WORDS));
 		analyzer = new EnglishAnalyzer(Version.LUCENE_36,set);
 		
 		IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_36, analyzer);
-		
-		// Only create the index for the first time and subsequent learning will update the index
-		if (create){
-			config.setOpenMode(OpenMode.CREATE);
-			create = false;
-		}
-		else {
-			config.setOpenMode(OpenMode.APPEND);
-		}
+		// Only create the index for the first time and subsequent learning will update the inde
+		config.setOpenMode(OpenMode.CREATE_OR_APPEND);
 		
 		IndexWriter indexWriter = new IndexWriter(
 				FSDirectory.open(indexDir),
 				config);
 		
-		File dir = new File(fileDir);
+		File dir = new File(sourceDir);
 		File[] files = dir.listFiles();
 		for (File file : files) {
 			if (!file.isDirectory() && file.exists() && file.canRead() 
-					&& file.length() > 0.0 && file.isFile() && file.getName().endsWith(suffix)) {
+					&& file.length() > 0.0 && file.isFile() && file.getName().endsWith(SettingsActivity.suffix)) {
+				
+				if (SettingsActivity.hashedArticles.contains(file.getName()) == false)
+					SettingsActivity.hashedArticles.add(file.getName());
+				else 
+					continue;
 				
 				Document document = new Document();
 				
-				document.add(new Field("content", new FileReader(file)));
+				document.add(new Field(FIELD_CONTENTS, new FileReader(file)));
 				document.add(new Field("filename",file.getName(), Field.Store.YES, Field.Index.ANALYZED));
 									
 				if (document != null)
@@ -94,8 +135,26 @@ public class IndexSources {
 		
 		indexWriter.close();
 	}
+	
+	// Helper method for indexing User's preference
+	private static void indexHelper(File indexDir, IndexWriterConfig config, String content) throws CorruptIndexException, LockObtainFailedException, IOException{
+		IndexWriter indexWriter = new IndexWriter(
+				FSDirectory.open(indexDir),
+				config);
+						
+				Document document = new Document();
+				
+				//document.add(new Field(FIELD_CONTENTS, new FileReader(file)));				
+				document.add(new Field(FIELD_CONTENTS,content,Field.Store.YES, Field.Index.ANALYZED));
+									
+				if (document != null)
+					indexWriter.addDocument(document);
 
-	public static void computeTopTermQuery() throws Exception {
+		indexWriter.close();
+	}
+
+
+	public static List<String> computeTopTermQuery(File indexDir) throws Exception {
 		  Directory directory = FSDirectory.open(indexDir); 
 		  
 		  final Map<String,Integer> frequencyMap = 
@@ -119,8 +178,10 @@ public class IndexSources {
 		    // sort the term map by frequency descending
 		    Collections.sort(termlist, new ReverseComparator<String>(
 		      new ByValueComparator<String,Integer>(frequencyMap)));
+		    
 		    // retrieve the top terms based on topTermCutoff
 		    List<String> topTerms = new ArrayList<String>();
+		    
 		    float topFreq = -1.0F;
 		    for (String term : termlist) {
 		      if (topFreq < 0.0F) {
@@ -138,6 +199,10 @@ public class IndexSources {
 		        }
 		      }
 		    }
+		    
+		    return topTerms;
+		    
+		    /*
 		    StringBuilder termBuf = new StringBuilder();
 		 
 		    for (String topTerm : topTerms) {
@@ -148,9 +213,11 @@ public class IndexSources {
 		      
 		    }	
 		    
-		    exportResult(termBuf);		    
+		    exportResult(termBuf);	
+		    */ 	    
+		     
 		  }
-	
+/*	
 	private static void exportResult(StringBuilder termBuf) {		
 		 try {
 			 File exportFile = new File(indexDir,"results.txt");
@@ -162,6 +229,35 @@ public class IndexSources {
             e.printStackTrace();
         }
 
+	}
+*/	
+	private static void delete(File indexDir) throws IOException{	
+		if(indexDir.isDirectory()){
+    		if(indexDir.list().length==0){
+    		   indexDir.delete();
+    		   
+    		}else{
+    		   //list all the directory contents
+        	   String files[] = indexDir.list();
+ 
+        	   for (String temp : files) {
+        	      //construct the file structure
+        	      File fileDelete = new File(indexDir, temp);
+        	      
+        	      //recursive delete
+        	     delete(fileDelete);
+        	   }
+ 
+        	   //check the directory again, if empty then delete it
+        	   if(indexDir.list().length==0){
+           	     indexDir.delete();
+        	   }
+    		}
+ 
+    	}else{
+    		//if file, then delete it
+    		indexDir.delete();
+    	}		
 	}
 	
 

@@ -23,9 +23,13 @@
             android:key="learn_gmail"
             android:title="@string/learn_gmail"
             android:summary="@string/learn_gmail_summary"  />
+        
+        <Preference
+            android:key="learn_articles"
+            android:title="@string/learn_articles"
+            android:summary="@string/learn_articles_summary"  />
      
         </PreferenceCategory>
-        
         
         
         

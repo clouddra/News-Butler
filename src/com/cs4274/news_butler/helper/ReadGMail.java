@@ -3,6 +3,9 @@ package com.cs4274.news_butler.helper;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 import javax.mail.BodyPart;
 import javax.mail.Folder;
@@ -12,10 +15,9 @@ import javax.mail.Multipart;
 import javax.mail.internet.MimeMessage;
 
 import org.jsoup.Jsoup;
+import android.util.Log;
 
-import android.os.AsyncTask;
-
-import com.cs4274.news_butler.HomeActivity;
+import com.cs4274.news_butler.SettingsActivity;
 import com.google.code.oauth2.OAuth2Authenticator;
 import com.sun.mail.imap.IMAPFolder;
 import com.sun.mail.imap.IMAPStore;
@@ -26,18 +28,53 @@ public class ReadGMail {
 	private String GmailSourceFile = "Gmail.txt";
 	private String filepath;
 	private static int NO_OF_EMAILS_TO_LEARN = 50;
+	//private String content = "";
 	File myFile;
 	
-	
-	public void readSentItems(String user, String token, String filePath){
+/*	
+	public String readSentItems(String user, String token, String filePath) throws InterruptedException, ExecutionException{
 		this.filepath = filePath;
-		new connectToImapTask().execute(user, token);		
+		
+		return new connectToImapTask().execute(user, token).get();
+		
+	}
+*/	
+	public List<String> readSentItems(String user, String token, String filePath) throws Exception{
+		this.filepath = filePath;
+		Message[] messageReverse = null;
+		int emailNumber = 0;
+		List<String> gmailMessages = new ArrayList<String>();
+		
+		// This is using a patched JavaMail for Android			
+		IMAPStore store = OAuth2Authenticator.connectToImap(
+					"imap.gmail.com", 
+					993, 
+					user, 
+					token, 
+					true);
+		
+		IMAPFolder folder = (IMAPFolder) store.getFolder("[Gmail]/Sent Mail"); 
+        folder.open(Folder.READ_ONLY); 
+        emailNumber = folder.getMessageCount();
+        
+        Message[] msgs = folder.getMessages(1,emailNumber); 
+        messageReverse = reverseMessageOrder(msgs);	            
+        
+       
+        for (int i=0;i<messageReverse.length;i++) {  
+         	String body = getBody(messageReverse[i]).replaceAll("[0-9]","");        	
+         	gmailMessages.add(body);
+        }
+       
+		//return new connectToImapTask().execute(user, token).get();
+		return gmailMessages;
 	}
 	
-	private class connectToImapTask extends AsyncTask <String,Void,Message[]> {
+/*	
+	private class connectToImapTask extends AsyncTask <String,Void,String> {
 
 		@Override
-		protected Message[] doInBackground(String... credentials) {			
+		protected String doInBackground(String... credentials) {			
 			Message[] messageReverse = null;
 			int emailNumber = 0;
 			try {
@@ -54,6 +91,7 @@ public class ReadGMail {
 	            folder.open(Folder.READ_ONLY); 
 	            int end = folder.getMessageCount();
 	            
+	       
 	            if (end > NO_OF_EMAILS_TO_LEARN) {
 	            	emailNumber = NO_OF_EMAILS_TO_LEARN;
 	            }
@@ -65,22 +103,29 @@ public class ReadGMail {
 		            Message[] msgs = folder.getMessages(start, end); 
 		            messageReverse = reverseMessageOrder(msgs);	            
 		            
+		            content = "";
+		            for (int i=0;i<messageReverse.length;i++) {  
+		             	String body = getBody(messageReverse[i]).replaceAll("[0-9]","");
+		             	content = content + body + " ";
+		            }
 		            
-		            exportGmail(messageReverse);	
+		            //exportGmail(messageReverse);	
 	            
 		    } catch (Exception e) {	 
 	            e.printStackTrace();
 		    } 
 			
-			return messageReverse;
+			return content;
+			//return messageReverse;
 		}
 
 		@Override
-		protected void onPostExecute(Message[] result) {	
-			new indexSourcesTask().execute();
+		protected void onPostExecute(String result) {	
+			//new indexSourcesTask().execute();
+			//content = result;
 		}			
 	}
-	
+*/	
 	/*
 	 * Reverse the messages so that the latest one appear first	
 	 */
@@ -99,7 +144,7 @@ public class ReadGMail {
 	 * Method to extract the body of the email
 	 */
 	private String getBody(Message message) throws IOException, MessagingException {
-		String result = null;
+		String result = "";
 		if(message instanceof MimeMessage)
         {
             MimeMessage m = (MimeMessage)message;
@@ -114,7 +159,7 @@ public class ReadGMail {
                 {
                     BodyPart part =  content.getBodyPart(i);
                     if (part.getDisposition() != null) {
-                    		return null;
+                    		return " ";
                     }
                     else if(part.isMimeType("text/plain"))
                     {
@@ -145,7 +190,7 @@ public class ReadGMail {
             else // not a mime message
             {
                 System.out.println("Not a MIME message");
-                result = null;
+                result = " ";
             }
         }
 		return result;
@@ -176,13 +221,14 @@ public class ReadGMail {
 	/*
 	 * AsyncTask to index the sources
 	 */
-	 
+	
+	/*
 	public class indexSourcesTask extends AsyncTask <Void,Void,Void> {
 			
 			@Override
 			protected Void doInBackground(Void... params) {	
 				try {
-					IndexSources.createIndex(filepath,HomeActivity.suffix);				
+					IndexSources.createIndex(filepath,SettingsActivity.USER);				
 				} catch (Exception e) {				
 					e.printStackTrace();
 				}
@@ -200,5 +246,6 @@ public class ReadGMail {
 			}
 				
 		}
+		*/
 	
 }

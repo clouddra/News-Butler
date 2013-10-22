@@ -1,10 +1,15 @@
 package com.cs4274.news_butler;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 
 import android.net.ConnectivityManager;
@@ -27,10 +32,10 @@ import android.widget.Toast;
 import com.cs4274.news_butler.helper.IndexSources;
 import com.cs4274.news_butler.helper.ReadGMail;
 import com.cs4274.news_butler.helper.ReadSMS;
-
+import com.cs4274.news_butler.SettingsActivity;
 
 public class HomeActivity extends Activity {
-	 
+		
 	private AccountManager accountManager;
 	private static final int AUTHORIZATION_CODE = 1995;
 	private static final int ACCOUNT_CODE = 1602;
@@ -39,13 +44,14 @@ public class HomeActivity extends Activity {
     String userToken = null;
 	
 	public List<String> messages;
+	public List<String> gmailMessages;
 	
 	//private final int ACTIVITY_SSO = 1000;
 	//private static final String APP_ID = "247627235387014";
 	//private static final String PERMISSIONS = "read_stream,read_friendlists,manage_friendlists,manage_notifications,publish_stream,publish_checkins,offline_access";
 	
 	private String SMSSourceFile = "SMS.txt";
-	private String filepath = getIndexDirectory();
+	private String applicationDirectory = getIndexDirectory();
 	public static String suffix = ".txt";
 	File myExternalFile;
 	
@@ -68,8 +74,8 @@ public class HomeActivity extends Activity {
 	// This method is invoked when the button getSMS is called
 	// When merging together with UI, just place this method in the onClickListener or use XML to activate this method
 	public void getSMS(View v) {
-		//new readSMSTask().execute();
-		new indexSourcesTask().execute();
+		new readSMSTask().execute();
+		//new indexSourcesTask().execute();
 	}
 	
 	// This method is invoked when the button getGmail is called
@@ -104,11 +110,52 @@ public class HomeActivity extends Activity {
 		
 		@Override
 		protected void onPostExecute(Void result) {		
-			exportText();	
+			//exportText();	
 		}
 			
 	}
 	
+	// AsyncTask to index the sources
+			public class indexSourcesTask extends AsyncTask <String,Void,String> {
+						
+				Context context = getApplicationContext();
+				
+				@Override
+				protected String doInBackground(String... params) {		
+					try {
+						IndexSources.createIndex(params[0],params[1],params[2]);
+						
+					} catch (Exception e) {				
+						e.printStackTrace();
+					}
+						
+					return params[1];
+				}
+				
+				@Override
+				protected void onPostExecute(String type) {
+					/*
+					System.out.println("TYPE:" + type);
+					try {
+						if (type.equalsIgnoreCase(SettingsActivity.USER)) {
+							File indexDir = new File(applicationDirectory + "/" + IndexSources.USER_INDEX + "/");
+							SettingsActivity.userTopTerms = IndexSources.computeTopTermQuery(indexDir);
+							saveToInternalStorage(SettingsActivity.USER_TOP_TERMS_FILENAME,SettingsActivity.userTopTerms);
+							seeUserTopTerms();
+						} 
+
+						Toast.makeText(context, "Finish Learning from Gmail!", Toast.LENGTH_SHORT).show();
+					} catch (Exception e) {				
+						e.printStackTrace();
+					}
+					*/
+				}
+				
+					
+			}
+	
+	
+/*
 	// AsyncTask to index the sources
 	public class indexSourcesTask extends AsyncTask <Void,Void,Void> {
 		Context context = getApplicationContext();
@@ -116,7 +163,7 @@ public class HomeActivity extends Activity {
 		@Override
 		protected Void doInBackground(Void... params) {		
 			try {
-				IndexSources.createIndex(filepath,suffix);
+				IndexSources.createIndex(filepath,SettingsActivity.USER,"test");
 				
 			} catch (Exception e) {				
 				e.printStackTrace();
@@ -136,7 +183,7 @@ public class HomeActivity extends Activity {
 		}
 			
 	}
-	
+*/	
 
 	public static Activity getActivity() {
 		return HomeActivity.getActivity();
@@ -216,7 +263,7 @@ public class HomeActivity extends Activity {
 										
 					//Use username and token to read Sent Items
 					if (userToken != null) {					
-						new readGmailTask().execute(username,userToken,filepath);							
+						new readGmailTask().execute(username,userToken,applicationDirectory);							
 					}
 					else {
 						Toast.makeText(context, "Unable to authenticate with Gmail", Toast.LENGTH_SHORT).show();
@@ -229,19 +276,29 @@ public class HomeActivity extends Activity {
 	}
 
 	// AsyncTask to read Gmail
-		private class readGmailTask extends AsyncTask <String,Void,Void> {
+		private class readGmailTask extends AsyncTask <String,Void,String> {
 			Context context = getApplicationContext();
 			
 			@Override
-			protected Void doInBackground(String... params) {			
+			protected String doInBackground(String... params) {			
 				ReadGMail gmailClass = new ReadGMail();
-				gmailClass.readSentItems(params[0], params[1], params[2]);
+				StringBuilder gmailMessageString = new StringBuilder();		
+				try {
+						gmailMessages = gmailClass.readSentItems(params[0], params[1], params[2]);
+				} catch (Exception e) {
+						e.printStackTrace();
+				}
+					 
+				Iterator<String> iterator = gmailMessages.iterator();
+				while (iterator.hasNext()) 
+						gmailMessageString.append(iterator.next());
 				
-				return null;
+				return gmailMessageString.toString();
 			}
 			
 			@Override
-			protected void onPostExecute(Void result) {	
+			protected void onPostExecute(String content) {	
+				new indexSourcesTask().execute(applicationDirectory,SettingsActivity.USER,content);
 				Toast.makeText(context, "Finish learning from Gmail!.", Toast.LENGTH_SHORT).show();
 			}
 				
@@ -264,7 +321,7 @@ public class HomeActivity extends Activity {
 		
 		return dir.getAbsolutePath();
 	}
-	
+/*	
 	private void exportText() {
 		myExternalFile = new File(filepath, SMSSourceFile);
 		String nextLine = "\n";
@@ -284,7 +341,7 @@ public class HomeActivity extends Activity {
         			 
 		 new indexSourcesTask().execute();	 
 	}
-	
+*/	
 	private boolean isConnectedToInternet() {
 		Context context = getApplicationContext();
 		ConnectivityManager cm =
@@ -297,4 +354,44 @@ public class HomeActivity extends Activity {
 	
 	}
 
+	public void seeUserTopTerms() throws ClassNotFoundException {
+		List<String> userTerms = readFromInternalStorage(SettingsActivity.USER_TOP_TERMS_FILENAME);
+		for (String terms : userTerms) {
+			System.out.println(terms);
+		}
+	}
+	
+	public void saveToInternalStorage(String filename, List<String> data) throws IOException {
+		try {
+			FileOutputStream fos = openFileOutput(filename, Context.MODE_PRIVATE);
+			ObjectOutputStream of = new ObjectOutputStream(fos);
+			of.writeObject(data);
+            of.flush();
+            of.close();
+            fos.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<String> readFromInternalStorage(String filename) throws ClassNotFoundException {
+		List<String> topTermList = null;
+		FileInputStream fis;
+		try {
+			fis = openFileInput(filename);
+			ObjectInputStream oi = new ObjectInputStream(fis);
+			topTermList = (List<String>) oi.readObject();
+			oi.close();
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return topTermList;
+	}
+	
 }

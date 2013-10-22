@@ -12,4 +12,6 @@
 	<string name="learn_sms">SMS</string>
 	<string name="learn_gmail_summary"></string>
 	<string name="learn_gmail">Gmail</string>
+	<string name="learn_articles_summary"></string>
+	<string name="learn_articles">Articles</string>
 </resources>
