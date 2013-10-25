@@ -3,7 +3,9 @@ package com.cs4274.news_butler.helper;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -39,11 +41,12 @@ public class ReadGMail {
 		
 	}
 */	
-	public List<String> readSentItems(String user, String token, String filePath) throws Exception{
+	public List<String> readSentItems(String user, String token, String filePath, String todayDateString) throws Exception{
 		this.filepath = filePath;
 		Message[] messageReverse = null;
 		int emailNumber = 0;
 		List<String> gmailMessages = new ArrayList<String>();
+		int todayDate = Integer.parseInt(todayDateString);
 		
 		// This is using a patched JavaMail for Android			
 		IMAPStore store = OAuth2Authenticator.connectToImap(
@@ -57,13 +60,94 @@ public class ReadGMail {
         folder.open(Folder.READ_ONLY); 
         emailNumber = folder.getMessageCount();
         
-        Message[] msgs = folder.getMessages(1,emailNumber); 
+        Message[] msgs = folder.getMessages(1,emailNumber/2); 
         messageReverse = reverseMessageOrder(msgs);	            
         
        
         for (int i=0;i<messageReverse.length;i++) {  
          	String body = getBody(messageReverse[i]).replaceAll("[0-9]","");        	
-         	gmailMessages.add(body);
+         	
+         	int dateDifference = todayDate - getMessageDate(messageReverse[i].getSentDate());
+         	switch (dateDifference) {
+         	case 0:
+            	for (int j=0;j<140;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 1:
+            	for (int j=0;j<130;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 2:
+            	for (int j=0;j<120;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 3:
+            	for (int j=0;j<110;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 4:
+            	for (int j=0;j<100;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 5:
+            	for (int j=0;j<90;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 6:
+            	for (int j=0;j<80;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 7:
+            	for (int j=0;j<70;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 8:
+            	for (int j=0;j<60;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 9:
+            	for (int j=0;j<50;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 10:
+            	for (int j=0;j<40;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 11:
+            	for (int j=0;j<30;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 12:
+            	for (int j=0;j<20;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 13:
+            	for (int j=0;j<10;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	case 14:
+            	for (int j=0;j<10;j++) {
+            		gmailMessages.add(body);
+            	}
+            	break;
+         	default:
+         		gmailMessages.add(body);
+         	}
+         	
         }
        
 		//return new connectToImapTask().execute(user, token).get();
@@ -196,6 +280,15 @@ public class ReadGMail {
 		return result;
 	}
 	
+	private int getMessageDate(Date messageDate) {
+		SimpleDateFormat dateFormater = new SimpleDateFormat("yyyyMMdd");
+		String todayDate = dateFormater.format(messageDate);
+		
+		return Integer.parseInt(todayDate);
+	}
+	
+	
+	
 	/*
 	 * Method to export Gmail messages to txt file
 	 */
@@ -218,34 +311,6 @@ public class ReadGMail {
         			 
 		 	 
 	}
-	/*
-	 * AsyncTask to index the sources
-	 */
-	
-	/*
-	public class indexSourcesTask extends AsyncTask <Void,Void,Void> {
-			
-			@Override
-			protected Void doInBackground(Void... params) {	
-				try {
-					IndexSources.createIndex(filepath,SettingsActivity.USER);				
-				} catch (Exception e) {				
-					e.printStackTrace();
-				}
-					
-				return null;
-			}
-			
-			@Override
-			protected void onPostExecute(Void result) {
-				try {
-					IndexSources.computeTopTermQuery();					
-				} catch (Exception e) {				
-					e.printStackTrace();
-				}
-			}
-				
-		}
-		*/
+
 	
 }

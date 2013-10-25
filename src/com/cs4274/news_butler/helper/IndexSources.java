@@ -34,6 +34,8 @@ import org.apache.lucene.store.LockObtainFailedException;
 
 import org.apache.lucene.util.Version;
 
+import android.util.Log;
+
 import com.cs4274.news_butler.SettingsActivity;
 import com.cs4274.news_butler.util.ByValueComparator;
 import com.cs4274.news_butler.util.ReverseComparator;
@@ -87,7 +89,8 @@ public class IndexSources {
 					
 					if (!indexDir.exists()) 
 						indexDir.mkdirs();
-					System.out.println("Articles Index Directory: " + indexDir);
+					
+					Log.e("Articles Index Directory", indexDir.toString());
 					indexHelper(appDir+"/"+eachDir+"/",indexDir);		
 					}
 				}

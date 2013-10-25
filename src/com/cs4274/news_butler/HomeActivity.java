@@ -7,6 +7,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -97,7 +99,7 @@ public class HomeActivity extends Activity {
 		@Override
 		protected Void doInBackground(Void... params) {			
 			final ReadSMS ReadSMS = new ReadSMS();
-			messages = ReadSMS.getOutboxSms(context);
+			messages = ReadSMS.getOutboxSms(context, getTodayDate());
 			
 			Iterator<String> iterator = messages.iterator();
 			
@@ -263,7 +265,7 @@ public class HomeActivity extends Activity {
 										
 					//Use username and token to read Sent Items
 					if (userToken != null) {					
-						new readGmailTask().execute(username,userToken,applicationDirectory);							
+						new readGmailTask().execute(username,userToken,applicationDirectory,getTodayDate());							
 					}
 					else {
 						Toast.makeText(context, "Unable to authenticate with Gmail", Toast.LENGTH_SHORT).show();
@@ -284,7 +286,7 @@ public class HomeActivity extends Activity {
 				ReadGMail gmailClass = new ReadGMail();
 				StringBuilder gmailMessageString = new StringBuilder();		
 				try {
-						gmailMessages = gmailClass.readSentItems(params[0], params[1], params[2]);
+						gmailMessages = gmailClass.readSentItems(params[0], params[1], params[2],params[3]);
 				} catch (Exception e) {
 						e.printStackTrace();
 				}
@@ -394,4 +396,12 @@ public class HomeActivity extends Activity {
 		return topTermList;
 	}
 	
+	
+	private String getTodayDate() {
+		Calendar c = Calendar.getInstance();			
+		SimpleDateFormat dateFormater = new SimpleDateFormat("yyyyMMdd");
+		String todayDate = dateFormater.format(c.getTime());
+					
+		return todayDate;
+	}
 }

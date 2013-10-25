@@ -7,11 +7,15 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import java.util.Vector;
 import java.util.concurrent.ExecutionException;
 
 
@@ -95,6 +99,8 @@ public class SettingsActivity extends PreferenceActivity{
 	        //facebook.setText("Learned");
 	        Log.d("Custom Pref Add", facebookPreference.getText());
 	       
+	        Log.d("TODAY DATE", getTodayDateInMS());
+	        
 	        SharedPreferences control = getSharedPreferences(CONTROL,0); 
 		       sms = control.getBoolean(LEARNT_SMS,false);
 		       gmail = control.getBoolean(LEARNT_GMAIL, false );
@@ -277,7 +283,7 @@ public class SettingsActivity extends PreferenceActivity{
 			@Override
 			protected String doInBackground(Void... params) {			
 				final ReadSMS ReadSMS = new ReadSMS();
-				messages = ReadSMS.getOutboxSms(context);
+				messages = ReadSMS.getOutboxSms(context,getTodayDate());
 				
 				Iterator<String> iterator = messages.iterator();
 				StringBuilder smsContent = new StringBuilder();
@@ -342,7 +348,7 @@ public class SettingsActivity extends PreferenceActivity{
 							saveToInternalStorage(filename, articleTopTerms);
 						}
 						for (String domain : domains) {
-							System.out.println(domain);
+							Log.e("Domain List",domain);
 						}
 						saveToInternalStorage(SAVED_DOMAINS, domains);
 						seeArticleTopTerms();
@@ -449,10 +455,10 @@ public class SettingsActivity extends PreferenceActivity{
 						Log.e("token",userToken);					
 						//Use username and token to read Sent Items
 						if (userToken != null && smsGmail == false) {					
-							new readGmailTask().execute(username,userToken,applicationDirectory);							
+							new readGmailTask().execute(username,userToken,applicationDirectory, getTodayDate());							
 						}
 						else if (userToken !=null && smsGmail == true) {
-							new readSMSGmailTask().execute(username,userToken,applicationDirectory);
+							new readSMSGmailTask().execute(username,userToken,applicationDirectory, getTodayDate());
 						}
 						else {
 							Toast.makeText(context, "Unable to authenticate with Gmail", Toast.LENGTH_SHORT).show();
@@ -475,7 +481,7 @@ public class SettingsActivity extends PreferenceActivity{
 					
 						 
 					try {
-							gmailMessages = gmailClass.readSentItems(params[0], params[1], params[2]);
+							gmailMessages = gmailClass.readSentItems(params[0], params[1], params[2],params[3]);
 					} catch (Exception e) {
 							e.printStackTrace();
 					}								
@@ -508,7 +514,7 @@ public class SettingsActivity extends PreferenceActivity{
 					StringBuilder messageString = new StringBuilder();
 					
 					try {
-						gmailMessages= gmailClass.readSentItems(params[0], params[1], params[2]);
+						gmailMessages= gmailClass.readSentItems(params[0], params[1], params[2],params[3]);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
@@ -519,7 +525,7 @@ public class SettingsActivity extends PreferenceActivity{
 					
 					
 					final ReadSMS ReadSMS = new ReadSMS();
-					messages = ReadSMS.getOutboxSms(context);
+					messages = ReadSMS.getOutboxSms(context,getTodayDate());
 					
 					Iterator<String> itr = messages.iterator();
 
@@ -627,7 +633,7 @@ public class SettingsActivity extends PreferenceActivity{
 			
 			for (int i=0; i<domainList.size();i++) {
 				List<String> domainTopTerms = readFromInternalStorage(domainList.get(i));
-				System.out.println("Domain is: " + domainList.get(i));
+				Log.e("Domain Top Terms","Domain is: " + domainList.get(i));
 				for (String terms : domainTopTerms) {
 					System.out.println(terms);
 				}
@@ -651,14 +657,18 @@ public class SettingsActivity extends PreferenceActivity{
 		}
 		
 		private static int COMPARE_TOP = 50;
-		
-		private List<String> getMatchingDomain(List<String> userTopTerms, List<String> domainList) throws ClassNotFoundException {
-			int bestMatch = -1;
-			int secondMatch = -1;
-			int matchingNumber = 0;
-			int highest = 0;
-			int secondHighest = 0;	
+				
+		private List<String> getMatchingDomain(List<String> userTopTerms, List<String> domainList) throws ClassNotFoundException {			
+			//int matchingNumber = 0;
 			List<String> topMatchingList = new ArrayList<String>();
+			Vector<Integer> domainWeight = new Vector<Integer>(domainList.size());
+			int weight = 0;
+			int[] termWeightArray = new int[COMPARE_TOP];
+			
+			for (int n=0;n<COMPARE_TOP;n++) {
+				termWeightArray[n] = COMPARE_TOP - n;
+			}
+			
 			
 			for (int i=0; i<domainList.size();i++) {
 				List<String> domainTopTerms = readFromInternalStorage(domainList.get(i));
@@ -670,23 +680,46 @@ public class SettingsActivity extends PreferenceActivity{
 					max = COMPARE_TOP;
 				else
 					max = (domainSize > userSize) ? userSize : domainSize;
-				domainTopTerms.subList(0, max);
+				domainTopTerms = domainTopTerms.subList(0, max);
 				List<String> userLess = userTopTerms;
-				userLess.subList(0, max);
+				userLess = userLess.subList(0, max);
 				
-				userLess.retainAll(domainTopTerms);
-				matchingNumber = userLess.size();
-				if (matchingNumber > highest) {
-					highest = matchingNumber;
-					bestMatch = i;
+				weight = 0;
+				for (int article=0;article<max;article++) {
+					for (int user=0;user<max;user++) {
+						if (domainTopTerms.get(article).equalsIgnoreCase(userLess.get(user)))
+							weight = weight + termWeightArray[article]; 							
+					}
+				}
+				
+				domainWeight.add(weight);
+				//userLess.retainAll(domainTopTerms);
+				//matchingNumber = userLess.size();
+				
+				Log.e("Domain Weight", "Domain: " + domainList.get(i) + " ; Weight: " + weight);
+			}
+				
+			
+			int bestMatch = -1;
+			int secondMatch = -1;
+			int highest = 0;
+			int secondHighest = 0;	
+			
+			for (int index=0;index < domainWeight.capacity();index++) {						
+				
+				int temp = domainWeight.get(index);
+				
+				if (temp > highest) {
+					highest = temp;
+					bestMatch = index;
 					continue;
 				}
-				else if (matchingNumber > secondHighest ){
-					secondHighest = matchingNumber;
-					secondMatch = i;
+				else if (temp > secondHighest ){
+					secondHighest = temp;
+					secondMatch = index;
 				}
-			}
 			
+			}
 			if (bestMatch == -1 && secondMatch == -1)
 				return null;
 			
@@ -694,5 +727,21 @@ public class SettingsActivity extends PreferenceActivity{
 			topMatchingList.add(domainList.get(secondMatch));
 			
 			return topMatchingList;
+		}
+		
+		
+		private String getTodayDate() {
+			Calendar c = Calendar.getInstance();			
+			SimpleDateFormat dateFormater = new SimpleDateFormat("yyyyMMdd");
+			String todayDate = dateFormater.format(c.getTime());
+						
+			return todayDate;
+		}
+		
+		private String getTodayDateInMS() {
+			Calendar c = Calendar.getInstance();	
+			Long time = c.getTimeInMillis();
+								
+			return time.toString();
 		}
 }
