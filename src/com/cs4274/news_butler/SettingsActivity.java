@@ -657,6 +657,7 @@ public class SettingsActivity extends PreferenceActivity{
 		}
 		
 		private static int COMPARE_TOP = 50;
+		private static double SECOND_PREFERENCE_PERCENTAGE = 0.75;
 				
 		private List<String> getMatchingDomain(List<String> userTopTerms, List<String> domainList) throws ClassNotFoundException {			
 			//int matchingNumber = 0;
@@ -723,8 +724,14 @@ public class SettingsActivity extends PreferenceActivity{
 			if (bestMatch == -1 && secondMatch == -1)
 				return null;
 			
+			
 			topMatchingList.add(domainList.get(bestMatch));
-			topMatchingList.add(domainList.get(secondMatch));
+			
+			int bestMatchWeight = domainWeight.get(bestMatch);
+			int secondMatchWeight = domainWeight.get(secondMatch);
+			
+			if ( secondMatchWeight/bestMatchWeight >= SECOND_PREFERENCE_PERCENTAGE )
+				topMatchingList.add(domainList.get(secondMatch));
 			
 			return topMatchingList;
 		}
