@@ -10,13 +10,11 @@ import java.io.ObjectOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.Vector;
-import java.util.concurrent.ExecutionException;
 
 
 import com.cs4274.news_butler.helper.IndexSources;
@@ -40,7 +38,9 @@ import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
+import android.support.v4.app.NavUtils;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 public class SettingsActivity extends PreferenceActivity{
@@ -61,12 +61,13 @@ public class SettingsActivity extends PreferenceActivity{
 	
 	public static final String USER_TOP_TERMS_FILENAME = "userTopTerms";
 	public static final String SAVED_DOMAINS = "savedDomains";
+	public static final String USER_PREFERENCE = "userPreference";
+	public static final String DOMAIN_SCORE_FILE = "Score.txt";
 	
 	//private final int ACTIVITY_SSO = 1000;
 	//private static final String APP_ID = "247627235387014";
 	//private static final String PERMISSIONS = "read_stream,read_friendlists,manage_friendlists,manage_notifications,publish_stream,publish_checkins,offline_access";
 	
-	private String SMSSourceFile = "SMS.txt";
 	private String applicationDirectory = getIndexDirectory();
 	public static final String suffix = ".txt";
 	public static final String USER = "user";
@@ -90,6 +91,7 @@ public class SettingsActivity extends PreferenceActivity{
 	 @SuppressWarnings("deprecation")
 	public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
+	        getActionBar().setDisplayHomeAsUpEnabled(true);
 	        accountManager = AccountManager.get(this);
 	        
 	        // Load the preferences from an XML resource
@@ -184,17 +186,29 @@ public class SettingsActivity extends PreferenceActivity{
 				}
 			});		
 	        
+	        /*
 	        Preference articlesPreference = (Preference)findPreference("learn_articles");
 	        articlesPreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
 				
 				@Override
 				public boolean onPreferenceClick(Preference preference) {
 					articles = true;
-					getArticleTopTerms();
+					//getArticleTopTerms();
 					return false;
 				}
 			});
+			*/
 	        
+	 }
+	 
+	 public boolean onOptionsItemsSelected(MenuItem item) {
+		 switch (item.getItemId()) {
+		 // Respond to the action bar's Up/Home button
+		 case android.R.id.home:
+			 NavUtils.navigateUpFromSameTask(this);
+			 return true;
+		 }	    
+		 return super.onOptionsItemSelected(item);		 
 	 }
 	 
 	 @Override
@@ -238,16 +252,17 @@ public class SettingsActivity extends PreferenceActivity{
 	 }
 	 
 	 
-		// This method is invoked when the button getSMS is called
-		// When merging together with UI, just place this method in the onClickListener or use XML to activate this method
+	 	/*
+	 	 * This method is invoked when the button getSMS is pressed, to learn the user's SMS for preference
+	 	 */
 		public void getSMS() {
 			sms = true;
 			new readSMSTask().execute();
-			//new indexSourcesTask().execute(applicationDirectory,USER);
 		}
 		
-		// This method is invoked when the button getGmail is called
-		// When merging together with UI, just place this method in the onClickListener or use XML to activate this method
+		/*
+		 * This method is invoked when the button getGmail is pressed, to learn the user's Gmail for preference
+		 */
 		public void getGmail() {	
 			gmail = true;
 			if(isConnectedToInternet())
@@ -257,6 +272,9 @@ public class SettingsActivity extends PreferenceActivity{
 			}
 		}
 		
+		/*
+		 * This method is invoked when any of the button SMS or Gmail is pressed before and now pressed again, to learn them for user's preference
+		 */
 		public void getSMSGmail() {
 			smsGmail = true;
 			if(isConnectedToInternet()) {
@@ -268,15 +286,22 @@ public class SettingsActivity extends PreferenceActivity{
 			}
 		}
 		
+		/*
 		public void getArticleTopTerms() {
+			
 			if (isConnectedToInternet()) 
 				new indexSourcesTask().execute(applicationDirectory,ARTICLE,null);
 			else {
 				Toast.makeText(getApplicationContext(), "Please turn on your Data to enable better matching of News", Toast.LENGTH_SHORT).show();
 			}
-		}
 			
-		// AsyncTask to read SMS from Content Provider
+		}
+		*/
+			
+		
+		/*
+		 * AsyncTask to read SMS and call the indexing method
+		 */	
 		private class readSMSTask extends AsyncTask <Void,Void,String> {
 			Context context = getApplicationContext();
 			
@@ -302,77 +327,11 @@ public class SettingsActivity extends PreferenceActivity{
 			@Override
 			protected void onPostExecute(String content) {		
 				new indexSourcesTask().execute(applicationDirectory,USER,content);
-				Toast.makeText(context, "Finish learning from SMS!.", Toast.LENGTH_SHORT).show();
-				//exportText();	
 			}
 				
 		}
 		
-		// AsyncTask to index the sources
-		public class indexSourcesTask extends AsyncTask <String,Void,String> {
-					
-			Context context = getApplicationContext();
-			
-			@Override
-			protected String doInBackground(String... params) {		
-				try {
-					IndexSources.createIndex(params[0],params[1],params[2]);
-					//IndexSources.createIndex(filepath,suffix,USER);
-					
-				} catch (Exception e) {				
-					e.printStackTrace();
-				}
-					
-				return params[1];
-			}
-			
-			@Override
-			protected void onPostExecute(String type) {
-				System.out.println("TYPE:" + type);
-				try {
-					if (type.equalsIgnoreCase(USER)) {
-						File indexDir = new File(applicationDirectory + "/" + IndexSources.USER_INDEX + "/");
-						userTopTerms = IndexSources.computeTopTermQuery(indexDir);
-						saveToInternalStorage(USER_TOP_TERMS_FILENAME,userTopTerms);
-						seeUserTopTerms();
-					} 
-					else if (type.equalsIgnoreCase(ARTICLE)) {									
-						File indexDir = new File(applicationDirectory + "/" + IndexSources.ARTICLE_INDEX + "/");
-						String[] directory = indexDir.list();
-						
-						for (String eachDir : directory) {
-							File domainDir = new File(applicationDirectory+"/"+ IndexSources.ARTICLE_INDEX + "/" + eachDir + "/");
-							List<String> articleTopTerms = IndexSources.computeTopTermQuery(domainDir);
-							String filename = eachDir.replace("_index", "");
-							domains.add(filename);
-							saveToInternalStorage(filename, articleTopTerms);
-						}
-						for (String domain : domains) {
-							Log.e("Domain List",domain);
-						}
-						saveToInternalStorage(SAVED_DOMAINS, domains);
-						seeArticleTopTerms();
-						
-						if (articles && smsGmail) {
-							List<String> userPreference = getMatchingDomain(getUserTopTerms(),getDomainList());
-							Iterator<String> itr = userPreference.iterator();
-							while (itr.hasNext()){
-								Log.e("User Preference",itr.next());
-							}
-						}
-					}
-					
-			
-					//IndexSources.computeTopTermQuery();
-					Toast.makeText(context, "Finish personalization!", Toast.LENGTH_SHORT).show();
-				} catch (Exception e) {				
-					e.printStackTrace();
-				}
-			}
-				
-		}
 		
-
 		public static Activity getActivity() {
 			return SettingsActivity.getActivity();
 		}
@@ -398,7 +357,6 @@ public class SettingsActivity extends PreferenceActivity{
 							.getStringExtra(AccountManager.KEY_ACCOUNT_NAME);
 					username = accountName;
 					
-	 
 					// invalidate old tokens which might be cached. we want a fresh
 					// one, which is guaranteed to work
 					invalidateToken();
@@ -421,8 +379,7 @@ public class SettingsActivity extends PreferenceActivity{
 					break;
 				}
 			}
-			//username = userAccount.name;
-			//userName = userAccount.name;
+	
 			accountManager.getAuthToken(userAccount, SCOPE, null, this,
 					new OnTokenAcquired(), null);
 		}
@@ -435,6 +392,9 @@ public class SettingsActivity extends PreferenceActivity{
 			userToken = null;
 		}
 		
+		/*
+		 * Method to pull Gmail messages when the token is acquired
+		 */
 		private class OnTokenAcquired implements AccountManagerCallback<Bundle> {
 			Context context = getApplicationContext();
 			
@@ -470,7 +430,9 @@ public class SettingsActivity extends PreferenceActivity{
 			}
 		}
 
-		// AsyncTask to read Gmail
+		    /*
+		     * AsyncTask to pull Gmail messages and call the indexing method
+		     */
 			private class readGmailTask extends AsyncTask <String,Void,String>{
 				Context context = getApplicationContext();
 				
@@ -478,8 +440,7 @@ public class SettingsActivity extends PreferenceActivity{
 				protected String doInBackground(String... params) {			
 					ReadGMail gmailClass = new ReadGMail();
 					StringBuilder gmailMessageString = new StringBuilder();
-					
-						 
+											 
 					try {
 							gmailMessages = gmailClass.readSentItems(params[0], params[1], params[2],params[3]);
 					} catch (Exception e) {
@@ -491,8 +452,7 @@ public class SettingsActivity extends PreferenceActivity{
 						while (iterator.hasNext()) 
 							gmailMessageString.append(iterator.next());
 					}
-					
-						 					 
+									 					 
 					return gmailMessages.toString();
 				}
 				
@@ -504,7 +464,9 @@ public class SettingsActivity extends PreferenceActivity{
 					
 			}
 			
-			// AsyncTask to read SMS & Gmail
+			/*
+			 *  AsyncTask to pull SMS & Gmail and call the indexing method
+			 */			
 			private class readSMSGmailTask extends AsyncTask <String,Void,String> {
 				Context context = getApplicationContext();
 				
@@ -544,10 +506,82 @@ public class SettingsActivity extends PreferenceActivity{
 					
 			}			
 		
-		/*
+			
+			/*
+			 * AsyncTask to index the sources
+			 */
+			public class indexSourcesTask extends AsyncTask <String,Void,String> {
+						
+				Context context = getApplicationContext();
+				
+				@Override
+				protected String doInBackground(String... params) {		
+					try {
+						IndexSources.createIndex(params[0],params[1],params[2]);
+						//IndexSources.createIndex(filepath,suffix,USER);
+						
+					} catch (Exception e) {				
+						e.printStackTrace();
+					}
+						
+					return params[1];
+				}
+				
+				@Override
+				protected void onPostExecute(String type) {
+					System.out.println("TYPE:" + type);
+					try {
+						if (type.equalsIgnoreCase(USER)) {
+							File indexDir = new File(applicationDirectory + "/" + IndexSources.USER_INDEX + "/");
+							userTopTerms = IndexSources.computeTopTermQuery(indexDir);
+							saveToInternalStorage(USER_TOP_TERMS_FILENAME,userTopTerms);
+							seeUserTopTerms();
+							new indexSourcesTask().execute(applicationDirectory,ARTICLE,null);
+						} 
+						else if (type.equalsIgnoreCase(ARTICLE)) {									
+							File indexDir = new File(applicationDirectory + "/" + IndexSources.ARTICLE_INDEX + "/");
+							String[] directory = indexDir.list();
+							
+							for (String eachDir : directory) {
+								File domainDir = new File(applicationDirectory+"/"+ IndexSources.ARTICLE_INDEX + "/" + eachDir + "/");
+								List<String> articleTopTerms = IndexSources.computeTopTermQuery(domainDir);
+								String filename = eachDir.replace("_index", "");
+								domains.add(filename);
+								saveToInternalStorage(filename, articleTopTerms);
+							}
+							for (String domain : domains) {
+								Log.e("Domain List",domain);
+							}
+							saveToInternalStorage(SAVED_DOMAINS, domains);
+							seeArticleTopTerms();
+							
+							/*
+							if (articles && smsGmail || articles && sms || articles && gmail) {
+								List<String> userPreference = getMatchingDomain(getUserTopTerms(),getDomainList());
+								Iterator<String> itr = userPreference.iterator();
+								while (itr.hasNext()){
+									Log.e("User Preference",itr.next());
+								}
+							}
+							*/
+							
+							List<String> userPreference = getMatchingDomain(getUserTopTerms(),getDomainList());
+							saveToInternalStorage(USER_PREFERENCE, userPreference);
+							Toast.makeText(context, "Finish learning your preference!", Toast.LENGTH_LONG).show();
+						}
+									
+					} catch (Exception e) {				
+						e.printStackTrace();
+					}
+				}
+					
+			}	
+			
+			
+			
+		/******************************************************************
 		 * Helper methods
-		 */
-		
+		 ******************************************************************/
 		private String getIndexDirectory(){
 			File dir;
 			String state = Environment.getExternalStorageState();
@@ -562,25 +596,26 @@ public class SettingsActivity extends PreferenceActivity{
 			return dir.getAbsolutePath();
 		}
 		
-		private void exportText() {
-			myExternalFile = new File(applicationDirectory, SMSSourceFile);
+		/*
+		private void exportScore(List<String> domainList, Vector<Integer> domainScore) {
+			myExternalFile = new File(applicationDirectory, DOMAIN_SCORE_FILE);
 			String nextLine = "\n";
-			Iterator<String> iterator = messages.iterator();
 			
 			try {
 	             FileOutputStream fos = new FileOutputStream(myExternalFile);
-	             while (iterator.hasNext()) {		
-	            	 String text = iterator.next().replaceAll("[0-9]","");
+	             
+	             for (int i=0;i<domainList.size();i++) {
+	            	 String text = "Domain: " + domainList.get(i) + " ; Score: " + domainScore.get(i);
 	            	 fos.write(text.getBytes());
 	            	 fos.write(nextLine.getBytes());
-	            }             
+	             }	                         
 	             fos.close();
 	         } catch (IOException e) {
 	             e.printStackTrace();
 	         }
-	        			 
-			 new indexSourcesTask().execute(applicationDirectory,USER);	 
+			 
 		}
+		*/
 		
 		private boolean isConnectedToInternet() {
 			Context context = getApplicationContext();
@@ -593,6 +628,7 @@ public class SettingsActivity extends PreferenceActivity{
 			return isConnected;
 		
 		}
+		
 		
 		public void saveToInternalStorage(String filename, List<String> data) throws IOException {
 			try {
@@ -607,6 +643,7 @@ public class SettingsActivity extends PreferenceActivity{
 			}
 	
 		}
+		
 		
 		@SuppressWarnings("unchecked")
 		public List<String> readFromInternalStorage(String filename) throws ClassNotFoundException {
@@ -641,6 +678,7 @@ public class SettingsActivity extends PreferenceActivity{
 			
 		}
 		
+		
 		public void seeUserTopTerms() throws ClassNotFoundException {
 			List<String> userTerms = readFromInternalStorage(USER_TOP_TERMS_FILENAME);
 			for (String terms : userTerms) {
@@ -648,26 +686,50 @@ public class SettingsActivity extends PreferenceActivity{
 			}		
 		}
 		
+		
 		private List<String> getUserTopTerms() throws ClassNotFoundException {
 			return readFromInternalStorage(USER_TOP_TERMS_FILENAME);
 		}
+		
 		
 		private List<String> getDomainList() throws ClassNotFoundException {
 			return readFromInternalStorage(SAVED_DOMAINS);
 		}
 		
+				
+		private String getTodayDate() {
+			Calendar c = Calendar.getInstance();			
+			SimpleDateFormat dateFormater = new SimpleDateFormat("yyyyMMdd");
+			String todayDate = dateFormater.format(c.getTime());
+						
+			return todayDate;
+		}
+		
+		
+		private String getTodayDateInMS() {
+			Calendar c = Calendar.getInstance();	
+			Long time = c.getTimeInMillis();
+								
+			return time.toString();
+		}
+		
+		
+		
+		
 		private static int COMPARE_TOP = 50;
 		private static double SECOND_PREFERENCE_PERCENTAGE = 0.75;
-				
+			
+		/*
+		 * Method to get the matching domain for the user's preference
+		 */
 		private List<String> getMatchingDomain(List<String> userTopTerms, List<String> domainList) throws ClassNotFoundException {			
-			//int matchingNumber = 0;
 			List<String> topMatchingList = new ArrayList<String>();
-			Vector<Integer> domainWeight = new Vector<Integer>(domainList.size());
-			int weight = 0;
-			int[] termWeightArray = new int[COMPARE_TOP];
+			Vector<Integer> domainScore = new Vector<Integer>(domainList.size());
+			int score = 0;
+			int[] termScoreArray = new int[COMPARE_TOP];
 			
 			for (int n=0;n<COMPARE_TOP;n++) {
-				termWeightArray[n] = COMPARE_TOP - n;
+				termScoreArray[n] = COMPARE_TOP - n;
 			}
 			
 			
@@ -685,30 +747,29 @@ public class SettingsActivity extends PreferenceActivity{
 				List<String> userLess = userTopTerms;
 				userLess = userLess.subList(0, max);
 				
-				weight = 0;
+				score = 0;
 				for (int article=0;article<max;article++) {
 					for (int user=0;user<max;user++) {
 						if (domainTopTerms.get(article).equalsIgnoreCase(userLess.get(user)))
-							weight = weight + termWeightArray[article]; 							
+							score = score + termScoreArray[article]; 							
 					}
 				}
 				
-				domainWeight.add(weight);
-				//userLess.retainAll(domainTopTerms);
-				//matchingNumber = userLess.size();
+				domainScore.add(score);
 				
-				Log.e("Domain Weight", "Domain: " + domainList.get(i) + " ; Weight: " + weight);
+				Log.e("Domain Score", "Domain: " + domainList.get(i) + " ; Score: " + score);
 			}
 				
+			//exportScore(domainList, domainScore);
 			
 			int bestMatch = -1;
 			int secondMatch = -1;
 			int highest = 0;
 			int secondHighest = 0;	
 			
-			for (int index=0;index < domainWeight.capacity();index++) {						
+			for (int index=0;index < domainScore.capacity();index++) {						
 				
-				int temp = domainWeight.get(index);
+				int temp = domainScore.get(index);
 				
 				if (temp > highest) {
 					highest = temp;
@@ -727,28 +788,13 @@ public class SettingsActivity extends PreferenceActivity{
 			
 			topMatchingList.add(domainList.get(bestMatch));
 			
-			int bestMatchWeight = domainWeight.get(bestMatch);
-			int secondMatchWeight = domainWeight.get(secondMatch);
+			int bestMatchScore = domainScore.get(bestMatch);
+			int secondMatchScore = domainScore.get(secondMatch);
 			
-			if ( secondMatchWeight/bestMatchWeight >= SECOND_PREFERENCE_PERCENTAGE )
+			if ( secondMatchScore/bestMatchScore >= SECOND_PREFERENCE_PERCENTAGE )
 				topMatchingList.add(domainList.get(secondMatch));
 			
 			return topMatchingList;
 		}
 		
-		
-		private String getTodayDate() {
-			Calendar c = Calendar.getInstance();			
-			SimpleDateFormat dateFormater = new SimpleDateFormat("yyyyMMdd");
-			String todayDate = dateFormater.format(c.getTime());
-						
-			return todayDate;
-		}
-		
-		private String getTodayDateInMS() {
-			Calendar c = Calendar.getInstance();	
-			Long time = c.getTimeInMillis();
-								
-			return time.toString();
-		}
 }

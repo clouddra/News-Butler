@@ -27,7 +27,6 @@ import com.sun.mail.imap.IMAPStore;
 
 public class ReadGMail {	
 	
-	private String GmailSourceFile = "Gmail.txt";
 	private String filepath;
 	private static int NO_OF_EMAILS_TO_LEARN = 50;
 	//private String content = "";
@@ -41,6 +40,10 @@ public class ReadGMail {
 		
 	}
 */	
+	
+	/*
+	 * Method to pull sent items from Gmail
+	 */
 	public List<String> readSentItems(String user, String token, String filePath, String todayDateString) throws Exception{
 		this.filepath = filePath;
 		Message[] messageReverse = null;
@@ -58,11 +61,19 @@ public class ReadGMail {
 		
 		IMAPFolder folder = (IMAPFolder) store.getFolder("[Gmail]/Sent Mail"); 
         folder.open(Folder.READ_ONLY); 
-        emailNumber = folder.getMessageCount();
+        int end = folder.getMessageCount();
         
-        Message[] msgs = folder.getMessages(1,emailNumber/2); 
+        if (end > NO_OF_EMAILS_TO_LEARN) {
+        	emailNumber = NO_OF_EMAILS_TO_LEARN;
+        }
+        else {
+        	emailNumber = end;
+        }
+        
+        int start = end - emailNumber + 1;
+        Message[] msgs = folder.getMessages(start,end); 
         messageReverse = reverseMessageOrder(msgs);	            
-        
+          
        
         for (int i=0;i<messageReverse.length;i++) {  
          	String body = getBody(messageReverse[i]).replaceAll("[0-9]","");        	
@@ -150,66 +161,9 @@ public class ReadGMail {
          	
         }
        
-		//return new connectToImapTask().execute(user, token).get();
 		return gmailMessages;
 	}
-	
-/*	
-	private class connectToImapTask extends AsyncTask <String,Void,String> {
-
-		@Override
-		protected String doInBackground(String... credentials) {			
-			Message[] messageReverse = null;
-			int emailNumber = 0;
-			try {
-				
-				// This is using a patched JavaMail for Android			
-				IMAPStore store = OAuth2Authenticator.connectToImap(
-							"imap.gmail.com", 
-							993, 
-							credentials[0], 
-							credentials[1], 
-							true);
-						
-		        IMAPFolder folder = (IMAPFolder) store.getFolder("[Gmail]/Sent Mail"); 
-	            folder.open(Folder.READ_ONLY); 
-	            int end = folder.getMessageCount();
-	            
-	       
-	            if (end > NO_OF_EMAILS_TO_LEARN) {
-	            	emailNumber = NO_OF_EMAILS_TO_LEARN;
-	            }
-	            else {
-	            	emailNumber = end;
-	            }
-	            
-					int start = end - emailNumber + 1;
-		            Message[] msgs = folder.getMessages(start, end); 
-		            messageReverse = reverseMessageOrder(msgs);	            
-		            
-		            content = "";
-		            for (int i=0;i<messageReverse.length;i++) {  
-		             	String body = getBody(messageReverse[i]).replaceAll("[0-9]","");
-		             	content = content + body + " ";
-		            }
-		            
-		            //exportGmail(messageReverse);	
-	            
-		    } catch (Exception e) {	 
-	            e.printStackTrace();
-		    } 
-			
-			return content;
-			//return messageReverse;
-		}
-
-		@Override
-		protected void onPostExecute(String result) {	
-			//new indexSourcesTask().execute();
-			//content = result;
-		}			
-	}
-*/	
+		
 	/*
 	 * Reverse the messages so that the latest one appear first	
 	 */
@@ -287,30 +241,5 @@ public class ReadGMail {
 		return Integer.parseInt(todayDate);
 	}
 	
-	
-	
-	/*
-	 * Method to export Gmail messages to txt file
-	 */
-	private void exportGmail(Message[] result) throws MessagingException {
-		myFile = new File(filepath, GmailSourceFile);
-		String nextLine = "\n";
-		
-		try {
-             FileOutputStream fos = new FileOutputStream(myFile);
-             for (int i=0;i<result.length;i++) {  
-             	String body = getBody(result[i]).replaceAll("[0-9]","");
-             	fos.write(body.getBytes());
-             	fos.write(nextLine.getBytes());
-             }
-                       
-             fos.close();         
-         } catch (IOException e) {
-             e.printStackTrace();
-         }
-        			 
-		 	 
-	}
 
-	
 }

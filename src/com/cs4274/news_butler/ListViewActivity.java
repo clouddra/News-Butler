@@ -16,9 +16,14 @@ package com.cs4274.news_butler;
  * limitations under the License.
  */
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -88,6 +93,45 @@ public class ListViewActivity extends ListActivity implements
 		// Set the Refreshable View to be the ListView and the refresh listener
 		// to be this.
 		mPullToRefreshAttacher.addRefreshableView(listView, this);
+		
+		if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
+			List<String> userPreference = new ArrayList<String>();
+			mPullToRefreshAttacher.setRefreshing(true);
+			try {
+				userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+			
+			if (userPreference.size()== 0)
+				asyncSearch("Singapore");
+			else if (userPreference.size() > 0) {
+				asyncSearch(userPreference.get(0));
+			}
+		}
+		
+	}
+	
+	@Override
+	 public void onResume() {
+		super.onResume();
+				
+		if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
+			List<String> userPreference = new ArrayList<String>();
+			mPullToRefreshAttacher.setRefreshing(true);
+			
+			try {
+				userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+			
+			if (userPreference.size()== 0)
+				asyncSearch("Singapore");
+			else if (userPreference.size() > 0) {
+				asyncSearch(userPreference.get(0));
+			}
+		}
 	}
 
 	@Override
@@ -96,7 +140,24 @@ public class ListViewActivity extends ListActivity implements
 		 * Simulate Refresh with 4 seconds sleep
 		 */
 		Log.d("refresh", "true");
-		asyncSearch("flood singapore");
+		if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
+			List<String> userPreference = new ArrayList<String>();
+			
+			try {
+				userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+			
+			if (userPreference.size()== 0)
+				asyncSearch("Singapore");
+			else if (userPreference.size() > 0) {
+				asyncSearch(userPreference.get(0));
+			}
+		} else {
+			asyncSearch("Singapore");
+		}
+		
 
 	}
 
@@ -223,7 +284,25 @@ public class ListViewActivity extends ListActivity implements
 		switch (item.getItemId()) {
 		case R.id.action_refresh:
 			mPullToRefreshAttacher.setRefreshing(true);
-			asyncSearch("flood singapore");
+			
+			if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
+				List<String> userPreference = new ArrayList<String>();
+				
+				try {
+					userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
+				} catch (ClassNotFoundException e) {
+					e.printStackTrace();
+				}
+				
+				if (userPreference.size()== 0)
+					asyncSearch("Singapore");
+				else if (userPreference.size() > 0) {
+					asyncSearch(userPreference.get(0));
+				}
+			} else {
+				asyncSearch("Singapore");
+			}
+			
 			return true;
 		case R.id.action_settings:
 			Intent settingsPage = new Intent(this, SettingsActivity.class);
@@ -240,6 +319,26 @@ public class ListViewActivity extends ListActivity implements
 		Intent i = new Intent(Intent.ACTION_VIEW);
 		i.setData(Uri.parse(item.getUrl()));
 		startActivity(i);
+	}
+	
+	
+	@SuppressWarnings("unchecked")
+	public List<String> readFromInternalStorage(String filename) throws ClassNotFoundException {
+		List<String> topTermList = null;
+		FileInputStream fis;
+		try {
+			fis = openFileInput(filename);
+			ObjectInputStream oi = new ObjectInputStream(fis);
+			topTermList = (List<String>) oi.readObject();
+			oi.close();
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return topTermList;
 	}
 
 }

@@ -43,7 +43,6 @@ import com.cs4274.news_butler.util.StopWords;
 
 
 public class IndexSources {
-	//private static File indexDir;
 	public static final String FIELD_PATH = "path";
 	public static final String FIELD_CONTENTS = "content";
 	public static final String USER_INDEX = "USER_INDEX";
@@ -108,7 +107,7 @@ public class IndexSources {
 		analyzer = new EnglishAnalyzer(Version.LUCENE_36,set);
 		
 		IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_36, analyzer);
-		// Only create the index for the first time and subsequent learning will update the inde
+		// Only create the index for the first time and subsequent learning will update the index
 		config.setOpenMode(OpenMode.CREATE_OR_APPEND);
 		
 		IndexWriter indexWriter = new IndexWriter(
@@ -220,20 +219,7 @@ public class IndexSources {
 		    */ 	    
 		     
 		  }
-/*	
-	private static void exportResult(StringBuilder termBuf) {		
-		 try {
-			 File exportFile = new File(indexDir,"results.txt");
-            FileOutputStream fos = new FileOutputStream(exportFile);
-		
-            fos.write(termBuf.toString().getBytes());                
-            fos.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-	}
-*/	
+	
 	private static void delete(File indexDir) throws IOException{	
 		if(indexDir.isDirectory()){
     		if(indexDir.list().length==0){
