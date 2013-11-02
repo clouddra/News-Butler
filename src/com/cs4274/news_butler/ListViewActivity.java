@@ -31,6 +31,7 @@ import org.json.JSONObject;
 
 import com.androidquery.AQuery;
 import com.androidquery.auth.BasicHandle;
+import com.androidquery.auth.FacebookHandle;
 import com.androidquery.callback.AjaxStatus;
 import com.androidquery.callback.Transformer;
 import com.google.gson.Gson;
@@ -63,6 +64,7 @@ import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
 public class ListViewActivity extends ListActivity implements
 		PullToRefreshAttacher.OnRefreshListener, SearchView.OnQueryTextListener {
 
+	
 	private ListView listView;
 	private AQuery aq;
 	private SearchView mSearchView;
@@ -133,6 +135,10 @@ public class ListViewActivity extends ListActivity implements
 			}
 		}
 	}
+	
+	
+
+	
 
 	@Override
 	public void onRefreshStarted(View view) {

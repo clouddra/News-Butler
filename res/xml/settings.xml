@@ -8,16 +8,29 @@
             android:summary="@string/learn_facebook_summary"
             android:title="@string/learn_facebook" >
         </CheckBoxPreference>
+        <!-- 
         <com.cs4274.news_butler.CustomPreference
             android:key="learn_facebook"
             android:dependency ="enable_facebook"
-            android:summary="@string/learn_facebook_summary"
+            android:summary="@string/learn_facebook_summary" 
             android:title="@string/learn_facebook" >
-        </com.cs4274.news_butler.CustomPreference>
+        </com.cs4274.news_butler.CustomPreference>-->
         <Preference
             android:key="learn_sms"
             android:title="@string/learn_sms"
             android:summary="@string/learn_sms_summary"  />     
+         <!--    
+       <Preference
+            android:key="learn_facebook"
+            android:title="@string/learn_facebook"
+            android:summary="@string/learn_facebook_summary"  /> 
+            --> 
+       
+       <com.cs4274.news_butler.CustomPreference
+            android:key="learn_facebook"
+            android:summary="@string/learn_facebook_summary" 
+            android:title="@string/learn_facebook" >
+        </com.cs4274.news_butler.CustomPreference>
         
         <Preference
             android:key="learn_gmail"

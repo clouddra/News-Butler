@@ -24,7 +24,7 @@ public class CustomPreference extends Preference {
 	
 	public boolean setText(String s){
 		if (super.persistString(s)){
-			this.setSummary(s);
+			this.setSummary("Last Learned: " + s);
 			return true;
 		}
 		return false;
