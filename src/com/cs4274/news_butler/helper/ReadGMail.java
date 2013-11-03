@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Vector;
 
 import javax.mail.BodyPart;
 import javax.mail.Folder;
@@ -44,12 +45,10 @@ public class ReadGMail {
 	/*
 	 * Method to pull sent items from Gmail
 	 */
-	public List<String> readSentItems(String user, String token, String filePath, String todayDateString) throws Exception{
+	public void readSentItems(String user, String token, String filePath, FBSQLiteHelper datasource, long previousLearned) throws Exception{
 		this.filepath = filePath;
 		Message[] messageReverse = null;
 		int emailNumber = 0;
-		List<String> gmailMessages = new ArrayList<String>();
-		int todayDate = Integer.parseInt(todayDateString);
 		
 		// This is using a patched JavaMail for Android			
 		IMAPStore store = OAuth2Authenticator.connectToImap(
@@ -75,93 +74,21 @@ public class ReadGMail {
         messageReverse = reverseMessageOrder(msgs);	            
           
        
-        for (int i=0;i<messageReverse.length;i++) {  
-         	String body = getBody(messageReverse[i]).replaceAll("[0-9]","");        	
-         	
-         	int dateDifference = todayDate - getMessageDate(messageReverse[i].getSentDate());
-         	switch (dateDifference) {
-         	case 0:
-            	for (int j=0;j<140;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 1:
-            	for (int j=0;j<130;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 2:
-            	for (int j=0;j<120;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 3:
-            	for (int j=0;j<110;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 4:
-            	for (int j=0;j<100;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 5:
-            	for (int j=0;j<90;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 6:
-            	for (int j=0;j<80;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 7:
-            	for (int j=0;j<70;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 8:
-            	for (int j=0;j<60;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 9:
-            	for (int j=0;j<50;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 10:
-            	for (int j=0;j<40;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 11:
-            	for (int j=0;j<30;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 12:
-            	for (int j=0;j<20;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 13:
-            	for (int j=0;j<10;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	case 14:
-            	for (int j=0;j<10;j++) {
-            		gmailMessages.add(body);
-            	}
-            	break;
-         	default:
-         		gmailMessages.add(body);
+        for (int i=0;i<messageReverse.length;i++) {          	              	       	
+
+        	if (previousLearned == -1L) { // never learn gmail before
+         		String body = getBody(messageReverse[i]).replaceAll("[0-9]",""); 
+         		long emailDate = getMessageDate(messageReverse[i].getSentDate()); 
+         		datasource.addMessage(body, emailDate);
          	}
-         	
+         	else {
+         		long emailDate = getMessageDate(messageReverse[i].getSentDate());         		
+         		if ( emailDate > previousLearned ) {// only learn emails that has not haven learnt before
+         			String body = getBody(messageReverse[i]).replaceAll("[0-9]","");
+         			datasource.addMessage(body, emailDate);
+         		}
+         	}       	   	
         }
-       
-		return gmailMessages;
 	}
 		
 	/*
@@ -234,11 +161,8 @@ public class ReadGMail {
 		return result;
 	}
 	
-	private int getMessageDate(Date messageDate) {
-		SimpleDateFormat dateFormater = new SimpleDateFormat("yyyyMMdd");
-		String todayDate = dateFormater.format(messageDate);
-		
-		return Integer.parseInt(todayDate);
+	private long getMessageDate(Date messageDate) {	
+		return messageDate.getTime() / 1000L;
 	}
 	
 

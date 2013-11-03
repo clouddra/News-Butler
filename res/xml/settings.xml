@@ -15,10 +15,12 @@
             android:summary="@string/learn_facebook_summary" 
             android:title="@string/learn_facebook" >
         </com.cs4274.news_butler.CustomPreference>-->
-        <Preference
+        
+        <com.cs4274.news_butler.CustomPreference
             android:key="learn_sms"
             android:title="@string/learn_sms"
-            android:summary="@string/learn_sms_summary"  />     
+            android:summary="@string/learn_sms_summary"  >         
+        </com.cs4274.news_butler.CustomPreference>    
          <!--    
        <Preference
             android:key="learn_facebook"
@@ -32,16 +34,19 @@
             android:title="@string/learn_facebook" >
         </com.cs4274.news_butler.CustomPreference>
         
-        <Preference
+        <com.cs4274.news_butler.CustomPreference
             android:key="learn_gmail"
             android:title="@string/learn_gmail"
-            android:summary="@string/learn_gmail_summary"  />
+            android:summary="@string/learn_gmail_summary" >           
+        </com.cs4274.news_butler.CustomPreference>
         
+        <!-- 
         <Preference
             android:key="learn_articles"
             android:title="@string/learn_articles"
-            android:summary="@string/learn_articles_summary"  />
-     
+            android:summary="@string/learn_articles_summary"  />     	
+     	-->
+     	
         </PreferenceCategory>
         
         

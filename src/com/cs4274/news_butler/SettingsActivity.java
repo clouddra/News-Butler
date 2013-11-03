@@ -71,7 +71,10 @@ public class SettingsActivity extends PreferenceActivity {
 	private static final String USERNAME = "username";
 	private static final String TOKEN = "token";
 	private static final String SET = "set";
-
+	private static final String SMS_LAST_LEARNED = "smslastlearned";
+	private static final String FACEBOOK_LAST_LEARNED = "facebooklastlearned";
+	private static final String GMAIL_LAST_LEARNED = "gmaillastlearned";
+	
 	public static final String USER_TOP_TERMS_FILENAME = "userTopTerms";
 	public static final String SAVED_DOMAINS = "savedDomains";
 	public static final String USER_PREFERENCE = "userPreference";
@@ -86,13 +89,18 @@ public class SettingsActivity extends PreferenceActivity {
 	public static final String suffix = ".txt";
 	public static final String USER = "user";
 	public static final String ARTICLE = "article";
+	public static String smsLastLearnedDate = null;
+	public static String facebookLastLearnedDate = null;
+	public static String gmailLastLearnedDate = null;
 	public static boolean facebook = false;
 	public static boolean sms = false;
 	public static boolean gmail = false;
 	public static boolean smsGmail = false;
 	public static boolean articles = false;
+	public static boolean change = false;
 	private static String username = null;
 	private static String userToken = null;
+	private long gmailpreviousLearned = -100L;
 	public List<String> messages = new ArrayList<String>();
 	public List<String> gmailMessages = new ArrayList<String>();
 	public static List<String> userTopTerms;
@@ -132,9 +140,29 @@ public class SettingsActivity extends PreferenceActivity {
 		facebook = control.getBoolean(LEARNT_FACEBOOK, false);
 		smsGmail = control.getBoolean(LEARNT_SMS_GMAIL, false);
 		articles = control.getBoolean(LEARNT_ARTICLES, false);
+		smsLastLearnedDate = control.getString(SMS_LAST_LEARNED, null);
+		facebookLastLearnedDate = control.getString(FACEBOOK_LAST_LEARNED, null);
+		gmailLastLearnedDate = control.getString(GMAIL_LAST_LEARNED, null);
+		
 		// username = control.getString(USERNAME, null);
 		// userToken = control.getString(TOKEN, null);
-
+		
+		if (smsLastLearnedDate != null) {
+			CustomPreference smsPreference = (CustomPreference) findPreference("learn_sms");
+			smsPreference.setText(smsLastLearnedDate);
+		}
+		
+		if (facebookLastLearnedDate != null) {
+			CustomPreference fbPreference = (CustomPreference) findPreference("learn_facebook");
+			fbPreference.setText(facebookLastLearnedDate);			
+		}
+		
+		if (gmailLastLearnedDate != null) {
+			CustomPreference gmailPreference = (CustomPreference) findPreference("learn_gmail");
+			gmailPreference.setText(gmailLastLearnedDate);
+		}
+		
+		
 		SharedPreferences hashedSet = getSharedPreferences(HASHMAP, 0);
 		hashedArticles = hashedSet.getStringSet(SET, emptySet);
 		/*
@@ -160,43 +188,60 @@ public class SettingsActivity extends PreferenceActivity {
 		 * });
 		 */
 
-		Preference smsPreference = (Preference) findPreference("learn_sms");
+		CustomPreference smsPreference = (CustomPreference) findPreference("learn_sms");
 		smsPreference
-				.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+				.setOnPreferenceClickListener(new CustomPreference.OnPreferenceClickListener() {
 
 					@Override
 					public boolean onPreferenceClick(Preference preference) {
-						if (sms == false && gmail == false) {
-							getSMS();
-						} else if (sms == true && gmail == false) {
-							getSMS();
-						} else if (sms == false && gmail == true) {
-							getSMSGmail();
-						} else if (sms == true && gmail == true) {
-							getSMSGmail();
+						Date previousLearned = null;
+						if ( ((CustomPreference) preference).getText() == "") {
+							sms = true;
+							learnSMS(-1L);
+							return false;
 						}
-
-						return false;
+						else {
+							SimpleDateFormat df = new SimpleDateFormat(
+									"MM/dd/yyyy HH:mm:ss");							
+							try {
+								previousLearned = df
+										.parse(((CustomPreference) preference)
+												.getText());
+							} catch (ParseException e) {							
+								e.printStackTrace();
+							}
+							learnSMS(getUnixTime(previousLearned));
+							return false;
+						}						
 					}
 				});
 
-		Preference gmailPreference = (Preference) findPreference("learn_gmail");
+		CustomPreference gmailPreference = (CustomPreference) findPreference("learn_gmail");
 		gmailPreference
-				.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+				.setOnPreferenceClickListener(new CustomPreference.OnPreferenceClickListener() {
 
 					@Override
 					public boolean onPreferenceClick(Preference preference) {
-						if (gmail == false && sms == false) {
-							getGmail();
-						} else if (gmail == true && sms == false) {
-							getGmail();
-						} else if (gmail == false && sms == true) {
-							getSMSGmail();
-						} else if (gmail == true && sms == true) {
-							getSMSGmail();
+						Date previousLearned = null;
+						if ( ((CustomPreference) preference).getText() == "") {
+							gmail = true;
+							learnGmail(-1L);
+							return false;
 						}
-
-						return false;
+						else {
+							SimpleDateFormat df = new SimpleDateFormat(
+									"MM/dd/yyyy HH:mm:ss");							
+							try {
+								previousLearned = df
+										.parse(((CustomPreference) preference)
+												.getText());
+							} catch (ParseException e) {							
+								e.printStackTrace();
+							}
+							learnGmail(getUnixTime(previousLearned));
+							return false;
+						}
+						
 					}
 				});
 
@@ -210,6 +255,7 @@ public class SettingsActivity extends PreferenceActivity {
 						Date previousLearned = null;
 						if (((CustomPreference) preference).getText() == "") {
 							Log.d("custom pref", "empty pref");
+							facebook = true;
 							auth_facebook(-1L);
 							return false;
 						} else {
@@ -330,11 +376,11 @@ public class SettingsActivity extends PreferenceActivity {
 	}
 
 	private class storeFBTask extends
-			AsyncTask<JSONObject, Void, Void> {
+			AsyncTask<JSONObject, Void, String> {
 		Context context = getApplicationContext();
 
 		@Override
-		protected Void doInBackground(JSONObject... params) {
+		protected String doInBackground(JSONObject... params) {
 			// TODO Auto-generated method stub
 			JSONObject json = params[0];
 			//Queue<Pair<String, Long>> messageEntries = new LinkedList<Pair<String, Long>>();
@@ -360,8 +406,8 @@ public class SettingsActivity extends PreferenceActivity {
 									pattern);
 							Date date = sdf.parse(createdTime);
 							date.getTime();
-							// Log.d("fb date", String.valueOf(getUnixTime(date)));
-							// Log.d("fb string", message + createdTime);
+							 Log.d("fb date", String.valueOf(getUnixTime(date)));
+							 Log.d("fb string", message + createdTime);
 
 							datasource.addMessage(message, getUnixTime(date));
 
@@ -392,21 +438,19 @@ public class SettingsActivity extends PreferenceActivity {
 			}
 			*/
 			
-			Log.d("db data", concatenateString(datasource.getMessages()));
+			//Log.d("db data", concatenateString(datasource.getMessages()));
 			
 			// check for messages after timing. Should return empty
-			Log.d("db data after", concatenateString(datasource.getMessagesAfter(1583389550)));
+			//Log.d("db data after", concatenateString(datasource.getMessagesAfter(1583389550)));
+			
+			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
 			datasource.close();
-
-			
-			
-
-
-			
-			return null;
+			return content;
 		}
 		
-		protected void onPostExecute(Void result){
+		protected void onPostExecute(String content){
+			new indexSourcesTask().execute(applicationDirectory, USER, content);
+					
 			CustomPreference fbPreference = (CustomPreference) findPreference("learn_facebook");
 			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 			
@@ -417,6 +461,7 @@ public class SettingsActivity extends PreferenceActivity {
 			String reportDate = df.format(today);
 
 			fbPreference.setText(reportDate);
+			facebookLastLearnedDate = reportDate;
 			
 			Toast.makeText(getApplicationContext(),
 					"Finished adding FB to database!",
@@ -430,7 +475,7 @@ public class SettingsActivity extends PreferenceActivity {
 		return d.getTime() / 1000L;
 	}
 	
-	public String concatenateString(String[] s){
+	public String concatenateString(Vector<String> s){
 		StringBuilder builder = new StringBuilder("");
 		for (String currentString: s)
 			builder.append(currentString).append(" ");
@@ -457,6 +502,9 @@ public class SettingsActivity extends PreferenceActivity {
 		facebook = control.getBoolean(LEARNT_FACEBOOK, false);
 		smsGmail = control.getBoolean(LEARNT_SMS_GMAIL, false);
 		articles = control.getBoolean(LEARNT_ARTICLES, false);
+		smsLastLearnedDate = control.getString(SMS_LAST_LEARNED, null);
+		facebookLastLearnedDate = control.getString(FACEBOOK_LAST_LEARNED, null);
+		gmailLastLearnedDate = control.getString(GMAIL_LAST_LEARNED, null);
 		// username = control.getString(USERNAME, null);
 		// userToken = control.getString(TOKEN, null);
 
@@ -475,6 +523,9 @@ public class SettingsActivity extends PreferenceActivity {
 		editor.putBoolean(LEARNT_FACEBOOK, facebook);
 		editor.putBoolean(LEARNT_SMS_GMAIL, smsGmail);
 		editor.putBoolean(LEARNT_ARTICLES, articles);
+		editor.putString(SMS_LAST_LEARNED, smsLastLearnedDate);
+		editor.putString(FACEBOOK_LAST_LEARNED, facebookLastLearnedDate);
+		editor.putString(GMAIL_LAST_LEARNED, gmailLastLearnedDate);
 		// editor.putString(USERNAME, username);
 		// editor.putString(TOKEN, userToken);
 		editor.commit();
@@ -490,19 +541,25 @@ public class SettingsActivity extends PreferenceActivity {
 	 * This method is invoked when the button getSMS is pressed, to learn the
 	 * user's SMS for preference
 	 */
-	public void getSMS() {
-		sms = true;
-		new readSMSTask().execute();
+	public void learnSMS(long previousLearned) {	
+		if ( previousLearned == -1L) {
+			new readSMSTask().execute(-1L);
+		}
+		else {
+			new readSMSTask().execute(previousLearned);
+		}
+		
 	}
 
 	/*
 	 * This method is invoked when the button getGmail is pressed, to learn the
 	 * user's Gmail for preference
 	 */
-	public void getGmail() {
-		gmail = true;
-		if (isConnectedToInternet())
-			chooseAccount();
+	public void learnGmail(long previousLearned) {
+		if (isConnectedToInternet()) {
+			gmailpreviousLearned = previousLearned;
+			chooseAccount();			
+		}
 		else {
 			Toast.makeText(getApplicationContext(),
 					"Unable to connect to Gmail, please turn on your Data",
@@ -514,7 +571,7 @@ public class SettingsActivity extends PreferenceActivity {
 	 * This method is invoked when any of the button SMS or Gmail is pressed
 	 * before and now pressed again, to learn them for user's preference
 	 */
-	public void getSMSGmail() {
+	public void learnSMSGmail() {
 		smsGmail = true;
 		if (isConnectedToInternet()) {
 			// new
@@ -543,32 +600,29 @@ public class SettingsActivity extends PreferenceActivity {
 	/*
 	 * AsyncTask to read SMS and call the indexing method
 	 */
-	private class readSMSTask extends AsyncTask<Void, Void, String> {
+	private class readSMSTask extends AsyncTask<Long, Void, String> {
 		Context context = getApplicationContext();
 
 		@Override
-		protected String doInBackground(Void... params) {
+		protected String doInBackground(Long... params) {
 			final ReadSMS ReadSMS = new ReadSMS();
-			messages = ReadSMS.getOutboxSms(context, getTodayDate());
+			ReadSMS.storeOutboxSms(context, datasource, params[0] );
 
-			Iterator<String> iterator = messages.iterator();
-			StringBuilder smsContent = new StringBuilder();
-
-			if (iterator.hasNext() == false)
-				Toast.makeText(context, "No SMS to learn from!.",
-						Toast.LENGTH_SHORT).show();
-
-			else {
-				while (iterator.hasNext())
-					smsContent.append(iterator.next().replaceAll("[0-9]", ""));
-			}
-
-			return smsContent.toString();
+			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
+			datasource.close();
+			return content;
 		}
 
 		@Override
 		protected void onPostExecute(String content) {
 			new indexSourcesTask().execute(applicationDirectory, USER, content);
+						
+			CustomPreference smsPreference = (CustomPreference) findPreference("learn_sms");
+			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");		
+			Date today = Calendar.getInstance().getTime();
+			String reportDate = df.format(today);
+			smsPreference.setText(reportDate);
+			smsLastLearnedDate = reportDate;		
 		}
 
 	}
@@ -654,12 +708,12 @@ public class SettingsActivity extends PreferenceActivity {
 					Log.e("username", username);
 					Log.e("token", userToken);
 					// Use username and token to read Sent Items
-					if (userToken != null && smsGmail == false) {
+					if (userToken != null && gmailpreviousLearned != -100L) {
 						new readGmailTask().execute(username, userToken,
-								applicationDirectory, getTodayDate());
+								applicationDirectory);
 					} else if (userToken != null && smsGmail == true) {
-						new readSMSGmailTask().execute(username, userToken,
-								applicationDirectory, getTodayDate());
+						//new readSMSGmailTask().execute(username, userToken,
+								//applicationDirectory, getTodayDate());
 					} else {
 						Toast.makeText(context,
 								"Unable to authenticate with Gmail",
@@ -684,33 +738,34 @@ public class SettingsActivity extends PreferenceActivity {
 			StringBuilder gmailMessageString = new StringBuilder();
 
 			try {
-				gmailMessages = gmailClass.readSentItems(params[0], params[1],
-						params[2], params[3]);
+				gmailClass.readSentItems(params[0], params[1],
+						params[2],datasource, gmailpreviousLearned);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 
-			if (gmailMessages.size() > 0) {
-				Iterator<String> iterator = gmailMessages.iterator();
-				while (iterator.hasNext())
-					gmailMessageString.append(iterator.next());
-			}
-
-			return gmailMessages.toString();
+			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
+			datasource.close();
+			return content;
 		}
 
 		@Override
 		protected void onPostExecute(String content) {
 			new indexSourcesTask().execute(applicationDirectory, USER, content);
-			Toast.makeText(context, "Finish learning from Gmail!.",
-					Toast.LENGTH_SHORT).show();
+			
+			CustomPreference gmailPreference = (CustomPreference) findPreference("learn_gmail");
+			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");		
+			Date today = Calendar.getInstance().getTime();
+			String reportDate = df.format(today);
+			gmailPreference.setText(reportDate);
+			gmailLastLearnedDate = reportDate;
 		}
 
 	}
-
+/*
 	/*
 	 * AsyncTask to pull SMS & Gmail and call the indexing method
-	 */
+
 	private class readSMSGmailTask extends AsyncTask<String, Void, String> {
 		Context context = getApplicationContext();
 
@@ -720,8 +775,8 @@ public class SettingsActivity extends PreferenceActivity {
 			StringBuilder messageString = new StringBuilder();
 
 			try {
-				gmailMessages = gmailClass.readSentItems(params[0], params[1],
-						params[2], params[3]);
+				gmailClass.readSentItems(params[0], params[1],
+						params[2], datasource, gmailpreviousLearned);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -731,7 +786,7 @@ public class SettingsActivity extends PreferenceActivity {
 				messageString.append(iterator.next());
 
 			final ReadSMS ReadSMS = new ReadSMS();
-			messages = ReadSMS.getOutboxSms(context, getTodayDate());
+			messages = ReadSMS.storeOutboxSms(context, getTodayDate());
 
 			Iterator<String> itr = messages.iterator();
 
@@ -749,6 +804,7 @@ public class SettingsActivity extends PreferenceActivity {
 		}
 
 	}
+*/
 
 	/*
 	 * AsyncTask to index the sources
@@ -766,7 +822,6 @@ public class SettingsActivity extends PreferenceActivity {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-
 			return params[1];
 		}
 
@@ -816,6 +871,7 @@ public class SettingsActivity extends PreferenceActivity {
 					saveToInternalStorage(USER_PREFERENCE, userPreference);
 					Toast.makeText(context, "Finish learning your preference!",
 							Toast.LENGTH_LONG).show();
+					change = true;
 				}
 
 			} catch (Exception e) {
@@ -939,8 +995,15 @@ public class SettingsActivity extends PreferenceActivity {
 		Calendar c = Calendar.getInstance();
 		SimpleDateFormat dateFormater = new SimpleDateFormat("yyyyMMdd");
 		String todayDate = dateFormater.format(c.getTime());
-
+		
 		return todayDate;
+	}
+	
+	private long getTodayDateLong() {
+		Calendar c = Calendar.getInstance();
+		Long todayDate = c.getTimeInMillis();
+		
+		return todayDate/1000;
 	}
 
 	private String getTodayDateInMS() {

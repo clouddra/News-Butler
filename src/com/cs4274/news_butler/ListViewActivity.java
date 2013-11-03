@@ -96,7 +96,8 @@ public class ListViewActivity extends ListActivity implements
 		// to be this.
 		mPullToRefreshAttacher.addRefreshableView(listView, this);
 		
-		if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
+		if (SettingsActivity.smsLastLearnedDate != null || SettingsActivity.facebookLastLearnedDate != null
+				|| SettingsActivity.gmailLastLearnedDate != null) {
 			List<String> userPreference = new ArrayList<String>();
 			mPullToRefreshAttacher.setRefreshing(true);
 			try {
@@ -117,21 +118,23 @@ public class ListViewActivity extends ListActivity implements
 	@Override
 	 public void onResume() {
 		super.onResume();
+		
+		if (SettingsActivity.change == true) {
+			if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
+				List<String> userPreference = new ArrayList<String>();
+				mPullToRefreshAttacher.setRefreshing(true);
 				
-		if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
-			List<String> userPreference = new ArrayList<String>();
-			mPullToRefreshAttacher.setRefreshing(true);
-			
-			try {
-				userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
-			}
-			
-			if (userPreference.size()== 0)
-				asyncSearch("Singapore");
-			else if (userPreference.size() > 0) {
-				asyncSearch(userPreference.get(0));
+				try {
+					userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
+				} catch (ClassNotFoundException e) {
+					e.printStackTrace();
+				}
+				
+				if (userPreference.size()== 0)
+					asyncSearch("Singapore");
+				else if (userPreference.size() > 0) {
+					asyncSearch(userPreference.get(0));
+				}
 			}
 		}
 	}
@@ -146,7 +149,8 @@ public class ListViewActivity extends ListActivity implements
 		 * Simulate Refresh with 4 seconds sleep
 		 */
 		Log.d("refresh", "true");
-		if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
+		if (SettingsActivity.smsLastLearnedDate != null || SettingsActivity.facebookLastLearnedDate != null
+				|| SettingsActivity.gmailLastLearnedDate != null) {
 			List<String> userPreference = new ArrayList<String>();
 			
 			try {
@@ -291,7 +295,8 @@ public class ListViewActivity extends ListActivity implements
 		case R.id.action_refresh:
 			mPullToRefreshAttacher.setRefreshing(true);
 			
-			if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
+			if (SettingsActivity.smsLastLearnedDate != null || SettingsActivity.facebookLastLearnedDate != null
+					|| SettingsActivity.gmailLastLearnedDate != null) {
 				List<String> userPreference = new ArrayList<String>();
 				
 				try {

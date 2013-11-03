@@ -1,5 +1,9 @@
 package com.cs4274.news_butler.helper;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Vector;
+
 import android.util.Log;
 import android.content.Context;
 import android.database.Cursor;
@@ -96,12 +100,124 @@ public class FBSQLiteHelper extends SQLiteOpenHelper {
 		// Cursor cursor = getReadableDatabase().
 		// rawQuery("select * from todo where _id = ?", new String[] { id });
 	}
+	
+	public Vector<String> getMessagesAddWeightRecent(long todayDate) {
+
+		
+		Cursor cursor = this.getReadableDatabase().query(TABLE_MESSAGES,
+				null, null, null, null, null, null);
+		Vector<String> allMessages = new Vector<String>(cursor.getCount());
+		cursor.moveToFirst();
+		int todayDateFormatted = convertDate(todayDate);
+		long msgDate;
+		while (!cursor.isAfterLast()) {
+			msgDate = cursor.getLong(2);	
+			int dateDifference = todayDateFormatted - convertDate(msgDate);
+
+			switch (dateDifference) {
+            case 0:
+            	for (int i=0;i<140;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break;
+            case 1:
+            	for (int i=0;i<130;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break;              
+            case 2:
+            	for (int i=0;i<120;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 3:
+            	for (int i=0;i<110;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 4:
+            	for (int i=0;i<100;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break;
+            case 5:
+            	for (int i=0;i<90;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 6:
+            	for (int i=0;i<80;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 7:
+            	for (int i=0;i<70;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 8:
+            	for (int i=0;i<60;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 9:
+            	for (int i=0;i<50;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 10:
+            	for (int i=0;i<40;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break;
+            case 11:
+            	for (int i=0;i<30;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 12:
+            	for (int i=0;i<20;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 13:
+            	for (int i=0;i<10;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            case 14:
+            	for (int i=0;i<10;i++) {
+            		allMessages.add(cursor.getString(1));
+            	}
+            	break; 	 
+            default:            	
+            	allMessages.add(cursor.getString(1));	
+            	break;
+            }		
+			cursor.moveToNext();
+		}
+		// make sure to close the cursor
+		Log.d("db full count", String.valueOf(cursor.getCount()));
+		cursor.close();
+		// return allMessages.toString();
+		return allMessages;
+	}
 
 	public long addMessage(String message, long time) {
 		ContentValues values = new ContentValues();
 		values.put(COLUMN_MESSAGE, message);
 		values.put(COLUMN_TIME, time);
 		return this.getWritableDatabase().insert(TABLE_MESSAGES, null, values);
+	}
+	
+	private int convertDate(long date) {
+		Calendar c = Calendar.getInstance();
+		c.setTimeInMillis(date*1000);
+		
+		SimpleDateFormat dateFormater = new SimpleDateFormat("yyyyMMdd");
+		String formattedDate = dateFormater.format(c.getTime());
+			
+		return Integer.parseInt(formattedDate);
 	}
 
 }
