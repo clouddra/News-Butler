@@ -42,6 +42,7 @@ import com.cs4274.news_butler.util.ReverseComparator;
 import com.cs4274.news_butler.util.StopWords;
 
 
+
 public class IndexSources {
 	public static final String FIELD_PATH = "path";
 	public static final String FIELD_CONTENTS = "content";
