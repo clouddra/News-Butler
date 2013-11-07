@@ -86,11 +86,6 @@ public class SettingsActivity extends PreferenceActivity {
 	public static final String USER_PREFERENCE = "userPreference";
 	public static final String DOMAIN_SCORE_FILE = "Score.txt";
 
-	// private final int ACTIVITY_SSO = 1000;
-	// private static final String APP_ID = "247627235387014";
-	// private static final String PERMISSIONS =
-	// "read_stream,read_friendlists,manage_friendlists,manage_notifications,publish_stream,publish_checkins,offline_access";
-
 	private String applicationDirectory = getIndexDirectory();
 	public static final String suffix = ".txt";
 	public static final String USER = "user";
@@ -131,14 +126,8 @@ public class SettingsActivity extends PreferenceActivity {
 
 		// Load the preferences from an XML resource
 		addPreferencesFromResource(R.xml.settings);
-		// CustomPreference facebookPreference = (CustomPreference)
-		// findPreference("learn_facebook");
 
-		/*
-		 * Log.d("Custm Pref", facebookPreference.getText());
-		 * //facebook.setText("Learned"); Log.d("Custom Pref Add",
-		 * facebookPreference.getText());
-		 */
+
 		datasource = new FBSQLiteHelper(this);
 		SharedPreferences control = getSharedPreferences(CONTROL, 0);
 		sms = control.getBoolean(LEARNT_SMS, false);
@@ -150,8 +139,6 @@ public class SettingsActivity extends PreferenceActivity {
 		facebookLastLearnedDate = control.getString(FACEBOOK_LAST_LEARNED, null);
 		gmailLastLearnedDate = control.getString(GMAIL_LAST_LEARNED, null);
 		
-		// username = control.getString(USERNAME, null);
-		// userToken = control.getString(TOKEN, null);
 		
 		if (smsLastLearnedDate != null) {
 			CustomPreference smsPreference = (CustomPreference) findPreference("learn_sms");
@@ -265,21 +252,6 @@ public class SettingsActivity extends PreferenceActivity {
 
 					}
 				});
-
-		
-
-
-				CustomPreference articlePref = (CustomPreference) findPreference("learn_articles");
-				articlePref
-						.setOnPreferenceClickListener(new CustomPreference.OnPreferenceClickListener() {
-
-							@Override
-							public boolean onPreferenceClick(Preference preference) {
-								fetchTerms();
-								return true;
-							}
-					});
-		
 		
 
 	}
@@ -329,8 +301,7 @@ public class SettingsActivity extends PreferenceActivity {
 							String createdTime = currentMessage
 									.getString("created_time");
 
-							// Date date =
-							// DateFormat.getDateTimeInstance().parse(createdTime);
+	
 							final String pattern = "yyyy-MM-dd'T'hh:mm:ssZ";
 							final SimpleDateFormat sdf = new SimpleDateFormat(
 									pattern);
@@ -348,26 +319,15 @@ public class SettingsActivity extends PreferenceActivity {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
-						// Log.d("fb string", currentMessage.toString());
 					}
 				}
-				// Log.d("fb inbox", conversations.toString());
+			;
 			} catch (JSONException e) {
-				// TODO Auto-generated catch block
 				// e.printStackTrace();
 			}
 
 			// datasource.close();
-			/*
-			Pair<String, Long> entry;
-			Queue<Pair<String, Long>> messageEntries = ((Queue<Pair<String, Long>>[]) params)[0];
-			while ((entry = messageEntries.poll()) != null) {
-				// Log.d("fb date", String.valueOf(getUnixTime(date)));
-				//Log.d("fb string", entry.first + entry.second);
-				datasource.addMessage(entry.first, entry.second);
-			}
-			*/
-			
+					
 			//Log.d("db data", concatenateString(datasource.getMessages()));
 			
 			// check for messages after timing. Should return empty
@@ -515,17 +475,6 @@ public class SettingsActivity extends PreferenceActivity {
 		}
 	}
 
-	/*
-	 * public void getArticleTopTerms() {
-	 * 
-	 * if (isConnectedToInternet()) new
-	 * indexSourcesTask().execute(applicationDirectory,ARTICLE,null); else {
-	 * Toast.makeText(getApplicationContext(),
-	 * "Please turn on your Data to enable better matching of News",
-	 * Toast.LENGTH_SHORT).show(); }
-	 * 
-	 * }
-	 */
 
 	/*
 	 * AsyncTask to read SMS and call the indexing method
@@ -637,14 +586,13 @@ public class SettingsActivity extends PreferenceActivity {
 					userToken = token;
 					Log.e("username", username);
 					Log.e("token", userToken);
+					
 					// Use username and token to read Sent Items
 					if (userToken != null && gmailpreviousLearned != -100L) {
 						new readGmailTask().execute(username, userToken,
 								applicationDirectory);
-					} else if (userToken != null && smsGmail == true) {
-						//new readSMSGmailTask().execute(username, userToken,
-								//applicationDirectory, getTodayDate());
-					} else {
+					} 
+					else {
 						Toast.makeText(context,
 								"Unable to authenticate with Gmail",
 								Toast.LENGTH_SHORT).show();
@@ -704,7 +652,6 @@ public class SettingsActivity extends PreferenceActivity {
 		protected String doInBackground(String... params) {
 			try {
 				IndexSources.createIndex(params[0], params[1], params[2]);
-				// IndexSources.createIndex(filepath,suffix,USER);
 
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -724,33 +671,7 @@ public class SettingsActivity extends PreferenceActivity {
 					seeUserTopTerms();
 					
 					fetchTerms();
-									
-					//new indexSourcesTask().execute(applicationDirectory, ARTICLE, null);
-				} else if (type.equalsIgnoreCase(ARTICLE)) {
-					File indexDir = new File(applicationDirectory + "/"
-							+ IndexSources.ARTICLE_INDEX + "/");
-					String[] directory = indexDir.list();
 
-					for (String eachDir : directory) {
-						File domainDir = new File(applicationDirectory + "/"
-								+ IndexSources.ARTICLE_INDEX + "/" + eachDir
-								+ "/");
-						List<String> articleTopTerms = IndexSources
-								.computeTopTermQuery(domainDir);
-						String filename = eachDir.replace("_index", "");
-						domains.add(filename);
-						saveToInternalStorage(filename, articleTopTerms);
-					}
-					for (String domain : domains) {
-						Log.e("Domain List", domain);
-					}
-					saveToInternalStorage(SAVED_DOMAINS, domains);
-					seeArticleTopTerms();
-					
-					//List<String> userPreference = getMatchingDomain(getUserTopTerms(), getDomainList());
-					//saveToInternalStorage(USER_PREFERENCE, userPreference);
-					//Toast.makeText(context, "Finish learning your preference!", Toast.LENGTH_LONG).show();
-					//change = true;
 				}
 
 			} catch (Exception e) {
@@ -773,12 +694,7 @@ public class SettingsActivity extends PreferenceActivity {
             	List<Domain> topTerms;
             	Gson gson = new Gson();
             	topTerms = gson.fromJson(response, new TypeToken<List<Domain>>() {}.getType());
-            	
-
-            	// code to test json serialization successful or not
-            	String topTermsString = gson.toJson(topTerms, new TypeToken<List<Domain>>() {}.getType());
-    			Toast.makeText(aq.getContext(),topTermsString, Toast.LENGTH_LONG).show();
-    			
+            				
     			// call scoring function here
             	try {
 					List<String> userPreference = getMatchingDomain(getUserTopTerms(), topTerms);
@@ -816,21 +732,6 @@ public class SettingsActivity extends PreferenceActivity {
 
 		return dir.getAbsolutePath();
 	}
-
-	/*
-	 * private void exportScore(List<String> domainList, Vector<Integer>
-	 * domainScore) { myExternalFile = new File(applicationDirectory,
-	 * DOMAIN_SCORE_FILE); String nextLine = "\n";
-	 * 
-	 * try { FileOutputStream fos = new FileOutputStream(myExternalFile);
-	 * 
-	 * for (int i=0;i<domainList.size();i++) { String text = "Domain: " +
-	 * domainList.get(i) + " ; Score: " + domainScore.get(i);
-	 * fos.write(text.getBytes()); fos.write(nextLine.getBytes()); }
-	 * fos.close(); } catch (IOException e) { e.printStackTrace(); }
-	 * 
-	 * }
-	 */
 
 	private boolean isConnectedToInternet() {
 		Context context = getApplicationContext();
@@ -880,20 +781,6 @@ public class SettingsActivity extends PreferenceActivity {
 		return topTermList;
 	}
 
-	public void seeArticleTopTerms() throws ClassNotFoundException {
-		List<String> domainList = readFromInternalStorage(SAVED_DOMAINS);
-
-		for (int i = 0; i < domainList.size(); i++) {
-			List<String> domainTopTerms = readFromInternalStorage(domainList
-					.get(i));
-			Log.e("Domain Top Terms", "Domain is: " + domainList.get(i));
-			for (String terms : domainTopTerms) {
-				System.out.println(terms);
-			}
-		}
-
-	}
-
 	public void seeUserTopTerms() throws ClassNotFoundException {
 		List<String> userTerms = readFromInternalStorage(USER_TOP_TERMS_FILENAME);
 		for (String terms : userTerms) {
@@ -905,17 +792,6 @@ public class SettingsActivity extends PreferenceActivity {
 		return readFromInternalStorage(USER_TOP_TERMS_FILENAME);
 	}
 
-	private List<String> getDomainList() throws ClassNotFoundException {
-		return readFromInternalStorage(SAVED_DOMAINS);
-	}
-
-	private String getTodayDate() {
-		Calendar c = Calendar.getInstance();
-		SimpleDateFormat dateFormater = new SimpleDateFormat("yyyyMMdd");
-		String todayDate = dateFormater.format(c.getTime());
-		
-		return todayDate;
-	}
 	
 	private long getTodayDateLong() {
 		Calendar c = Calendar.getInstance();
@@ -924,12 +800,6 @@ public class SettingsActivity extends PreferenceActivity {
 		return todayDate/1000;
 	}
 
-	private String getTodayDateInMS() {
-		Calendar c = Calendar.getInstance();
-		Long time = c.getTimeInMillis();
-
-		return time.toString();
-	}
 
 	private static int COMPARE_TOP = 40;
 	private static double SECOND_PREFERENCE_PERCENTAGE = 0.8;
@@ -982,8 +852,6 @@ public class SettingsActivity extends PreferenceActivity {
 			Log.e("Domain Score", "Domain: " + domainNames.get(i) + " ; Score: "
 					+ score);
 		}
-
-		// exportScore(domainList, domainScore);
 
 		int bestMatch = -1;
 		int secondMatch = -1;

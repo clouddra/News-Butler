@@ -30,17 +30,7 @@ public class ReadGMail {
 	
 	private String filepath;
 	private static int NO_OF_EMAILS_TO_LEARN = 50;
-	//private String content = "";
 	File myFile;
-	
-/*	
-	public String readSentItems(String user, String token, String filePath) throws InterruptedException, ExecutionException{
-		this.filepath = filePath;
-		
-		return new connectToImapTask().execute(user, token).get();
-		
-	}
-*/	
 	
 	/*
 	 * Method to pull sent items from Gmail

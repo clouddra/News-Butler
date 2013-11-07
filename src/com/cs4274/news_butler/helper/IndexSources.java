@@ -48,7 +48,7 @@ public class IndexSources {
 	public static final String FIELD_CONTENTS = "content";
 	public static final String USER_INDEX = "USER_INDEX";
 	public static final String ARTICLE_INDEX = "ARTICLE_INDEX";
-	private static final float topTermCutoff = (float) 0.1;
+	private static final float topTermCutoff = (float) 0.05;
 	private static Analyzer analyzer; 
 
 
@@ -66,6 +66,7 @@ public class IndexSources {
 		if (type.equalsIgnoreCase(SettingsActivity.USER)) {
 			config.setOpenMode(OpenMode.CREATE);
 			indexDir = new File(appDir + "/" + USER_INDEX + "/");
+			
 			if (indexDir.exists()) {
 				delete(indexDir);
 			} 
@@ -94,12 +95,8 @@ public class IndexSources {
 					indexHelper(appDir+"/"+eachDir+"/",indexDir);		
 					}
 				}
-			}
-			
-			
-		}			
-		
-		
+			}			
+		}					
 	}
 	
 	// Helper method for indexing articles
@@ -204,20 +201,7 @@ public class IndexSources {
 		    }
 		    
 		    return topTerms;
-		    
-		    /*
-		    StringBuilder termBuf = new StringBuilder();
-		 
-		    for (String topTerm : topTerms) {
-		      termBuf.append(topTerm).
-		        append("(").
-		        append(frequencyMap.get(topTerm)).
-		        append(")\n");
 		      
-		    }	
-		    
-		    exportResult(termBuf);	
-		    */ 	    
 		     
 		  }
 	
