@@ -22,5 +22,7 @@ Unix
 javac -classpath .:* Lucene.java
 java -cp .:*: Lucene 
 
-client
+
+
+Android App
   - remember to check server IP
