@@ -1,0 +1,38 @@
+Dean Richards believes Newcastle are in great shape to prosper in the top tier of English rugbyDean Richards, the director of rugby at newly promoted Newcastle, is confident that the club will prosper back in the Aviva Premiership next season.The Falcons returned to the top flight on Wednesday thanks to a 49-33 aggregate victory over Bedford.And Richards paid tribute to the competitive nature of the Championship, saying the level of rugby needed to top that Division this season will help Newcastle in the Premiership.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Newcastle director of rugby Dean Richards is looking to flourish in the Premiership next season
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2418761998001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2418761998001'});    
+        });
+    
+
+Newcastle director of rugby Dean Richards is looking to flourish in the Premiership next seasonNewcastle spent just one campaign in the second tier and Richards, who led Harlequins to promotion in 2006, believes the second tier is getting stronger.He said: "The Championship has improved from when I was here last."There are some quality sides. You look at Bedford today and there's Nottingham and Leeds, they are three very good sides who on their day could regularly beat Premiership teams."
+    "There are some quality sides. You look at Bedford today and there's Nottingham and Leeds, they are three very good sides who on their day could regularly beat Premiership teams."
+			Richards on Championship
+
+
+    "There are some quality sides. You look at Bedford today and there's Nottingham and Leeds, they are three very good sides who on their day could regularly beat Premiership teams."
+			Richards on Championship
+
+As for Newcastle's chances, he added: "We are going in the right direction."The culture is starting to shape up and we are enjoying each others' company."I'm not going to say next season we're going to finish first, third, fifth, ninth, 12th. I never make predictions."What I will say is that we will go up, give it our all and hopefully we won't be fighting for survival."Newcastle lost just one match out of 22 in the Championship before winning the play-off final.Watch every Lions game live only on Sky Sports. To sign up or upgrade click here

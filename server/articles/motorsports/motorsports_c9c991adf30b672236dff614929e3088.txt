@@ -1,0 +1,30 @@
+Alonso fails to make top 10Fernando Alonso has pointed to his superior race record over Felipe Massa after the Spaniard was once more outqualified by his departing team-mate in Abu Dhabi on Saturday.Although Ferrari were off the pace throughout practice at the Yas Marina Circuit, Massa still managed to make Q3 on Saturday evening, eventually qualifying in eighth slot, while Alonso fell at the second hurdle for the first time this season but will start 10th after Kimi Raikkonen was penalised.Despite being told in mid-September that his Ferrari contract would not be renewed for 2014, Massa has now outqualified his team leader in five of the last six races and eight times in total this year - by far the Brazilian's best record in his four seasons alongside Alonso.But despite the recent turnaround, Alonso appeared unfazed about the situation when asked about it on Saturday night, suggesting that the result that mattered came on Sunday and he was still ahead in this area, having outscored Massa by 56 points to 35 since the Belgian GP - and throughout the season."We need to see at the end of the weekend how everything goes, it's not only qualifying," he told reporters.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Abu Dhabi GP - Qualifying Highlights
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2795621192001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2795621192001'});    
+        });
+    
+
+Abu Dhabi GP - Qualifying Highlights"There are many things you can do for qualifying that make the car quicker and then in the race make the car slower. So to take a look only on qualifying is a little bit difficult, you need to take the overall weekend. In the last four races before India, three [times] Felipe was in front of me in qualifying and here will be now four or five."But in these last five races I finished in front by a lot of points. In fact I have 207 and he has 90 something [sic. 102]. This is Formula 1. Saturday is one thing, good for the show, good for keep talking but at the end of the day the points are on Sundays."He pointedly added that he hadn't been the only driver to be outqualified by his team-mate in Abu Dhabi."There are different strategies, different determination to prioritise something in the weekend," he said."We saw [Mark] Webber in front of Sebastian [Vettel], Nico [Rosberg] in front of [Lewis] Hamilton. There are some surprising results."What had clearly not come as a surprise to Alonso, however, was Ferrari's single-lap plight given they have been around a second off the pace all weekend.The Spaniard now hopes a rare start from so low down - he started 11th at the 2012 European GP, which he went on to win - could actually provide some tyre strategy benefit."All weekend in the practice we have been not so quick, all Ferraris out of the first ten and in qualifying two we were ten and eleven, so a difficult track for us here," said Alonso, who will have a free choice of tyres."But we will see tomorrow how the race develops. Sometimes we saw races that it's good to start position 11 with new tyres, hopefully tomorrow we see one of those."Alonso was then asked if there was any chance of repeating his triumphant row-five Valencia surge from last season, when he drove one the best races of his career to claim the victory.As ever the Spaniard refused to rule anything out, but admitted Ferrari needed to be realistic about their prospects given the F138's troubled practice form.However, despite both Ferraris starting behind both Mercedes and Lotus cars - the two teams who the Scuderia are fighting for second place in the Constructors' Championship - Alonso expressed belief that they could still outscore them on Sunday."Who knows? In Valencia it was a complete surprise that starting 11th we won the race. If we win the race tomorrow it will be even more of a surprise I guess. But who knows?" he said."We need to be more realistic, we need to start the race thinking that it will be tough because we have not been competitive in all the practice. We need to score good points and for this we need to have a perfect race."I don't know what is the goal that we can achieve tomorrow because it's a little bit [of a] question mark, not only for us: I think for everybody going in to the race, nobody knows how competitive they will be."But I'm still confident that we will get some good points and more points than our competitors. I'm confident."

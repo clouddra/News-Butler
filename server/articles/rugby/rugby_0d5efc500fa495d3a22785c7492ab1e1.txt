@@ -1,0 +1,44 @@
+Brandon Meriweather: Washington safety will miss the week eight trip to DenverWashington Redskins safety Brandon Meriweather's ban has been halved to one game on appeal.Meriweather had been suspended without pay for two games by the NFL after being flagged for a pair of illegal hits against the Chicago Bears in week seven.But hearing officer Ted Cottrell - jointly appointed by the league and players' union - reduced the punishment on Wednesday.The Bears were left furious when Meriweather landed big hits on receivers Brandon Marshall and Alshon Jeffrey during Washington's 45-41 win on Sunday - both hits were flagged for illegal contact to the head of a defenceless receiver.Meriweather has a reputation for playing close to the edge, and had already been fined $42,000 this season for a helmet-to-helmet hit.
+Live on Sky Sports
+
+Live NFL
+Jacksonville Jaguars v San Francisco 49ers
+October 27, 2013 4:00pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+He will miss the week eight game at Denver and lose around $70,000 in salary, but many of the Chicago Bears feel he has got off lightly - including Marshall, who took one of his hits on Sunday."Guys like that really don't understand that there is life after football," Marshall told the Chicago Tribune. "I respect the league trying to better our game and guys like that, maybe he needs to get suspended or taken out of the game completely."I understand. I get it. I was one of those guys. I played defense growing up. I was a head hunter. Even sometimes on the offensive side, I played that way. But with rules in place, you've gotta respect it."Bears tight end Martellus Bennett went a step further when he joined a local radio station and discussed the Meriweather hits, and his reaction to them."Oh, I still want to punch him in the face," Bennett said, reiterating what he said straight after the game - and he had more choice words after being told about Meriweather's reported jokes about expecting a fine."The scumbag," Bennett responded. "What it comes down to, at the end of the day, the players have got to look out for the players. There's a way to go out there and be a beast when you hit people, and have nobody want to come across the middle.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Daily news, interviews and analysis from all 32 NFL teams six days a week.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2759939163001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2759939163001'});    
+        });
+    
+
+Daily news, interviews and analysis from all 32 NFL teams six days a week."But then there's a way not to do it, where you're deliberately hitting guys (high), or after the game you're saying, 'Oh, I've got to pay,' because you know what you did was wrong when you were doing it."Then it just becomes wrong. It's not ignorance, because he knows what he's doing, or guys know what they're doing. Some guys are making these attacks on other guys."For his part, Meriweather defended himself and says he was trying to perform each hit as outlined by the NFL, which is keen to cut out shots to the head and avoid concussions."I feel like every hit that I took was a legit hit," Meriweather told the Washington Post. "I wasn't trying to be dirty. I wasn't trying to hurt nobody."I didn't launch with my head. I used my shoulder like they told me to do. You've just got to play. There ain't nothing I can do about it. I just go out there and play."

@@ -1,0 +1,28 @@
+The Green Bay Packers could be without wide receiver Randall Cobb for as long as six weeks with a suspected fractured fibula after he took a hit against the Baltimore Ravens which has angered his quarterback Aaron Rodgers.Cobb was knocked out of Sunday's game in Baltimore when safety Matt Elam dived at the receiver as he jumped to catch a pass from Rodgers - and he made heavy contact with Cobb's knee as he landed.Rodgers was not happy with the tackle from his point of view, and immediately ran over to confront Elam, who he says could have avoided a dangerous hit on Cobb's knee."I just felt like, from my vantage point, he had plenty of time to not take out a guy's legs in that situation," Rodgers said."The other safety came over and actually made a very knowledgeable point, which I appreciated a little intelligent answer back and forth about some of the issues defensive players have to deal with with the target area. I totally understand that and get that."I think he could have hit in the proper hitting zone, and that's what I told him."Ravens coach John Harbaugh defended the hit, saying it was a quick play and that Elam did nothing wrong - rejecting Rodgers' comments."To say that it could have been more artistically palatable, is pretty hard for me to understand," Harbaugh said on the Ravens' website. "That's a fast route."They ran a pretty good route there. Aaron made a good, quick throw in there and Matt is doing the best he can to try to stop that play. So I have no idea what he's talking about."Part of Rodgers' frustration could be the depletion of his receiving options - as James Jones also limped out of Sunday's game with a sprained knee, although he at least has a chance of playing against Cleveland this weekend.Jarrett Boykin stepped in for Cobb on Sunday and had a big case of the drops with just one catch from six passes, so Rodgers will be desperate to at least get Jones on the field alongside Jordy Nelson.Cobb's receiving skills and his speed out of the backfield will be a big loss though, and Green Bay will have to lean more on rookie running back Eddie Lacy with their receiving options down.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2744246239001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2744246239001'});    
+        });
+    
+
+Green Bay have problems also on defence, with Nick Perry joining fellow linebacker Clay Matthews on the sidelines after suffering a foot injury in Baltimore.If Brad Jones cannot recover from hamstring injury in time, the Packers will face the Browns with just one of their four starting linebackers from the beginning of the season - that being AJ Hawk who took over from Jones as defensive signal caller against the Ravens.Defensive co-ordinator Dom Capers praised Jamari Lattimore's performance when he replaced Jones against the Ravens at inside linebacker, but on the outside rookies Andy Mulumba and Nate Palmer will be asked to step into full-time roles.At 3-2 and behind both Detroit and Chicago in the NFC North after their early bye week, it's an injury crisis the Packers could do without.

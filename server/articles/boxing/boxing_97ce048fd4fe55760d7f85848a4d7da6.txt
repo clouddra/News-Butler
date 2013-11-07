@@ -1,0 +1,30 @@
+Gennady Golovkin celebrates after defending his WBA and IBO titlesGennady Golovkin retained his unbeaten record with a stoppage of Curtis Stevens in the eighth defence of his WBA middleweight belt.The Kazakh bruiser forced Stevens' corner to step in and end the fight during a one-sided eighth round, with a flurry of punches leaving Stevens dazed and bloodied at Madison Square Garden.Victory takes Golovkin's record to 28-0, with 25 of those wins coming by stoppage, and it was the 15th fight in a row he has won without needing to go the distance.But it will not go down as an easy victory for the 31-year-old despite him having put Stevens down as early as the second round.The American, whose record drops to 25-4, started slowly and could well have been finished inside six minutes, only just beating the count after being caught by a sensational Golovkin left hook.But he took time to recover and Golovkin had to fend off a fierce assault in the fourth, when he was caught by a quick left-right combination by the brave challenger.Stevens stayed in contention past the halfway mark but started to tire noticeably in the seventh when he had to take plenty of punishment on the ropes.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Golovkin defends title
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2798167303001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2798167303001'});    
+        });
+    
+
+Golovkin defends titleThat continued in the eighth when Stevens barely managed to land a counter-punch, and his corner decided enough was enough after the bell rang to end the round.Golovkin was soon setting his sights on the future after the fight, calling out a number of likely rivals he would like to take on soon.He said: "My plan was just to box. I know I'm the champion, my speed is better, my power is better. My coach told me to box, not have a crazy fight, a street fight."Stevens is a strong guy. After the knockdown I felt great, it was my fight. I am open for everybody. Sergio Martinez, Peter Quillin, I am here."

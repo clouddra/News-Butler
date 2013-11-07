@@ -1,0 +1,30 @@
+Webber unsure of pit stop strategyMark Webber has admitted he was "surprised" to be switched to a three-stop strategy by Red Bull after finishing second to two-stopping team-mate Sebastian Vettel in the Japanese GP.For the first half of Sunday's Suzuka race it had appeared that Webber was Red Bull's best chance of beating Lotus's leading Romain Grosjean to victory, as he ran second to the Frenchman and ahead of Vettel.However, that early top three order would turn on its head once the strategies played out with Vettel, having run longer first and second stints, winning for the fifth straight race as Webber made an additional stop and then passed Grosjean late on for second.And although he admitted afterwards that he wouldn't have caught Vettel even had he dispensed with the Lotus before the penultimate lap, Webber revealed that he had earlier questioned why the Red Bull pitwall had switched him to a three-stopper.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Japanese GP: Race in 60 Seconds
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740236997001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2740236997001'});    
+        });
+    
+
+Japanese GP: Race in 60 Seconds"I didn't think the battle was going to be with Sebastian at the end to be honest," he said. "It was pretty much done when we didn't do enough damage on the three-stop against Seb's pace on the two."We tried to race Romain at the end and then in the end we switched to a three. So I was the meat in a sandwich trying to beat Romain on a two and then all of a sudden we've decided to do the three."I was a little bit surprised. I asked was it the right thing to do because I felt we could get to the lap we were looking to get to. Of course Seb was two or three laps longer, four laps maybe, but in terms of the target lap that we looked to get to the two-stop [window] I thought was achievable."The three was not absolutely ridiculous but it's a bit more high risk and you've got to clear people obviously [on the track]."So piggy in the middle trying to do both and in the end we got it back to where we were in terms of position, but obviously Seb jumped both of us [Webber and Grosjean]."Speaking to Sky Sports F1 after seeing his drivers finish first and second, Red Bull Team Principal Christian Horner explained the reasoning for Webber's strategy: "The whole race was dictated by the first stint. Mark went through the tyre faster than Sebastian and therefore didn't have the range and had to pit earlier."Webber had been the first of the leading trio to pit on lap 12 and says he had been attempting to undercut Grosjean, although still believed he was on course for a two-stop race at the time."We were looking to get in the lead, to put some pressure on Romain. I think the option [tyre] for all of us wasn't easy to handle," he said."I put some pressure on Romain towards the end of that stint. We were more or less in the window for two-stop. As soon as I pitted the guys said 'yeah we are on a two-stop, it's no problem. Look after the tyres and we'll stay on two.'"Then I was on two and we switched to three, so I think they just probably it was just a quicker way for me to do [the race with a] three stop. That's what they thought so that was the reason they did it. So that's the reason for that."Webber's second pit stop - which effectively locked him into his three-stop strategy - came on on lap 26, three laps earlier than Grosjean and 12 earlier than the sister Red Bull.Speaking to Sky Sports F1 later, Webber elaborated on how he had hoped his original strategy would pan out - although made clear that the Red Bull pitwall had far more information at their disposal to make the ultimate call."After the first stop, the guys said we were still on a two [-stop strategy], 'there's no problem so keep looking after the tyres, we can get to the target lap," he told Natalie Pinkham."That was the plan, I was looking to wait behind Romain and then squeeze up between lap 28 and 31 - which was the target lap. Then, on lap 25, the guys said we were going to a three-stop."I asked the guys if this was right. They said 'yes, give it a go'. And that was it. I don't have the whole chess match in front of me. They had more information than me."Halfway through the race, Red Bull were heard to tell Vettel "you are racing Grosjean, you are not racing Webber"."I stopped to think about that and if they thought Webber was gone a three-race strategy. But what they meant was that he was out of the picture," commented Sky F1 pundit Martin Brundle.

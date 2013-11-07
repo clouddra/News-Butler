@@ -1,0 +1,38 @@
+Richards: the former Leicester coach has propelled Newcastle into the PremiershipDean Ryan told Sky Sports that Newcastle will be competitive upon their return to the Aviva Premiership.The Falcons were relegated from the top division in 2012 but secured an immediate return to it by beating Championship rivals Bedford 49-33 on aggregate in this term's play-off final.Read our match report hereRyan - who will begin his role as Worcester's new Director of Rugby this summer - praised the work done by Newcastle counterpart Dean Richards and feels the North East outfit have enough about them to steer clear of danger next season.
+    "There won't be significant change at Newcastle because Dean has grown a core group of players who are used to playing together."
+			Dean Ryan
+
+
+    "There won't be significant change at Newcastle because Dean has grown a core group of players who are used to playing together."
+			Dean Ryan
+
+"Everyone wants a magic formula instantly [when you slip into the Championship] but Dean has not panicked and got everything stable," said former Newcastle player Ryan."He knows that if he can keep this side moving forward they can then add more quality and grow their reputation again, and they will hold their own in the Premiership with Dean and [forwards coach] John Wells at the helm."A year in the Championship and the pressure it has brought will not have done Newcastle any harm as they will know how to get out of tight corners, while Kingston Park will be a difficult place to go."They will have to use those things next year, but they can certainly start building because there is a good infrastructure and a big following of fans who will get behind their team and try to inspire them to put one over the big sides."Dean has been there with Harlequins and right up the top with Leicester and is well aware of the priorities, but there won't be significant change because he has grown a core group of players who are used to playing together."Former Worcester flanker Pat Sanderson, meanwhile, reckons "great things" lie in store for Newcastle under the tutelage of Richards, whose job with the Falcons is his first since the Bloodgate scandal.Sanderson also reckons the future is bright for Bedford, who have qualified for the Championship play-offs for the last four seasons, but doubts whether the Blues are particularly interested in securing promotion to the Premiership at this stage.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Pleased for the players
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2418761998001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2418761998001'});    
+        });
+    
+
+Pleased for the playersThe ex-England man said: "You only have to look at Dean's track record and see what he has done for a number of clubs to know that he is capable of building something that lasts - and that's why he is such a prized possession for Newcastle."The Falcons are back in the Premiership but it is only the start of a very long road and with Dean at the helm great things can happen for Newcastle - especially now they have a winning mentality."Bedford coach Mike Rayer must be commended for the job he does year in, year out with the resources at his disposal - but I think the Blues are happy where they are," added Sanderson."They are towards the top of the Championship and have a good relationship with Saracens with regards to players flowing in and out, and to make the step up now would be quite a transition."I don't see the appetite within Bedford to make that move just yet."

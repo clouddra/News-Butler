@@ -1,0 +1,30 @@
+Raikkonen issues still unresolvedKimi Raikkonen has been excluded from Abu Dhabi GP qualifying and sent to the back of Sunday's grid after his Lotus car failed Formula 1's floor test.The Finn had qualified in fifth place on Saturday but will now start from the back of the 22-car field after his E21 fell foul of the asymmetric front floor deflection test.After being summoned to the stewards in the hours after qualifying, Lotus argued that "the relevant part broke upon contact with a kerb" - the same case they successfully made when Romain Grosjean's E21 failed the same test after qualifying at the Hungarian GP in July.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Abu Dhabi GP - Qualifying Report
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2798644794001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2798644794001'});    
+        });
+    
+
+Abu Dhabi GP - Qualifying ReportHowever, on this occasion the FIA saw things differently and in a statement issued late on Saturday night at the Yas Marina Circuit stated that "the stewards did not accept that the incident referred to constituted an accident, or excused failing the relevant test".Raikkonen was subsequently disqualified from the qualifying results with his car having failed to comply with Article 3. 17. 5 of the Technical Regulations, although the Finn is allowed to compete in the race starting from the back of the grid. Lotus will also have the option of pulling the car out of parc ferme and starting the former World Champion from the pitlane in order to make otherwise prohibited changes to the E21 to aid its overtaking chances.The penalty comes as a major blow to Lotus's hopes of closing their points deficit to Mercedes and Ferrari for second place in the Constructors' Championship and amid a weekend in which their financial predicament, and increasingly strained relationship with Raikkonen, has already been under the spotlight.Raikkonen revealed on Friday that he had been considering walking out on the team this weekend after being "paid zero euro this year."The immediate beneficiary of Raikkonen's demotion is Sauber's Nico Hulkenberg who moves up one position to fifth on the grid, with Grosjean in the other Lotus jumping up to the third row in sixth behind.Having failed to make the top ten shootout, Ferrari's Fernando Alonso will now start tenth - although the Spaniard still have a free starting tyre choice given he didn't participate in Q3 for the first time this season.

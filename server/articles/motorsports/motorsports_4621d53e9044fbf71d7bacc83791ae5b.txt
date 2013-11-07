@@ -1,0 +1,30 @@
+Fernando Alonso had some strong words to say about Ferrari's lack of development when he addressed the media after the Japanese GP.Can you finish second in the Constructors' Championship?Fernando Alonso: "Mercedes will take points off Lotus and vice-versa, but the most important thing is that we are on the podium. If we are on the podium at the next four races then it will not be a problem."You were behind the Sauber with the Ferrari engine once again at this race. Is that frustrating for you and was the way that you overtook him a sign of that frustration?FA: "No, not frustrated - to be honest Sauber have made a step forward in the past races, especially when Pirelli reintroduced the 2012 tyres. They are getting back to a similar performance level as last year. Perez and Kobayashi were very good and in fact Kobayashi was even on the podium here at Suzuka, proving that the Sauber are strong in this race."They have a little bit less top speed compared to us or compared to Korea when they ran with very little downforce, so we had the possibility and it was good, but to finish fourth or fifth is no big change - it is just extra points for the team. So I am happy, but nothing really more to say."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Fernando Alonso missed out on a podium place after finishing 4th at the Japanese Grand Prix.
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740219861001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2740219861001'});    
+        });
+    
+
+Fernando Alonso missed out on a podium place after finishing 4th at the Japanese Grand Prix.Felipe Massa didn't follow team-orders in the first stint. How do you feel about that? Any problems?FA: "We cannot make a big thing out of it. We are racing and whatever we did we would have finished in the same position because we could not achieve anything more. I don't know exactly what happened, but there is zero problem."We are trying to do our best fairly - me, the team - to score as many points as possible and sometimes it is not easy when the performance is not super. It is never easy when we are fighting for seventh and eighth place. It would be nice to come back to the old days at Ferrari of fighting over first and second and then deciding who wins like Red Bull do - one car does two stops, one car does three stops and the finish first and second - this is a much easier life."I am always trying to do my maximum and Ferrari are always trying to do their maximum so let's do our maximum in the last four races."It seems since Pirelli changed the tyres Ferrari have struggled. Is that the case or is it simply the team have not been able to develop the car?FA: "The problem is our development. The problem is that we didn't adapt to the tyres or had the steps that we planned. We arrived at the races in July with some updates that looked good on paper, but not so much on the track and I think that slowed down the performance improvement that we should have had."The Pirellis are an extra thing. It is clear some teams lost a little bit of performance, some have gained a little bit of performance - like Sauber as we have said - but they had to make the changes because the other tyres explode. So it was not a decision to make one team better than another team - it was a change so we could continue racing in the championship, so there is nothing we can do."

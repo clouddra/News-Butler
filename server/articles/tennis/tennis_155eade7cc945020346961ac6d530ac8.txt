@@ -1,0 +1,44 @@
+Novak Djokovic, champion at the O2 Arena in 2012, says it is time for the World Tour Finals to move to another cityNovak Djokovic is the latest leading male player to suggest that the ATP World Tour finals should be moved from London.The Serb believes the end of season tournament, currently being staged at the O2 Arena in London for a fifth successive season, should be rotated every few years.The defending champion says the event, which features the top eight players in the world and arguably is the most important and prestigious after the Grand Slams, should be used as a vehicle to make the game more popular.The 26-year-old, who opens his campaign at the O2 Arena on Tuesday evening, said: "The tournament should definitely be organised at different places and not held in one city for more than three years.
+Live on Sky Sports
+
+Live Tennis: ATP World Tour Finals
+2013 Day Two
+November 5, 2013 6:00pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+"Various players share this opinion and believe it should be played in places where our sport, which is a global one, is not so popular which means it could expand."On Monday world No 1 Rafa Nadal mooted a similar point, but stressed that the playing surface should be rotated each year.The Spaniard said: "The Tour Finals have been indoors from 2005 until now, so I am a bit unlucky with this. For me it is more fair to have it outdoors on different surfaces."In this tournament we qualify by playing on all surfaces but the Tour Finals are always on hard courts."This is a great place to play, I have never been to a tournament with a better atmosphere, but that doesn't mean the ATP can't be a little bit more fair with the players."We could change every year to play it on the surfaces we qualify for the Finals. That means, for example, a good clay-court player would have the chance to play on his best surface."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Stanislas Wawrinka defeated Tomas Berdych 6-3 6-7 (0-7) 6-3 to clinch an opening victory at the ATP World Tour Finals.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2804669475001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2804669475001'});    
+        });
+    
+
+Stanislas Wawrinka defeated Tomas Berdych 6-3 6-7 (0-7) 6-3 to clinch an opening victory at the ATP World Tour Finals.The current deal means the O2 Arena will remain the venue for the World Tour Finals through to the 2015 event.Djokovic takes on former world number one Roger Federer on Tuesday and although he says 32-year-old Federer remains 'a class act', the Serb believes his recent drop in form is probably due to reduced mobility around the court.The pair will take to the court at the O2 Arena at 8pm, in their opening Group B match, with Djokovic seeking a second victory over Federer in less than six days.He beat him in Paris last week and Djokovic, talking about his next opponent's current game, said: "From my point of view he hasn't been moving as well as he did before."I guess that's one of the reasons why he hasn't had much success this year."But he's still Roger Federer, a 17-time Slam winner, who has achieved so much in his career and he's never to be underestimated as long as he plays tennis."He has an incredible quality in his game and he's still striking the ball really well. If he feels well on any day, he can beat anybody."You can watch the ATP Tour finals from the O2 Arena in London on Sky Sports 3.

@@ -1,0 +1,30 @@
+Carl Froch: Believes he is a class above George GrovesCarl Froch insists he is taking George Groves seriously, but has dismissed his chances of victory in the big super-middleweight showdown on November 23.Froch is preparing to defend his WBA and IBF titles against Groves at the Phones 4u Arena in Manchester, live on Sky Sports Box Office.The Nottingham fighter has fought at world level for a number of years and holds wins over big names such as Mikkel Kessler, Jermain Taylor and Lucian Bute.Groves has been handed his first shot at world title and Froch doubts whether the 25-year-old is ready for such a major bout, despite his unbeaten record.Froch told Sky Sports News: "He's unbeaten in 19 fights and he's got 15 knockouts so that in itself speaks volumes in terms of a record. It's a very good record, he's unbeaten, but you have to look at the opponents he's fought to get to that level and who he's beat and how he's beaten them."When you look at his resume he's not boxing the best. He's not boxing the top 10 in the world. He's all of a sudden coming up from the Championship straight up to the Premier League now and a lot of the time if Manchester United play Scunthorpe, there's only going to be one winner. That's usually the case in boxing."On paper and as far as I'm concerned, George Groves hasn't got a chance of beating me, but that's not just because he's not fought anyone at my level. He simply isn't good enough in my opinion."He's going to try and give himself belief and think he is going to do the business and he'll come and have a go. That in itself poses a threat to me. I've got to be ready for him and I am. I'm very ready."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Froch: Dismissive
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2788195877001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2788195877001'});    
+        });
+    
+
+Froch: DismissiveFroch avenged his defeat to Mikkel Kessler in his last fight, defeating the Dane on points and is keen to face Andre Ward, who inflicted the only other loss on his record.Mexican star Julio Cesar Chavez Jnr and fearsome puncher Gennady Golovkin have also been mentioned as future opponents and Froch believes some exciting fights could lie ahead."Potentially it's a fight people keep talking about. A rematch with Andre Ward, the only guy on my unbelievable resume that I haven't beat," said Froch."Andre Ward is a strange one, he's been injured for a while and now he's talking about doing light-heavyweight. It's difficult for him to get fights because he's so effective at what he does."He's a very, very awkward fighter. He knows how to win. I'm not going to say he's not a good fighter, he's beaten me, but he's not exciting. The TV broadcasters haven't quite got hold of him. HBO in American don't really get excited when they talk about Andre Ward."Unless that changes, after I have beaten George Groves that is definitely and option for me but there's Julio Cesar Chavez Jnr, a young wild kid. Chavez was a legend, his dad, he's a big name in Mexico so that's a massive fight."There's also a guy who is quite frightening looking when you watch him fight, Gennady Golovkin, triple G, he's a middleweight looking to come up to super-middle. So there's Chavez, there's Golovkin and there's potentially a rematch with Ward."Carl Froch and George Groves will be in the studio for tonight's Ringside Special on Sky Sports 2 at 6pm.

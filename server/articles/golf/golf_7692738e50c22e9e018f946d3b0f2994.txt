@@ -1,0 +1,30 @@
+Ernie Els (r) partnered Brendon de Jonge for the opening three days of the Presidents CupErnie Els believes the International team can take plenty of positives from their performance at last week's Presidents Cup despite falling to another defeat in the biennial event.America eventually clinched an 18.5 - 15.5 victory at Muirfield Village, their eighth win in ten renewals with the Internationals' sole triumph coming in Australia in 1998.But while Els tasted defeat for the sixth time in his lengthy Presidents Cup career, he insisted his team-mates could hold their heads high after what he claimed was the highest-quality tournament he has been involved in.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Ewen Murray and Wayne Riley look back on day 4 of the Presidents Cup.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2724801663001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2724801663001'});    
+        });
+    
+
+Ewen Murray and Wayne Riley look back on day 4 of the Presidents Cup."We knew it was always going to be tough - with a very strong American team, a home course and home crowd advantage - but we put our heart and souls into it," he wrote on his personal website. "We had a lot of fight in us the whole week and it was a pleasure and a privilege for me to be on the team with these guys."There's no need for me to go into the ins and outs of every day, nor the ups and downs of all the matches. However, summing up I will say that in all my eight appearances in this competition, the level of play this year and the number of birdies made on both teams was outstanding, probably the best we've seen."The four-time major champion earned a total of three points for Nick Price's team having edged out Steve Stricker in Sunday's singles matches.He spent the majority of the week partnering Zimbabwe's Brendon de Jonge - the duo winning both their foursomes matches but losing their two fourball outings - and said he had thoroughly enjoyed the experience."For me, playing with Brendon was great," he continued. "Obviously Nick was in a difficult situation with his captain's picks, because someone is going to be disappointed. I supported Brendon because of his play and the way he hits the golf ball; he hits a power-cut so he's got the perfect game for Muirfield Village."That was my theory. We also played together in the FedEx Cup and we thought we could be good together. We both hit the ball well all week and actually Brendon was awesome out there. He played beautifully and we had a lot of fun."A storming showing in the singles, where they claimed 7.5 points from a possible 12, ensured the Internationals finished much closer than many would have predicted and Els feels the result could have different had they shown a little more composure over the first three days of competition."Reflecting on the four days' play there were a couple instances where, maybe through a lack of experience, we just let some matches get away from us," he added."But we weren't far away and these young guys know what it's all about now. They showed some class, some great golf and plenty of fight.""All credit to the Americans, they played exceptionally well. It seemed like they were able to seize the momentum in most of the sessions and we were always trying to fight ourselves back into it."

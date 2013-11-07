@@ -1,0 +1,349 @@
+Pienaar: leading the way for Ulster's brilliant win over MontpellierClick on the videos to view the highlights as Paul Wallace and Shaun Edwards  look at the winners and losers after Round Two of the Heineken Cup.Northampton 27 - 16 Ospreys
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Northampton v Ospreys - Highlights
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008790001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2757008790001'});    
+        });
+    
+
+Northampton v Ospreys - HighlightsShaun Edwards: Courtney Lawes can play No.6 but second row is definitely his best position. I thought the contest between him and Alun Wyn Jones was excellent. Two world class second rowers going toe-to-toe; it was like a heavyweight championship fight and both were excellent.Paul Wallace: Physically the Ospreys were outplayed, especially at the breakdown. Northampton just dominated all the contact areas and really fronted up. It sets up a magical back-to-back encounter against Leinster - two huge games.Leinster 19 - 7 Castres
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Leinster v Castres - highlights
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008786001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2757008786001'});    
+        });
+    
+
+Leinster v Castres - highlightsPaul Wallace: I don't think Castres can be too aggrieved with that try not being awarded at the end. There are millimetres in it but I think Sean O'Brien got his hand in and held Pedrie Wannenburg up, it was close but for me the ball was held up.Shaun Edwards on Julien Tomas yellow card for repeatedly not putting the ball into the scrum straight: That was a completely bizarre occurrence, it was pretty extreme. Yes there is the ruling that if you continue to infringe after the ref has warned you then you will get a yellow card, but I think it was a bit harsh and added to the  angst that Castres felt that they were getting mistreated on the day.Cardiff 19 - 15 Toulon
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Cardiff v Toulon - Highlights
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008791001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2757008791001'});    
+        });
+    
+
+Cardiff v Toulon - HighlightsShaun Edwards: There is a saying that goes 'beware the humiliated team' and I think there was a bit of humiliation in Cardiff's first effort last week, but this game of rugby is an emotional game and you have to come with that required amount of emotion which they clearly did for this game.Paul Wallace: Toulon have struggled on the road before and this could be a real turning point for Cardiff who have under-performed over the last few seasons. If they really galvanise they could build on this win and it could be the start of something big in Cardiff.Glasgow 20 - 16 Exeter
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Glasgow v Exeter - Highlights
+
+        <object id="video-id4" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008793001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video4','ob':'#video-id4','id':'2757008793001'});    
+        });
+    
+
+Glasgow v Exeter - HighlightsPaul Wallace: There was some great play from Glasgow, they really have this try scoring ability and Gregor Townsend has filled this team with so much confidence. Exeter would have been really buoyed after last week but Glasgow are a tough side to beat up there.Shaun Edwards: I don't think it was a bad result for Exeter to go to Glasgow and get a bonus point. It's a tight Pool and I think this is definitely one of those pools that is going to go down to the last week in January.Saracens 16 - 17 Toulouse
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Saracens v Toulouse - Highlights
+
+        <object id="video-id5" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008794001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video5','ob':'#video-id5','id':'2757008794001'});    
+        });
+    
+
+Saracens v Toulouse - HighlightsPaul Wallace: I was very impressed by Toulouse, mind you they are bit like a super tanker without a captain on the bridge, their direction was very poor at halfback and they had no kicking game. It was sheer power and force that got Toulouse the win. Their ball carrying was superb and Gillian Galan - well what a find he is. His ball carrying is just so impressive, I don't think I have seen anyone like him before, he was just shrugging off tackles - and these were good tacklers, big men getting knocked back. It was taking three to four defenders to stop him and you just knew he was going to get them over the gain line. If he had been deployed in the Saracens half a bit more then I think it could have been a much tougher night for Sarries.Zebre 6 - 33 Connacht
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Zebre v Connacht - Highlights
+
+        <object id="video-id6" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008789001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video6','ob':'#video-id6','id':'2757008789001'});    
+        });
+    
+
+Zebre v Connacht - HighlightsConnacht reignited their hopes of qualifying from Heineken Cup Pool Three following a 33-6 victory over Zebre, however the Irish province missed out on a winning bonus point.ASM Clermont Auvergne 23 - 16 Harlequins
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Clermont v Harlequins - Highlights
+
+        <object id="video-id7" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008788001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video7','ob':'#video-id7','id':'2757008788001'});    
+        });
+    
+
+Clermont v Harlequins - HighlightsPaul Wallace: There was some brilliant interplay for Clermont's first try - they really have an eye for space. But as Clermont always do they get themselves into a good position and then take their foot off the pedal and Quins just kept on coming. Mike Brown really played well and Nick Evans got the drop-goal to give them a losing bonus point.Shaun Edwards: I think Harlequins played with an amazing amount of pride and they were true to their style of play. That defeat at home to Scarlets is ultimately going to hurt them in this competition but they can take a lot of pride from today's performance. They have lost a lot of size in the team and they don't seem to be as powerful as they used to be, but there effort today was outstanding.Scarlets  26 - 26 Racing Métro
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Scarlets v Racing Metro - Highlights
+
+        <object id="video-id8" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008787001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video8','ob':'#video-id8','id':'2757008787001'});    
+        });
+    
+
+Scarlets v Racing Metro - HighlightsPaul Wallace: I think Scarlet's were lucky to get away with the draw, I think that final try that Racing scored should have been awarded. Yes it did go forward but it was a wrestle for the ball and not a knock-on. The Scarlets played some superb rugby though and they are a joy to watch, with Rhys Priestland in there they have become a different side and they have such an attacking ability outside. They are missing Samson Lee so they had a bit of a power issue upfront.Shaun Edwards: Scott William's form is the talk of Europe, the way he is playing in the last couple of weeks has been superb and I hope he can keep it going for when Wales take on the Springboks which will be a massive challenge.Leicester 34 - 3 Treviso
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Leicester v Treviso - Highlights
+
+        <object id="video-id9" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757074925001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video9','ob':'#video-id9','id':'2757074925001'});    
+        });
+    
+
+Leicester v Treviso - HighlightsShaun Edwards: This was reminiscent of watching Leicester 15-20 years ago and Treviso were always going to be up against it. You usually see yellow cards when you are under pressure and we saw three in this game which shows how much pressure Treviso were under.Paul Wallace: Treviso are a physical side too and do not roll over easy. It was a real credit to Leicester who kept going and chased that bonus point. It came down to the last minute but it just shows the confidence they have and it is no coincidence that the big clubs with European history go on and get the bonus point even when it looks like that has gone past them. This could be very important for them.Montpellier 8 - 25 Ulster
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Montpellier v Ulster - Highlights
+
+        <object id="video-id10" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757074926001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video10','ob':'#video-id10','id':'2757074926001'});    
+        });
+    
+
+Montpellier v Ulster - HighlightsPaul Wallace: To go down to Montpellier who have started of the season so well and win is fantastic. It was a real shock to me, the Ulster pack really fronted up and they look like real contenders now.Shaun Edwards: This was a massive result for Ulster and showed their intent. Ruan Pienaar is back in there pulling the strings and kicking his goals as usual. To win by that margin against a top French team is an incredible result.Munster 26 - 10 Gloucester
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Munster v Gloucester - Highlights
+
+        <object id="video-id11" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008785001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video11','ob':'#video-id11','id':'2757008785001'});    
+        });
+    
+
+Munster v Gloucester - HighlightsPaul Wallace: You always knew that Munster were going to come out with something after what happened in Edinburgh. Peter O'Mahony coming back into the side led from the start. Gloucester really took the game to Munster and Dan Robson at scrumhalf had an exceptional game, he dictated everything and is a real find. The score line does not reflect how well they played.Shaun Edwards: I am a huge fan of the Robson at No.9 for Gloucester. He gives defensive coaches like me sleepless nights because he has got so much pace and great vision as well.Perpignan 31 - 14 Edinburgh
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Perpignan v Edinburgh - Highlights
+
+        <object id="video-id12" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2757008792001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video12','ob':'#video-id12','id':'2757008792001'});    
+        });
+    
+
+Perpignan v Edinburgh - HighlightsShaun Edwards: I went and watched Perpignan play Gloucester last week and I was impressed with their style of play. You always get a big pack from them who love their scrimmaging, love their rolling maul but they are much more than that. What they have now is flair, Wandile Mjekevu  is just absolutely magnificent. He has speed, athletic prowess and is just an excellent rugby player.

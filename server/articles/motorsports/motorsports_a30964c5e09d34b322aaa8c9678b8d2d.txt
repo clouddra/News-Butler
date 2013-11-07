@@ -1,0 +1,30 @@
+Darcy Ward: Poole captain led Pirates to victory over Birmingham BrummiesPoole Pirates clinched their second Elite League title in three seasons after completing victory over Birmingham Brummies in the second leg of the Grand Final.The Pirates led by 21 points after the opening leg and never looked like giving up the advantage, even winning 47-43 on the night at Perry Barr Stadium to finish with an aggregate success of 104-79.Birmingham had a huge task on their hands and the home side could not mount a comeback on a track still showing effects of the persistent rain which had caused the contest to be delayed for 24 hours.The Brummies sat on top of the table at the end of the regular season but were outclassed by a Poole side which has finished either as winner or runner-up in each of the last four years.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Poole Pirates crowned champions
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2746037009001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2746037009001'});    
+        });
+    
+
+Poole Pirates crowned championsPoole struck their first hammer blow in heat two as Kyle Newman and Josh Grajczonek brought home a 5-1 haul which stretched their lead to a massive 25 points.Things got worse for the hosts when Danny King crashed out of heat three in spectacular style. The Brummies skipper was thankfully able to get to his feet, but in his absence Poole took another 5-1 through Greg Hancock and Grajczonek.Birmingham chipped away at the huge deficit when Chris Harris won heat four and Jason Doyle took heat six, while Josh Auty crossed the line first in the eighth heat.However, time was running out for the Brummies and when Grajczonek and Maciej Janowski took a 5-1 in heat nine the writing was firmly on the wall.At the start of heat 11, Poole needed just one more point to be mathematically sure of the victory and, after a short delay due to a fall from Thomas H Jonasson, captain Darcy Ward duly took the win to spark the celebrations.The remaining four heats were of no consequence to the overall outcome, but the Brummies were not able to salvage any pride as Poole hung on to win the second leg outright as well.

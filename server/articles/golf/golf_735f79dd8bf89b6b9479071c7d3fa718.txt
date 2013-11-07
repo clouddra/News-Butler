@@ -1,0 +1,38 @@
+Dustin Johnson: Showed his mettle in the final roundDustin Johnson said he was delighted with the way he handled the pressure after winning the WGC-HSBC Champions in China.The 29-year-old saw his three-shot overnight lead wiped out after just two holes by Ian Poulter and also had Graeme McDowell for company after the third.But a scintillating finish, which included a chip-in eagle at 16, saw the American come home in 31 and hold off the two European Ryder Cup stars.Speaking after his three-shot win, Johnson said: "I didn't get off to the best start and Poulter and Graeme McDowell they got off to great starts and put a lot of pressure on me.
+    "They put a lot of pressure on me but I'm really proud of myself the way I handled it and the way I finished."
+			Dustin Johnson
+
+
+    "They put a lot of pressure on me but I'm really proud of myself the way I handled it and the way I finished."
+			Dustin Johnson
+
+"But I knew I was swinging well and putting well so I knew just to stick to my game plan, play the golf course how I want to play it and it's going to come."Obviously I played really well on the last few holes on the front nine and then had a great back nine but the guys they made it really interesting and I just played really good coming down the stretch."I knew they were going to come out swinging and I held them off. The last few holes if you're playing well you can make some birdies but they are tough holes and it was a lot of fun out there today."It was a good match from both of them, they put a lot of pressure on me but I'm really proud of myself the way I handled it and the way I finished."Johnson has had several excellent chances to win majors over the last few years before buckling on day four. Having shown such maturity and patience in the final round here in Shanghai, he believes he's now much better equipped to handle the pressure.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Shanghai victory for Johnson
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2798167302001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2798167302001'});    
+        });
+    
+
+Shanghai victory for Johnson"It takes a while to learn that. I wish I would have had some of that a few times a few years ago but you learn from your mistakes and try to get better from them."I think I showed a lot of patience out there and a lot of discipline with the clubs I picked and shot selection and I played really solid today."Johnson now hopes his latest win - the eighth of his PGA Tour career - can act as a springboard for those elusive major victories."This is probably my biggest win with the field and the tournament, a world golf championship, so hopefully there's better things to come," he said.

@@ -1,0 +1,30 @@
+Woodward expects another winEngland will conquer the Australians at Twickenham on Saturday if they succeed in the scrum, says Sir Clive Woodward.Chris Robshaw will lead the hosts out against their arch rivals in a mouth-watering showdown being shown live on Sky Sports 2HD from 1.30pm in the first of three Autumn Tests, with Argentina and New Zealand awaiting later in the month.Speaking 10 years after steering the English to victory in the World Cup against the Aussies, Woodward was hopeful Stuart Lancaster's side could reign supreme at the weekend.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+England v Australia - 17 Nov 2012
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2789153916001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2789153916001'});    
+        });
+    
+
+England v Australia - 17 Nov 2012"I really hope the scrum goes well," Woodward told Sky Sports News. "I hope it's not just a succession of penalties at scrum time. If England batter Australia at the scrum then they'll win."But if the Australians can compete in the scrum then we've got a great game of rugby - they're building a great side. But then so are England and I think some of the selections are really exciting."England have not beaten Australia since November 2010, but with the inclusion of rugby league convert and debutant Joel Tomkins who is and paired with Billy Twelvetrees in midfield, as well as Lee Dickson chosen at scrum-half, it appears Lancaster is in offensive mood."I think Twelvetrees brings a lot and he'll help Owen Farrell," added Woodward. "I really want England to go out and attack but I hope the game isn't won on penalties because England smash Australia in the scrum."The top players in the world all come from the southern hemisphere and maybe one or two from France, I think England over the next couple of years have to find a couple of gems. At the moment we've got a really good team but no one great individual that you can build your team around."Following England's last-gasp win over Australia at the World Cup in 2003, Woodward emphasised the need for long-term preparation was crucial for success."Throughout that tournament we had our highs and lows - the South Africa game in the pool was huge - but we delivered," the 53-year-old said."It was a great group of players and I was confident from the start that we could deliver and we ended up in a dream final. Australia in Sydney was just fantastic and a night we'll never forget."Looking back it was just a huge relief - England arrived at the World Cup as favourites which is a very un-English thing to do. We know why we won, it wasn't a freak - we arrived as the best team, the players and back-room team were just awesome and the RFU was fantastic so we had every chance."The pressure was huge. Had we not delivered as favourites we'd never have forgiven ourselves so to actually get the job done - even if it was only just - was really something quite special."Watch England versus Australia on Saturday from 1.30pm on Sky Sports 2, plus for full details of Sky Sports' Autumn Internationals coverage, click here.

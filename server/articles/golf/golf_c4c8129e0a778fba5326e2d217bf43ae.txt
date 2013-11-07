@@ -1,0 +1,32 @@
+Scott Jamieson smiles after he just misses out on historic round of 59Scott Jamieson came agonisingly close to making European Tour history as his 15-foot chip on the 18th at the Portugal Masters burned the edge of the hole to miss out on a first ever round of 59.Going out early in the third round after shooting 66 and then a struggling 73 on Friday, Jamieson took full advantage of good scoring conditions at the Oceanico Victoria Golf Course as he moved from three-under to 14-under during a pulsating round. 
+Third round leaderboard
+(GB & Ireland unless stated)-16 P Waring-14 S Jamieson-14 S Thornton-14 J Donaldson-14 H Otto (Rsa)-13 P Larrazabal (Spa)-13 A Quiros (Spa)-13 C DoakClick here for collated scores (GB & Ireland unless stated)-16 P Waring-14 S Jamieson-14 S Thornton-14 J Donaldson-14 H Otto (Rsa)-13 P Larrazabal (Spa)-13 A Quiros (Spa)-13 C DoakClick here for collated scores -16 P Waring-14 S Jamieson-14 S Thornton-14 J Donaldson-14 H Otto (Rsa)-13 P Larrazabal (Spa)-13 A Quiros (Spa)-13 C DoakClick here for collated scores Click here for collated scoresIt lifted him from tied 52nd at start of play to tied second - two shots behind leader Paul Waring of England.The 29-year-old Scot hit 11 birdies during a remarkable third round but could just not find that one more on the final hole that would have given him the first ever 59 in Europe.Jamieson sank to his knees as he watched his chip from the rough just off the back of the green slip agonisingly wide as he finished with a round of 60.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Jamieson misses out on 59
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2738696514001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2738696514001'});    
+        });
+    
+
+Jamieson misses out on 59After six birdies saw him to the turn in 29, Jamieson's progress slowed up with just one birdie in four holes before he birdied the 16th and then rolled in a lengthy birdie effort on 17 to give himself a chance of history.A nerveless drive put him in prime position in the centre of the 18th fairway, but although his iron shot pitched just short of the flag it rolled off the back of the green - and although his chip was a fine effort he just missed out on carding the first ever 59 on the European Tour."I said to Richard (his caddie) playing 17 I really want to make a birdie here so we have a chance of it going down the last and I could not have asked to hit a better shot in," Jamieson told Sky Sports. "It pitched just short of the hole... what a chip as well!"When I birdied the 13th I said to Richard then 'A few more and we could be part of history'."I was definitely nervous but thinking about it from the tournament point of view the leaders are going to be a minimum of 16, 17 maybe 18 under going into tomorrow so that kept me going."Jamieson's round was the 18th round of 60 on the European Tour, and comes hot on the heels of American Peter Uihlein, who missed a putt for a 59 on the 18th hole at Kingsbarns during the Alfred Dunhill last month.When the winds picked up in the afternoon, it seemed as if Jamieson's 14-under total would be good enough for a share of the lead.A host of players hit that mark but couldn't go beyond it before Waring birdied 16 and 17 to kick two shots clear.A two-putt at 18 left Waring (67) two in front of Jamieson, Welshman Jamie Donaldson (66), England's Simon Thornton (65) and South African Hennie Otto (69).It's a further shot back to Spanish pair Pablo Larrazabal (64) and Alvaro Quiros (68) along with Scotsman Chris Doak (69).David Lynn, who shared the halfway lead with Waring and Otto, slipped back to tied 16th after a two-over 73 left him at 10-under.Waring, who has never won on the European Tour, said: "I started a bit poorly, didn't quite hit it close enough but I holed some nice putts towards the end of the day so I feel pretty good."We'll see what happens tomorrow."

@@ -1,0 +1,30 @@
+Quarterback Josh Freeman will start for Minnesota on MondayJust two weeks after making the surprise move to Minnesota, Josh Freeman will start as Vikings quarterback against the New York Giants on Monday night.Freeman has had a whirlwind couple of weeks, going from franchise quarterback to bench warmer to ex-Tampa Bay Buccaneers man in lightning-quick fashion, but his return to action has been equally as speedy.Christian Ponder also started the season as the main man for the Vikings, but he has again performed badly and, after firstly making way for back-up Matt Cassel, his future with the team looks bleak.Freeman had said his move to Minnesota was a chance to 'pump the brakes' and take stock of his career, but just nine days later he was named as the starter by head coach Leslie Frazier - and he will make his debut under the national spotlight on Monday Night Football."The time that he's put in, how well he's adapted to our system, and I like his work ethic," Frazier said of Freeman. "He's done enough for us to say we want to give him this opportunity, which is something we had in mind when we acquired him. We think now is the time."After leaving Tampa Bay in such acrimonious circumstances, 2009 first-round pick Freeman will be playing with a point to prove when he runs out for his new team on Monday."It's been a smooth adjustment," said Freeman. The opportunity to come in here and just focus strictly on football, and this is a storied franchise. They do things the right way around here."Do I have a chip on my shoulder? Sure, I do. But I think it's more deeply rooted than just the past six months, 12 months. It's just wanting to go out and be great, and even deeper than that, Leslie extended his hand, giving me an opportunity to come in here."Ponder will be the back-up for Freeman on Monday, but it will be tough to stomach a permanent role with the clipboard after being the starter for so long, and he does not know where his future lies right now."I don't know," Ponder replied when asked if he wanted a trade. "I've got to figure out what's best for me and everything and for this team, and so I don't know if that's staying here or going somewhere else."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Latest NFL Total Access
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2749121628001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2749121628001'});    
+        });
+    
+
+Latest NFL Total AccessFreeman certainly offers a more dynamic option under centre than the at times ponderous Ponder - he became Tampa Bay's first 4,000-yard passer last season with a career-best 27 touchdowns as the team enjoyed a record points year.2010 was also a promising campaign with 25 touchdowns against just six interceptions for a passer rating of 95.9, but inconsistency has been a problem in recent games.Despite the record numbers last season, Freeman could not get the wins needed with the Bucs losing eight of their last nine games going back into last season - including an 0-3 start under Freeman this year.Freeman completed just 45.7 percent of his passes this year with two TDs and three interceptions leading to coach Greg Schiano benching them and then deciding he was surplus to requirements, but the Vikings hope they will be getting the best side of Freeman.Ponder has struggled to provide a secure option at quarterback over the last two seasons as starter, with interceptions his main issue with 25 of them in his two full seasons - and another five in three games this year.

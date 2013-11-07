@@ -1,0 +1,30 @@
+San Francisco 49ers scored six touchdowns during a 42-10 victory over the struggling Jacksonville Jaguars, the second NFL regular-season game to be held at Wembley in the space of a month.Quarterback Colin Kaepernick led four long touchdown drives on San Francisco's first four possessions to put his side out of sight at 28-0 up midway through the second quarter.Kaepernick ran for two touchdowns and threw for another, while his running back Frank Gore scored twice on the ground as the Niners piled up 221 rushing yards in total.Gore finished with 71 yards on 19 carries, Kaepernick 54 rushing yards to go with 164 through the air and Gore's back-up Kendall Hunter added 84 yards on the ground.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+San Francisco Running Back Frank Gore feel¿s continuing to play hard in the 2nd half was key to victory over Jacksonville.
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2774948633001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2774948633001'});    
+        });
+    
+
+San Francisco Running Back Frank Gore feel¿s continuing to play hard in the 2nd half was key to victory over Jacksonville.The Jaguars, making the first of their four planned appearances in London over the next four years, scored a solitary touchdown in the third quarter and are now 0-8 for the season.San Francisco lived dangerously early on. They recovered their own fumble on the opening kick-off before Gore picked up the necessary yardage for a first down on fourth-and-one at the Jacksonville 21 to keep his offence on the field.Two plays later and Gore went down the middle for a touchdown from 19 yards out to complete an eight-play, 76-yard drive.Kaepernick then took centre stage; he dived over on a 12-yard run, found Vernon Davis in the end zone with a floated two-yard pass and added a nine-yard touchdown run himself for good measure.In between, Jacksonville managed a total of two first downs, including going three-and-out on three straight possessions.The Jaguars did get on the board shortly before half-time courtesy of a 38-yard Josh Scobee field goal and followed up in the third quarter when quarterback Chad Henne hit Mike Brown with a 29-yard touchdown pass, three plays after Gore's fumble gave away good field position.But the comeback never had the chance to get going; Gore finished off his second touchdown of the day from close range on San Francisco's next drive, which consisted of three running plays, the first a 41-yard gain by Hunter.Dan Skuta added a sixth touchdown for the 49ers when he returned tight end Marcedes Lewis' fumble 47 yards.San Francisco's fifth win in a row improved their record to 6-2 and also tied a franchise record for scoring 30 or more points in five straight games.The eighth regular-season contest at Wembley since 2007 was a predictable blow-out, but another bumper attendance - 83,599 on the back of 83,519 for Minnesota's win against Pittsburgh in September - is encouraging for the NFL's long-term aim of a London franchise and the league has already confirmed plans for three more fixtures at the same venue next season.

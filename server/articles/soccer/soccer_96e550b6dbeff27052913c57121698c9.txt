@@ -1,0 +1,117 @@
+Alvaro Negredo: Celebrates his opener with Edin DzekoManchester City needed extra-time to beat Newcastle 2-0 in the Capital One Cup fourth round.Newcastle had the better of proceedings over 90 minutes but they could not break the deadlock and instead left St James' Park digesting an unflattering defeat.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Highlights: Newcastle 0 Man City 2
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2785661795001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2785661795001'});    
+        });
+    
+
+Highlights: Newcastle 0 Man City 2And while Alvaro Negredo and Edin Dzeko deserve praise for neat finishes in the 99th and 115th minutes, goalkeeper Costel Pantilimon also did everything that was asked of him.City made 10 changes from the side that was beaten by Chelsea at the weekend, the least surprising of which involved the struggling Hart stepping down.A first-half save from Shola Ameobi, when partially unsighted, was good but a firm block when in a one-on-one with Papiss Cisse was even better.Newcastle showed five changes of their own and the teams contested a scrappy 90 minutes, with neither doing enough to seal the win in regulation.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Pardew: Left disappointed
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2785661797001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2785661797001'});    
+        });
+    
+
+Pardew: Left disappointedBoth had chances to do so, not least a pair of close-range headers in the space of a minute late on. Negredo saw his beaten clear by Tim Krul but an unmarked Yoan Gouffran had no such excuse as he diverted Mathieu Debuchy's cross wide from inside the six-yard box.City lost Stevan Jovetic to injury after just 10 minutes, with Manuel Pellegrini summoning Negredo from the bench.The visitors started lethargically, with Pantilimon making a good save from Ameobi on the half-hour.Ameobi had the ball in the net a minute later but was ruled offside when he tapped home Cisse's shot across goal.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Dzeko: Gives his reaction
+
+        <object id="video-id4" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2785932397001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video4','ob':'#video-id4','id':'2785932397001'});    
+        });
+    
+
+Dzeko: Gives his reactionNavas created City's best chance in the 63rd minute when he came away with the ball following an ill-judged foray from Krul, but James Milner curled his effort wide.With 12 minutes left in normal time, Negredo made his first major contribution, waltzing into the box and floating in a delicate close-range chip that Krul flicked around the post.Both sides might still have won it in normal time, Negredo denied by Krul at close range and Gouffran nodding a glorious chance wide.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Inside Newcastle's changing room pre-match
+
+        <object id="video-id5" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2785183818001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video5','ob':'#video-id5','id':'2785183818001'});    
+        });
+    
+
+Inside Newcastle's changing room pre-matchPantilimon made sure the shutout continued in extra-time when he saved well from Cisse, and that paved the way for the belated opener.Dzeko drilled a low cross into the Newcastle area and Negredo edged in front of Mapou Yanga-Mbiwa to apply the finishing touch.The hard-working Dzeko got his own reward just before the break in extra-time when he got on the end of Milner's pass and successfully rounding the keeper.Joleon Lescott cleared a Ben Arfa volley off the line in the closing stages but City held on for victory.

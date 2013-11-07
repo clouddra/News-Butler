@@ -1,0 +1,38 @@
+Poole narrowly beat Swindon to set up a fixture with Birmingham in the Elite League Grand Final.Birmingham Brummies will meet Poole Pirates for the Sky Sports Elite League title after they recorded contrasting semi-final victories on Monday night.While the Brummies cruised past Wolverhampton Wolves 55-38 to make it 101-82 on aggregate, the Pirates produced a sensational second-leg fightback to stun Swindon Robins.
+    "I'm not getting carried away, because the job is half done."
+			Phil Morris
+
+
+    "I'm not getting carried away, because the job is half done."
+			Phil Morris
+
+Poole's fourth successive appearance in the Grand Final looked unlikely when they trailed by 10 after the first meeting, but they gave their rivals an early warning of what was to come with a 5-1 result in the opening leg.When Greg Hancock, who finished with a 13-point haul to keep alive his hopes of winning the top-flight title in England for the first time in his stellar career, picked up the victory in heat nine the Pirates had levelled the overall scores.The plucky Robins recovered with a tactical win from Peter Kildemand in the next, giving them a three-point cushion and suggesting the momentum in the tie had shifted back in their favour.However, the reigning champions saw their defence come to a disappointing end when they suffered back-to-back 5-1 defeats, meaning Poole - who had lost to Swindon in the 2012 final - had qualified with a heat to spare.Darcy Ward top-scored for Neil Middleditch's side with 13+1 while Josh Grajczonek contributed 12 crucial points, including triumphing in the penultimate heat to knock the Robins off their perch. They won 55-38 on the night, making it 97-90 overall.Birmingham had no such issues in reaching their first ever Elite League final, the regular season table-toppers never trailing in their clash with Midlands rivals Wolverhampton.Already holding a two-point cushion after an impressive performance in the first leg on their travels, they pushed themselves even further clear when a 5-1 result in heat two was followed up by a pair of 4-2 scores in favour of the hosts.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Birmingham beat rivals Wolverhampton to make it to the Speedway Grand Final where they will face Poole.
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2707793585001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2707793585001'});    
+        });
+    
+
+Birmingham beat rivals Wolverhampton to make it to the Speedway Grand Final where they will face Poole.The Wolves made the most of a tactical ride in the seventh race, Fredrik Lindgren scoring double points, but that still only made the score 26-19 on the night.Birmingham's response was a 5-1 thanks to Jason Doyle and Josh Auty and when the former led home team-mate Martin Smolinski in the 10th heat, the Wolves knew their season was coming to a rather disappointing end.A delighted Phil Morris confirmed afterwards that the Brummies would travel to Poole for the first leg next Monday, with the second then taking place at Perry Barr Stadium a week later. Both meetings can be seen live on Sky Sports."I'm not getting carried away, because the job is half done," Morris said. "The team spirit is first class. We've worked very hard as a team and fight as a team."Hopefully we can have a good start at Poole, keep it close then bring it back here. We respect Poole as a team, but we're not afraid of them at all. We were top of the league for a reason."

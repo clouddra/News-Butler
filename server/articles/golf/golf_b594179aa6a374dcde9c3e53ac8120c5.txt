@@ -1,0 +1,38 @@
+Dustin Johnson reacts to his tee-shot at 18 that found waterWGC-HSBC Champions leader Dustin Johnson said his double bogey at the 18th hurt but he's still delighted with the way he's playing.The American will take a three-shot lead into Sunday's final round after an amazing Saturday 66 which featured 10 birdies but also double bogeys at the 10th and 18th holes.Johnson, who had gone to the turn in 30, responded to his first serious error with four birdies in a row from the 13th but saw his chances of a big overnight cushion vanish at the par five last when his five-shot advantage over defending champion Ian Poulter was cut to three as he made a seven after driving into water."After 10 I wasn't too disappointed but obviously the double on the last hole hurt a little bit. But overall I played really good again today," Johnson told Sky Sports 4.
+    "If you told me I would shoot six-under teeing off I would have taken it, but obviously left a few shots out there."
+			Dustin Johnson
+
+
+    "If you told me I would shoot six-under teeing off I would have taken it, but obviously left a few shots out there."
+			Dustin Johnson
+
+"If you told me I would shoot six-under teeing off I would have taken it, but obviously left a few shots out there," said the seven-time PGA Tour winner who had led by five at halfway after a second round 63."(This course) sets up well off the tee for me. I can hit a lot of drivers and I drove it really well again today, other than the last drive on 18.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Dustin Johnson: Three clear
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2795120856001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2795120856001'});    
+        });
+    
+
+Dustin Johnson: Three clear"Besides that, I hit a lot of great shots, a lot of good putts so I have to come out tomorrow and do the same thing I did today."Poulter, who won this title at Mission Hills last year, remains confident that he can overturn Johnson's three-shot lead."I have to do my thing tomorrow," Poulter said. "It's only Saturday. You can't win tournaments on Saturday. It's all about playing well on Sunday. I need to do that. I need to make plenty of birdies, try to make an eagle. If I can, I can get close."Third-placed Graeme McDowell, who carded an eight-under 64 to move within four of Johnson, has extra incentive on Sunday. The Northern Irishman is currently second in the Race To Dubai standings and could move past leader Henrik Stenson if he finishes runner-up on his own on Sunday."From here, it looks like Dustin is going to have to beat himself for anybody to have a chance to catch him," McDowell said. "Race to Dubai points will be very important to me. I have a lot to play for tomorrow. If not the trophy, second place will certainly be worth my while."

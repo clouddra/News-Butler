@@ -1,0 +1,30 @@
+Ewen McKenzie: Backing James Horwill to bounce backAustralia head coach Ewen McKenzie says James Horwill was disappointed to be dropped as captain but backed him to react positively in Saturday's game with England.Horwill has been asked to concentrate on regaining his form following an indifferent spell, with Ben Mowen given the responsibility of leading the Wallabies out at Twickenham for the QBE autumn international."He was pretty disappointed. He is an emotional guy and he brings that to his leadership and he brings that to the team," McKenzie told Sky Sports News when asked about Horwill's reaction."I like people to be passionately involved, so that's obviously a disappointment (for Horwill)."He trained really well on Tuesday so I really hope he will channel that into a performance on Saturday."Quade Cooper has been named vice-captain for the game and McKenzie is sure the fly-half will be boosted by the news, even if he keeps his cards close to his chest."He doesn't give too much away and we know each other pretty well, so it was more of a 'corridor chat'," added McKenzie.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+McKenzie says James Horwell is naturally disappointed after losing his captaincy
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2789473227001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2789473227001'});    
+        });
+    
+
+McKenzie says James Horwell is naturally disappointed after losing his captaincy"I know deep down there are significant moments for him and I think it is some recognition for the journey he has been on."I don't want it to be distraction to him but he is always leading out there, every game he plays."He has a huge responsibility in terms of managing the game, so it's really a recognition of that."But the bottom line is, he has to perform too."Watch England take on Australia this Saturday. Coverage starts on Sky 3D and Sky Sports 2 HD from 1:30pm.

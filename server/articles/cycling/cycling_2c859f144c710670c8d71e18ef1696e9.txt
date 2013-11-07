@@ -1,0 +1,59 @@
+Chris Froome praised race organisers for the 2014 Tour routeChris Froome believes the 2014 Tour de France will be even harder than the 2013 edition and has admitted the cobblestones on stage five present a "risk" to the riders.The reigning champion was present in Paris as organisers Amaury Sports Organisation unveiled a 3,656km parcours featuring five summit finishes and a 54km individual time trial.The race starts with three days in England, before tackling 15.4km of cobbles in northern France and then heading into the Vosges, Alps and finally Pyrenees mountain ranges."I like it," Froome said. "It's challenging and it has got a bit of everything. With five hilltop finishes, that makes it in my eyes harder than last year's Tour de France."The cobblestones are something we are going to have to prepare for specifically and look at very carefully at how we minimise the risks. There are accidents and mechanical problems that could happen"The mountain days and time trial would be my strengths. The way I see it, there is no reason why I shouldn't be able to stay with the all the GC [general classification] contenders on the cobbles, but I wouldn't expect myself to be able to follow the likes of Fabian Cancellara and Tom Boonen."One of the five summit finishes is on La Planches des Belles Filles, a climb that holds happy memories for Froome after he won a stage there in the 2012.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+'Harder': Chris Froome
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2762760634001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2762760634001'});    
+        });
+    
+
+'Harder': Chris FroomeHe will also relish the time trial, which comes on stage 20 and covers a largely flat course.Froome added: "It was a very special day for me winning at La Planches des Belles Filles. I will get a special feeling going back there again next year."It is going to be the first summit finish again, which it was last time, and I think that always marks quite an important day for the GC riders."I think there is enough time trialling, especially with the one time trial being over 50km. That is definitely going to sort the race out. It is predominantly flat, it is long, and there could be big time gaps there as well."Mark Cavendish also attended the presentation and revealed he is excited about the prospect of riding in front of home fans, and in particular on stage one in Harrogate, where he has family ties."I started my first Tour de France in London and to go back to the UK for the start of the race for the second time in my career is a big, big thing," he said.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+'Honoured': Mark Cavendish
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2762760626001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2762760626001'});    
+        });
+    
+
+'Honoured': Mark Cavendish"To do it as well in my mother's home county of Yorkshire is an honour. The first stage finishes in my home town, so a lot of my family will be there. We have an apartment literally 50 metres from the stage finish. I used to stay there two or three times a year as a child."The first stage is set to end in a bunch sprint and consequently offers Cavendish the chance to claim the race leader's yellow jersey for the first time in his career.He added: "It is the second opportunity in my career to go for the yellow jersey. Obviously, I missed it this year, so I would like to try it again with the stage win."Ultimately I want a successful week at home before we go back into France and carry on for the remaining two weeks."

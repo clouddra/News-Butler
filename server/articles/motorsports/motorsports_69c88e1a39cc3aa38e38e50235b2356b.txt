@@ -1,0 +1,44 @@
+Alonso - It was a good raceFernando Alonso has escaped punishment for his controversial pass on Toro Rosso's Jean-Eric Vergne during the Abu Dhabi GP.With ten laps of the race remaining, the Ferrari driver rejoined the track following his final pitstop alongside the oncoming Vergne and swept past the Frenchman with all four wheels of his F138 over the designated track limits.However, the stewards have accepted Alonso's explanation that he had no option but to take to the run-off area and decided against meting out a retrospective drive-through penalty which would have added on 25 seconds to the Spaniard's race time and demoted him from fifth to ninth."While Car 3 [Alonso] did leave the track at Turn 3-4 the stewards believe that he had no choice, as Car 18 [Vergne] closed on him," the FIA statement confirming that no further action would be taken stated."Car 18 was at the end of his stint with worn tyres and was fully committed to the Turn as Car 3 exited the pits. Telemetry confirms that Car 3 was significantly faster, on option tyres, and had the advantage throughout the sequence.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Ted's Notebook - Abu Dhabi Grand Prix
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2800114666001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2800114666001'});    
+        });
+    
+
+Ted's Notebook - Abu Dhabi Grand Prix"The drivers' explanations were completely clear. Therefore the Stewards determine that neither car could avoid the incident, and no advantage was gained as a result of the incident."Speaking to reporters prior to the verdict after visiting the stewards to give his side of the story, Alonso expressed confidence that he had done nothing wrong."I was going out of the pit, I was alongside the Toro Rosso and we really didn't have the space to both [keep] going on the track. So at that point you are either invisible or you are going to be forced to be out of the track," the double World Champion explained."But the rules say that when you have a car alongside you, you cannot use the full width of the track. He used the full width of the track, I've been forced to go out and I think it's clear."The 32-year-old added that ideally he wouldn't have even passed Vergne at that point of the circuit."I wanted to come behind [Vergne] to be honest because in Turn Four I have the detection point and I can pass on the DRS [zone] and with good traction and the new soft [tyre], it's clear," Alonso explained."But I was side-by-side and already in front so I a little bit surprised that I was forced to go off track. Actually this was the plan B - plan A was to pass him with the DRS."In taking avoiding action, Alonso heavily rode over the kerb in the turns three-four sequence and afterwards said: "I still have all the teeth after the bump! In the back obviously there is pain a little bit now because it was a big hit."We had the alarm also on the chassis after some G-Forces. For sure it was a big hit but hopefully I'm okay for Austin and Brazil."
+On Sky Sports
+
+F1 Midweek Report
+2013 Abu Dhabi Grand Prix
+November 6, 2013 7:00pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+The decision of the stewards to clear the Spaniard could prove critical in Ferrari's ongoing battle to finish second in the Constructors' Championship. The Scuderia currently trail Mercedes by eleven points in the standings with two races of the season remaining.Alonso's finish represented a strong personal recovery drive after he failed to make Q3 for the first time in 2013 on Saturday and the Spaniard suggested Ferrari could be reasonably satisfied with the result given their weekend-long struggles around the Yas Marina Circuit."I think I did my maximum," he said. "The car in front [Romain Grosjean], he's 30 seconds ahead. It's true that I lost a little bit of time in traffic but 30 seconds is a lot of time so we didn't maybe have the pace to be in the top four. The top five is the maximum."We have one Mercedes in front, one behind. We have one Lotus in front, one behind, obviously with the DNF of Kimi [Raikkonen]. So my job I think is done after a very tough weekend. [It is] very difficult not having the pace [yet] we still finished in front of one Lotus and one Mercedes."We need to do better in Austin but this time I think we minimised the damage."By completing the final stint on fresh soft tyres, Alonso was the fastest man on the track after passing Di Resta with three laps to go and ended up with the overall fastest race lap - just his second in the last two years."I was having fun," he admitted. "It was the first laps I had no traffic in front and the team told me to push. In the other parts of the race they told me to cool the brakes. So now that I had the brakes in condition I finally pushed."

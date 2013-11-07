@@ -1,0 +1,30 @@
+Owen Farrell has praised Chris Robshaw's leadershipOwen Farrell has insisted that Chris Robshaw is the right man to lead England in the QBE Internationals against Australia, Argentina and New Zealand.Robshaw has skippered England in 16 of his 17 Test appearances, however he was given a break during the summer - with Tom Wood taking over the reins for the tour to South America.In Robshaw's absence, Wood guided England to two Test victories over Argentina and a warm-up win over Consur XV - while rival No 7 Matt Kvesic took his chance with some impressive displays.That sparked speculation that England coach Stuart Lancaster could opt for a new man at the helm, with Geoff Parling, who had led the British and Irish Lions against the Rebels, and Dylan Hartley also mentioned as potential successors.However Lancaster has kept faith in the 27-year-old Robshaw - and Farrell claims the decision has the backing of the squad.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Farrell backing Robshaw
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2764887001001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2764887001001'});    
+        });
+    
+
+Farrell backing Robshaw"He has been brilliant," England No 10 Farrell told Sky Sports. "He is someone we want to be led by."First and foremost he is a leader in the fact he goes out and does it himself."He is the hardest working player in the team and someone that leads by example massively. There is no one you would want to follow more than that."It hasn't all been plain-sailing for Robshaw, with the Harlequins back row coming in for criticism for last year's QBE International losses to Australia and South Africa, as well as the Six Nations thrashing by Wales.However Farrell believes it was wrong to single Robshaw out for blame."I don't think it all fell on him. He probably took most of the stick but it is the performance of the team," he added. "The things that went wrong we will all learn from, including Chris."Watch England's opening QBE International against Australia live on Sky Sports 2 HD at 1.30pm on Saturday, November 2

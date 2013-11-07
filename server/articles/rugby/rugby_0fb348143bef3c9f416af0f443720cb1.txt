@@ -1,0 +1,44 @@
+Stuart Lancaster: Criticised by Sir Clive WoodwardWorld-Cup winning coach Sir Clive Woodward has criticised current England boss Stuart Lancaster for the performance in the 20-13 victory over Australia.
+Live on Sky Sports
+
+Live International Rugby Union
+England v Argentina
+November 9, 2013 1:30pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+England took advantage of a sloppy second-half display from the Wallabies - who led at half-time - to emerge victorious at Twickenham.But Woodward was not impressed by England and says the main problem was the speed at which they played the game.Woodward wrote in the Daily Mail: "England's most significant flaw was to allow themselves to get sucked down to the level of the Australian team - and the Wallabies in the second half were worthy of a one out of 10."I would love to sit down with both head coaches and ask a simple question: 'What were you both trying to do?'"If you went to a rock concert, or to the West End, and saw a quality of performance as bad as that then you would feel disgruntled and there was certainly an odd, unsettled atmosphere in the ground."Every time England won a penalty you could tell the initial instinct is to look around or into the stands rather than taking an immediate decision.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Highlights - England v Australia
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2796863373001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2796863373001'});    
+        });
+    
+
+Highlights - England v Australia"It's not the personnel, it is the way England are playing, and speed of play comes down to the coaches."We are not throwing down the gauntlet at Twickenham like we used to when it was a fortress."If England have any aspirations to be the number one ranked team in the world, they have to play in a very different way and speed of ball is top of the list."England v Argentina is live on Sky Sports 2HD on Saturday at 1.30pm

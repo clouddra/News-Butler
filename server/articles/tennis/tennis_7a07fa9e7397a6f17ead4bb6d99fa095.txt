@@ -1,0 +1,43 @@
+Novak Djokovic: Won at the O2 last yearThe World Tour Finals get underway at London's O2 on Monday afternoon with defending champion Novak Djokovic aiming to return to the world No. 1 spot.
+Live on Sky Sports
+
+Live Tennis: ATP World Tour Finals
+2013 Day One
+November 4, 2013 12:00pm
+
+
+
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+Stanislas Wawrinka, who is taking part in the season finale for the first time, is first on court against Tomas Berdych at 2pm.Juan Martin Del Potro then faces Richard Gasquet in the evening session, with both matches live on Sky Sports 3 HD.One notable absentee will be Wimbledon champion Andy Murray, who has pulled out as he continues his recovery from back surgery."You realise how much you miss the competition when you're away from it - whether it's in London or any of the smaller tournaments," Murray said.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+ATP World Tour preview
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2802365009001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2802365009001'});    
+        });
+    
+
+ATP World Tour preview"It will be hard missing London but that's the situation I'm in and I've just got to make the best of it."Novak Djokovic knows victory in the tournament will send him back to the top of the world rankings but the new Paris Masters champion is looking forward to playing in London regardless."The O2 means a lot regardless of the rankings because it's the last week of the season, with the best eight players in the world playing a round-robin system so every match is top quality."The Barclays ATP World Tour Finals are live on Sky Sports throughout the week, starting Monday at 2pm, Sky Sports 3 HD.

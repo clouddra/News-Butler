@@ -1,0 +1,30 @@
+The McLaren boss reflects on a difficult Japanese GP and discusses the team's driver line-up plans for 2014 as well as the recruitment of aerodynamicist Peter Prodromou from Red Bull.How would you describe Sunday's race?Martin Whitmarsh: "It was a tough race. Jenson made a good start actually, he was good off the line and was on the outside where he was making up a few places but he was then caught on the outside of Turn One where we had had the Vettel-Lewis incident."That put him back and then through that first lap he flat-spotted so he had very high vibrations and a struggle. Ultimately, that struggle meant we switched to a three-stop, which wasn't going to optimum for him, but that meant that, and it was always going to be tough thereafter. But I think Jenson did a reasonable good coming back from that."For Checo, he made a reasonable start, but then the first stop went wrong with the Nico Rosberg incident and he came out behind Jenson. We had two untidy stops, where we lost a second or two apiece, which was unfortunate. And then had a puncture which turned what should have been a two-stop into a three-stop. So messy, really."I think Checo would have been the points without that puncture - but not what you want for the afternoon."Sergio had quite a scruffy weekend, crashing out in Practice Two, any concerns about that?MW: "No. Firstly, a lot of people had incidents here - it's that sort of circuit. As for the incident on Friday, I think I could probably show you 50 of those with that very corner and that very incident. There's something about the entry into Spoon. You drift over to the right - Michael [Schumacher] did it last year on Friday, it's one of the things that happen - so, it's not great, but okay."I think he was racing well and without the problems he could have got seventh or eighth. But, from where we are at the moment, I think in the last two or three races he's driven very well indeed."Where do you think Jenson could have ended up without the switch in strategy and without the flat-spot?MW: "Given we had to switch and had the flat-stop, we could have been one or two places higher up, but that's where we are at the moment - that's all."Are you any closer to confirming your second driver for 2014?MW: "Yes."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Button - We should have done better
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740219860001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2740219860001'});    
+        });
+    
+
+Button - We should have done betterSo, Sergio then?MW: "I'm closer because I'm one day closer than I was yesterday and, guess what, tomorrow I will be one day closer as well!"Are there any factors you have in mind when making that final decision?MW: "I've said all along 'let's have a few races go by and then let's have a chat', and that's exactly what we are going to do. There's no tearing rush to do this at the moment. I know it's an interesting story - and a whole load of spurious stories stem from it - but we are in no hurry."Turning to the news on Peter Prodromou from Red Bull. You say you have signed him, Red Bull say he is under contract. What's the situation there? How will it be resolved?MW: "Firstly, he has a contract and he will be working for us in the future. But currently he is employed by Red Bull and we have to respect that, which is why we are not talking about timeframes. But the fact is that he has a contract and he will come to McLaren."Do you think he may be placed on gardening leave?MW: "Again, they may do that, but that's for Red Bull to discuss, it's not for me because it's not in my power."

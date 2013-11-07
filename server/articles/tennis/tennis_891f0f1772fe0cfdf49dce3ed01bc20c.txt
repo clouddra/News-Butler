@@ -1,0 +1,52 @@
+Novak Djokovic: The defending champion opens his O2 campaign against Roger Federer on Tuesday eveningDefending champion Novak Djokovic opens his campaign at this year's ATP Tour Finals in London on Tuesday evening when he faces the man he beat in last season's final Roger Federer.Federer, a six-time champion, had been chasing a hat-trick of victories in the tournament 12 months ago when he was beaten in two close sets by the then world No 1 Serb.
+Live on Sky Sports
+
+Live Tennis: ATP World Tour Finals
+2013 Day Two
+November 5, 2013 12:00pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+Djokovic is currently No 2 while his Swiss opponent is five places further down the list following a mediocre year by his own high standards.According to Djokovic, the 32-year-old Federer remains 'a class act' but the Serb believes his drop in form is probably due to reduced mobility around the court.The pair will take to the court at the O2 Arena at 8pm, in their opening Group B match, with Djokovic seeking a second victory over Federer in less than six days.He beat him in Paris last week and Djokovic, talking about his next opponent's current game, said: "From my point of view he hasn't been moving as well as he did before."I guess that's one of the reasons why he hasn't had much success this year."But he's still Roger Federer, a 17-time Slam winner, who has achieved so much in his career and he's never to be underestimated as long as he plays tennis.
+    "From my point of view he hasn't been moving as well as he did before. I guess that's one of the reasons why he hasn't had much success this year."
+			Novak Djokovic
+
+
+    "From my point of view he hasn't been moving as well as he did before. I guess that's one of the reasons why he hasn't had much success this year."
+			Novak Djokovic
+
+"He has an incredible quality in his game and he's still striking the ball really well. If he feels well on any day, he can beat anybody."But before Federer and Djokovic come face-to-face, world No 1 Rafa Nadal will take to the court to begin his campaign against fellow Spaniard David Ferrer.Nadal has never won the Tour finale and arrives in London hoping to cement his position at the top of the ranking this week - which would mean he ends the year at No 1.He too meets a player who he faced in France last week, when his 31-year-old compatriot came out on top in straight sets at the semi-final stage.However, that was only Ferrer's fifth victory over the 13-time Grand Slam champion in 25 attempts - having lost the previous nine.Remarkably, despite their many meetings over the last nine years, this will be only their third ATP contest indoors.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Stanislas Wawrinka defeated Tomas Berdych 6-3 6-7 (0-7) 6-3 to clinch an opening victory at the ATP World Tour Finals.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2804669475001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2804669475001'});    
+        });
+    
+
+Stanislas Wawrinka defeated Tomas Berdych 6-3 6-7 (0-7) 6-3 to clinch an opening victory at the ATP World Tour Finals.The pair take to the court at 2pm in Group A.The O2 is not a happy hunting ground for Nadal who would like to see the playing surface rotated each year.The Spaniard said: "The Tour Finals have been indoors from 2005 until now, so I am a bit unlucky with this. For me it is more fair to have it outdoors on different surfaces."In this tournament we qualify by playing on all surfaces but the Tour Finals are always on hard courts."This is a great place to play, I have never been to a tournament with a better atmosphere, but that doesn't mean the ATP can't be a little bit more fair with the players."We could change every year to play it on the surfaces we qualify for the Finals. That means, for example, a good clay-court player would have the chance to play on his best surface."The current deal means the O2 Arena will remain the venue for the World Tour Finals through to the 2015 event.You can watch the ATP Tour finals from the O2 Arena in London on Sky Sports 3.

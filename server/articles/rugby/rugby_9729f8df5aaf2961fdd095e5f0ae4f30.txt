@@ -1,0 +1,59 @@
+South Africa coach Heyneke Meyer insists his side's impressive record at Ellis Park will not be enough to beat New Zealand in Saturday's Rugby Championship decider.The Springboks need a four-try win and to stop the All Blacks from picking up a bonus point if they are to pip their great rivals to the title.The All Blacks have lost just once under Steve Hansen, though, and head in to final match of this season's tournament as favourites to defend their crown.However Ellis Park has not been a happy hunting ground for them in the past, with the Boks winning eight of the past 11 meetings there - including the 1995 World Cup final.Meyer, though, knows his side can't rely on home advantage alone to see them upset the odds."Ellis Park is not going to do it for us," he said. "The crowd is not going to do it for us, although it's a huge, huge help."Meyer has made two changes to his team for the decider, with Bismarck du Plessis and Juandre Kruger named in the starting XV.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+The panel discuss Saturday's clash
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2717456993001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2717456993001'});    
+        });
+    
+
+The panel discuss Saturday's clashSkipper Jean de Villiers insists the side are ready, adding: "The All Blacks are the greatest team in the world and we want to test ourselves against the best."Centre JJ Englebrecht has shaken off a quad muscle injury and passed a fitness test on Friday so Jan Serfontein - who was standing by to replace him - will be on the bench with Juan de Jongh dropping out of the match-day 23.New Zealand have also made two changes, with captain Richie McCaw and prop Charlie Faumuina getting the nod following the win over Argentina.And after beating Argentina last time out, the All Blacks now can't wait to get stuck into the Boks.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Bob Skinstad previews clash
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2717501969001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2717501969001'});    
+        });
+    
+
+Bob Skinstad previews clash"In the sheds after the (last) game there was a sense that the boys are pretty excited for this challenge," said fly-half Aaron Cruden."We know it's going to be a massive one, the Springboks at Ellis Park. Yeah, there's been a bit of talk about it."South Africa: 15 Zane Kirchner, 14 Willie le Roux, 13 JJ Engelbrecht, 12 Jean de Villiers (capt), 11 Bryan Habana, 10 Morne Steyn, 9 Fourie du Preez, 8 Duane Vermeulen, 7 Willem Alberts, 6 Francois Louw, 5 Juandre Kruger, 4 Eben Etzebeth, 3 Jannie du Plessis, 2 Bismarck du Plessis, 1 Tendai Mtawarira. Replacements: 16 Adriaan Strauss, 17 Gurthro Steenkamp, 18 Coenie Oosthuizen, 19 Franco van der Merwe, 20 Siya Kolisi, 21 Ruan Pienaar, 22 Pat Lambie, 23 Jan SerfonteinNew Zealand: 15 Israel Dagg, 14 Ben Smith, 13 Conrad Smith, 12 Ma'a Nonu, 11 Julian Savea, 10 Aaron Cruden, 9 Aaron Smith, 8 Kieran Read, 7 Richie McCaw (capt), 6 Liam Messam, 5 Sam Whitelock, 4 Brodie Retallick, 3 Charlie Faumuina, 2 Andrew Hore, 1 Tony Woodcock. Replacements: 16 Dane Coles, 17 Wyatt Crockett, 18 Ben Franks, 19 Steven Luatua, 20 Sam Cane, 21 Tawera Kerr-Barlow, 22 Beauden Barrett, 23 Charles Piutau.South Africa v New Zealand will be live on Sky Sports 4 HD from 3pm or you can watch all the action unfold with a 24-hour Sky Sports Day Pass from NOW TV.For more information visit click here

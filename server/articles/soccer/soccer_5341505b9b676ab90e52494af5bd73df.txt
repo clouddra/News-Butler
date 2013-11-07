@@ -1,0 +1,22 @@
+
+Moyes' men continue uninspired startTags: Manchester United, Southampton, Premier LeagueMoyes' men continue uninspired startvar ESPN_GLOBALS = {"videoPlayers":{"intl_videoHub09":{"height":324,"width":576,"autostart":"true","trackingName":"intl_videoHub09","adSet": "intl","useExternalIdFilter": true}}};espn.video.embeded.play();
+
+Manchester United manager David Moyes has claimed his side have developed an unfortunate habit of being slow starters in the opening weeks of a season, as he refuses to hit the panic button after a stuttering start to life at Old Trafford.
+
+United fell eight points behind Premier League leaders Arsenal after a 1-1 home draw against Southampton on Saturday, but he remains calm in the face of adversity, suggesting a sluggish start is nothing new for the defending champions.
+
+• Okwonga: Saints halt momentum• Brewin: Three things• Payne: United's prudence
+
+"Over the years, Manchester United have been slow starters quite often," he said. "We’ve been a little bit slow in the way we've gone about things at the start, but hopefully that will improve.
+
+"We knew we had a difficult opening period and we knew the games we were coming into, in lots of ways, looked as if they were more winnable, but we have to try and do it. We've got to do it. We lost two points [against Southampton], but we'll pick ourselves up.
+
+"We have to make sure we do our job. We can only try and win our games now and then concentrate on the other matches later on. It is a slow start but I am sure we will improve.
+
+"The players here are good enough and come the end of the season is when you have to be in your best form."
+
+Moyes is hoping his side start to display a killer instinct after they conceded a late goal against Southampton and he urged his players to ram home their advantage when they get the opportunities.
+
+"That is one of the things we will be looking to try and do," added Moyes. "Try to finish matches off. We have had some opportunities, but I've been saying that near enough from the start. We've had quite a few chances and not taken them and while it’s like that, you're at risk."
+
+United’s uncertain form will be tested once more when they take on Real Sociedad at Old Trafford in the Champions League on Wednesday night.

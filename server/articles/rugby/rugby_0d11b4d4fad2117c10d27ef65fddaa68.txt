@@ -1,0 +1,59 @@
+Billy Twelvetrees says he is delighted to be included in the England squad for the Autumn Internationals.England head coach Stuart Lancaster has named Chris Robshaw captain for the QBE Internationals.Harlequins back row Robshaw beat off competition from Northampton's Tom Wood to lead his country in Twickenham appointments with Australia, Argentina and New Zealand.After missing out on the British & Irish Lions tour to Australia, Six Nations captain Robshaw was rested for England's summer trip to Argentina.Wood successfully led the tourists in his place and a solid start to the season has seen the Northampton flanker's stock rise.However, Lancaster kept faith with Quins skipper Robshaw, who has captained his country in 16 of the last 19 internationals, and said: "The first and foremost criteria for captaincy is to be on the team sheet and Chris is in there on his playing ability.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Stuart Lancaster speaks to Phil Edwards shortly after naming his England squad for the Autumn Internationals.
+
+        <object id="video-id4" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2747958013001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video4','ob':'#video-id4','id':'2747958013001'});    
+        });
+    
+
+Stuart Lancaster speaks to Phil Edwards shortly after naming his England squad for the Autumn Internationals."But on top of that he has a massive amount of respect within the squad and has led England well. Every team needs leaders; we are building a strong group and Chris is at the forefront of that leadership."Robshaw said: "Every time you pull on that white shirt it's a privilege. It's a huge honour to be named captain and to lead your country. But I've always said it's not about who you are but what you do and I've got to make sure that I perform as a player first."We have some good leaders across the squad and I know we will support each other as we head into a massive game against Australia."Lancaster, who missed out on a first Six Nations Championship due to the Millennium Stadium defeat, said: "My priority is to decide on the captain on form and fitness and the first thing is to get everyone fit and in camp."It was a big (European) weekend, Chris could have got injured at the weekend and things would have been different, we want a broad leadership group, but when it came down to it Chris was the stand-out."Robshaw said he had been encouraged by rival Wood in the training camp in Leeds, and added: "We have a good relationship and push each other hard in training. We want to be in the right place by 2015 (World Cup).
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Billy Twelvetrees says he is delighted to be included in the England squad for the Autumn Internationals.
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2764053199001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2764053199001'});    
+        });
+    
+
+Billy Twelvetrees says he is delighted to be included in the England squad for the Autumn Internationals."Most of us have been together as a group for around 18 months and, alongside some of the new guys who joined in the summer, we want to drive each other on."Lancaster is "pretty optimistic" that Wood's Northampton team-mate Dylan Hartley will be fit to face the Wallabies next week despite the hooker having his foot in a plastic boot.The Kiwi-born No 2 turned his ankle while playing for Saints in their Heineken Cup win over Ospreys on Sunday.Bath prop David Wilson has also also yet to train with the squad at and is receiving ongoing treatment for a tight calf.Gloucester's uncapped centre Henry Trinder is "progressing well" with a hamstring strain and "should return to training" on Thursday.But prop Alex Corbisiero remains a doubt for the Wallabies Test as he continues with "off-field" rehabilitation from a knee injury.Watch England's opening QBE International against Australia live on Sky Sports 2 HD at 1.30pm on Saturday, November 2

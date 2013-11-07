@@ -1,0 +1,59 @@
+Red Bull: Said their one-two could have easily been in a different orderChristian Horner has said Red Bull were initially unsure which of their drivers' strategies would ultimately win out in the Japanese GP - and insists Mark Webber would have been free to challenge Sebastian Vettel for victory in the closing laps.The World Champions' decision to run split pit strategies with their two drivers in Sunday's race proved a major post-race talking point after Vettel, who had run third to Webber and long-time race leader Romain Grosjean through the first two stints, prevailed thanks to a long-running two-stop plan and claimed his fifth successive victory.Webber, meanwhile, was switched onto a three-stop strategy mid-way through the race - a decision the Australian later revealed had "surprised" him and which he had questioned over team radio when the details were relayed to him.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Webber unsure of pit stop strategy
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740234487001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2740234487001'});    
+        });
+    
+
+Webber unsure of pit stop strategyChristian Horner told Sky Sports F1 immediately after overseeing his team's second one-two finish of the season that they had made Webber make an additional pitstop owing to excessive tyre wear on the Australian's car by the end of the opening stint, later adding the tyres had been at "100% wear".Speaking to reporters on Sunday night at Suzuka, Horner insisted that while either strategy could have proved the more advantageous one, it was Vettel's immediate pass on Grosjean for the lead after his final stop that ultimately made the difference."There are always decisive moments in any race and any championship and I think the decisive moment today was really in the first stint," the Red Bull Team Principal said in reference to Webber's higher tyre wear."Then of course Sebastian was able to make that move on Grosjean very quickly."He knew that Mark had gone a difficult route - it wasn't clear at the point that we went [way] that which was going to be the quicker way to the end of the race."Potentially the three-stop looked it but effectively we hedged our bets, split the cars which was then tactically [it was a question of] what do you do as Lotus? Which one do you cover? It was the best option for us as a team."While Vettel caught and passed Grosjean within three laps of his final pitstop, Webber took far longer to pass when he caught up with the Lotus, despite the advantage of fresher medium tyres, with the 37-year-old only completing the move with two laps to go.By then Vettel was too far out of reach for any late charge. But had he not been, Horner says both drivers were aware they would have been free to fight it out despite the German being on the brink of his fourth world title."We'd discussed it before the race that the drivers were free to race each other today," the Englishman added. "But Sebastian making the move early and quickly and getting past Grosjean and building a bit of a lead was critical for his race."Horner added: "When Mark pitted with ten or 11 laps to go and went on to the soft tyre he obviously closed on Grosjean pretty quickly but then came across a bit of traffic and unfortunately he didn't go past Grosjean too quickly. That killed off any chance he had of winning the race."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Ted's Japanese Notebook
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740353939001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2740353939001'});    
+        });
+    
+
+Ted's Japanese NotebookHorner also clarified that Vettel's radio call to Red Bull to "keep him away from me" was in reference to the McLaren of Sergio Perez who the German was coming up to lap, rather than the oncoming Webber."Sebastian came on the radio and said get Perez out the way because he was coming up to lap him," the Red Bull chief confirmed."Perez was running at a reasonable pace and Sebastian knew that sitting behind a car, and he'd done a lap behind Perez, was going to damage those tyres. So he said to Charlie 'come on this isn't fair, he's been there for over a lap' and Perez immediately pulled out of the way and he came back on [the radio] and said 'thank you very much.'"

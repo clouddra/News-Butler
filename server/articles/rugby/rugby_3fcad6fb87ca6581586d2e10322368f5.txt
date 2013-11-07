@@ -1,0 +1,30 @@
+Peter Betham: Will make his international debutAustralia coach Ewen McKenzie will hand a Test debut to Peter Betham in Saturday's Bledisloe Cup clash with New Zealand.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Ewen McKenzie - pride to play for
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2749128910001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2749128910001'});    
+        });
+    
+
+Ewen McKenzie - pride to play forWith Joe Tomane, Chris Feauai-Sautia and Nick Cummins all ruled out through injury - and James O'Connor in the international wilderness due to disciplinary reasons - Betham gets his chance to impress on the wing."The reality of rugby is that most players get an opportunity at the misfortune of one of their team mates, but it's about what each individual does with that opportunity that counts the most," McKenzie said."That doesn't just apply to Peter but to a number of guys who are receiving a chance this week. There is no better way to make your mark than by playing well against the All Blacks."Matt Toomua and Ben McCalman also come into the side as the Wallabies look to upset the odds in Dunedin, live on Sky Sports 4 HD.Toomua is handed the No 12 jersey after Christian Leali'ifano suffered an ankle injury, with Quade Cooper taking over the kicking duties.McCalman comes into the side for Scott Fardy, who has an eye injury, and will start at No 8, with Ben Mowen switching to the blindside.Australia have already suffered two defeats to New Zealand this season - with the All Blacks going on to retain the Rugby Championship."The All Blacks are the most consistent team in world rugby and their record proves just how formidable they are when playing at home in front of their fans," McKenzie said."It was pleasing to see us take a step in the right direction against Argentina, but the test for us now is to produce that form week-in and week-out."Australia: 15 Israel Folau, 14 Adam Ashley-Cooper, 13 Tevita Kuridrani, 12 Matt Toomua, 11 Peter Betham, 10 Quade Cooper, 9 Will Genia, 8 Ben McCalman, 7 Michael Hooper, 6 Ben Mowen, 5 James Horwill (captain), 4 Rob Simmons, 3 Ben Alexander, 2 Stephen Moore, 1 James Slipper. Replacements: 16 Saia Fainga'a, 17 Benn Robinson, 18 Sekope Kepu, 19 Sitaleki Timani, 20 Dave Dennis, 21 Nic White, 22 Mike Harris, 23 Bernard Foley.New Zealand v Australia is live on Sky Sports 4HD on Saturday at 7.25pm

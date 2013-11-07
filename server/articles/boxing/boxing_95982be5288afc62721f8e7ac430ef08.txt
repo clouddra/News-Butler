@@ -1,0 +1,30 @@
+Timothy Bradley celebrates victoryTimothy Bradley retained his WBO world welterweight title with a split decision victory over Juan Manuel Marquez in Las Vegas.The battle of the last two men to beat Manny Pacquiao came down to the judges' scorecards, and two of them gave it to the American 116-112 and 115-113, while the third gave it to the veteran Mexican 115-113.It was a third narrow decision in a row for Bradley, who stretches his unbeaten record to 31 fights after thwarting Marquez in his bid to claim a fifth world title.After a fast start in the opening round, the fight developed into a tactical battle, with Bradley looking the sharper, the younger fighter and using his speed to get in and out without absorbing too much damage.The 40-year-old Marquez was always in the contest, but was almost floored in the 12th and final round when a left hook sent him stumbling backwards, but he remained on his feet to hear the final bell."That win was my ticket to the boxing Hall of Fame," Bradley said. "I beat a great champion. He couldn't touch me. I gave him a boxing lesson."I had to fight this fight because this is the only way I can win this fight, if I slug with him he's the bigger puncher, he probably would have hurt me early on, so I wanted to stay smart and give myself an opportunity to win the fight.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Bradley would love Pacquiao rematch
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740234481001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2740234481001'});    
+        });
+    
+
+Bradley would love Pacquiao rematchBradley said he could now take on a re-match with Pacquiao, if the Philippino comes through his fight in Macau next month against Brandon Rios"Anything is possible," he added. "I'd love that challenge. I'll have to sit down with my management and see what makes sense from here."Marquez was left fuming at the decision, which he likened to some of the controversial ones against Pacquiao - who he lost to twice and also drew with before knocking out in their last contest."I came to win. I felt that I did win," Marquez said. "The judges took it away. You don't have to knock out a guy to win.""I've been robbed six times in my career," Marquez said. "I clearly won the fight."

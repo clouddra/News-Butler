@@ -1,0 +1,38 @@
+Jason Dufner: Maiden Major victorySky Sports pundit Colin Montgomerie believes Jason Dufner's maiden major victory in the USPGA Championship at Oak Hill is "the start of something big" for the American.Two years after losing to Keegan Bradley in a play-off in the same tournament, Dufner produced a strong final round of two-under 68 to finish two shots clear of Jim Furyk, who carded a final round of 71.
+    "I think it was a tremendous effort to come back two years after losing a play-off, in the same championship, and win the same Major."
+			Colin Montgomerie
+
+
+    "I think it was a tremendous effort to come back two years after losing a play-off, in the same championship, and win the same Major."
+			Colin Montgomerie
+
+Dufner was a more than worthy winner, according to Montgomerie, who was impressed with the American's impeccable driving and ability to bounce back from the disappointment of losing in 2011."The way he struck the ball tee to green was imperious and as I said in commentary there I haven't seen the ball driven that well," Montgomerie told Sky Sports. "Ok 17 and 18 he happened to bogey but the shot at 16 - under that pressure - was incredible."I think it was a tremendous effort to come back two years after losing a play-off, in the same championship, and win the same Major. I think this is the start of something big for Jason Dufner."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Dufner secures PGA success
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2599042389001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2599042389001'});    
+        });
+    
+
+Dufner secures PGA successDufner, who equalled the record for the lowest round in a Major earlier in the tournament, had begun the day a shot behind his American rival but birdied four, five and eight to take himself to 11-under.The world number eight, who had thrown away a five-shot lead in the closing stages in 2011, roled in the pars on the back nine before a wonderful approach at 16 led to a further birdie and meant dropped shots at 17 and 18 were irrelevant.Sky Sports pundit Butch Harmon was delighted with the result and believes the American's victory will be one of the most popular of recent years."He is just the Dufmeister," said Harmon. "Everybody loves him, all the other players love him, he is a great friend to everyone. He played a beautiful round of golf today. Yes, he bogeyed the last two holes because he did not have to do anything but that to win this championship. But he is going to one of the most popular champions we have had in a long time at a Major championship."This is a guy that everybody can relate to, and all these fans, they can relate to him. He looks a bit sloppy at times and just kind of goes about his own way. He is a great guy and I could not be happier for him."Despite Dufner's every-man demeanour, Paul McGinley insists that it was no major shock that the American had to finish on top at Oak Hill.The European Ryder Cup captain said: "He is a great player. There is no doubt about that. He has proved that over the last number of years when he has contended on several occasions in big tournaments and in winning big tournaments and also contending in Majors."So it is no surprise for anyone in the game that he is capable of winning a Major championship. He went 27 holes without dropping a shot - when you are hanging around the lead in a Major championship over the weekend that is a tremendous stat to have."

@@ -1,0 +1,88 @@
+Sebastian Vettel and Christian Horner at Suzuka, as Helmut Marko looks onIt may have been their 14th one-two finish in five seasons, but Sunday's Japanese GP was anything but straightforward for the Red Bull pitwall. Speaking to the written press at Suzuka, Christian Horner explained why they split their drivers' strategies, lauded Vettel's race, and lots more...It was really close strategically, so how did you do it? Were you working two cars as one or were you doing them separately?Christian Horner: "The key aspect was obviously the first stint. We went into the race thinking it was going to be marginal for a two-stop but we believed, probably in clear air, we could do that."The first stint dictated everything for us: Mark put Grosjean under quite a lot of pressure and went through the tyre phases pretty quickly to the point that he'd run out of tyres by the lap that he pitted on, pretty early in the race, which was too short in our own minds to make a two-stop really work because you'd effectively run out of tyres in that last stint."So as the raced opened up for Mark, and [Daniel] Ricciardo held the rest of the field back, some clear track space opened up and while Sebastian was able to do the opposite, Grosjean pitted to cover Mark, and Sebastian was able in clear air to run at a very quick pace having conserved his tyres.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Japanese GP: Race in 60 Seconds
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740236997001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2740236997001'});    
+        });
+    
+
+Japanese GP: Race in 60 Seconds"That happened again during the second stint and as the gap opened up for Mark, effectively it was a free stop, we felt that that was the best way to attack and pass Grosjean with Mark and do the opposite with Sebastian."Of course that then puts Lotus in a difficult position because which car do they cover? So effectively you've got a bit of a chess game going on strategically. But with the benefit of clear air, Mark was able to run at a very quick pace. Sebastian, having conserved his tyres, went about five laps longer than we expected him to so when Sebastian pitted and came out behind Grosjean, he used those tyres incredibly well to pass him very quickly."He closed on him and passed him immediately with a very brave move down the pitstraight and then knew he was effectively racing Mark who was going to be in a different strategy and on a softer, quicker tyre at the end of the grand prix."When Mark pitted with ten or 11 laps to go and went on to the soft tyre, obviously he closed on Grosjean pretty quickly, but then came across a bit of traffic and unfortunately he didn't go past Grosjean too quickly. That killed off any chance he had of winning the race. But it was great to see him make the move on Grosjean and absolutely fantastic for the team to get a one-two finish."Can you just clear up whether Seb had DRS when he overtook Grosjean?CH: "Seb had DRS when he passed Grosjean. Mark missed it on one lap because he pushed the button too early. We noticed there was one lap where Mark got right in the slipstream but because he pushed the button too early the flap didn't open, so he didn't get the benefit on that lap."Is there disappointment Christian about not wrapping it all up in the championship here?CH: "I don't think there's any disappointment! We're gutted to have achieved a one-two finish in one of the best races strategically and operationally we've ever operated!
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Vettel on the verge
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740234492001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2740234492001'});    
+        });
+    
+
+Vettel on the verge"We came here to try and win the race today and the championships will take care of themselves. We'll go to India and we'll attack that weekend as we have here. If we score more points than the others we'll win the championship - there's no disappointment at all in any single member of this team!"Would you have allowed Mark to attack Seb at the end? It seemed like Seb was saying can you keep him away from me...CH: "Sebastian came on the radio and said get [Sergio] Perez out the way because he was coming up to lap him."Perez was running at a reasonable pace and Sebastian knew that sitting behind a car, and he'd done a lap behind Perez, was going to damage those tyres. So he said to Charlie [Whiting] 'come on this isn't fair, he's been there for over a lap' and then Perez immediately pulled out of the way and he came back on [the radio] and said thank-you very much."It was crucial and we discussed it before the race that the drivers were free to race each other today. At one point in the race it looked like Grosjean, if he held Sebastian up, they would both come up and Mark would be on the better tyre at that point and have the better chance of winning."But Sebastian making the move early and quickly and getting past Grosjean and building a bit of a lead was again critical for his race."Isn't that where the difference lies, where you had one driver who had to make that move, did it, and Mark didn't make that move? Those minutiae between winning several World Championships and coming close.CH: "Well there's always decisive moments in any race and any championship and I think the decisive moment today was really in the first stint."Then of course Sebastian was able to make that move on Grosjean very quickly. He knew that Mark had gone a difficult route - it wasn't clear at the point that we went that [way] which was going to be the quicker way to the end of the race.  Potentially the three-stop looked it but effectively we hedged our bets, split the cars which was then tactically [it was a question of] what do you do as Lotus? Which one do you cover? It was the best option for us as a team.Was the trigger for the first pitstop that Mark was running out of tyres or that he does an undercut in order to challenge Grosjean?CH: "The trigger was that he was out of the tyres. The first stop he'd gone through the tyres, he was at 100% wear and literally had to pit."When you switched Mark to a three-stop were you betting on Grosjean covering Mark?CH: "It was always potentially going to put Mark behind Grosjean if he stuck on a two-stop, but on much fresher tyres and with the pace difference of about a second and a half a lap which is what you need to overtake here."It's obviously difficult for Grosjean because which one does he cover? He's got Mark pitting, Sebastian staying out, and they obviously elected to sort of go halfway in between. It panned out perfectly for us."You've won the last five races, what are you chances of winning the final four?CH: "Sebastian has won every race since the summer break which is an incredible achievement. There are still four races to go, our target is to try and carry this momentum into those last four races. I don't think any of us could have imagined he would have had the run of success that he has and the way he's driving at the moment is quite supreme."We'll see. India is a different challenge, as is Abu Dhabi. Mark got pretty close today so it would be great to see Mark win a race before the end of the year as well."If Grosjean had managed to hold Vettel up and go defensive for four or five laps, Mark was still pulling away at that time wasn't he?CH: "Yes he was, but again he'd just started to run out of tyres so we had to pit. You get to a point where the tyres drop off and what we saw this weekend is they are going okay, they're going okay then they drop very quickly - literally within a lap and a half. As soon as hit the cliff you are out of rubber."Is it the front or rears?CH: "Rears here."What does this demonstrate about Seb's range of abilities? We're used to see him winning from pole, today he's done it from third in a bit of a struggle. Is that a perfect demonstration today of what he does?CH: "I think so. He also picked up a bit of damage from the incident with [Lewis] Hamilton that took about probably 20 points of downforce off the front wing. So he had a damaged car and he just manages to adapt. He played the thinking game today. He watched, he waited in that first stint, he preserved the tyres.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Webber unsure of pit stop strategy
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740234487001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2740234487001'});    
+        });
+    
+
+Webber unsure of pit stop strategy"He knew he wasn't going to get priority at that first stop because we'd discussed it before the race that the lead car would get the priority, so he was very smart in the way he handled the race. He created the options for him by having that range [on the tyres] in the first stint and then doing the same in the second stint by making those tyres go longer and further than any other driver."Then of course when he had the one opportunity he needed to nail Grosjean he did immediately."McLaren are saying they've signed Peter Prodromou to a contract, you're saying you want him to see out his contract until the end of next year. Is there any middle ground? Will you require a period of gardening leave? How do you view it?CH: "Peter is a valued member of the team, he is making a valuable contribution. We have got tremendous strength in team within the team."The content of any contract obviously is confidential but the duration of his contract runs for quite a while yet. We're certainly in no rush to release him early and he will be with the team until the end of his existing agreement."One would have thought you can't have him working within your team if he's going to join a rival in the very near future...CH: "Well that's what he did with McLaren before he came to us."

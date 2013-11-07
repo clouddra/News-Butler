@@ -1,0 +1,43 @@
+Novak Djokovic: Fought hard to overcome David Ferrer in ParisNovak Djokovic claimed the Paris Masters title with a 7-5 7-5 victory against David Ferrer to retain his hopes of ending the year as world No 1.Djokovic, who last suffered defeat in the US Open final against Rafael Nadal, came through in one hour and 52 minutes at a packed Palais Omnisports de Paris Bercy.
+Live on Sky Sports
+
+Live Tennis: ATP World Tour Finals
+2013 Day One
+November 4, 2013 12:00pm
+
+
+
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+He secured his 17th straight victory to capture his sixth title this season and his 40th ATP title, the 15th player to reach this milestone and now heads into the season-ending World Tour Finals at the O2 in London as hot favourite.Ferrer, who was trying to become the first man ever to retain the title in the French capital, picked up where he left off with a rip-roaring start.The 31-year-old made his move in the fifth game, taking his opportunity with a delicate chip over the net on his second break point, before calling on all his reserves to hold in the next game.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Djokovic wins Paris masters
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2800182829001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2800182829001'});    
+        });
+    
+
+Djokovic wins Paris mastersHowever, some metronomic tennis from Djokovic gave him a window of an opportunity at 4-3, but the Spaniard showed tremendous tenacity to hang on.Ferrer tensed up whilst serving for the set and Djokovic only needed one of his two break point chances to restore parity in what was turning into an intoxicating battle.The 26-year-old Belgrade native turned the screw and opened up two set points on Ferrer's next service game and he took it in 52 minutes of action thanks to a beautifully angled forehand which his opponent netted.Djokovic hit an impressive 18 winners and won 83 per cent of his first serve points while Ferrer won only 29 per cent of his second serve points.French Open runner-up Ferrer was trying to defeat three top 10 players in a row in the ATP rankings since Rome in 2010 and he received an instant boost with a break in the opening game of the second set.But once again nerves got the better of him as he failed to serve out the set after crashing his forehand into the tramlines at 30-40 and from then on Djokovic took over, winning 16 of the final 21 points to reclaim the title he had previously won four years ago.Speaking about the No 1 position after the match, Djokovic said: "It doesn't just depend on me, it depends on Rafa. It's very important for me to concentrate on myself and let things take care of themselves. I've taken a lot of confidence from this week."Watch every session of the ATP World Tour Finals - which run from November 4-11 - on Sky Sports. Click here for coverage details.You can catch all the action from the ATP World Tour Finals with a Sky Sports Day Pass. For more information click here

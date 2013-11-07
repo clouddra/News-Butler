@@ -1,0 +1,38 @@
+Alex Corbisiero: Played a starring role for the Lions last summerStuart Lancaster is hopeful that Northampton prop forward Alex Corbisiero can play a full part in England's QBE Autumn Internationals.The 25-year-old front rower, who played in both of the Lions' Test victories over Australia in the summer, has struggled with knee trouble and is currently sidelined.
+    "He is definitely not out of the QBE Series by any stretch of the imagination. Everyone is optimistically hoping that he will come through and be available for some if not all of the games."
+			Stuart Lancaster
+
+
+    "He is definitely not out of the QBE Series by any stretch of the imagination. Everyone is optimistically hoping that he will come through and be available for some if not all of the games."
+			Stuart Lancaster
+
+But despite reports in Wednesday morning's press that Corbisiero could miss all three games against Australia, Argentina and New Zealand, England head coach Lancaster struck a more optimistic note after naming Corbisiero in his 34-man squad."Alex has had a bit of fluid drained off his knee," he said. "It is recommended that he has a couple of weeks of rehab so he is definitely not out of the QBE Series by any stretch of the imagination."Everyone is optimistically hoping that he will come through and be available for some if not all of the games, but at the moment he is having some fluid drained off the knee."He will have to have some rehab this week probably leading into next week, so we will see how we go, we are keeping an open mind on it."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+England calls for Trinder, Tomkins and Burrell
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2746782205001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2746782205001'});    
+        });
+    
+
+England calls for Trinder, Tomkins and BurrellAsked if the prop - who played just three times for London Irish last season after injuring his knee in the win against New Zealand 11 months ago - is a long-term worry ahead of the 2015 World Cup, Lancaster said: "Long-term it is obviously something he has struggled with."But with good management we are optimistic - Northampton have been excellent really - that we will be able to see him through right the way through to 2015 and beyond."Watch England's fixtures Australia, Argentina and New Zealand live on Sky Sports

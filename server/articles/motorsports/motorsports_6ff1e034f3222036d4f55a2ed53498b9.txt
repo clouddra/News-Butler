@@ -1,0 +1,30 @@
+Daniil Kvyatt won race 1 in Abu Dhabi to claim the 2013 GP3 ChampionshipDaniil Kvyat claimed the 2013 GP3 Drivers' Championship after a dominant victory in Race One at the Yas Marina Circuit in Abu Dhabi.The 19-year-old Russian, who will graduate to Formula 1 next season with Toro Rosso, has been in a league of his own throughout the weekend having topped practice and qualifying before leading every lap of the race and picking up the bonus for fastest lap."First of all I have to thank the team, we did it guys," the delighted Kvyat said on the podium."I feel amazing and thanks to all the Russian guys that came here today. I didn't expect this at the start of the season and I am really looking forward to next year now.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Daniil Kvyat claims he is ready for F1
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2795857539001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2795857539001'});    
+        });
+    
+
+Daniil Kvyat claims he is ready for F1"It comes together when all the factors are there - the team, the mental approach, many combinations - but I am just very, very happy."I prefer to results and next year we will see again. But I feel ready and I think after today it is a very good sign."The MW Arden driver made a perfect getaway from pole and was followed by the Carlin's of Nick Yelloly and Alexander Sims into turn one after third-placed Kevin Korjus stalled on the grid. Carlos Sainz made another rocket start from sixth to challenge the two Brits, but ran wide and slipped back to his grid slot once again.The race, though, was quickly neutralised so the marshals could recover the car of Carmen Jorda who launched herself over the kerbs on the inside of the first chicane, breaking her suspension on landing.The action got back underway on lap four and that was as close as anyone got to Kvyat, who set the fastest lap next time around as he eased away to victory.Sainz, though, had a rather more eventful fifth lap as he attempted to pass Patric Niederhasuer around the outside on the run to turn 11. The Jenzer driver moved towards the edge of the track as they entered the braking zone, spinning Sainz 360 degress, but the Spaniard somehow wrestled his car under control once more and continued to finish ninth. Niederhauser, however, retired on the spot.With Kvyat out in front and with the two bonus points for fastest lap secured, Facu Regalia needed to finish in the top six to keep the title fight alive, but the ART driver was struggling to make progress from his grid slot of tenth. The Argentine picked up a couple of positions courtesy of the Sainz/Niederhauser collision, but crossed the line in seventh place handing the title to Kvyat with one race remaining. To add to the 21-year-old's woes, he was then handed a 20-second time penalty for "not respecting yellow flags and track limits" which relegated him to 16th.GP3 Abu Dhabi - Race One1) Daniil Kvyat (RUS) - MW Arden - 29:40.1452) Alexander Sims (GBR) - Carlin - +4.6773) Nick Yelloly (GBR) - Carlin - +7.0534) Conor Daly (USA) - ART Grand Prix - +7.4115) Jack Harvey (GBR) - ART Grand Prix - +8.3336) Dean Stoneman (GBR) - Koiranen GP - +14.9007) Tio Ellinas (CYP) - Marussia Manor Racing - +18.2358) Patrick Kujala (FIN) - Koiranen GP - +26.8829) Carlos Sainz (ESP) - MW Arden - +32.83010) Dino Zamparelli (GBR) - Marussia Manor Racing - +33.215Selected others16) Facu Regalia (ARG) - ART Grand Prix - +36.957 *includes 20 second penalty17) Robert Cregan (IRL) - Trident - +38.13320) Alice Powell (GBR) - Bamboo Engineering - +41.27721) Ryan Cullen (GBR) - Marussia Manor Racing - +44.59122) Josh Webster (GBR) - Status Grand Prix - +49.911Drivers' Championship1) Daniil Kvyat - 162 - Champion2) Facu Regalia - 138) Conor Daly - 1164) Kevin Korjus - 1075) Jack Harvey - 1066) Tio Ellinas - 1017) Nick Yelloly - 1018) Aaro Vainio - 759) Alexander Sims - 7510) Carlos Sainz - 68

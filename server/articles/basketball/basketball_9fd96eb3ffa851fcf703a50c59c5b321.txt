@@ -1,0 +1,66 @@
+Blake Griffin: Will be under the guidance of Doc Rivers this seasonThe NBA returns on Tuesday night, with 30 teams across two conferences and six divisions gearing up for a gruelling 82-game regular-season schedule.Last year the Miami Heat secured their second straight title after an epic victory over the San Antonio Spurs in the Finals, which went the seven-game distance for the 18th time in league history.The Heat are clear favourites for a 'three-peat' but several teams will be out to deny LeBron James and co that historic achievement.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+NBA Season Wrap
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2504345465001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2504345465001'});    
+        });
+    
+
+NBA Season WrapHere, we take a look at how thinks are likely to shape up in the Western Conference, where eight play-off spots are up for grabs.San Antonio SpursThe Spurs snatched defeat from the jaws of victory in Game Six of last season's Finals but will be back to conduct business as usual in the Western Conference. They have finished outside the top three in the West just once in the last 13 years, a testament to their status as perennial contenders. Tim Duncan and Manu Ginobili are ageing but can still get it done, while Tony Parker is one of the league's best point guards. Danny Green, a breakout star in the play-offs, and Kawhi Leonard will be expected to step up throughout the season.Los Angeles ClippersThe Clippers should be the best team in Los Angeles for a second straight year having brought in Doc Rivers from the Boston Celtics to be their new coach. Point guard Chris Paul and power forward Blake Griffin are possibly the most recognisable tandem in the league and there is enough talent on the rest of the roster for them to have a legitimate shot at the Finals under the guidance of Rivers, who knows exactly what it takes to win it all.Oklahoma City Thunder
+
+
+Kevin Durant: Will be without Russell Westbrook for part of the season
+
+Kevin Durant: Will be without Russell Westbrook for part of the seasonMany consider Thunder forward Kevin Durant to be the NBA's second best player having turned his team into one of the league's top-ranked teams since being drafted in 2007. The amazingly efficient scorer will have to do without his partner in crime Russell Westbrook for part of the season, with the explosive point guard still recovering from knee surgery. When Westbrook went down in the play-offs last season the Thunder were shocked by the Memphis Grizzlies and some questions remain as to how good they will be without him.Golden State WarriorsThe Warriors are one of the most watchable teams in the NBA and will be hoping to make the transition from fun play-off underdogs to serious contenders. Three-point king Stephen Curry always seems to produce the goods on the big occasion, while the trade for Andre Iguodala bolsters both their defence and offence. Harrison Barnes and Klay Thompson have huge potential, while David Lee should average either a double-double or close to it. With Andrew Bogut playing centre, they are a match for anyone. 
+2012-13 standings
+1. Oklahoma City Thunder (60-22)2. San Antonio Spurs (58-24)3. Denver Nuggets (57-25)4. Los Angeles Clippers (56-26)5. Memphis Grizzlies (56-26)6. Golden State Warriors (47-35)7. Los Angeles Lakers(45-37)8. Houston Rockets (45-37)9. Utah Jazz (43-39)10. Dallas Mavericks (41-41)11. Portland Trail Blazers (33-49)12. Minnesota Timberwolves (31-51)13. Sacramento Kings (28-54)14. New Orleans Hornets (27-55)15. Phoenix Suns (25-57) 1. Oklahoma City Thunder (60-22)2. San Antonio Spurs (58-24)3. Denver Nuggets (57-25)4. Los Angeles Clippers (56-26)5. Memphis Grizzlies (56-26)6. Golden State Warriors (47-35)7. Los Angeles Lakers(45-37)8. Houston Rockets (45-37)9. Utah Jazz (43-39)10. Dallas Mavericks (41-41)11. Portland Trail Blazers (33-49)12. Minnesota Timberwolves (31-51)13. Sacramento Kings (28-54)14. New Orleans Hornets (27-55)15. Phoenix Suns (25-57)Houston RocketsThe Rockets made possibly the biggest move of all during the off-season, signing up free agent Dwight Howard after he left the LA Lakers. Howard is a polarising figure in the NBA, but there is no doubting his immense physical talents. Shooting guard James Harden carried the scoring load admirably last season and should be even better in his second season of being the main man. The hysteria over Jeremy Lin has died down, but he is still a decent point guard capable of moments of brilliance. With Omer Asik also improving, seeds of excitement are being sown.Memphis GrizzliesThe Grizzlies made it all the way to the Conference Finals last season, but would be hard pressed to repeat that achievement. They have not responded to the off-season moves being made in the rest of the West, and their roster is solid rather than spectacular. Good up front but may lack outside shooting.Minnesota TimberwolvesMinnesota are in the best shape they have been for several years with big man Kevin Love healthy - at least for now - and point guard Ricky Rubio also getting extended time on the floor. The duo's development is key to any success the Timberwolves are aiming for.Dallas MavericksThe Mavericks still have Dirk Nowitzki, but the team that won the NBA crown in 2011 has been dismantled. The rebuilding project is likely to be a long one even though the big German is still one of the game's elite players. Monta Ellis has been signed.Denver Nuggets
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Derrick Rose masterclass
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2603065685001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2603065685001'});    
+        });
+    
+
+Derrick Rose masterclassPoint guard Ty Lawson is now the leader out on court after the departure of Andre Iguodala to Golden State. Danilo Gallinari is a solid scorer but is out for a large portion of the season with a torn ACL. They have a new coach but will benefit from home advantage at altitude.Los Angeles LakersThe Lakers seem set for a tough year. Dwight Howard and Metta World Peace have left, while Pau Gasol and Steve Nash are ageing rapidly. The man who has been the face of the franchise for over 10 years, Kobe Bryant, is still recovering from a torn Achilles. A date has not been set for his return yet, but he has been ruled out of the season opener. "I know he's Superman, but my God. He hasn't run yet," coach Mike D'Antoni said. Oh dear.

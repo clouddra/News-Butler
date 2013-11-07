@@ -1,0 +1,53 @@
+Sebastian Vettel: P1 yet againSebastian Vettel has begun his probable title-clinching Indian GP weekend in ominous fashion by setting the pace in Practice One at the Buddh International Circuit.The World Champion, who only requires a fifth-place finish on Sunday to secure his fourth successive Drivers' Championship, clocked a best time around the dusty Indian circuit of 1:26.683 to outpace Red Bull team-mate Mark Webber by 0.188s and Mercedes' Nico Rosberg by 0.216s.For Fernando Alonso, however, - the only man who can still mathematically, albeit improbably, deny Vettel the title - it was an unusually troubled start to the weekend as a gearbox problem mid-way through the session on his Ferrari curtailed his running with a mere six laps on the board.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Lewis Hamilton, Fernando Alonso and Pastor Maldonado all struggled during the first practice session of the Indian Grand Prix.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2767457780001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2767457780001'});    
+        });
+    
+
+Lewis Hamilton, Fernando Alonso and Pastor Maldonado all struggled during the first practice session of the Indian Grand Prix.Although the sight of Vettel at the head of the timesheets has become more of a recurring sight than ever since the summer break - the German has now set the pace in 41 different sessions in 2013 - it was actually the first time anyone but Lewis Hamilton has headed the P1 order since Spa in late August.And if any confirmation was needed that there would be no let-up from Vettel this weekend despite the minimal title-winning requirement, Red Bull chief Christian Horner told Sky Sports F1: "We've still got to finish the job off and our focus is on getting the very best out of this weekend and the Championship tables will tend to take care of themselves."Meanwhile, usual P1 pacesetter Hamilton finished behind Lotus's in-form Romain Grosjean in fifth place, half a second off the pace.The Briton did, though, steadily work his way up the order in the closing stages of the session having at one stage reported over the radio that his W04 felt "all over the place". Hamilton had been one of several drivers to take to the expansive circuit's copious run-off areas.
+Live on Sky Sports
+
+Live Formula One
+2013 Indian Grand Prix
+October 27, 2013 8:00am
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+McLaren pair Jenson Button and Sergio Perez took sixth and seventh places respectively having gone earlier than most in a session that was slow to get going, the former having suggested he will try a more extreme set-up on the troublesome MP4-28 this weekend in a bid to try and learn some lessons for 2014.Aside from trying to secure second place in the Constructors' Championship, Ferrari's thoughts have increasingly turned to the sport's new era next season but the Scuderia will certainly hope for a more competitive Indian weekend than P1 proved with lead runner Felipe Massa a full second off the pace in eighth.Alonso would likely have been closer but his running was brief due to the gearbox glitch that struck mid-way round just his sixth lap as he was changing up the gears coming out of a corner. But although Ferrari have confirmed they will have to change the unit before P2, the Spaniard won't be penalised for the change as it was not his race gearbox.Ferrari, like the majority of their rivals, had already been working to a condensed opening practice programme owing to the typically dusty, slippery nature of the little-used circuit at the start of the race weekend. It was the best part of 40 minutes before the big names left the pitlane for their first serious runs, with Perez having had the circuit to himself up until then.After taking over Paul Di Resta's Force India, GP2 front-runner James Calado enjoyed an eventful session en-route to the 18th-fastest time, bouncing over one of the track's outside kerbs at one point, before ending up with a healthy 22 laps on the board.
+
+        .v5-art-body ul.skybet {background:url("/images/v5/v5-tile-common.png") no-repeat scroll -1px -1121px transparent !important}
+        .v5-art-body ul.blank {background:none;padding-left:5px}
+    
+
+
+
+
+

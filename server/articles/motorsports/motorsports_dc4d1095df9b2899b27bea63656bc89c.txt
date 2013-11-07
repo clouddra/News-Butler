@@ -1,0 +1,53 @@
+Sebastian Vettel: A perfect start to his big weekend on the timesheetSebastian Vettel is expecting the degradation on the soft tyre to improve as the Indian GP weekend progresses after drivers suffered from blistering during Friday practice - although he admits race stints are certain to be short.On the opening day of the weekend, which is likely to result in him being crowned a four-times World Champion, Vettel's imperious form since the August summer break continued as he set the pace in both practice sessions ahead of Red Bull team-mate Mark Webber.However, the afternoon running wasn't without concern for the German as he again suffered a KERS fault at the start of the session and then, along with a number of drivers, reported blistering problems when he switched to the soft tyre for the first time.Such high levels of wear quickly prompted suggestions that drivers may struggle to make the expected premium two-stop strategy work, and while not disputing that the soft was degrading quite quickly, Vettel doesn't expect the situation to be as bad come the race.
+Live on Sky Sports
+
+Live Formula One
+2013 Indian Grand Prix: Qualifying
+October 26, 2013 8:30am
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+"Obviously the soft tyre is not lasting very long," he told reporters."It's Friday; the track is rubbering in and it's improving usually for Saturday. Plus we didn't use this compound for a long time [Hungary] so I think tomorrow should be better."Nonetheless, the German is fully expecting the medium tyre to be the compound of choice once the leading teams embark on their second stints."On Sunday it could be a short stint on the option tyres, but as I said usually the track rubbers in and things improve," Vettel added."People learn how to deal with the tyre and fine-tune the set-up. Nonetheless I don't think it will do a lot of laps on Sunday, but probably more than today."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Indian Grand Prix - P1 Moments
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2767457780001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2767457780001'});    
+        });
+    
+
+Indian Grand Prix - P1 MomentsThe World Champion also explained the period he spent in the garage mid-way through Practice Two."We weren't sure to be honest. After the run on options on the last timed lap I had a bit of an off and we weren't quite sure why," he said."We checked the car just to make sure nothing was broken then we went back out and had a long run after that. So the car was fine."
+
+        .v5-art-body ul.skybet {background:url("/images/v5/v5-tile-common.png") no-repeat scroll -1px -1121px transparent !important}
+        .v5-art-body ul.blank {background:none;padding-left:5px}
+    
+
+
+
+
+

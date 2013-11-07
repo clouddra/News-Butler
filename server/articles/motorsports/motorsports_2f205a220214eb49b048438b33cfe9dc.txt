@@ -1,0 +1,30 @@
+Daniel Ricciardo: Left feeling hard done byA frustrated Daniel Ricciardo admitted his drive-through penalty in the Japanese GP "ruined my race" after he missed out on a points finish.The Australian, who had dropped out of last week's Korean GP late on while on course for ninth place, had worked his way into top-ten contention after running a long opening stint on the hard tyres, which briefly brought him all the way up to fourth place.After his pitstop, and on fresher tyres, Ricciardo went to overtake around the outside of Paul Di Resta at the 190mph 130R but ran wide over the run-off area in completing the move before returning to the track ahead of the Force India driver.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Ted's Japanese Notebook
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740353939001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2740353939001'});    
+        });
+    
+
+Ted's Japanese NotebookHowever, stewards soon took the view that the Toro Rosso driver had completed the move while going off the track and issued him with a drive-through penalty - a sanction with heavily contributed to Ricciardo finishing down in 13th."I am disappointed not to have scored some points today, because I am convinced I was heading for the top ten, which would have been an encouraging result, after struggling with the balance of the car on Saturday," the Red Bull-bound driver bemoaned."We started on the hard tyre and after I made a good start to move up two places, it was looking good as I passed [Valtteri] Bottas on the track and moved up the order as those on the medium pitted ahead of me. I was moving up the order again after my first stop and then I made a move on the outside of Sutil at the 130R and got past him."But after that, I ran wide onto the grass, which lost me a bit of time. Sadly, the stewards decided I had gained an advantage by going off the track and had to take a drive-through penalty, which of course ruined my race."I was ninth when I came in for the penalty and it dropped me down outside the points."The Australian, however, was far more outspoken on his car-to-pits radio after he finished the race and clearly felt he had been harshly treated by the stewards.With team-mate Jean-Eric Vergne only finishing one place better than Ricciardo in 12th, Toro Rosso have slipped 14 points behind Constructors' Championship rivals Sauber after the Swiss team's resurgence continued with their first double points finish of 2013.

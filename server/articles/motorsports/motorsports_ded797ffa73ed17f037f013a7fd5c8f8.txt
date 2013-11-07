@@ -1,0 +1,73 @@
+World Champion Sebastian Vettel scored his seventh straight victory of the season on Sunday with a dominant performance in the Abu Dhabi GP.The German wrapped up his fourth straight title in India last weekend and while the end was rather less lofty seven days on, the means were just as impressive.The only obstacle in Vettel's way was the presence of his Red Bull team-mate Mark Webber on pole position, but the 26-year-old duly overcame him at the earliest available opportunity.He then put his foot down and simply drove into the distance, with Vettel's ability to maintain his speed whilst also managing his tyres once again very much to the fore. It was a virtuoso display in that regard, the 26-year-old's early advantage such that he held on to his lead after making his first pit stop.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Abu Dhabi GP: Race in 60 seconds
+
+        <object id="video-id4" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2799167264001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video4','ob':'#video-id4','id':'2799167264001'});    
+        });
+    
+
+Abu Dhabi GP: Race in 60 seconds"The car was absolutely brilliant, absolutely brilliant," Vettel told Sky F1's Martin Brundle on the podium afterwards. "There's not much more to say. It was flying at some stages, at least it felt like it. Massive gaps - a big surprise."Asked for his reaction, Webber said: "The start wasn't great. Nico got an unbelievable start and Seb's was better than mine."In the first stint, [I was] just not strong enough on the soft tyres, Seb got a very, very good gap."After that the race started pretty well for me, but Seb by then was gone. He was in another category at the front."Webber trailed home half a minute behind, with Nico Rosberg claiming the final podium position for Mercedes ahead of Lotus's Romain Grosjean - and it's fair to say that both drivers enjoyed rather better fortunes than their respective team-mates.
+On Sky Sports
+
+F1 Midweek Report
+2013 Abu Dhabi Grand Prix
+November 6, 2013 7:00pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+Lewis Hamilton's race never really recovered after a poor start. In fact, he was on the back foot on the grid after brake vibrations forced Mercedes' mechanics to effect hasty repairs. Hamilton then struggled in traffic after making his first pit stop, getting stuck behind Sauber's Esteban Gutierrez first and then Force India's Adrian Sutil.Hamilton's efforts to pass Sutil at one stage resulted in him losing another place to Ferrari's Felipe Massa; if Vettel was serene out front then the battle for the minor points places was frenetic indeed, as different strategies came into play.Ferrari appeared to have placed both their drivers on a one-stop strategy but in the event both Massa and Fernando Alonso couldn't make their tyres last. Alonso finished fifth and was later cleared by race stewards of any wrongdoing after his second stop almost resulted in a high-speed collision with Jean-Eric Vergne's Toro Rosso.Massa, meanwhile, finished eighth, although the Scuderia have now fallen 11 points behind Mercedes in the battle for second place in the Constructors' Championship.In contrast to the rest of the field, Force India managed to get both of their drivers to the chequered flag by making just the one pit stop. The reward for Paul di Resta was sixth place ahead of Hamilton, with Sutil finishing tenth behind Massa and McLaren's Sergio Perez.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Ted's Notebook - Abu Dhabi Grand Prix
+
+        <object id="video-id5" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2800114666001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video5','ob':'#video-id5','id':'2800114666001'});    
+        });
+    
+
+Ted's Notebook - Abu Dhabi Grand PrixOutside the points, Jenson Button finished 12th after a first-lap collision ruined his race for the second weekend running while Nico Hulkenberg came home 14th behind team-mate Gutierrez after a drive-through penalty - Sauber released his car into the path of Perez's after a pit stop - ended what had looked like a solid run in the points.Kimi Raikkonen's race summed up his weekend perfectly. Having threatened a boycott at the start of the weekend in protest at Lotus's inability to pay his wages, the Finn had started the race at the back of the grid after his car failed a post-qualifying scrutineering check. But he only managed two corners before colliding with a Caterham and had left the track before the race was half run.The impression was that Raikkonen couldn't wait to get the hell out of there. Contrast that with the reaction of Vettel, who once again performed doughnuts after - yet again - proving a class apart.On this form, a run of nine straight wins to finish the season appears more than likely.MW

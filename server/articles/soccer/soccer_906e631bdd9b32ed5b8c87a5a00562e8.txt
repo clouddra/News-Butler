@@ -1,0 +1,30 @@
+James Forrest: Curls home the equaliser for CelticA wonderful late solo goal from James Forrest snatched Celtic a 1-1 draw with Hibs in an entertaining Scottish Premiership clash at Easter Road.The in-form Paul Heffernan struck after just 18 minutes for the hosts and an excellent performance from goalkeeper Ben Williams looked to have secured the points before heroics from substitute Forrest 15 minutes from time.It was the Bhoys who were the first to threaten through a wayward Kris Commons effort, but the net was soon rippling at the other end when Heffernan pounced on a long ball to slide underneath the advancing Fraser Forster.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Lennon frustrated
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2755438990001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2755438990001'});    
+        });
+    
+
+Lennon frustratedForster had to be alert to prevent Kevin Thomson from doubling the lead soon afterwards and Celtic were dealt a further blow when Commons, who had just cleared Williams' crossbar from a decent chance, hobbled off on the half-hour mark.There was still time before the break for Anthony Stokes and Giorgios Samaras to waste inviting openings - the latter forcing Williams into a superb save with a clean strike from inside the penalty area.The second half proved an end to end affair with Celtic pressing keenly for the equaliser and Hibs happy to try and snatch a crucial two-goal cushion from counter-attacks.That meant a busy time for both goalkeepers, with Williams on his toes to prevent Beram Kayal and Stokes from levelling and Forster in action to deny Owain Tudor Jones and Liam Craig as the game opened up.Hibs fans were just beginning to believe a shock victory could be theirs when Forrest, who had replaced Commons in the latter stages of the first half, drifted inside two defenders and curled past Williams and into the far corner with the outside of his foot to silence the home support.Stokes and captain Scott Brown spurned late chances to seal all three points for Neil Lennon's men as they both drove shots too high, and Williams had to be on his mettle one last time when he denied Forrest a second from point-blank range at the death.

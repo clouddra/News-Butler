@@ -1,0 +1,30 @@
+Luke Rowe believes Chris Froome can overcome the cobbles in next year's Tour de FranceTeam Sky rider Luke Rowe has backed Chris Froome to conquer the cobblestones and go on to win a second successive Tour de France next summer.The route for the 2014 race was unveiled in Paris yesterday and although it features five summit finishes and a long time trial, which fit Froome's strengths, it also includes 15.4km of cobbled roads.The pave, as the cobbles are known, come in nine sections on stage five and present a potential hazard to contenders for overall victory such as Froome, Alberto Contador and Nairo Quintana.Crashes and mechanical problems are common and the fight for position is frantic, and while the likes of Fabian Cancellara and his fellow Classics specialists will relish the challenge, those less comfortable on cobbles will merely look to survive the stage.It is the first time since 2010 that pave have been included in the Tour. Froome has minimal experience of them, but Rowe believes that with a strong team around him, the 2013 Tour winner can emerge from stage five unscathed.He told What's The Story?: "Stage five has nine sections of cobbles. That is not Froomey's kettle of fish - he certainly won't be used to that."It is almost like a different sport, riding the cobbles. You are used to perfectly smooth tarmac, but then you hit the cobbles and they are just something else. Your whole body vibrates, nine times out of ten your bottles fly out of your cage. But I think Froomey can deal with that."A couple of years ago [at the 2010 Tour], Saxo-Bank controlled the race so well for [eventual winner] Andy Schleck. You wouldn't have thought he would have got across the cobbles and he got across it in the front group."If you have a strong enough team behind you, which I am pretty sure Froomey will, you can get past stage five and if you can get past that, that is a big step towards winning the yellow jersey again."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Rowe: Froome can win
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2764887017001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2764887017001'});    
+        });
+    
+
+Rowe: Froome can winShould Froome make it past the cobbles, he will view summit finishes on stages 10, 14, 15, 17 and 18, and then a flat 54km time trial on stage 20 as the days on which he can win the race overall.The route appears ideal for Froome's talents and Rowe is confident his team-mate can deliver victory."I think Froomey has got a pretty good chance," he added. "There are five mountain-top finishes, which suits him perfectly. There is a long time trial, 54km, so there is nothing saying he cannot win it."Whether Rowe will be joining Froome in the Team Sky line-up for the 2014 Tour is another matter.He is a Classics specialist who enjoys riding on cobbles and would play a key role on stage five, but at 23 years old and having never finished a three-week Grand Tour, he fears next summer's race could come too soon."Never say never," he added. "I would like to think so, but realistically, it is possibly still a year too early. I will still throw my name in the hat and hope for the best, but realistically I would say no."

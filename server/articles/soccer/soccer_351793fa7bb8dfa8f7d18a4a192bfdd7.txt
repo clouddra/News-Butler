@@ -1,0 +1,30 @@
+Kris Doolan: On target for Partick on Sunday afternoonInverness wasted an opportunity to close on Premiership leaders Celtic with a gaffe by keeper Dean Brill handing Partick Thistle the spoils with a 2-1 victory at Caledonian Stadium.The contest looked set for a draw, but with six minutes left, Aaron Sinclair's tame cross from the left was spilled by the on-loan Luton Town goalkeeper, allowing Kris Doolan to spin and smash in his second of the game.Inverness boss Terry Butcher cut a dejected figure in the closing stages as Gary Warren narrowly failed to add to his earlier strike and level the score with a late header that sailed just over the bar.It was a stunning win in a lively encounter for the visitors who secured their third away victory of the season to steer them above St Johnstone into seventh in the Scottish Premiership.Caley began the day four points behind Celtic and would have begun in buoyant mood against a team six places below them and they began brightly with Ben Greenhalgh hitting the upright after a cute chip from Aaron Doran.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Inverness wasted an opportunity to close on Premiership leaders Celtic after losing 2-1 to Partick
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2755937948001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2755937948001'});    
+        });
+    
+
+Inverness wasted an opportunity to close on Premiership leaders Celtic after losing 2-1 to PartickThe sucker-punch duly arrived though as the recalled midfielder James Craigen surged into the box to pick up Kallum Higginbotham's pass and Doolan was on hand to burst past the defenders and slam the ball low into the net.It may well have been a lively half-time talk for Butcher who was livid with the officials when Doran was denied an equaliser when the assistant waved his flag for an infringement.The smile returned on Butcher's face immediately after the interval when defender Warren jumped sharply to nod in a free-kick.Both teams searched for a winner and the spoils looked certain to be shared, but then it was time for Brill to grab the headlines with his fumble as he watched Doolan crash in the winner.

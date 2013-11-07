@@ -1,0 +1,28 @@
+Von Miller is back with the Denver BroncosThe Denver Broncos have had few problems in remaining unbeaten this season, and their only weak point in defence is about to be boosted with the return of Von Miller from his six-game suspension.Miller's return comes at the ideal moment with Denver set for their toughest assignment of the season with a trip to Indianapolis to face the Colts on Sunday.While Peyton Manning and the offence have been blowing teams away, Denver's defence has shown the only signs of weakness, most notably in defending the pass and pressurising the opposition quarterback.They rank last against the pass, and 22nd in sacks, but that area of the game looks set for a huge boost with the return of pass rush specialist Miller after his six-game ban.Miller was banned for violating the league's substance abuse policy, and he knows he is now walking a tightrope with any further offence likely to get him banned for at least a year, so the third-year man knows he has to earn his team's trust once again."I definitely made mistakes in the past,'' Miller said. "It wouldn't do anybody any good to go back and defend that stuff. I served my suspension, I'm working hard to gain everybody's trust back."I'm just going to take it one day at a time. All I can ask is that everybody judge me on my actions going forward. And I can gain everybody's trust back that way."I've still got a long career ahead of me, and I'm certain I can gain everybody's trust back. I love football, and to have football taken away from you, it's tough. It's definitely been tough, to get football back, it's a blessing. It's a blessing that everything I set out to do is still right here in front of me."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2744246239001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2744246239001'});    
+        });
+    
+
+With 30 sacks in his first two season, Miller should provide the spark needed to up Denver's defensive game, which could be bad news for the rest of the league with such a high-quality player coming back into a team that has started the season 6-0."I still move like a wildcat," Miller added. "I'm still quick. I'm still going to cover guys. I'm in the best shape of my life. Emotionally I'm in a very good place."Coach John Fox, who has also been boosted by the return of cornerback Champ Bailey, is delighted to have the Pro Bowler back in the ranks."He's a dynamic rusher. He's one of the better ones in this league; I think most people would agree," Fox said. "Obviously we're real excited to get him back. We'll see what kind of football fitness he is in come Wednesday. But he creates a tough one-on-one matchup for most offenses."Denver already have the highest-scoring offence in league history after six games, and now adding two of their best defensive players back into the mix will only add to their stock as Super Bowl favourites.

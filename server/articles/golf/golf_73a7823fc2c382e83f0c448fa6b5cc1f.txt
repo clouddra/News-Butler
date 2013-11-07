@@ -1,0 +1,30 @@
+Adam Scott: Adds the pink jacket to the green one who claimed at Augusta back in AprilAdam Scott produced a course-record 64 to win the PGA Grand Slam of Golf in Bermuda.The Australian moved past first-round leader Justin Rose in the closing holes as he finished on eight under, two shots clear of his nearest rival in the tournament that involves the season's four major champions.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Australian Adam Scott produced a course-record 64 to pip Justin Rose and win the PGA Grand Slam of Golf in Bermuda.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2748962546001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2748962546001'});    
+        });
+    
+
+Australian Adam Scott produced a course-record 64 to pip Justin Rose and win the PGA Grand Slam of Golf in Bermuda.Having carded a 67 on Tuesday, Rose extended his overnight two-shot advantage to four by the end of the front nine.However the Englishman was unable to hang on, a drop after a wayward tee shot at the 16th seeing him slip back into second.While he could only par the next Masters champion Scott landed his six-iron approach shot within inches of the cup, allowing him a tap-in eagle three.He could afford to par the last with a two-shot cushion, meaning he added the winner's pink jacket to the green one he had dramatically secured in a play-off at Augusta back in April.Jason Dufner was a distant third on three under, while defending champion Padriag Harrington - who had replaced Ernie Els in the four-man field for the 36-hole event - was even further adrift on three over."Obviously, I'm thrilled to come out on top," Scott, who bettered the previous best score of 65 shot by Lucas Gloves in 2009, said."Fun, but a trying couple of days here, really, especially today."Standing on the 11th tee, didn't look like a score like that was going to be possible. But I played very well and managed to slowly claw away at Justin."Rose was magnanimous in defeat, a 69 not quite enough to clinch him the title. He admitted afterwards that Scott had simply been too good, particularly over the back nine in testing conditions."I didn't have my best game all week really and I'd have been surprised (to win)," he said."I started with a two-shot lead and somebody had to shoot well to beat me."When you're in that position you want to close it out, but when somebody finishes it out like that, you have to tip your hat and say you were beaten rather than losing."

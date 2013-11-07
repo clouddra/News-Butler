@@ -1,0 +1,30 @@
+Snooker player Stephen Lee has been given a 12-year ban from the sport for match-fixing.Stephen Lee admits he has been left "devastated and outraged" by the 12-year ban handed to him for match-fixing and insists he is innocent.The former world No 5 was found guilty of seven match-fixing charges by an independent tribunal last week following an investigation into eight matches - four at the Malta Cup in 2008, two at the UK Championship in 2008, and one each at the China Open and the World Championship in 2009.The suspension has been dated to start from 12 October 2012, when the interim suspension was imposed, leaving Lee unable to play again before 12 October 2024, his 50th birthday.He has also been ordered to pay £40,000 towards the cost of the hearing, although Lee has confirmed he will appeal against the suspension.Speaking to Sky Sports News, Lee said: "I am absolutely devastated at what has happened.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Stephen Lee maintains he is innocent.
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2694881404001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2694881404001'});    
+        });
+    
+
+Stephen Lee maintains he is innocent."I am going to be with the QC on Friday morning and we will look at the whole picture and start making some big holes. They've got no facts."It is unbelievable. My kids are getting picked on at school and it is totally outrageous what I have been put through."I will be making an official statement with my QC on Friday."As for whether he would ever play snooker again, Lee added: "Yes, that's all I know, it's the game I Iove. We will just see what happens."In his written findings of the case, tribunal chairman Adam Lewis QC described Lee, who refused to make details of bank accounts available, as an "unreliable" witness, and a "weak" man who had been taken advantage of by others.The findings state: "These breaches occurred when Mr Lee was in a financially perilous state not entirely of his own making and was finding it difficult to obtain entry to enough tournaments."As a weak man in a vulnerable position he succumbed to temptation. I consider it unlikely that he was the prime mover or instigator of the activity. It seems to me likely that advantage was taken of him."Chairman of the WPBSA Jason Ferguson said: "We take no pride in having to deal with such serious issues. However this demonstrates our commitment to ensuring that snooker is free from corruption."It is an important part of our anti-corruption approach that players found to be involved in fixing matches or any aspect of a match are severely dealt with."Speaking to Sky Sports News, WPBSA Disciplinary Committee Chairman Nigel Mawer said: "I think it sends a very clear message that people who get involved in match-fixing are going to face severe penalties and in Stephen Lee's case it's ended him having any involvement in snooker."Former professional Willie Thorne added: "12 years is virtually a life ban. Stephen was playing some of the best snooker of his career. It's just a shame it's come to that because he was a very, very good player."

@@ -1,0 +1,44 @@
+Massa frustrated with strategyFelipe Massa was left frustrated by a "mistake" by Ferrari which he reckoned cost him a higher finish in the Abu Dhabi Grand Prix.The Brazilian eventually finished eighth at the Yas Marina Circuit but believed he could have made better progress in the closing stages had the Scuderia fitted his car with what he thought was the correct tyre.
+On Sky Sports
+
+F1 Midweek Report
+2013 Abu Dhabi Grand Prix
+November 6, 2013 7:00pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+Massa's F138 was fitted with the medium tyre after he stopped on lap 38. At that stage he was running fifth, directly ahead of team-mate Fernando Alonso.Alonso himself stopped for the second and final time six laps later. He rejoined ahead of Massa but his car was fitted was faster soft tyres, enabling the Spaniard to claim the fifth place at the chequered flag.Left trailing his team-mate for the first time in the race, Massa said that Ferrari, who had tried to run a one-stop strategy for both cars before changing their minds, had "made a mistake"."I didn't expect to use the medium in the last stint as well, I expected to use the soft," he said. "I did 19 laps at the beginning and was the best car on the soft and then we decided to stop at the last moment the second time. I expected to see the soft tyres on the car and I saw the other one."That was the mistake of my race. Without this problem, I would have easily finished in the top five."Even so, Massa rejected the suggestion that Ferrari had deliberately fitted the medium tyres in order to hand Alonso an advantage."For sure not," he insisted. "They need these points, they need to score as many points as possible. The team would never do that to me. It's not even close to my mind that the team is doing something.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Abu Dhabi GP: Race in 60 seconds
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2799167264001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2799167264001'});    
+        });
+    
+
+Abu Dhabi GP: Race in 60 seconds"I believe in the team and I'll believe until the last moment," added the 32-year-old, who is leaving Ferrari at the end of the season.Massa also denied there was anything untoward in Ferrari's call to bring him in whilst leaving Alonso out."We called because of the pace. We saw that the pace was very slow and I think it was time to stop," he said."I think it was going to be very, very difficult, one stop, because the pace we had was a little bit too quick for the rear tyres."However, Massa admitted that the situation was frustrating given his desire to impress potential new employers."It is. Definitely I'm not happy because today I was doing a great race all the time, I mean fighting and overtaking cars; you know a very good race all the time - good pace," he added."Then suddenly I didn't finish in the position I'm supposed to finish. This is frustrating but anyway I showed good pace and this is important."

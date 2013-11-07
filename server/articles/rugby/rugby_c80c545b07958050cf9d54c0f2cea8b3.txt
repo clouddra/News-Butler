@@ -1,0 +1,30 @@
+Chris Robshaw: England skipper enjoys a joke during trainingBilly Twelvetrees has welcomed the re-appointment of Chris Robshaw as England captain.Robshaw's position was confirmed by head coach Stuart Lancaster for the autumn internationals after he was rested for the tour of Argentina in the summer.Northampton flanker Tom Wood led England impressively in Robshaw's absence but Lancaster has kept faith with Harlequins man, who he first made skipper for the 2012 Six Nations.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Billy Twelvetrees says he is delighted to be included in the England squad for the Autumn Internationals.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2764053199001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2764053199001'});    
+        });
+    
+
+Billy Twelvetrees says he is delighted to be included in the England squad for the Autumn Internationals.And Gloucester centre Twelvetrees, likely to start at inside centre against Australia in the first of England's autumn Tests on November 2, is happy with that decision.Twelvetrees told Sky Sports: "Chris is a terrific leader. He leads by example and that's what you want from your captain."He goes hard in every game and all the boys are definitely behind him. We respect him fully."In training he's terrific as well. Around the squad he's great at getting to know everyone and making everyone feel comfortable. From that point of view, it's what you want your leader to be."

@@ -1,0 +1,38 @@
+Dai Young: Praised the performance of former Leicester fly-half Andy GoodeWasps director of rugby Dai Young admitted the result was more important than the performance after seeing his side defeat Leicester 22-12 at Adam's Park.Andy Goode kicked 17 points against his former employers, including two crucial drop goals in the second half when he had a strong wind at his back.
+    "The result was far more important than the performance as we just had to find a way to win. It was a tough day for our youngsters as they are a wily old bunch up front and those youngsters will have learnt a lot today."
+			Dai Young
+
+
+    "The result was far more important than the performance as we just had to find a way to win. It was a tough day for our youngsters as they are a wily old bunch up front and those youngsters will have learnt a lot today."
+			Dai Young
+
+The experienced fly-half also had a hand in the only try of the game, scored by Christian Wade in the ninth minute, as the capital club claimed just their second win of the season in the Aviva Premiership."I never thought the game was safe until three or four minutes from the end. We made it difficult for ourselves in the second half as we allowed them to gain field position," Young said."Our defence for the 10 minutes that we were down to 14 men, when Carlo Festuccia was sin-binned, was crucial and the difference between winning and losing."The result was far more important than the performance as we just had to find a way to win. It was a tough day for our youngsters as they are a wily old bunch up front and those youngsters will have learnt a lot today."Young reserved special praise for Goode, particularly after the number 10 had come in for some criticism at the start of the campaign."Andy was outstanding as he steered the ship and kicked the important goals," he added. "A lot of people have knocked him this season but he showed today why I wanted him to join us.Leicester mustered four penalties from Owen Williams but struggled without their England internationals, even failing to make the most of a 10-minute period when Wasps had hooker Festuccia sent to the sin-bin.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Find out what James O¿Connor could bring to European Rugby.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2766279437001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2766279437001'});    
+        });
+    
+
+Find out what James O¿Connor could bring to European Rugby.Director of rugby Richard Cockerill, who was able to resume his match-day duties after serving a nine-match touchline ban, admitted the display wasn't up to scratch."We are disappointed; it was a pretty ordinary game with error after error. The weather conditions were difficult but we missed crucial kicks and we went to sleep for their try. These things cost you and our performance was below average," he said.The Tigers boss also refused to use the fact his side were badly hit by injuries and England call-ups as an excuse for the performance."We have the whole of our first-choice back-line out and a number of key forwards but we came with a side that should have played better. It wasn't a disgrace but I expected a little bit better than that," Cockerill added.

@@ -1,0 +1,38 @@
+The NFL will return to Wembley for three games this seasonNFL commissioner Roger Goodell has confirmed London will host three games in the 2014 season.The Jacksonville Jaguars, Atlanta Falcons and the Oakland Raiders will all play home fixtures at Wembley Stadium as the UK fanbase continues to be rewarded for their enthusiasm."Our fans in the UK have continued to demonstrate that they love football and want more," Goodell said.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Wembley will host three games
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2730392769001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2730392769001'});    
+        });
+    
+
+Wembley will host three games"Both of this year's games in London sold out quickly.  The fan enthusiasm for our sport continues to grow.  By playing two games in the UK this year, we are creating more fans."We hope that with three games in London next year we will attract even more people to our game."Jaguars owner Shad Khan added: "We made the right decision to commit to playing a home game in London each season through 2016.
+    "We hope that with three games in London next year we will attract even more people to our game."
+			Roger Goodell
+
+
+    "We hope that with three games in London next year we will attract even more people to our game."
+			Roger Goodell
+
+"The Jaguars have a broader worldwide fan base today and the anticipation for our London game later this month is shared by our loyal fans in Jacksonville, so it's a perfect scenario for everyone. The energy and appetite for the NFL in the UK is incredible. The Raiders and Falcons will see for themselves next season."A crowd of 83,518 turned out at Wembley to see the Minnesota Vikings' thrilling 34-27 win over the Pittsburgh Steelers on September 29.

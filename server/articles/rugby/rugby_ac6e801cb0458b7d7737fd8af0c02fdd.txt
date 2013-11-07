@@ -1,0 +1,44 @@
+New Fulham chairman Shahid Khan says Jaguars could play at Craven CottageJacksonville Jaguars owner Shahid Khan says any NFL team being based in London is still a long way off and would not put his team's name forward as a possible option - but did reveal that he had thought about playing a game at Craven Cottage in the future.Khan also boss of Premier League side Fulham, and with his NFL team the Jaguars scheduled to play a game at Wembley for the next four years they will become pretty well known in London.Having watched his Premier League side beat Crystal Palace on Monday, Khan is staying in London to watch Jacksonville play at Wembley on Sunday, and he admitted that there was a huge difference in owning the two teams."It's different, it's very, very different," he told Sky Sports News. "You've got the relegation, promotion aspect which the NFL doesn't have.
+Live on Sky Sports
+
+Live NFL
+Jacksonville Jaguars v San Francisco 49ers
+October 27, 2013 4:00pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+"We're able to do things like get a fresh start in the NFL, which you couldn't do over here. We can change the culture, change the players which is very difficult to do here."Having become 'London's team' for the next four years, starting on Sunday, the Jaguars are the first name in the frame for a possible UK outpost of the NFL if that does come to happen in the future.Khan insists, though, that he is only thinking of the next four years and that a possible London NFL team is still some way off."We're absolutely looking forward to it, we have been for a while. We were over here over a year ago so we're glad it's finally here."It's a big commitment to Wembley and to London, but I think it's way too early to think about a team being based over here - if you look at it, it's the first year with two games.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Daily news, interviews and analysis from all 32 NFL teams six days a week.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2759939163001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2759939163001'});    
+        });
+    
+
+Daily news, interviews and analysis from all 32 NFL teams six days a week."We're the first team and the only team that's committed to play here for more than one year, which is for four years. Next year there'll be three games here so it's a long time to go, you've got to decide if it makes sense and we haven't got all the facts."For us our commitment is four games over four years in London, that's our commitments right now."Having had a look around Fulham's Craven Cottage, Khan said he could envisage staging a Jaguars home game there in the future - even if the venue is a lot smaller than the usual NFL home."Anything is possible, we're playing here once a year at Wembley and maybe we end up playing here - that's what I was talking to with our media from Jacksonville, this is like a high school game setting, so personal, so up close, it might be kind of fun."

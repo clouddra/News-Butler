@@ -1,0 +1,30 @@
+Felipe Massa refused to let Fernando Alonso past during the Japanese GPStefano Domenicali says Felipe Massa will not be reprimanded by Ferrari for ignoring team orders during the Japanese Grand Prix.Massa was running ahead of team-mate Fernando Alonso during the early stages of Sunday's race when his engineer Rob Smedley told him over Ferrari's pits-to-car radio: "Multi-function strategy A, multi-function strategy A. Now please!"That message was believed to be code instructing Massa to move aside in order to allow the Spaniard to pass, but the Brazilian, who will not be retained by the team next season, opted to ignore the order.Team Principal Domenicali was asked about the incident after the race, but insisted he will not speak to the 32-year-old about the matter as the team have more important issues to focus on."No not really," he told the assembled media when asked if it was an issue."To be honest with you we brought home today what was the maximum and there is no point in creating something around these things as there are other things that we need to focus on to try and improve the car up to the end of the championship."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Fernando Alonso missed out on a podium place after finishing 4th at the Japanese GP.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2740219861001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2740219861001'});    
+        });
+    
+
+Fernando Alonso missed out on a podium place after finishing 4th at the Japanese GP.Alonso, who later passed Massa in any case, echoed the views of his boss and vowed there are no problems between himself and Massa."We cannot make a big thing out of it," the Spaniard said. "We are racing and whatever we did we would have finished in the same position because we could not achieve anything more. I don't know exactly what happened, but there is zero problem."We are trying to do our best fairly - me, the team - to score as many points as possible and sometimes it is not easy when the performance is not super. It is never easy when we are fighting for seventh and eighth place."However, in an apparent barbed reference to the furore over Red Bull's strategy calls during Sunday's race, Alonso added:"It would be nice to come back to the old days at Ferrari of fighting over first and second and then deciding who wins like Red Bull do - one car does two stops, one car does three stops and they finish first and second."I am always trying to do my maximum and Ferrari are always trying to do their maximum so let's do our maximum in the last four races."Alonso has failed to qualify higher than fifth since the Bahrain GP and is yet to start on the front-row this season. That poor Saturday record is something Domenicali has identified as key to improving if the team are to stay ahead of Mercedes and Lotus in the Constructors' Championship."From now on the fight is with Mercedes and Lotus and it will be very tight and we need to make sure we improve the car," the Italian added."We can do it - we need to improve the qualifying as that is quite difficult and we know that basically everything is tapered by the position at the start and the first couple of laps, then it just becomes a case of how you manage the traffic. When we were behind the train of cars today on the hard tyres, we were lapping three seconds slower than the cars at the front, so at the end of the day that is really the point."If we want to keep fighting we need to try and improve the car and there are some things that we can bring in the next couple of races and also the position in qualifying. That will be difficult as Red Bull are very strong and Mercedes seem to have something more in qualifying, but this is the target. There are still four races to go and we have second with a great aggressiveness behind and it is fundamental for all of our engineering staff to keep their heads up to the end as we want to keep that position."

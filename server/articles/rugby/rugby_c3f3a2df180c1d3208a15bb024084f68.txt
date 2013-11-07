@@ -1,0 +1,30 @@
+Jonny Wilkinson has opened the door to a Lions call-upJonny Wilkinson has confirmed he is prepared to discuss the possibility of joining up with the British & Irish Lions in Australia.The 34-year-old fly-half ended a Heineken Cup-winning campaign at Toulon in disappointment with a 19-14 Top 14 final defeat to Castres on Saturday - and Wilkinson is now awaiting an injection on a slight groin problem.That did not stop the hero of the 2003 World Cup from inviting contact from Lions coach Warren Gatland - and he may yet perform a sensational U-turn having originally rejected a place on the tour.Wilkinson said: "If Warren wants to call me about joining up with the Lions, I will happily have that conversation with him."The Lions did well today and I'm going to need a couple of days just to assess where I am."It always feels worse when you've just lost a big game. And I don't even know if Warren still wants me, but I'm certainly not going to rule anything out."Saracens and England stand-off Owen Farrell drew criticism for his performance in the tour opener in Hong Kong despite a 59-8 victory over the Barbarians, during which he was involved in a incident with Schalk Brits that has resulted in his club-mate being banned for three weeks.Brits, who had been cited by IRB commissioner Simon Ryan, appeared at a hearing before judicial officer Steve Lewis.Lewis decided that Brits' offence was mid-range but a possible five weeks sanction was reduced to three because of "compelling mitigating factors".
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Dean not worried by Lions
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2426539577001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2426539577001'});    
+        });
+    
+
+Dean not worried by LionsA statement released after the hearing read: "The IRB's sanctions for foul play have been established on the basis that a one-week period of suspension would normally result in a player missing one match."Consequently, he is suspended from all rugby up to and including the thirdAviva Premiership match of the 2013-14 season, unless the judicial officer confirms in writing that any pre-season match shall be considered meaningful for the purpose of regulation 17.19.11 (d), in which case such a match shall be included as one of the three matches."Referee Steve Walsh initially penalised Farrell for reacting to Brits but then reversed his decision after consulting television replays.Saturday's game was Brits's final outing of the season.Watch every Lions game live only on Sky Sports.  Click here to sign up or  upgrade now.

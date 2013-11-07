@@ -1,0 +1,68 @@
+Ronnie O'Sullivan: Claims to have been offered £20,000 to fix a match more than 10 years agoRonnie O'Sullivan has claimed he was offered £20,000 to fix a snooker match.The 37-year-old writes in his autobiography, Running, that the offer was made 10 years ago by someone he knew and concerned a Premier League match.His revelation comes just days after former world No 5 Stephen Lee was for 12 years for seven match-fixing offences, although Lee is to appeal the verdict and the punishment imposed.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Hearn - No way back for Lee
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2693782274001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2693782274001'});    
+        });
+    
+
+Hearn - No way back for Lee"Someone rang me and said he'd like to meet me over in the forest and have a walk through the woods," O'Sullivan writes. "I knew the fella, and it was someone you don't want to mess around with."What they were offering me, 20 grand, I could get for a couple of nights' work.Detailing the offer, O'Sullivan writes: "'You're playing in the Premier League,' he said. 'Yes.' 'And we've got people who can put big bets on. If you lose this frame and this frame we can get enough on it to make some money. We'll give you this out of it."'World Snooker chairman Barry Hearn says O'Sullivan will be asked to explain his claim."I understand the approach has not been reported and the WPBSA will be writing to Ronnie O'Sullivan to ask for more information."The current disciplinary code of conduct was not in force then but now any approach has to be reported in 24 hours."O'Sullivan turned down the offer and has since gone on to become a five-time world champion, although he has accused snooker's governing body of trying to prevent him winning his fifth this year by changing the cloth before the final.He believes a slower baize was installed onto the Crucible table after the semi-final to suit the style of his opponent Barry Hawkins, who he went on to beat 18-12 to claim his fifth world title.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Lee maintains innocence
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2694881404001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2694881404001'});    
+        });
+    
+
+Lee maintains innocence"The conspiracy theorist in me believes it was done to stop me winning the World Championship," he says in his autobiography.He then told the Daily Mail: "You only change the cloth if it's running badly. I understood the four semi-finalists have to agree they want a new cloth. But, as far as I am aware, there was no complaint."The new cloth benefited Barry more than me. It was like playing on carpet. It didn't suit my game at all."But Hearn dismissed O'Sullivan's claim, saying: "If it was a conspiracy it wasn't very good one! There was nocomplaint whatsoever from anyone at the time about changing the cloth, which is something that happens quite often during tournaments."Ronnie made a record number of hundred breaks during the match and he is such a big name that it was a great result for the sport."
+
+        .v5-art-body ul.skybet {background:url("/images/v5/v5-tile-common.png") no-repeat scroll -1px -1121px transparent !important}
+        .v5-art-body ul.blank {background:none;padding-left:5px}
+    
+
+
+Catch live action across 6 sports channels exclusively with Sky Sports - Find out more
+
+

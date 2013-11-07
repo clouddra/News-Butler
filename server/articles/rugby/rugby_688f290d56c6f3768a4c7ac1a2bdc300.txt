@@ -1,0 +1,38 @@
+Stuart Lancaster announces his England team for the Autumn Internationals.Stuart Lancaster has revealed that Chris Robshaw's fine early season form and fitness made the decision to give him the England captaincy an easy one.Robshaw has been Lancaster's first choice skipper since he took over the coaching duties from Martin Johnson two years ago - the Harlequins skipper getting the honour in only his second international.He will again lead out his country at Twickenham against Australia on November 2 followed by internationals against Argentina and New Zealand on successive weekends.Robshaw was rested from the victorious two-Test tour of Argentina in June when fellow flanker Tom Wood took over the captaincy but, despite criticism of his leadership in the 30-3 Six Nations thrashing by Wales in March, Lancaster had no hesitation in returning to his first choice.
+    "We want a broad leadership group, but when it came down to it Chris was the stand-out."
+			Stuart Lancaster
+
+
+    "We want a broad leadership group, but when it came down to it Chris was the stand-out."
+			Stuart Lancaster
+
+Lancaster, who missed out on a first Six Nations Championship due to the Millennium Stadium defeat, said: "My priority is to decide on the captain on form and fitness and the first thing is to get everyone fit and in camp."It was a big (European) weekend, Chris could have got injured at the weekend and things would have been different, we want a broad leadership group, but when it came down to it Chris was the stand-out."Robshaw said he had been encouraged by rival Wood in the training camp in Leeds, and added: "We have a good relationship and push each other hard in training. We want to be in the right place by 2015 (World Cup).
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Stuart Lancaster speaks to Phil Edwards shortly after naming his England squad for the Autumn Internationals.
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2747958013001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2747958013001'});    
+        });
+    
+
+Stuart Lancaster speaks to Phil Edwards shortly after naming his England squad for the Autumn Internationals."Most of us have been together as a group for around 18 months and, alongside some of the new guys who joined in the summer, we want to drive each other on."Lancaster is "pretty optimistic" that Wood's Northampton team-mate Dylan Hartley will be fit to face the Wallabies next week despite the hooker having his foot in a plastic boot.The Kiwi-born No 2 turned his ankle while playing for Saints in their Heineken Cup win over Ospreys on Sunday.Bath prop David Wilson has also also yet to train with the squad at and is receiving ongoing treatment for a tight calf.Gloucester's uncapped centre Henry Trinder is "progressing well" with a hamstring strain and "should return to training" on Thursday.But prop Alex Corbisiero remains a doubt for the Wallabies Test as he continues with "off-field" rehabilitation from a knee injury.Watch England's autumn internationals on Sky Sports HD2

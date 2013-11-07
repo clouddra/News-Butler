@@ -1,0 +1,44 @@
+Quarterback Jeff Garcia in action for the Cleveland Browns back in 2004Veteran quarterback Jeff Garcia offered his services to the Cleveland Browns after watching the continued struggles of Brandon Weedon, who he says is clearly struggling for confidence.The Browns looked to have turned the corner when Brian Hoyer came in at quarterback and lit up the previously cumbersome offence, but he quickly suffered season-ending injury.Cleveland had to return to Weedon, who has looked completely lost in back-to-back defeats against the Lions and Packers, with coach Rob Chudzinski pondering a switch to back-up Jason Campbell.Garcia, who is now 43 and has his own coaching set-up, has been watching Weedon's struggles, and says he even offered to get back into pads to help out the Browns.
+Live on Sky Sports
+
+Live NFL
+Jacksonville Jaguars v San Francisco 49ers
+October 27, 2013 4:00pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+"It's funny, I actually reached out to the Browns and said, 'Hey, if you need a guy to come in, work me out, take a look,' " Garcia told local radio in Cleveland. "I don't know if people want me back in Cleveland, but I'm open to the opportunity.""I see all these quarterbacks going down and I'm like hey give me a call I'm ready to come back man."Garcia liked what he saw from Hoyer during his brief spell as the starter, but does not see the same ability in Weedon, who could be running out of time with so many quarterbacks coming out of college in next year's Draft."It's unfortunate what's happened," he added. "When Brian Hoyer stepped on to the field the way he played against Minnesota, putting the ball on the spot, accurate, I was excited about where the team was going with him at quarterback."The injury happened and it's back to the old ways with what happened before, and I just don't see the same abilities on the field how Brian run the offence to how Weedon runs the offence. We saw that with him in the last game, he was high, he was wide and it showed all the signs of not being confident in your system and having doubts about your ability."What I hoped would have happened is Brandon Weedon would see how Brian Hoyer was playing and would try and emulate him but that's not happened."One of Garcia's coaching pupils has been JaMarcus Russell, the former No 1 overall Draft pick who was eventually cut by the Oakland Raiders after failing to live up to his college hype.Russell had shed the pounds to get back into shape for an NFL comeback, and had been attracting interest from a number of clubs, but his chances were diminished by a reported knee injury and weight issues, but Garcia offered a different opinion.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Latest NFL Total Access
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2759939163001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2759939163001'});    
+        });
+    
+
+Latest NFL Total Access"We worked with him earlier this year, got 50 pounds off him and got him into shape," said Garcia. "Once he left us he worked out with the Bears, he was going to get a look from the Ravens but there was a concern about his dedication and motivation to be better this time around."When he got that settlement from Oakland, that $3 million dollar-plus settlement, I think things got soft again. I think the motivation might have changed a little bit."I know he had a little bit of a knee problem but I just don't know if that fire, that hunger, continued to burn when all of a sudden he got money in his pocket again, and that's the unfortunate thing."And that's the unfortunate thing because that three months that he was with us, he really committed himself, we pushed him, we brought out the best of him. And if he would have continued along that path I think he could have been somebody special."

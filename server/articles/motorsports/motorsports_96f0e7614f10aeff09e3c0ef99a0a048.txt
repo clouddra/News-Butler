@@ -1,0 +1,59 @@
+Hans Anderson gives his reaction to Swindon's semi-final first leg victory over the Poole Pirates.League winners Birmingham and defending champions Swindon are firm favourites to make the Elite League Grand Final.Birmingham put in the most impressive display of the evening as they secured a 46-44 win at rivals Wolverhampton Wolves.Wolves went into the meeting without their talismanic number one and world champion elect Tai Woffinden and they struggled without him.Freddie Lindgren did his best for Wolves with an excellent paid 14, but he was the only home rider to claim double figures as the Brummies triumphed at Monmore Green to set themselves up perfectly for the return leg in the Second City next week.Birmingham could even afford for their German number one Martin Smolinski to have an unusual off night as he scored just three points - but Jason Doyle scored heavily from number two to top score with 12, whilst Chris Harris was superb for his 11 points.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Semi-final first leg highlights from Heat 14 of Wolverhampton Wolves' duel with Birmingham Brummies.
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2686846080001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2686846080001'});    
+        });
+    
+
+Semi-final first leg highlights from Heat 14 of Wolverhampton Wolves' duel with Birmingham Brummies.Indeed Harris could have scored more, but in heat 15 he hit Wolves guest Niels Kristian Iversen which resulted in the former British number one being excluded - but it had no impact on the result as Doyle claimed the second place needed for a Birmingham win on the night."Birmingham have got a fabulous team, strong all the way through and they are difficult to handle as you have seen," Wolves boss Peter Adams told Sky Sports 2."15 heats is a lot of volume to go, so it is not all over yet."Birmingham boss Phil Morris said: "It is only half-time - Wolves could come to us and do what er have done to them, you have to respect them."We wanted to come and win and that was our goal, it does help us."In the other semi-final, Swindon took a 52-42 win over Poole Pirates, in what was a repeat of last season's final.The Robins dominated early on and as early as heat 7 the visitors were using a tactical ride - something they did twice on the evening but on each occasion - through Greg Hancock and then Darcy Ward, they could only claim four points for second places.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Semi-final first leg highlights of heat 15 between Swindon Robins and Poole Pirates.
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2686846083001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2686846083001'});    
+        });
+    
+
+Semi-final first leg highlights of heat 15 between Swindon Robins and Poole Pirates.Ward did his best for Poole with a brilliant paid 15 on the night, whist Hancock and Maciej Janowski chipped in with 9 apiece, but there was little else on offer for the visitors - which was in stark contrast to the home side.Captain Hans Andersen top scored with paid 11, whilst Troy Batchelor also hit double figures - including a brilliant third in the final heat when he crept up the inside of Janowski to make sure Swindon took a double points lead into the second leg next Monday.There were also good hauls from Kyle Howarth (8+2), Ed Kennett (8+1) and Peter Kildemand (8) as Swindon were just too strong for Poole and they travel to the South Coast next week in confident mood.Batchelor told Sky Sports: "Last year we had seven and still managed to win so ten points is even better."Captain Hans Andersen added: "Ten points is what Rosco [Swindon boss Alun Rossiter] ordered and I am pretty happy I watched it on the big screen and saw Troy coming, next week we need to make sure there are no last places and not throwing away points. We sunk the Pirate ship!"Poole boss Neil Middleditch admits he was disappointed that they did not hold Swindon to less than ten points."I am a bit upset, to go in with ten points is a bit of a mountain climb," he said. "We won't give up, we haven't  all season and we are not about to now."

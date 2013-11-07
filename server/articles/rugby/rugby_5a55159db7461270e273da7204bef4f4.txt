@@ -1,0 +1,28 @@
+Tight end Kellen Winslow of the New York JetsThe NFL has suspended New York Jets tight end Kellen Winslow for four games for violating the league's policy on performance enhancing drugs.Winslow says that the news has been a big surprise and insists he does not know what caused him to fail a drugs test, which has seen him suspended immediately without pay.The team's leading receiver will now miss games against the Pittsburgh Steelers, New England Patriots, Cincinnati Bengals and New Orleans Saints before being eligible to return."It came as a huge surprise to me when I learned that I tested positive for a banned substance. I have investigated all possible sources since learning of the positive test, including possible medical causes, but frustratingly, I do not know the source," Winslow said in a statement."I do not take supplements that list any banned ingredients, but the NFL policy is very strict, so I am accountable for the results."I sincerely apologize to my teammates, coaches and Jets fans for this situation. I will work extremely hard during this time away from the field and look forward to contributing to the team as soon as the suspension ends."Winslow leads the Jets this season with 17 catches for 169 yards and two touchdowns after he was signed in June due to the team's severe lack of receivers.The 30-year-old has struggled to find a regular home after leaving the Cleveland Browns as a Pro Bowler - making stops in Tampa Bay, Seattle and New England.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2738465143001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2738465143001'});    
+        });
+    
+
+Four-year veteran Jeff Cumberland will now be the main tight end for rookie quarterback Geno Smith to throw to, after he had the best game of his career against the Atlanta Falcons on Monday night.The Jets also signed undrafted rookie Zach Sudfeld from the New England Patriots last week and he looks like backing up Cumberland against the Steelers on Sunday.With Jets coach Rex Ryan talking up Cumberland, a few good performances from him and some promise from Sudfeld could once again seen Winslow looking for a new home.

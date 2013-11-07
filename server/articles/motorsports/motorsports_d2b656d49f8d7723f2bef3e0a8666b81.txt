@@ -1,0 +1,53 @@
+Fernando Alonso: Not expecting any late-season gifts from VettelFernando Alonso doesn't fear he is running out of time to win a coveted third world title, despite perennial rival Sebastian Vettel standing on the brink of his fourth consecutive crown.A fifth-place finish for Vettel in Sunday's Indian GP will confirm that Alonso's quest to win his maiden Drivers' Championship at Ferrari will stretch into a fifth season.Having already twice finished as a close runner-up to his Red Bull rival since arriving at Maranello in 2010, Alonso is on course for yet another second-place finish this year and 2014 will mark the eighth season since the Spaniard won the second of his back-to-back titles with Renault - no driver has ever won the championship again after such a long wait.But despite already being one of the eldest and most experienced drivers on the grid, Alonso insists he isn't fretting about his remaining world title possibilities and says he can derive a lot of satisfaction from his performances since arriving at Ferrari.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+What a weekend - India GP
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2765145633001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2765145633001'});    
+        });
+    
+
+What a weekend - India GP"Obviously I'd like to win and I'm 32 so it's not the last year of my career. I'm sure that I will have more opportunities," he said on Thursday."I would like to win more championships. These last four years I fight for three world championships. Maybe I finish three times second, which is obviously sad in a way because you are close to fighting for the World Championship and win it, but on the other hand I'm extremely proud."I'm doing the best form and the best races of my life in these years, so when I go to bed I'm extremely proud."And despite coming up agonisingly short of becoming a triple World Champion in both 2010 and 2012, Alonso says his time at Ferrari hasn't proved a disappointment and they had to simply congratulate Red Bull on their sustained success while working to eventually overhaul them."When I signed for Ferrari it was a dream come true," he explained. "I came to this fantastic team and I was coming from 2009 that I was fighting to pass Q2 [with Renault]. So when I joined Ferrari I knew that I will have the possibility to fight for the World Championship, maybe get it, maybe not because this is sport and anything can happen."In four years three times I fight for the World Championship, so more or less as I expected. If I didn't get it, this is because it's not exactly mathematics, it was one team and one driver better than us in these four years better than us."They deserve [it], we congratulate them and next year we start from zero, we need to raise our game and we need to do better. So next year we start again in that position and with the hope to keep improving and do better."With the title race having been effectively run for several races, Ferrari are locked in a battle with Mercedes and Lotus for second place in the Constructors' Championship with just 33 points covering the trio of teams heading into the last four races.
+Live on Sky Sports
+
+Live Formula One
+2013 Indian Grand Prix
+October 27, 2013 8:00am
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+Asked if the fact Vettel only needs a relatively minor points finish to secure the title in India could increase Ferrari's chances of ending the German's relentlessness winning run, a doubtful Alonso replied: "I don't think so. If it was the last race maybe he can be more conservative, but four races to go it's a matter of time when he will get the championship. I"I'm sure he will try to win these remaining four races - I'm sure he has the potential to win all four - and we will try to be as close to him as possible and fight for the podium."But I don't think Sebastian's approach will change our race."Indeed, reflecting the prevailing feeling in the paddock in regards to the resolution of the 2013 title race, Alonso added: "If Sebastian wins here or in Abu Dhabi it's more a problem for him to honest. It depends when he wants to celebrate, which country's best to celebrate [in]!"
+
+        .v5-art-body ul.skybet {background:url("/images/v5/v5-tile-common.png") no-repeat scroll -1px -1121px transparent !important}
+        .v5-art-body ul.blank {background:none;padding-left:5px}
+    
+
+
+
+
+

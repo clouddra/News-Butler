@@ -1,0 +1,38 @@
+Stuart Lancaster: Expects three England victories in the QBE InternationalsStuart Lancaster says Saturday's QBE International against Australia marks the beginning of a "defining year" for England.The countdown to the 2015 World Cup begins in earnest with Twickenham fixtures against the Wallabies, Argentina and New Zealand.
+    "It's a defining year because we're two years out from the World Cup and we have got consistency in the coaching team and in terms of selection."
+			Stuart Lancaster
+
+
+    "It's a defining year because we're two years out from the World Cup and we have got consistency in the coaching team and in terms of selection."
+			Stuart Lancaster
+
+England endured mixed fortunes last autumn, losing to Australia and South Africa before stunning the All Blacks in their final game of 2012.However, head coach Lancaster has adopted a no excuses policy this time around and is expecting victory in all three Tests next month."It's a defining year because we're two years out from the World Cup and we have got consistency in the coaching team and in terms of selection," he said."We've had some good experiences and some not so good, but the good have outweighed the not so good. It's a matter of building on those now."We've won seven out of the last eight games, but we've not consistently delivered in every game."The next step is to consistently deliver in every game at the highest level."Australia have been ranked in the top three for the last three or four years. It's a big game but one we're ready for and one we should be expecting go into with confidence."Alongside Argentina and New Zealand, we'll have to go into the game with the expectation of winning."Every player in England 23-man squad for this weekend is under the age of 30, but Lancaster insists his team selection was not influenced by age."When you're selecting a side you're selecting on the here and now. You're selecting on form first and foremost," he said.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+England coach Stuart Lancaster says Lee Dickson has been the standout scrum-half since the start of this season.
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2790027666001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2790027666001'});    
+        });
+    
+
+England coach Stuart Lancaster says Lee Dickson has been the standout scrum-half since the start of this season."In the back of your mind you think about two years' time and giving opportunities to players who you think will be around at that point."The 2015 World Cup is always at the back of your mind in selection, but it's not what drives it."I'm not following some sort of misguided youth policy to give every 20 or 21-year-old a game."It makes it an exciting time to be building a team for not just 2015, but way beyond because these guys should be around for a long time."Watch England take on Australia this Saturday. Coverage starts on Sky 3D and Sky Sports 2 from 1.30pm.

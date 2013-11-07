@@ -1,0 +1,66 @@
+Derrick Rose: Finally returns after more than a year on the sidelinesThe NBA returns on Tuesday night, with 30 teams across two conferences and six divisions gearing up for a gruelling 82-game regular-season schedule.Last year the Miami Heat secured their second straight title after an epic victory over the San Antonio Spurs in the Finals, which went the seven-game distance for the 18th time in league history.The Heat are clear favourites for a 'three-peat' but several teams will be out to deny LeBron James and co that historic achievement.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+NBA Season Wrap
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2504345465001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2504345465001'});    
+        });
+    
+
+NBA Season WrapHere, we take a look at how thinks are likely to shape up in the Eastern Conference, where eight play-off spots are up for grabs.Miami HeatSince acquiring free agent LeBron James, unanimously regarded as the best player in the world, during the 2010 off-season the Heat have reached the Finals on three straight occasions, winning the last two. Dwyane Wade and Chris Bosh complement James to form a trio that is the envy of the league, while former high draft picks Greg Oden and Michael Beasley have joined in a bid to revive flagging professional careers which have not justified their prodigious talent. One possible distraction? The contracts of 'The Big Three', which all expire at the end of the campaign.Chicago BullsPossibly the NBA's most anticipated storyline heading into the season is the return of Bulls point guard Derrick Rose. The former MVP was missing for the whole of last season as he recovered from a torn ACL, but is back and looks better than ever if pre-season is anything to go by. He joins a solid roster which includes Joakim Noah and Britain's Luol Deng. With the 25-year-old Rose entering his prime, the Bulls will be aiming to return to the Finals for the first time since the Michael Jordan era.Brooklyn Nets
+
+
+Paul Pierce (L) and Kevin Garnett: Have moved from the Celtics to the Nets
+
+Paul Pierce (L) and Kevin Garnett: Have moved from the Celtics to the NetsSince buying the team in 2010 it has become clear that Russian billionaire Mikhail Prokhorov is not scared to steal the limelight. This summer he hired Jason Kidd as head coach immediately following his retirement and traded for veteran Boston Celtics trio Kevin Garnett, Paul Pierce and Jason Terry. They join a team which was previously built around point guard Deron Williams. It could work, or it could be a disaster. Either way, it will not be boring. The Nets are some way over the tax limit too, so Prokhorov will have to cough up.New York KnicksLast year New York won the Atlantic Division and finished second in the East overall, but while the teams round them have been making moves the Knicks have kept a steady roster. They have possibly the best scorer in the NBA in Carmelo Anthony, while centre Tyson Chandler is one of the league's elite defensive players. This is Anthony's third full season in the Big Apple, the previous two having ended in play-off disappointment. 
+2012-13 standings
+1. Miami Heat (66-16)2. New York Knicks (54-28)3. Indiana Pacers (49-32)4. Brooklyn Nets (49-33)5. Chicago Bulls (45-37)6. Atlanta Hawks (44-38)7. Boston Celtics (41-40)8. Milwaukee Bucks (38-44)9. Philadelphia 76ers (34-48)10. Toronto Raptors (34-48)11. Detroit Pistons (29-53)12. Washington Wizards (29-53)13. Cleveland Cavaliers (24-58)14. Charlotte Bobcats (21-61)15. Orlando Magic (20-62) 1. Miami Heat (66-16)2. New York Knicks (54-28)3. Indiana Pacers (49-32)4. Brooklyn Nets (49-33)5. Chicago Bulls (45-37)6. Atlanta Hawks (44-38)7. Boston Celtics (41-40)8. Milwaukee Bucks (38-44)9. Philadelphia 76ers (34-48)10. Toronto Raptors (34-48)11. Detroit Pistons (29-53)12. Washington Wizards (29-53)13. Cleveland Cavaliers (24-58)14. Charlotte Bobcats (21-61)15. Orlando Magic (20-62)Indiana PacersLast year's surprise play-off package enter the season with a renewed confidence having taken Miami the distance in the Eastern Conference Finals. Paul George will hope to carry on from his breakout campaign and is joined in the front court by Danny Granger, who missed almost all of last season through injury, and 7ft 2in Roy Hibbert. They do not have the star power of the other contenders, but are solid in every department.Cleveland CavaliersCleveland ended last season third from bottom in the conference but are looking to improve with former top draft pick Kyrie Irving now in his third year. Big-name centre Andrew Bynum was recruited in the off-season, while front-court man Anthony Bennett was selected with the No 1 draft selection. Many people now have the Cavaliers down as dark horses.Detroit PistonsWith the likes of Brandon Jennings, Josh Smith and Greg Monroe on their roster, it is clear the Pistons have the talent to compete for a place in the post-season. Young, talented centre Andre Drummond is also on their books, meaning they are a team of huge potential.Washington WizardsThe Wizards made headlines shortly before the start of the season by trading injury-hit centre Emeka Okafor to the Phoenix Suns in exchange for fellow big man Marcin Gortat. The team is led by point guard John Wall, a former No 1 overall pick in his fourth year and fresh off signing a new contract.Atlanta Hawks
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Miami Heat celebrate NBA championship
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2503973550001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2503973550001'});    
+        });
+    
+
+Miami Heat celebrate NBA championshipThe Hawks are a team without a big-name star but with a serviceable rotation which managed to make the play-offs last year. They have lost Josh Smith, meaning Al Horford is now their main man.Toronto RaptorsThe Raptors traded for Rudy Gay in the middle of last season and the small forward will now lead the NBA's only Canadian team for a full campaign. However, he must find more consistency with his jump shot. DeMar DeRozan is the other main scoring threat.The Boston Celtics are in the midst of a big rebuilding project having traded away two of their three star players (the remaining one, Rajon Rondo, is currently injured) and hired a fresh-faced coach from the college ranks in Brad Stevens. The Milwaukee Bucks are now relying on Brandon Knight having traded Brandon Jennings for him, while the Charlotte Bobcats have acquired high-scoring forward Al Jefferson.The Orlando Magic have an exciting rookie in the form of Victor Oladipo, but are way short on established quality. The Philadelphia 76ers are by far the favourites to finish bottom of the pile, however. Jrue Holiday has been traded away, while top prospect Nerlens Noel may be held out for the whole year while he recovers from injury. Some have accused them of 'tanking' for a high pick in next year's talent-laden draft.

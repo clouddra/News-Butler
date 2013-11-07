@@ -1,0 +1,33 @@
+Horner - It was special for SebRed Bull boss Christian Horner believes Sebastian Vettel could have won the Abu Dhabi GP with a winning margin in excess of one minute had the World Champion been fully stretched.The four-times title winner crossed the finishing line at the Yas Marina Circuit over thirty seconds clear of his nearest pursuer, itself a remarkable measure of superiority in a sport in which every tenth of a second used to make a difference. Not now, with Vettel driving in a different league to the rest of the grid and disappearing at a rate of a second per lap in the first half of Sunday's race before easing off.No wonder Horner believed the victory could have been even more resounding and demoralising for Red Bull's distant competitors."If he was pushed he could have maybe even doubled that margin," the Red Bull chief told Sky Sports F1.Even on an afternoon when team-mate Mark Webber enjoyed a rare trouble-free race, and the German's race engineer 'Rocky' Rocquelin repeatedly urged his driver to slow down, Vettel's speed superiority was staggering over both the Australian and the rest of the field."The pace he had in hand was quite remarkable," eulogised Horner in the wake of Vettel's seventh consecutive win. "The level he has reached is quite phenomenal, it's just stunning. He seems to have found a real understanding with these tyres, and a real sensitive feel for what he needs to do to extract a lap time."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Vettel praises performance of car
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2800114668001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2800114668001'});    
+        });
+    
+
+Vettel praises performance of carVettel will equal Michael Schumacher's record of thirteen victories in a season if - or perhaps that should be 'when' - he wins the remaining two races of the season, the United States and Brazilian GPs. Vettel's level of driving has reached such a mastery that the German reckoned that, over the course of fifty-five laps in Abu Dhabi, all of which he led, he made just a single mistake when he short-shifted his RB9 gearbox.Asked to explain just why his driver is able to run faster and further on tyres the rest of the field find to be fickle and brittle, Horner suggested that Vettel had honed the perfect style for the Pirelli rubber."He doesn't excite the car too much, he doesn't create wheelspin, understeer or armfuls of oversteer. His inputs are very small, and he is very sensitive to where he needs to push."Following his latest victory, Vettel now leads the Drivers' Championship by over 130 points. His haul of 347 points is also more than the combined total managed by Lewis Hamilton and Nico Rosberg, whose Mercedes team stand second in the Constructors' Championship.
+
+
+

@@ -1,0 +1,47 @@
+Rory McIlroy: Looking the part againRory McIlroy feels his swing is back in synch again after taking the first round lead at the WGC-HSBC Champions in Shanghai.Still winless after a difficult campaign, the two-time major champion carded a seven-under 65 on Thursday to open up a two-shot advantage over the field."It felt good to be out there and in control of my golf ball," said the former world number one.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Rory McIlroy - opening 65
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2787700972001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2787700972001'});    
+        });
+    
+
+Rory McIlroy - opening 65"I was taking the club a little too far on the outside at the start of the season and dropping too much on the inside and then over-corrected the problem, started taking it more on the inside and started swinging left at impact."So it was just a matter of trying to find the balance with that. I did some good work with my coach Michael Bannon over the past few weeks and finally feel like it's back on track."I feel good. I'm controlling my ball much better. Seeing shots the way I like to see shots. It's getting there, it definitely is, it's only one round but it's a great start."
+    "I feel good. I'm controlling my ball much better. Seeing shots the way I like to see shots."
+			Rory McIlroy
+
+
+    "I feel good. I'm controlling my ball much better. Seeing shots the way I like to see shots."
+			Rory McIlroy
+
+His only better score this year was a 64 in the third round of the Deutsche Bank Championship in Boston but the Northern Irishmen felt Thursday's 65 in China had more merit."This is probably better, just because it was a little trickier conditions," McIlroy said. "There was a bit of breeze, and you've got to play good golf to shoot 7-under around this place."The 24-year-old says he won't be getting ahead of himself despite the fast start."I've tried to stay patient the entire season, and I know that if I believe that I'm working on the right things and I am working on the right things, then things will start to fall into place sooner or later," said McIlroy."It's obviously frustrating when you've had a couple of seasons previously where you have had success, and not being able to emulate that; there's times where you definitely get frustrated."I wouldn't say that I was restless in terms of trying to get a win this season, because I think that the best way to approach it is to stay patient and not to force the issue too much."Meanwhile, after winning in Shanghai last week, Gonzalo Fernandez-Castano is targeting back-to-back wins in the Chinese city after opening with a 67 to share second place after day one with Welshman Jamie Donaldson."It has been a good start. I played very, very solid golf tee to green again," said the Spaniard. "I left myself a lot of birdie chances and minus five to start the tournament is a pretty good result considering the circumstance as it was windy out there and there were some tricky pin positions."Donaldson's 67 included a 22-feet putt for eagle on the 16th hole."It's always nice to see those putts go into a hole like that. So it was a good end to the round," he said."There're so many difficult holes out there. If you miss the fairways in the wrong hole, it makes it very difficult to get anywhere near the green.  So it was just a case of trying to keep it in play, staying patient and taking it from there for me today."
+
+        .v5-art-body ul.skybet {background:url("/images/v5/v5-tile-common.png") no-repeat scroll -1px -1121px transparent !important}
+        .v5-art-body ul.blank {background:none;padding-left:5px}
+    
+
+
+Catch live action across 6 sports channels exclusively with Sky Sports - Find out more
+
+

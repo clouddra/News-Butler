@@ -1,0 +1,28 @@
+Quarterback Josh Freeman with the Tampa Bay BuccaneersJosh Freeman says his surprising move to Minnesota is an opportunity to 'pump the brakes' and get over his troubled exit from Tampa Bay, although the Vikings have told him he will get the chance to challenge for Christian Ponder's starting job.Freeman's troubled time with Tampa finally came to an end last week, and with the likes of Cleveland's Brian Hoyer and Buffalo's EJ Manual going down injured, they seemed likely landing spots for the quarterback.A few other teams have needs at the position, but Freeman surprisingly landed in Minnesota after passing a medical on Monday - a team with a regular starter and a back-up in Matt Cassel who won them their first game of the season at Wembley.The move looks a sure sign that third-year man Ponder was under severe pressure, but Freeman says part of the decision was that he could relax behind a recognised starter in his quizzical comments on a conference call."From standpoint of a career move, thing I like about the Vikings is, they've got a guy. It's an opportunity to pump the brakes," Freeman said. "It's been a crazy couple of weeks."Head coach Leslie Frazier insisted Ponder is still the starter, and he will play against Carolina on Sunday if his rib injury has healed, with Cassel stepping in if not.However, Frazier did admit that Freeman was told he would have the chance to fight for the start eventually with the Vikings, and that was part of his decision."I mean, that's part of the equation," Frazier said. "When we talked with him, that's definitely on the table, so we'll see how well he progresses and how well he picks up our offense."Frazier added that the team had looked into Freeman's situation at Tampa Bay, where it was released he was in the NFL's substance abuse program after a mix-up with his ADHD medication, and they were convinced he was not a problem player."You hear so many things; you have to find out what's true and what's not," Frazier said. "Once I did a little digging and had a chance to talk with him, I think we'll be able to coexist. I think we'll be all right."
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2728478072001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2728478072001'});    
+        });
+    
+
+For his part, Freeman is saying the right things and was not about to attack former coach Greg Schiano after he benched him and brought about his departure from Tampa."Obviously, he didn't feel that I was the guy he wanted leading his team, the calibre of quarterback he wanted under centre," said Freeman. "I have a lot of great memories there, a lot of good times. But times change, things progress and I'm just fired up about being here in Minnesota."Ponder says he still feels like the job is his, after holding a meeting with Frazier about the Freeman signing, but Cassel said nothing would surprise him, as he looked to have made a strong bid for the start in Wembley only to now have more competition."One thing you can expect in the NFL - expect the unexpected," Cassel said. "Because every week it changes. You never know what's going to happen."I learned that over time; this is my ninth year now. Anything that's overwhelming, or surprising, it's one of those things that's the NFL."

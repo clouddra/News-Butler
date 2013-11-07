@@ -1,0 +1,47 @@
+James O'Connor: Set for new challenge at London IrishLondon Irish have confirmed the signing of out-of-favour Australia utility back James O'Connor on a deal until the end of the season.The 23-year-old who can play at centre, wing, full-back or fly-half, was recently escorted from Perth Airport for drunken behaviour, the latest in a string of off-field indiscretions, and had his contract terminated by the Australian Rugby Union.The former Western Force and Melbourne Rebels player has had a chequered career since making his Australia debut as an 18-year-old in 2008.He has added a further 43 caps to his tally, with his footballing ability seeing him fielded at fly-half, centre, wing and full-back.He played at No 10 during Australia's 2-1 Test series defeat against the British and Irish Lions in the summer, scoring a try in the Wallabies' third Test defeat.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+London Irish have signed James O'Connor until the end of the season.
+
+        <object id="video-id3" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2779580486001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video3','ob':'#video-id3','id':'2779580486001'});    
+        });
+    
+
+London Irish have signed James O'Connor until the end of the season.Australia coach Ewen McKenzie insisted the decision to terminate the player's contract after the incident in Perth did not close the door on O'Connor's Test career, but admitted the player has to "modify behaviour".Four days prior to the second Test of the Lions series, O'Connor and team-mate Kurtley Beale were photographed at a fast-food restaurant in Melbourne at 4am in the morning, while the utility back had previously missed buses to training and team meetings.In 2011 he received a one-game ban for missing Australia's World Cup squad announcement, but his on-field ability has never been called into question and his availability prompted interest from several top European clubs.His last appearance for the Green and Gold was in the Rugby Championship victory over Argentina in September while the switch to England could also invigorate the Exiles, who have lost four of their opening six Premiership fixtures.London Irish's director of rugby Brian Smith said: "James is a world-class player and a terrific kid and it is fantastic to have him at London Irish."He will bring a huge amount of experience to our group and will fit in well to our style of play. He is fit and ready to play so the coaching group will get him up to date on everything and hopefully he'll be ready to go this weekend."
+    "James is a world-class player and a terrific kid and it is fantastic to have him at London Irish."
+			Brian Smith
+
+
+    "James is a world-class player and a terrific kid and it is fantastic to have him at London Irish."
+			Brian Smith
+
+O'Connor said: "Having decided that I needed a change from both a personal and playing point of view, I spoke to clubs in Japan and France, and concluded that the best way forward for my development was to move to England."Given that I've left my support network back in Australia, London Irish offered me an environment that I felt comfortable with."The club is renowned as a welcoming, family club throughout the world, it has a highly regarded Australian Director of Rugby in Brian Smith and plays a style of rugby that appeals to me."In England and Wales they play a very high-pressured, territory based game. I thoroughly believe I can improve elements of my game by playing in the Aviva Premiership."Watch England's opening November international against Australia on Sky Sports HD2 on Saturday
+
+        .v5-art-body ul.skybet {background:url("/images/v5/v5-tile-common.png") no-repeat scroll -1px -1121px transparent !important}
+        .v5-art-body ul.blank {background:none;padding-left:5px}
+    
+
+
+Catch live action across 6 sports channels exclusively with Sky Sports - Find out more
+
+

@@ -1,0 +1,59 @@
+Tottenham: Celebrate their dramatic win over HullTottenham secured their place in the Capital One Cup quarter-finals with a penalty shootout win over Hull City after a 2-2 draw White Hart Lane.Gylfi Sigurdsson put the hosts ahead with an early contender for goal of the season, but the game went in to extra-time following a horrible gaffe from Brad Friedel.Paul McShane put Hull on course for victory in extra-time, but Harry Kane made it 2-2 before Friedel saved Ahmed Elmohamady's penalty in a marathon shoot-out to set Spurs up with a quarter-final clash against West Ham.Despite a few boos at the end of the first period of extra-time, the home supporters got behind their team following Andre Villas-Boas' criticism of the atmosphere against the same opposition at the weekend.Fans' patience was tested early on when Christian Eriksen blasted a shot out for a throw-in, but they were then brought to their feet thanks to Sigurdsson's goal.The forward collected Kyle Naughton's pass and cleverly turned Curtis Davies before cracking a 25-yard half-volley past the diving Eldin Jakupovic.Younes Kaboul put in a goal-saving tackle to deny Danny Graham after Friedel had spilled Elmohamady's shot, but otherwise Tottenham were in complete control.However, Steve Bruce raged at referee Jon Moss just before the break when Kyle Walker's two-footed sliding challenge on Stephen Quinn went unpunished.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Villas-Boas: Hails Spurs fans
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2787513787001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2787513787001'});    
+        });
+    
+
+Villas-Boas: Hails Spurs fansThe game turned as soon as the teams came out for the second half.Substitute Aaron McLean came within a whisker of scoring with his first touch and the visitors then equalised.George Boyd found Elmohamady with a clever backheel and the Egyptian swung the ball to the back post to find Davies. The defender's shot dribbled back across the box and was going wide until Friedel clumsily fumbled the ball in to his own net.The home crowd responded well, but their team did not.Villas-Boas brought on Nacer Chadli and Vlad Chiriches but the former would last only nine minutes before being replaced by Kane after pulling his left hamstring.As the clock ticked towards 90 minutes, the game became a thrilling end-to-end encounter.Defoe entered the book for diving, while Erik Lamela saw a superb free-kick saved by Eldin Jakupovic.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Bruce: Calls for consistency
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2787708894001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2787708894001'});    
+        });
+    
+
+Bruce: Calls for consistencyChiriches clumsily toppled Gedo over in the Spurs box at the other end but, much to Bruce's annoyance, Moss waved play on.In the third minute of added time Kane struck the woodwork and moments later the game went in to extra-time.Villas-Boas urged his side on from the technical area but he had his head in his hands a few minutes later as Hull moved ahead.McShane ran through the Spurs box and escaped the feeble clutches of Chiriches before powering Boyd's corner past Friedel.Hull could have put the game to bed when Gedo fired just over from a volley and Spurs made them pay. Defoe laid the ball to Kane and he responded by turning his marker and burying a low equaliser in to the bottom corner.McLean gave Tottenham the advantage when he missed Hull's first penalty in the shoot out, but Lamela's miss levelled things up.Friedel then atoned for his early error by saving well from Elmohamady to send Spurs through.

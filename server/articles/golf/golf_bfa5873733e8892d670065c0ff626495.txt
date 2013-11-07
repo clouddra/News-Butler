@@ -1,0 +1,38 @@
+Stenson: has his hands on a trophy againDenis Pugh applauded Henrik Stenson's focus after the Swede eventually prevailed at the Deutsche Bank Championship on Monday.Lightning in Boston had caused delays on day four, but Stenson was unperturbed and overhauled Sergio Garcia with a final round five-under 66 to finish on a course record-equalling -22, two clear of his nearest challenger, Steve Stricker.
+    "He's had some horrible times but he's started showing some of the talent is still there and under pressure he's hit the rights shots."
+			Peter Oosterhuis
+
+
+    "He's had some horrible times but he's started showing some of the talent is still there and under pressure he's hit the rights shots."
+			Peter Oosterhuis
+
+Stenson had not won on the PGA Tour since scooping the Players Championship in 2009 but top-three finishes at the Open, Bridgestone Invitational and US PGA Championship demonstrated his good form and he delivered either side of a delay for lightning to unseat Tiger Woods at the top of the FedEx Cup play-off standings.And Pugh feels Stenson could go on to seal the FedEx Cup if he performs well again at the BMW Championship, which is live on Sky Sports from September 12."You got the feeling he was in total control," Pugh told Sky Sports. "The old Henrik would have beaming, playing jokes but he was so calm, as if he was saying to himself 'the day's mine, I took it well'."I think that shows how important his psychologist was to him and, hearing him speak as he did, with a good week's rest, he could be the man who takes the pot of gold."Peter Oosterhuis was also impressed with the 37-year-old's display and applauded the way he has bounced back this season after several years searching for his top form.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Shot Centre - Stenson's drive
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2645763132001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2645763132001'});    
+        });
+    
+
+Shot Centre - Stenson's drive"You could see the relief at the end when he knew he'd closed out the event," said the Englishman. "It was tremendous play from him, though."Considering his talent he's had some horrible times but he's started showing some of the talent is still there and under pressure he's hit the rights shots."He's got power off the tee and he can attack with iron shots - but you have to make a few putts as well and he did that."However, there was only frustration for overnight leader Garcia, who surrendered his two-shot lead by hitting a two-over final round of 73 to finish tied for fourth on -17.Four bogeys on the front nine left Garcia an uphill battle and Oosterhuis hopes the week off from FedEx Cup action will help the Spaniard come again in Illinois."The free week will be important for Sergio because somehow he has to shake off that 73," he said. "Sergio was in a great position and now he has to be in the right mood for the next tournament."

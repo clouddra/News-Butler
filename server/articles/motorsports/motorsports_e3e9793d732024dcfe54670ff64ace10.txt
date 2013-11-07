@@ -1,0 +1,53 @@
+Sebastian Vettel: Fastest despite a problematic sessionSebastian Vettel was fastest again in second practice on Friday as tyre degradation reared its head at the Indian Grand Prix.The World Champion-elect, who will clinch a fourth successive title this weekend if he finishes fifth or higher in Sunday's race, set the pace with a lap of 1:25.722s at the 5.125km Buddh International Circuit to go 0.289s faster that Red Bull team-mate Mark Webber.The stark facts make the session appear business as usual for Vettel but it was not without its difficulties. For a start, he was hampered by KERS problems - the German's pace an ominous sign assuming the issue was not rectified, which is unclear - and his car's rear brakes also left him pit-bound at one stage.More importantly in the context of the weekend ahead, both Vettel and Red Bull's cars suffered from blistering of the soft compound option tyre, particularly on the left-hand front.He was not alone in that regard, with Sky Sports F1's Ted Kravitz reporting blistering and graining up and down the pitlane, and it remains to be seen whether it might prevent Vettel from taking the fifth place he needs this weekend to take a fourth successive title.Probably not, given the German's omnipotence. Yet with a concerned Adrian Newey joined by Pirelli Motorsport Director Paul Hembery in the Red Bull pits at one stage, the suggestion is that they might be struggling more than their rivals.There is no suggestion that the soft tyre might pose a safety concern but assuming it fails to last in Sunday's race, it could lead to a strategy re-think on the part of the teams.
+On Sky Sports
+
+The F1 Show
+
+October 25, 2013 1:30pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+Last year's race was a one-stopper, with Pirelli bringing softer tyres in response to spice things up. Twelve months on, a two-stop race is on the cards according to Hembery, who appeared unconcerned by the blistering when he spoke to Sky Sports F1's Martin Brundle afterwards."To get a two-stop race, you've got to push with the choice and that's what we've done with the soft," he said. "As long as the teams can do the qualifying and the ten to 15 laps, which it seems they can - Kimi and Fernando did 24 laps runs on the softs - then we could be in for a two-stop race," Hembery said."There were no issues with the medium tyre, which will be the main race tyre."The session was not without its safety concerns, though, with Williams bringing their running to a premature halt after a wheel nut fell off Pastor Maldonado's car.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Loose wheel nut will worry Williams
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2767594752001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2767594752001'});    
+        });
+    
+
+Loose wheel nut will worry WilliamsThe incident, which came shortly after a tyre stop, was very similar to that which befell the Venezuelan during practice at the Japanese Grand Prix two weeks ago. On that occasion, Williams were fined €60,000 by the FIA, which said it viewed the situation as "serious".Behind the Red Bull pair, who also finished one-two in the morning's session, came Lotus's Romain Grosjean, with Lewis Hamilton fourth for Mercedes ahead of Ferrari's Fernando Alonso.Nico Rosberg (Mercedes) was sixth fastest ahead of Felipe Massa (Ferrari), with Kimi Raikkonen (Lotus) and McLaren pair Sergio Perez and Jenson Button completing the top ten.Further down the order, Maldonado wound up 16th fastest, three places behind team-mate Valtteri Bottas, while Paul Di Resta was 15th - the Force India driver also three place behind his team-mate Adrian Sutil.At the back of the pack, Max Chilton was 22nd fastest, 1.4s down on Marussia team-mate Jules Bianchi, who was nevertheless fractionally slower than the rival Caterham of Giedo van der Garde.
+
+        .v5-art-body ul.skybet {background:url("/images/v5/v5-tile-common.png") no-repeat scroll -1px -1121px transparent !important}
+        .v5-art-body ul.blank {background:none;padding-left:5px}
+    
+
+
+
+
+

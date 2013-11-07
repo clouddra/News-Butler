@@ -1,0 +1,38 @@
+Stuart Lancaster: Seeking inspiration from England's footballersEngland head coach Stuart Lancaster is hoping his side can learn from the experience of their football counterparts as the two sides look ahead to their respective World Cups.Roy Hodgson's side secured their place at next year's finals in Brazil with victory over Poland at Wembley on Tuesday and Lancaster is keen for his side to learn how to deal with similar high-pressure situations as they begin their preparations for hosting the 2015 Rugby World Cup.
+    "Credit to the footballers for dealing with the expectation and pressure. One of the challenges we'll face is the expectation and pressure of being the home team at a World Cup."
+			Stuart Lancaster
+
+
+    "Credit to the footballers for dealing with the expectation and pressure. One of the challenges we'll face is the expectation and pressure of being the home team at a World Cup."
+			Stuart Lancaster
+
+England will face Australia, Argentina and New Zealand in the forthcoming QBE Internationals at Twickenham and Lancaster feels that will help them to perform when under the cosh."Hopefully Roy will come into camp and we'll have a chance to chat," said Lancaster."I've spoken to him a couple of times in the past. We'll certainly invite him to our games and hopefully he can enjoy them without worrying about the result."Credit to the footballers for dealing with the expectation and pressure. One of the challenges we'll face is the expectation and pressure of being the home team at a World Cup."New Zealand faced that in 2011 and I thought they had that maturity and experience to deal with that pressure and still deliver on the stage."Our challenge is to be that experienced and to be ready for that."And next month's games are great preparation in that respect. Three games at Twickenham against three big southern hemisphere sides are great preparation."Lancaster also revealed he is happy for his players to spend time with their families during the tournament in a bid to make the experience less stressful and increase their chance of winning the Webb Ellis Cup.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Sky Sports' Stuart Barnes analyses Stuart Lancaster's new selections for the QBE Internationals in November.
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2746724256001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2746724256001'});    
+        });
+    
+
+Sky Sports' Stuart Barnes analyses Stuart Lancaster's new selections for the QBE Internationals in November."In 2011 New Zealand had the advantage of being able to go home to see their families and get away from the intensity of the World Cup," he added."I think they found that an advantage and we'll look to use that as well. We won't keep the players in camp all the time, we'll let them get out of the bubble."Watch England's QBE Autumn Internationals with Australia, Argentina and New Zealand live on Sky Sports this November

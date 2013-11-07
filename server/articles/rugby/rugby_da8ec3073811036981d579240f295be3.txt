@@ -1,0 +1,36 @@
+Owen Farrell: Learnt from Lions tour of AustraliaOwen Farrell is keen to put his experience of playing for the British and Irish Lions to good use when England take on Australia at Twickenham on Saturday.The Saracens fly-half came off the bench to make his Lions' debut in the 41-16 victory over the Wallabies in July.But Farrell believes the overall experience of being on the Lions tour of Australia could prove invaluable, with England looking to get off to a winning start in the QBE autumn internationals with victory over Ewen Mckenzie's' side."It was unbelievable experience and one I learned a lot from. You have to dip into that and keep using it," he said."A lot of people do a lot of work on the field, and stay behind after training and you see why these players are so good.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2782590584001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2782590584001'});    
+        });
+    
+
+"Having watched players who have been at the top for so long it's about not only that work but about the work off the field as well, dragging people with you and making the people around you understand as well."Farrell admits the Wallabies will, as always, prove stiff opposition for Stuart Lancaster's side this weekend and picked out Quade Cooper as their opponents' danger man."It's a big challenge, Australia have been playing very well," he added."They've been playing for a long time together this year, we're going to have to get up to speed quickly and make sure we're as prepared as we can be.He's (Cooper) been playing very well recently, you only have to look at the last couple of games for Australia to see how well he's been playing."We played against him while we were away in the summer, he played for the Reds and he was very good in that game as well."His ability to keep the ball alive and never get tackled, his footwork's brilliant, he can change games on his own. I'm sure we'll have someone who'll be looking to put some pressure on."
+    "Every time we step out on the field really, over the last 18 months, I think we've been going in the right direction and we need to make sure that carries on."
+			Owen Farrell
+
+
+    "Every time we step out on the field really, over the last 18 months, I think we've been going in the right direction and we need to make sure that carries on."
+			Owen Farrell
+
+Australia beat England 20-14 in last year's autumn international at Twickenham but Farrell believes they have learnt from that defeat."Small margins really of what we need to get right, how switched on you need to be and how concentrated you need to be for the full 80 minutes in this game, otherwise you'll get punished by what's a very talented team," he added when asked what improvements need to be made."There were a couple of times in the game we might have switched off and not quite got things right that we should have and that's what cost us."Farrell also looked ahead to England hosting the World Cup in 2015 and insisted they are making good progress as a team as they look to reclaim the Webb Ellis Trophy they last won in 2003."I think we want to take it to another level now and push on," he said."Every time we step out on the field really, over the last 18 months, I think we've been going in the right direction and we need to make sure that carries on."Watch England take on Australia this Saturday. Coverage starts on Sky 3D and Sky Sports 2 HD from 1:30pm.

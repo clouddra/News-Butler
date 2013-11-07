@@ -25,13 +25,18 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
 import com.androidquery.AQuery;
 import com.androidquery.auth.FacebookHandle;
+import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
+import com.androidquery.callback.Transformer;
 import com.cs4274.news_butler.helper.FBSQLiteHelper;
 import com.cs4274.news_butler.helper.IndexSources;
 import com.cs4274.news_butler.helper.ReadGMail;
 import com.cs4274.news_butler.helper.ReadSMS;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;
@@ -111,6 +116,7 @@ public class SettingsActivity extends PreferenceActivity {
 
 	public static final String FB_APP_ID = "514365765304596";
 	public static final String FB_PERMISSIONS = "read_mailbox";
+	public static final String SERVER_URL ="42.60.140.137:5000";
 	private AQuery aq;
 	private FBSQLiteHelper datasource;
 
@@ -165,28 +171,7 @@ public class SettingsActivity extends PreferenceActivity {
 		
 		SharedPreferences hashedSet = getSharedPreferences(HASHMAP, 0);
 		hashedArticles = hashedSet.getStringSet(SET, emptySet);
-		/*
-		 * CheckBoxPreference facebook2 = (CheckBoxPreference)
-		 * findPreference("enable_facebook");
-		 * facebook2.setOnPreferenceChangeListener(new
-		 * OnPreferenceChangeListener() { CustomPreference facebook3 =
-		 * (CustomPreference) findPreference("learn_facebook");
-		 * 
-		 * @Override public boolean onPreferenceChange(Preference arg0, Object
-		 * arg1) { if ((Boolean)arg1) facebook3.setText("Learned2"); else
-		 * facebook3.setText("TEST");
-		 * 
-		 * return true; } });
-		 * 
-		 * facebookPreference.setOnPreferenceClickListener(new
-		 * Preference.OnPreferenceClickListener() {
-		 * 
-		 * @Override public boolean onPreferenceClick(Preference preference) {
-		 * 
-		 * return false; }
-		 * 
-		 * });
-		 */
+
 
 		CustomPreference smsPreference = (CustomPreference) findPreference("learn_sms");
 		smsPreference
@@ -281,15 +266,21 @@ public class SettingsActivity extends PreferenceActivity {
 					}
 				});
 
-		/*
-		 * Preference articlesPreference =
-		 * (Preference)findPreference("learn_articles");
-		 * articlesPreference.setOnPreferenceClickListener(new
-		 * Preference.OnPreferenceClickListener() {
-		 * 
-		 * @Override public boolean onPreferenceClick(Preference preference) {
-		 * articles = true; //getArticleTopTerms(); return false; } });
-		 */
+		
+
+
+				CustomPreference articlePref = (CustomPreference) findPreference("learn_articles");
+				articlePref
+						.setOnPreferenceClickListener(new CustomPreference.OnPreferenceClickListener() {
+
+							@Override
+							public boolean onPreferenceClick(Preference preference) {
+								fetchTerms();
+								return true;
+							}
+					});
+		
+		
 
 	}
 
@@ -309,68 +300,7 @@ public class SettingsActivity extends PreferenceActivity {
 	}
 
 	public void facebookCb(String url, JSONObject json, AjaxStatus status) {
-		Log.d("fb", json.toString());
-		/*
-		Queue<Pair<String, Long>> messageEntries = new LinkedList<Pair<String, Long>>();
-		try {
-			JSONArray conversations = json.getJSONObject("inbox").getJSONArray(
-					"data");
-			for (int i = 0; i < conversations.length(); i++) {
-				JSONArray comments = conversations.getJSONObject(i)
-						.getJSONObject("comments").getJSONArray("data");
-				// Log.d("fb comments", comments.toString());
-
-				for (int j = 0; j < comments.length(); j++) {
-					JSONObject currentMessage = comments.getJSONObject(j);
-					try {
-						String message = currentMessage.getString("message");
-						String createdTime = currentMessage
-								.getString("created_time");
-
-						// Date date =
-						// DateFormat.getDateTimeInstance().parse(createdTime);
-						final String pattern = "yyyy-MM-dd'T'hh:mm:ssZ";
-						final SimpleDateFormat sdf = new SimpleDateFormat(
-								pattern);
-						Date date = sdf.parse(createdTime);
-						date.getTime();
-						// Log.d("fb date", String.valueOf(getUnixTime(date)));
-						// Log.d("fb string", message + createdTime);
-
-						messageEntries.add(new Pair<String, Long>(message,
-								getUnixTime(date)));
-						// datasource.addMessage(message, getUnixTime(date));
-
-					} catch (JSONException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (ParseException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					// Log.d("fb string", currentMessage.toString());
-				}
-			}
-			// Log.d("fb inbox", conversations.toString());
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			// e.printStackTrace();
-		}
-
-		// datasource.close();
-
-		CustomPreference fbPreference = (CustomPreference) findPreference("learn_facebook");
-		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
-
-		// Get the date today using Calendar object.
-		Date today = Calendar.getInstance().getTime();
-		// Using DateFormat format method we can create a string
-		// representation of a date with the defined format.
-		String reportDate = df.format(today);
-
-		fbPreference.setText(reportDate);
-		 */
-		
+		Log.d("fb", json.toString());		
 		new storeFBTask().execute(json);
 
 	}
@@ -880,6 +810,32 @@ public class SettingsActivity extends PreferenceActivity {
 		}
 
 	}
+	
+	
+	private void fetchTerms(){
+		
+		String url = "http://" + SERVER_URL + "/GET/terms";
+		Log.d("server_url", url);
+
+        aq.ajax(url, String.class, new AjaxCallback<String>() {
+
+            @Override
+            public void callback(String url, String response, AjaxStatus status) {
+            	List<Domain> topTerms;
+            	Gson gson = new Gson();
+            	topTerms = gson.fromJson(response, new TypeToken<List<Domain>>() {}.getType());
+            	
+            	
+            	// code to test json serialization successful or not
+            	String topTermsString = gson.toJson(topTerms, new TypeToken<List<Domain>>() {}.getType());
+    			Toast.makeText(aq.getContext(),topTermsString, Toast.LENGTH_LONG).show();
+    			
+    			// call scoring function here
+            }
+            
+    });
+
+	}
 
 	/******************************************************************
 	 * Helper methods
@@ -1093,6 +1049,16 @@ public class SettingsActivity extends PreferenceActivity {
 			topMatchingList.add(domainList.get(secondMatch));
 
 		return topMatchingList;
+	}
+	
+	private class Domain {
+		String domain;
+		String[] keywords;
+		
+		public Domain(String d, String[] k){
+			this.domain = d;
+			this.keywords = k;
+		}
 	}
 
 }

@@ -1,0 +1,32 @@
+Lionel Messi: Will face Real Madrid this weekendBarcelona lock horns with fierce rivals Real Madrid on Saturday at Camp Nou in the first Clasico of the season.Barcelona are looking for their first win over Real Madrid in La Liga in almost two years.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+El Clasico is coming!
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2766581642001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2766581642001'});    
+        });
+    
+
+El Clasico is coming!The Catalan side last tasted victory over Real in December 2011 with a 3-1 win at the Bernabeu, with Real winning two and drawing the other in the last three meetings.Barcelona are the only unbeaten side in La Liga after winning eight of their opening nine games and a home victory over Real would move the Catalans six points clear of their arch rivals.Barca go into the game in the rare position of having not won in their previous two outings - against Osasuna (0-0) and at AC Milan (1-1) in the Champions League.Real lie third in La Liga, with their only loss of the season coming against neighbours Atletico Madrid last month.The game will also mark Clasico debuts for both coaches Gerardo Martino and Carlo Ancelotti as they prepare for their first taste of the biggest game in Spanish football.All eyes will be on the big-money signings for both Barcelona and Real as Neymar and Gareth Bale look to make their mark for their new clubs on the grandest stage of all.Arguably the two best players on the planet Lionel Messi and Cristiano Ronaldo will come up against each other again in an intriguing sub-plot.Ronaldo has scored 15 goals from 12 appearances this season, while Messi has netted 12 goals in nine outings.Lionel Messi is set to start for Barcelona after coming through the midweek draw with AC Milan unscathed.The Argentine ace missed two games against Celtic and Valladolid earlier this month with a hamstring injury and only featured off the bench last weekend in the draw with Osasuna.Messi scored and played the full 90 minutes against AC Milan and will lead Barcelona's attack against Real.Barcelona are still missing full-back Jordi Alba for the visit of Real Madrid as he recovers from a hamstring injury.Ibrahim Afellay remains sidelined, while Jonathan dos Santos faces a lengthy spell on the sidelines after suffering a serious knee injury earlier this week.Gareth Bale is pushing to start his first El Clasico encounter after recovering from a thigh problem.The world's most expensive player has made a couple of substitute appearances in Real's last two games against Malaga and Juventus, and he has been declared fit to start against Barcelona.If Bale does start, Real boss Ancelotti will be left with a decision on who forms his attacking trio.Striker Karim Benzema has struggled in recent weeks whereas winger Angel Di Maria has blossomed, while Cristiano Ronaldo is a certain starter.Ancelotti has also indicated that Diego Lopez will return in goal after Iker Casillas started in the midweek UEFA Champions League win over Juventus.The game has come too soon for Xabi Alonso who has only just returned to training after a broken foot.
+                                                Team taken from Barcelona vs AC Milan (UEFA Champions League) on Tuesday 22nd October 2013                    
+                                                Team taken from Real Madrid vs Juventus (UEFA Champions League) on Wednesday 23rd October 2013                    

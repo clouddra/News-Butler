@@ -1,0 +1,30 @@
+Andy Murray with girlfriend Kim Sears before collecting his OBEWimbledon champion Andy Murray was delayed on his way to receiving an OBE at Buckingham Palace on Thursday after being asked to take an out-of-competition drug test.The Scot, who became the first British man in 77 years to win Wimbledon when he beat Novak Djokovic in July, got an unexpected knock on the door as he was preparing for his royal engagement."In the middle of a drug test hahaha I'm goin to be late!!" wrote Murray, who is recovering from back surgery, on Twitter.Olympic champion Murray was all smiles when he did arrive at Buckingham Palace to be presented with an OBE.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Murray receives OBE
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2749378569001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2749378569001'});    
+        });
+    
+
+Murray receives OBEThe tennis star was receiving the honour from the Duke of Cambridge, who was hosting his first investiture ceremony.Murray arrived at the palace with girlfriend Kim Sears and his parents Willie and Judy in a chauffeur-driven people carrier.Murray was awarded the OBE in the New Year Honours, before his historic triumph at Wimbledon, after winning the US Open and men's tennis final at London 2012.The British No 1 is currently out of action after undergoing back surgery, but hopes to make a return to competitive tennis before next year's Australian Open."I'm not going to come back until I'm 100 per cent fit so I'll have to wait and see," he told Sky Sports News."I've been recovering well, I've been doing my rehab and I haven't hit a tennis ball for four weeks."It's probably going to be another four weeks or so before I can start getting on the court again, but I'll just have to wait and see. "

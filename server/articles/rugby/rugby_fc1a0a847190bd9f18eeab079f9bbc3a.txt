@@ -1,0 +1,28 @@
+Richie McCaw: Leading 36-man squad to EuropeNew Zealand have named five uncapped players in their squad for the November internationals in Europe.Richie McCaw will lead a 36-man squad which will play France, Ireland and England, and 27 of them will first go to Tokyo to play Japan.Three of the uncapped players are supplied by the Crusaders - prop Joe Moody, lock Dominic Bird and flanker Luke Whitelock, brother of Sam, who is also in the squad.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2755079070001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2755079070001'});    
+        });
+    
+
+Blues winger Frank Halai and Hurricanes scrum-half TJ Perenara are also included, and Hurricanes flanker Ardie Savea - brother of Julian - will travel with the squad as an 'apprentice'.Hansen said: "The aim of the tour is to further develop our game structures, our skills sets and our individual players."We will be looking to use the tour to take ourselves beyond where we are at the moment."New Zealand have won all 10 of their internationals this year, with the latest a thrilling 41-33 victory over Australia on Saturday.Forwards: Dane Coles, Andrew Hore, Keven Mealamu, Wyatt Crockett, Charlie Faumuina, Ben Franks, Owen Franks, Joe Moody, Tony Woodcock, Dominic Bird, Brodie Retallick, Luke Romano, Jeremy Thrush, Sam Whitelock, Sam Cane, Steven Luatua, Richie McCaw (C), Liam Messam, Kieran Read (VC), Luke Whitelock.Backs: Tawera Kerr-Barlow, TJ Perenara, Aaron Smith, Beauden Barrett, Dan Carter (VC), Aaron Cruden, Tom Taylor, Ryan Crotty, Ma'a Nonu, Francis Saili, Israel Dagg, Frank Halai, Cory Jane, Charles Piutau, Julian Savea, Ben Smith

@@ -1,0 +1,44 @@
+Stuart Lancaster: Has backed Billy Twelvetrees after the centre's uneven performance against AustraliaStuart Lancaster admitted his frustration at the showing of England's midfield in the first half against Australia, but hinted that Billy Twelvetrees will retain his place despite a shaky performance at Twickenham.Although Lancaster's side ultimately defeated the Wallabies 20-13 in Saturday's opening QBE Autumn International, there was criticism of England's first half display in particular as they went in to the break trailing 13-6.There were positives to be taken despite the lack of control in the midfield according to the England head coach, who pointed to a failure to take their chances from penalties as the reason the hosts were behind after 40 minutes."(I was) slightly frustrated midfield or generally because in the first half we didn't really provide a good platform in the first half to build our attacking game on," Lancaster told Sky Sports. "That said it's a positive because we kept getting given penalties.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+England head coach Stuart Lancaster hinted he'll probably stick with Billy Twelvetrees in their second Autumn International match, against Argentina.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2803337625001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2803337625001'});    
+        });
+    
+
+England head coach Stuart Lancaster hinted he'll probably stick with Billy Twelvetrees in their second Autumn International match, against Argentina."What we didn't do unfortunately was nail those penalties and build that buffer. We had three scrums, three penalties awarded to us. We had a strong phase play attack and then they got done for not rolling away so we got another penalty."You get those and you're 12-3 up, as it happened, we didn't and then we concede a soft try and then a disappointing penalty and we go in 13-6 down. So the good thing was we held our nerve, we didn't panic, we didn't start chasing the scoreboard and played a good game second half and came out on top I think."Billy Twelvetrees started in the centre for England but the 24-year-old Gloucester back was seen to be at fault for the Australia try with a weak tackle and followed it up by conceding the penalty that saw the visitors take a 13-6 lead.His coach looked to back him, however, and gave a strong indication that Twelvetrees will keep his pace for this Saturday's Test with Argentina."I think we've got to give Billy (Twelvetrees) a chance to build on the caps he's had," Lancaster remarked. "He's not had too many opportunities so far."We've still got that decision to make but at the moment without giving the game away and picking the side too early - because we haven't trained yet - there is a mind-set for me to say you give him another chance."No game is ever won and lost by one person or one tackle and he was pretty good in some other areas."
+Live on Sky Sports
+
+Live International Rugby Union
+England v Argentina
+November 9, 2013 1:30pm
+
+
+
+Remote Record
+Get a Sky Sports Day Pass
+Upgrade to Sky Sports
+
+
+Lancaster, who will have the returning Alex Corbisiero and Geoff Parling available for the Pumas match, also commented on the need for protocols to be put in place when a player suffers a head injury following the decision by Tottenham to allow goalkeeper Hugo Lloris to play on despite suffering a suspected concussion in their Premier League game with Everton on Sunday."It is difficult," he added. "I think all you can do is get some protocols in place and they've only recently come in in Rugby Union with the pitch side concussion test."To be able to have that time where you can bring on a replacement and have that breathing space to allow the medics to make an informed decision I think is important in our game certainly," he said."It is an impact sport where collisions do happen and concussion is part and parcel of it unfortunately. I think in rugby we have got pretty strong protocols in place and we as coaches accept them."Looking ahead to the Argentina clash on Saturday, Lancaster was keen to stress the importance of not underestimating the Pumas."I look at some of the games and the scores in the Rugby Championship where New Zealand are just getting on top of them, Australia beat them 14-13 and even the South Africa second Test was a four or five points differential," he commented. "They're a tough side to play against and we need to be right."England v Argentina is live on Sky Sports 2HD on Saturday at 1.30pm

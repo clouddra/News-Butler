@@ -1,0 +1,30 @@
+Millwall held QPR to a 2-2 draw at The DenA late goal from Jermaine Easter saw Millwall claim a last-gasp 2-2 draw with QPR in Sky Bet Championship at The Den on Saturday.Rangers appeared to be heading for their fourth straight win after £4million summer signing Charlie Austin scored his sixth goal in as many matches midway through the second half.But Easter had other ideas, wriggling his way into the area in the third minute of stoppage time and lashing past Rob Green.Earlier, Rangers had opened the scoring in controversial fashion, breaking down field after Millwall were denied a strong penalty claim and taking the lead through Niko Kranjcar.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Redknapp hit in face by ball
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2755298495001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2755298495001'});    
+        });
+    
+
+Redknapp hit in face by ballScott McDonald got the hosts back into it soon after the break with a neat finish - the first goal QPR have conceded in nine games.Millwall began on the front foot and Martyn Waghorn got the better of Benoit Assou-Ekotto inside the first minute, but his cross from the right was cut out by Green.On seven minutes an expertly-timed tackle from Paul Connolly denied QPR forward Junior Hoilett a tap-in at the far post following a drilled cross from Kranjcar.The Croatian was pulling the strings for the visitors and after 21 minutes he collected possession on the edge of the box, let the ball run across his body, and unleashed a thumping strike that rattled back off David Forde's post.Millwall were then denied a spot-kick after Liam Trotter was felled by Austin, having won possession from Joey Barton inside the area.Referee Mike Dean waved played on and QPR went up the other end, with the ball eventually falling to Kranjcar who struck the ball beyond Forde.In the 39th minute the Croatian almost doubled his tally from a similar position, but this time his low strike was deflected behind by Connolly.A minute before the break Millwall missed a good chance to level after McDonald stood the ball up towards Trotter at the far post, but the midfielder glanced his header wide.Millwall began the second half the brighter and on 47 minutes McDonald broke through the challenge of Richard Dunne, but could not get his shot away as he reached the area.The Lions levelled five minutes later when Trotter dispossessed Dunne on the byline and his cut-back was stroked home by the well-positioned McDonald.Nadjim Abdou shot over after 56 minutes as Millwall looked seize the lead, but they required a superb block from Scott Malone to prevent Austin from restoring Rangers' lead on 58 minutes.Midway through the second period, however, Austin made no mistake, dinking the ball over Forde after the influential Kranjcar had outmuscled Paul Robinson.Forde was called into action again soon after, palming Hoilett's curling shot away from danger after the Canadian had cut into the area, but Millwall had the last word with Easter's fine effort at the death.

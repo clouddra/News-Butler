@@ -1,0 +1,30 @@
+Owners delight at winning Grand FinalPoole captain Darcy Ward has admitted that the Pirates' run to the Elite League title came out of the blue.The Pirates won the crown in 2011 and finished as runners-up in both 2010 and 2012, but a fourth-straight Grand Final appearance seemed unlikely at the midpoint of the season.But inspired by the additions of Josh Grajczonek and American legend Greg Hancock, Poole climbed up the standings and eventually made it into the play-offs with a fourth-placed finish.The Pirates then progressed to the Grand Final, where they claimed a comfortable 104-79 aggregate win over Birmingham Brummies to secure the crown for a fifth time.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Poole Pirates crowned champions
+
+        <object id="video-id2" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2746037009001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video2','ob':'#video-id2','id':'2746037009001'});    
+        });
+    
+
+Poole Pirates crowned champions"We were bottom in the middle of the year and had all the injuries, no-one expected this," Ward, who took over the captaincy from an injured Chris Holder, told Sky Sports."Then Hancock comes in and Josh picks up his form unbelievably. That is the form we've missed for the last couple of years. It's awesome."Pirates promoter Matt Ford admitted that fortune smiled on his side at times but was nonetheless delighted to see them crowned champions again."To come back the way the team have, we know what it's like (to win)," he said."Birmingham have been outstanding all year, as were Wolverhampton. What great teams, those guys all deserved this as well. We rode our luck, we know that, but we're so happy."Josh Grajczonek has been incredible since he's come in this year. Kyle Newman - a Poole lad - has been fantastic. All of them have been magic the whole year."

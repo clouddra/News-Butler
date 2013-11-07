@@ -1,0 +1,38 @@
+Dustin Johnson: Went from four behind to five in front after a 63Dustin Johnson says he won't change his game-plan after roaring into a five-shot lead in the WGC-HSBC Champions in China.Johnson, who started the day four shots behind first-round leader Rory McIlroy, kicked clear of the pack after a nine-under 63 which equalled the course record."Yesterday I doubled my third hole of the day, the 12th, and played really well after that and this morning on the range I worked on a few things and hit it really well coming out of the gates and obviously putted well," Johnson told Sky Sports."This course is great, you put this in America and it would hold up to any of them over there."I think it's a great course, it's in great shape and the greens are really good but you have to be spot-on with your iron shots because there is a lot of undulation and today I controlled my distance really well and drove it really well.
+    "There are still two more days of golf left so I will come out tomorrow and try to do the same thing I did today. I don't tend to play defensively, I just play my game and I play pretty aggressively."
+			Dustin Johnson
+
+
+    "There are still two more days of golf left so I will come out tomorrow and try to do the same thing I did today. I don't tend to play defensively, I just play my game and I play pretty aggressively."
+			Dustin Johnson
+
+"There are still two more days of golf left so I will come out tomorrow and try to do the same thing I did today. I don't tend to play defensively, I just play my game and I play pretty aggressively."Americans dominate the top of the leaderboard after round two with Johnson's compatriots Bubba Watson and Boo Weekley tied for second with McIlroy on seven-under.But pre-tournament favourite Phil Mickelson still has much to do despite a fast finish which put him in a seven-strong group on five-under.Mickelson, who took nine on his penultimate hole on Thursday in an opening 71, birdied five of his last six holes in his 68, dropping a shot on the reachable par-four 16th after hooking his tee shot into the water.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Dustin Johnson: Five clear
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2791327231001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2791327231001'});    
+        });
+    
+
+Dustin Johnson: Five clear"The last time I made a quadruple bogey, on the 14th hole at East Lake in 2009, I won the tournament, the Tour Championship, so it's an omen," Mickelson said."I've made too many mistakes but I am going to continue to play aggressively out here because I have to make birdies to catch the lead. Hopefully I'll eliminate a few mistakes here or there."

@@ -1,0 +1,38 @@
+Mike Phillips: Unsure of his future at club levelMike Phillips insists he is completely focused on Wales and the autumn series after coming to terms with being sacked by Bayonne.The scrum-half's spell with the Top 14 side came to an abrupt end earlier this week when he was dismissed for allegedly turning up drunk for a players' video analysis session.Phillips has instructed his legal team to issue proceedings against Bayonne, while the 31-year-old's future remains unclear.
+    "Whenever you put the Welsh jersey on, you've got to perform to your very best. Anything less than that is not good enough."
+			Mike Phillips
+
+
+    "Whenever you put the Welsh jersey on, you've got to perform to your very best. Anything less than that is not good enough."
+			Mike Phillips
+
+"I suppose that's up to my agent now," said Phillips. "I am in a situation I wasn't expecting to be in, so I'm going to have to deal with it."My focus is here (with Wales) now, just purely on training well and performing well and making sure I am up to speed with things. I'm feeling fit and strong, so that is really what I am thinking about."Who knows what is going to happen? Me and my agent are going to have numerous meetings, and we will see how things go and see what happens."I have been been a professional for more than 10 years and I've experienced different things. I am really focused and just enjoying being back in the (Wales) squad."Whenever you put the Welsh jersey on, you've got to perform to your very best. Anything less than that is not good enough."Those are the standards we've set, and it's why we have done reasonably well over the last few years."Phillips has claimed he learned of his sacking from an interview in a French newspaper on Monday morning, when Bayonne chairman Alain Afflelou described his alleged behaviour as "treason".
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Quade Cooper, James Horwill and Israel Folau take a trip to Wembley to get a taste of the NFL.
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2790038295001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2790038295001'});    
+        });
+    
+
+Quade Cooper, James Horwill and Israel Folau take a trip to Wembley to get a taste of the NFL.Phillips was fined and suspended for 10 days by relegation-threatened Bayonne for an off-field incident last year, and he was briefly banned from the Wales squad in 2011 following a confrontation with a doorman in Cardiff.Reflecting on the latest developments in his career, he said: "It's just frustrating the way it finished, obviously, but I can't really talk about it for legal reasons."It is just a case of moving on. I still have the same hunger as ever."

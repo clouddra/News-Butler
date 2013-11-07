@@ -1,0 +1,30 @@
+James O'Connor: Linked with move to London IrishAustralia star James O'Connor could sign for London Irish on a short-term deal.O'Connor's career has nosedived since the Wallabies' defeat at the hands of the British & Irish Lions in the summer.He was released by his Super 15 club Melbourne Rebels and was involved in a number of off-field indiscretions, including being escorted from Perth Airport for drunken behaviour.Western Force were interested in signing the talented back, but O'Connor confirmed on Wednesday that he would not be joining them and would instead try to secure a short-term contract in Europe.
+
+            function fw_config(){ return {
+            siteSection:"SkySports:Article", 
+            videoAssetFallbackId:30621833 }; }
+        
+
+
+Coming to a club near you...
+
+        <object id="video-id1" class="BrightcoveExperience">
+            <param name="bgcolor" value="#000" />
+            <param name="width" value="660" />
+            <param name="height" value="371" />
+            <param name="wmode" value="transparent" />
+            <param name="playerID" value="813474149001" />
+            <param name="publisherID" value="165012893"/>
+            <param name="isVid" value="true" />
+            <param name="isUI" value="true" />
+            <param name="autoStart" value="true"/>
+            <param name="@videoPlayer" value="2766279437001" />
+        </object>
+    
+   
+        $(document).ready(function() {
+            getBC({'con':'#video1','ob':'#video-id1','id':'2766279437001'});    
+        });
+    
+
+Coming to a club near you...London Irish and the Aviva Premiership are reported to be his most likely destination."I have decided that I will be moving overseas next month as part of a short-term playing contract," O'Connor said."I am in final discussions with several clubs and will announce the new partnership in coming days."I believe the move, for a few months, will be beneficial for me to develop in a different environment and help me to be the best rugby player and person that I can be."It will also ensure that I continue playing professional rugby immediately and not wait until early in the new year to resume competition."I want to give myself every opportunity to get back into the Wallabies side and to represent Australia in the 2015 Rugby World Cup."
