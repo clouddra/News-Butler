@@ -14,11 +14,11 @@ CS4274 Project
   
 To compile Lucene:
 
-Windows
+Windows:
 javac -classpath .;* Lucene.java
 java -cp .;*; Lucene 
 
-Unix
+Unix:
 javac -classpath .:* Lucene.java
 java -cp .:*: Lucene 
 
