@@ -71,14 +71,6 @@ public class ListViewActivity extends ListActivity implements
 	private TextView mStatusView;
 	private ArrayList<NewsItem> newsItems = null;
 	
-	private static String[] ITEMS = { "Abbaye de Belloc",
-			"Abbaye du Mont des Cats", "Abertam", "Abondance", "Ackawi",
-			"Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu",
-			"Airag", "Airedale", "Aisy Cendre", "Allgauer Emmentaler",
-			"Abbaye de Belloc", "Abbaye du Mont des Cats", "Abertam",
-			"Abondance", "Ackawi", "Acorn", "Adelost", "Affidelice au Chablis",
-			"Afuega'l Pitu", "Airag", "Airedale", "Aisy Cendre",
-			"Allgauer Emmentaler" };
 
 	private PullToRefreshAttacher mPullToRefreshAttacher;
 
@@ -196,6 +188,7 @@ public class ListViewActivity extends ListActivity implements
 	public boolean onQueryTextSubmit(String query) {
 
 		mPullToRefreshAttacher.setRefreshing(true);
+		newsItems = new ArrayList<NewsItem>();
 		asyncSearch(query);
 		return true;
 	}
