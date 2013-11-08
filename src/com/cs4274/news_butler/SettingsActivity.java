@@ -26,7 +26,7 @@ import com.androidquery.AQuery;
 import com.androidquery.auth.FacebookHandle;
 import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
-import com.cs4274.news_butler.helper.FBSQLiteHelper;
+import com.cs4274.news_butler.helper.SQLiteHelper;
 import com.cs4274.news_butler.helper.IndexSources;
 import com.cs4274.news_butler.helper.ReadGMail;
 import com.cs4274.news_butler.helper.ReadSMS;
@@ -88,7 +88,7 @@ public class SettingsActivity extends PreferenceActivity {
 	public static final String FB_PERMISSIONS = "read_mailbox";
 	public static final String SERVER_URL ="42.60.140.137:5000";
 	private AQuery aq;
-	private FBSQLiteHelper datasource;
+	private SQLiteHelper datasource;
 
 	@SuppressWarnings("deprecation")
 	public void onCreate(Bundle savedInstanceState) {
@@ -102,7 +102,7 @@ public class SettingsActivity extends PreferenceActivity {
 		addPreferencesFromResource(R.xml.settings);
 
 
-		datasource = new FBSQLiteHelper(this);
+		datasource = new SQLiteHelper(this);
 		SharedPreferences control = getSharedPreferences(CONTROL, 0);
 		smsLastLearnedDate = control.getString(SMS_LAST_LEARNED, null);
 		facebookLastLearnedDate = control.getString(FACEBOOK_LAST_LEARNED, null);
@@ -212,7 +212,6 @@ public class SettingsActivity extends PreferenceActivity {
 										.parse(((CustomPreference) preference)
 												.getText());
 							} catch (ParseException e) {
-								// TODO Auto-generated catch block
 								e.printStackTrace();
 								return false;
 							}
@@ -428,7 +427,7 @@ public class SettingsActivity extends PreferenceActivity {
 		
 		@Override
 		protected void onPreExecute() {
-		//	this.pd = SettingsActivity.this.createDialog();
+			this.pd = SettingsActivity.this.createDialog();
 		}
 		
 		@Override
@@ -466,7 +465,7 @@ public class SettingsActivity extends PreferenceActivity {
 			smsPreference.setText(reportDate);
 			smsLastLearnedDate = reportDate;		
 			
-			//this.pd.dismiss();
+			this.pd.dismiss();
 			
 			Toast.makeText(context, "Finish learning your preference!", Toast.LENGTH_LONG).show();
 		}

@@ -35,7 +35,7 @@ public class ReadGMail {
 	/*
 	 * Method to pull sent items from Gmail
 	 */
-	public void readSentItems(String user, String token, String filePath, FBSQLiteHelper datasource, long previousLearned) throws Exception{
+	public void readSentItems(String user, String token, String filePath, SQLiteHelper datasource, long previousLearned) throws Exception{
 		this.filepath = filePath;
 		Message[] messageReverse = null;
 		int emailNumber = 0;

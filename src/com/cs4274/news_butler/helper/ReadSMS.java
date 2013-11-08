@@ -16,20 +16,20 @@ public class ReadSMS {
 	
 	public ReadSMS () {}
 
-	public void storeOutboxSms(Context context, FBSQLiteHelper datasource, long previousLearned ) {
+	public void storeOutboxSms(Context context, SQLiteHelper datasource, long previousLearned ) {
 		if (context==null)
 			return;
 		
 		Uri uriSms = Uri.parse("content://sms/sent");
 		Cursor cursor = context.getContentResolver().query(uriSms, null,null,null,null); 
-	    cursor2SmsArray(cursor, datasource, previousLearned);
+		cursor2SmsArray(cursor, datasource, previousLearned);
 	    
 	    if(!cursor.isClosed())
 	        cursor.close();
 	    
 	}
 
-	public void cursor2SmsArray(Cursor cursor, FBSQLiteHelper datasource, long previousLearned) {
+	public void cursor2SmsArray(Cursor cursor, SQLiteHelper datasource, long previousLearned) {
 		 if(null == cursor || 0 == cursor.getCount())
 	            return;
 	    				 		

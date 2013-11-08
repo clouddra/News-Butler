@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.ContentValues;
 
-public class FBSQLiteHelper extends SQLiteOpenHelper {
+public class SQLiteHelper extends SQLiteOpenHelper {
 	public static final String TABLE_MESSAGES = "MESSAGES";
 	public static final String COLUMN_ID = "_id";
 	public static final String COLUMN_MESSAGE = "message";
@@ -27,7 +27,7 @@ public class FBSQLiteHelper extends SQLiteOpenHelper {
 			+ " integer primary key autoincrement, " + COLUMN_MESSAGE
 			+ " text not null, " + COLUMN_TIME + " integer not null);";
 
-	public FBSQLiteHelper(Context context) {
+	public SQLiteHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	}
 
@@ -38,7 +38,7 @@ public class FBSQLiteHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		Log.w(FBSQLiteHelper.class.getName(),
+		Log.w(SQLiteHelper.class.getName(),
 				"Upgrading database from version " + oldVersion + " to "
 						+ newVersion + ", which will destroy all old data");
 		db.execSQL("DROP TABLE IF EXISTS " + TABLE_MESSAGES);
@@ -107,6 +107,7 @@ public class FBSQLiteHelper extends SQLiteOpenHelper {
 		Cursor cursor = this.getReadableDatabase().query(TABLE_MESSAGES,
 				null, null, null, null, null, null);
 		Vector<String> allMessages = new Vector<String>(cursor.getCount());
+		Log.e("Number of messages in DB", Integer.toString(cursor.getCount()));
 		cursor.moveToFirst();
 		int todayDateFormatted = convertDate(todayDate);
 		long msgDate;
