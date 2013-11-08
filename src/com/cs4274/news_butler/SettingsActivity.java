@@ -14,12 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
-import java.util.Set;
 import java.util.Vector;
 
 import org.json.JSONArray;
@@ -31,7 +26,6 @@ import com.androidquery.AQuery;
 import com.androidquery.auth.FacebookHandle;
 import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
-import com.androidquery.callback.Transformer;
 import com.cs4274.news_butler.helper.FBSQLiteHelper;
 import com.cs4274.news_butler.helper.IndexSources;
 import com.cs4274.news_butler.helper.ReadGMail;
@@ -52,13 +46,10 @@ import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
-import android.preference.CheckBoxPreference;
 import android.preference.Preference;
-import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.support.v4.app.NavUtils;
 import android.util.Log;
-import android.util.Pair;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -68,46 +59,27 @@ public class SettingsActivity extends PreferenceActivity {
 	private static final int ACCOUNT_CODE = 1602;
 	private static final String SCOPE = "oauth2:https://mail.google.com";
 	private static final String CONTROL = "control";
-	private static final String HASHMAP = "hashmap";
-	private static final String LEARNT_SMS = "learntsms";
-	private static final String LEARNT_GMAIL = "learntgmail";
-	private static final String LEARNT_FACEBOOK = "learntfacebook";
-	private static final String LEARNT_SMS_GMAIL = "learnsmsgmail";
-	private static final String LEARNT_ARTICLES = "learnarticles";
-	private static final String USERNAME = "username";
-	private static final String TOKEN = "token";
-	private static final String SET = "set";
 	private static final String SMS_LAST_LEARNED = "smslastlearned";
 	private static final String FACEBOOK_LAST_LEARNED = "facebooklastlearned";
-	private static final String GMAIL_LAST_LEARNED = "gmaillastlearned";
-	
+	private static final String GMAIL_LAST_LEARNED = "gmaillastlearned";	
 	public static final String USER_TOP_TERMS_FILENAME = "userTopTerms";
 	public static final String SAVED_DOMAINS = "savedDomains";
 	public static final String USER_PREFERENCE = "userPreference";
-	public static final String DOMAIN_SCORE_FILE = "Score.txt";
 
 	private String applicationDirectory = getIndexDirectory();
 	public static final String suffix = ".txt";
 	public static final String USER = "user";
-	public static final String ARTICLE = "article";
 	public static String smsLastLearnedDate = null;
 	public static String facebookLastLearnedDate = null;
 	public static String gmailLastLearnedDate = null;
 	public static boolean facebook = false;
 	public static boolean sms = false;
 	public static boolean gmail = false;
-	public static boolean smsGmail = false;
-	public static boolean articles = false;
 	public static boolean change = false;
 	private static String username = null;
 	private static String userToken = null;
 	private long gmailpreviousLearned = -100L;
-	public List<String> messages = new ArrayList<String>();
-	public List<String> gmailMessages = new ArrayList<String>();
 	public static List<String> userTopTerms;
-	public List<String> domains = new ArrayList<String>();
-	public static Set<String> hashedArticles;
-	private Set<String> emptySet = new HashSet<String>();
 	File myExternalFile;
 
 	public static final String FB_APP_ID = "514365765304596";
@@ -130,11 +102,6 @@ public class SettingsActivity extends PreferenceActivity {
 
 		datasource = new FBSQLiteHelper(this);
 		SharedPreferences control = getSharedPreferences(CONTROL, 0);
-		sms = control.getBoolean(LEARNT_SMS, false);
-		gmail = control.getBoolean(LEARNT_GMAIL, false);
-		facebook = control.getBoolean(LEARNT_FACEBOOK, false);
-		smsGmail = control.getBoolean(LEARNT_SMS_GMAIL, false);
-		articles = control.getBoolean(LEARNT_ARTICLES, false);
 		smsLastLearnedDate = control.getString(SMS_LAST_LEARNED, null);
 		facebookLastLearnedDate = control.getString(FACEBOOK_LAST_LEARNED, null);
 		gmailLastLearnedDate = control.getString(GMAIL_LAST_LEARNED, null);
@@ -155,10 +122,6 @@ public class SettingsActivity extends PreferenceActivity {
 			gmailPreference.setText(gmailLastLearnedDate);
 		}
 		
-		
-		SharedPreferences hashedSet = getSharedPreferences(HASHMAP, 0);
-		hashedArticles = hashedSet.getStringSet(SET, emptySet);
-
 
 		CustomPreference smsPreference = (CustomPreference) findPreference("learn_sms");
 		smsPreference
@@ -168,7 +131,6 @@ public class SettingsActivity extends PreferenceActivity {
 					public boolean onPreferenceClick(Preference preference) {
 						Date previousLearned = null;
 						if ( ((CustomPreference) preference).getText() == "") {
-							sms = true;
 							learnSMS(-1L);
 							return false;
 						}
@@ -188,6 +150,7 @@ public class SettingsActivity extends PreferenceActivity {
 					}
 				});
 
+		
 		CustomPreference gmailPreference = (CustomPreference) findPreference("learn_gmail");
 		gmailPreference
 				.setOnPreferenceClickListener(new CustomPreference.OnPreferenceClickListener() {
@@ -196,7 +159,6 @@ public class SettingsActivity extends PreferenceActivity {
 					public boolean onPreferenceClick(Preference preference) {
 						Date previousLearned = null;
 						if ( ((CustomPreference) preference).getText() == "") {
-							gmail = true;
 							learnGmail(-1L);
 							return false;
 						}
@@ -217,6 +179,7 @@ public class SettingsActivity extends PreferenceActivity {
 					}
 				});
 
+		
 		CustomPreference fbPreference = (CustomPreference) findPreference("learn_facebook");
 		fbPreference
 				.setOnPreferenceClickListener(new CustomPreference.OnPreferenceClickListener() {
@@ -227,7 +190,6 @@ public class SettingsActivity extends PreferenceActivity {
 						Date previousLearned = null;
 						if (((CustomPreference) preference).getText() == "") {
 							Log.d("custom pref", "empty pref");
-							facebook = true;
 							auth_facebook(-1L);
 							return false;
 						} else {
@@ -257,7 +219,7 @@ public class SettingsActivity extends PreferenceActivity {
 	}
 
 	public void auth_facebook(long previousLearned) {
-
+		
 		FacebookHandle handle = new FacebookHandle(this, FB_APP_ID,
 				FB_PERMISSIONS);
 		String url;
@@ -313,10 +275,8 @@ public class SettingsActivity extends PreferenceActivity {
 							datasource.addMessage(message, getUnixTime(date));
 
 						} catch (JSONException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						} catch (ParseException e) {
-							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 					}
@@ -335,7 +295,11 @@ public class SettingsActivity extends PreferenceActivity {
 			
 			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
 			datasource.close();
-          indexSources( applicationDirectory, USER, content);
+	          try {
+				indexSources( applicationDirectory, content);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 
 			return content;
 		}
@@ -389,19 +353,9 @@ public class SettingsActivity extends PreferenceActivity {
 		super.onResume();
 
 		SharedPreferences control = getSharedPreferences(CONTROL, 0);
-		sms = control.getBoolean(LEARNT_SMS, false);
-		gmail = control.getBoolean(LEARNT_GMAIL, false);
-		facebook = control.getBoolean(LEARNT_FACEBOOK, false);
-		smsGmail = control.getBoolean(LEARNT_SMS_GMAIL, false);
-		articles = control.getBoolean(LEARNT_ARTICLES, false);
 		smsLastLearnedDate = control.getString(SMS_LAST_LEARNED, null);
 		facebookLastLearnedDate = control.getString(FACEBOOK_LAST_LEARNED, null);
 		gmailLastLearnedDate = control.getString(GMAIL_LAST_LEARNED, null);
-		// username = control.getString(USERNAME, null);
-		// userToken = control.getString(TOKEN, null);
-
-		SharedPreferences hashedSet = getSharedPreferences(HASHMAP, 0);
-		hashedArticles = hashedSet.getStringSet(SET, emptySet);
 	}
 
 	@Override
@@ -410,22 +364,10 @@ public class SettingsActivity extends PreferenceActivity {
 
 		SharedPreferences control = getSharedPreferences(CONTROL, 0);
 		SharedPreferences.Editor editor = control.edit();
-		editor.putBoolean(LEARNT_SMS, sms);
-		editor.putBoolean(LEARNT_GMAIL, gmail);
-		editor.putBoolean(LEARNT_FACEBOOK, facebook);
-		editor.putBoolean(LEARNT_SMS_GMAIL, smsGmail);
-		editor.putBoolean(LEARNT_ARTICLES, articles);
 		editor.putString(SMS_LAST_LEARNED, smsLastLearnedDate);
 		editor.putString(FACEBOOK_LAST_LEARNED, facebookLastLearnedDate);
 		editor.putString(GMAIL_LAST_LEARNED, gmailLastLearnedDate);
-		// editor.putString(USERNAME, username);
-		// editor.putString(TOKEN, userToken);
 		editor.commit();
-
-		SharedPreferences hashedSet = getSharedPreferences(HASHMAP, 0);
-		SharedPreferences.Editor editor2 = hashedSet.edit();
-		editor2.putStringSet(SET, hashedArticles);
-		editor2.commit();
 
 	}
 
@@ -434,12 +376,21 @@ public class SettingsActivity extends PreferenceActivity {
 	 * user's SMS for preference
 	 */
 	public void learnSMS(long previousLearned) {	
-		if ( previousLearned == -1L) {
+		boolean connected = isConnectedToInternet();
+		
+		// never learn before
+		if ( connected && previousLearned == -1L) {
 			new readSMSTask().execute(-1L);
 		}
-		else {
+		// learned before
+		else if ( connected ){
 			new readSMSTask().execute(previousLearned);
 		}
+		// no internet connection
+		else 
+			Toast.makeText(getApplicationContext(),
+					"Please turn on your Data for personalization to work",
+					Toast.LENGTH_SHORT).show();
 		
 	}
 
@@ -454,7 +405,7 @@ public class SettingsActivity extends PreferenceActivity {
 		}
 		else {
 			Toast.makeText(getApplicationContext(),
-					"Unable to connect to Gmail, please turn on your Data",
+					"Please turn on your Data for personalization to work",
 					Toast.LENGTH_SHORT).show();
 		}
 	}
@@ -472,7 +423,11 @@ public class SettingsActivity extends PreferenceActivity {
 
 			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
 			datasource.close();
-          indexSources( applicationDirectory, USER, content);
+	          try {
+				indexSources( applicationDirectory, content);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 
 			return content;
 		}
@@ -598,7 +553,6 @@ public class SettingsActivity extends PreferenceActivity {
 		@Override
 		protected String doInBackground(String... params) {
 			ReadGMail gmailClass = new ReadGMail();
-			StringBuilder gmailMessageString = new StringBuilder();
 
 			try {
 				gmailClass.readSentItems(params[0], params[1],
@@ -609,7 +563,11 @@ public class SettingsActivity extends PreferenceActivity {
 
 			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
 			datasource.close();
-          indexSources( applicationDirectory, USER, content);
+	          try {
+				indexSources( applicationDirectory, content);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 
 			return content;
 		}
@@ -629,55 +587,14 @@ public class SettingsActivity extends PreferenceActivity {
 	}
 
 	/*
-	 * AsyncTask to index the sources
-	 */
-	public class indexSourcesTask extends AsyncTask<String, Void, String> {
-
-		Context context = getApplicationContext();
-
-		@Override
-		protected String doInBackground(String... params) {
-			try {
-				IndexSources.createIndex(params[0], params[1], params[2]);
-
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			return params[1];
-		}
-
-		@Override
-		protected void onPostExecute(String type) {
-			System.out.println("TYPE:" + type);
-			try {
-				if (type.equalsIgnoreCase(USER)) {
-					File indexDir = new File(applicationDirectory + "/"
-							+ IndexSources.USER_INDEX + "/");
-					userTopTerms = IndexSources.computeTopTermQuery(indexDir);
-					saveToInternalStorage(USER_TOP_TERMS_FILENAME, userTopTerms);
-					seeUserTopTerms();
-					
-					fetchTerms();
-
-				}
-
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-
-	}
-	
-   
-	/*
 	 * Method to index the sources
 	 */
-	public class indexSources(String applicationDirectory, String type, String content) {
+	public void indexSources(String applicationDirectory, String content) throws Exception {
 
-				IndexSources.createIndex(applicationDirectory, type, content);
+			IndexSources.createIndex(applicationDirectory, content);
 
 			try {
-				if (type.equalsIgnoreCase(USER)) {
+				if (content != null) {
 					File indexDir = new File(applicationDirectory + "/"+ IndexSources.USER_INDEX + "/");
 					userTopTerms = IndexSources.computeTopTermQuery(indexDir);
 					saveToInternalStorage(USER_TOP_TERMS_FILENAME, userTopTerms);
@@ -713,6 +630,7 @@ public class SettingsActivity extends PreferenceActivity {
 					
 					Toast.makeText(getBaseContext(), "Finish learning your preference!",
 							Toast.LENGTH_LONG).show();
+					
 					change = true;
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();

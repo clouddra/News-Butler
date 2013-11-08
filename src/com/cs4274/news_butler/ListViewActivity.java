@@ -120,7 +120,8 @@ public class ListViewActivity extends ListActivity implements
 		super.onResume();
 		
 		if (SettingsActivity.change == true) {
-			if (SettingsActivity.sms == true || SettingsActivity.gmail == true) {
+			if (SettingsActivity.smsLastLearnedDate != null || SettingsActivity.facebookLastLearnedDate != null
+					|| SettingsActivity.gmailLastLearnedDate != null) {
 				List<String> userPreference = new ArrayList<String>();
 				mPullToRefreshAttacher.setRefreshing(true);
 				

@@ -1,8 +1,6 @@
 package com.cs4274.news_butler.helper;
 
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +17,6 @@ import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 
-import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
@@ -30,13 +27,9 @@ import org.apache.lucene.index.TermEnum;
 
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.store.LockObtainFailedException;
 
 import org.apache.lucene.util.Version;
 
-import android.util.Log;
-
-import com.cs4274.news_butler.SettingsActivity;
 import com.cs4274.news_butler.util.ByValueComparator;
 import com.cs4274.news_butler.util.ReverseComparator;
 import com.cs4274.news_butler.util.StopWords;
@@ -55,7 +48,7 @@ public class IndexSources {
 	public IndexSources(String fileDir) {}
 	
 	
-	public static void createIndex(String appDir, String type, String content)throws Exception {
+	public static void createIndex(String appDir, String content)throws Exception {
 		File indexDir;	
 		Set<String> set = new HashSet<String>(Arrays.asList(StopWords.SMART_STOP_WORDS));
 		analyzer = new EnglishAnalyzer(Version.LUCENE_36,set);
@@ -63,7 +56,6 @@ public class IndexSources {
 		IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_36, analyzer);		
 		
 		// rebuild everytime when learning user’s preference (delete entire index folder)
-		if (type.equalsIgnoreCase(SettingsActivity.USER)) {
 			config.setOpenMode(OpenMode.CREATE);
 			indexDir = new File(appDir + "/" + USER_INDEX + "/");
 			
@@ -74,83 +66,19 @@ public class IndexSources {
 				indexDir.mkdir();
 			}
 			
-			indexHelper(indexDir,config,content);
-			
-		}
-		
-		// each domain will have its own index
-		else if (type.equalsIgnoreCase(SettingsActivity.ARTICLE)){
-			File dir = new File(appDir);
-			String[] directory = dir.list();
-			
-			for (String eachDir : directory) {
-				if (!eachDir.equalsIgnoreCase(ARTICLE_INDEX)) {					
-					if (!eachDir.equalsIgnoreCase(USER_INDEX)) {
-					indexDir = new File(appDir+"/"+ ARTICLE_INDEX + "/" + eachDir + "_index/");				
+			IndexWriter indexWriter = new IndexWriter(
+					FSDirectory.open(indexDir),
+					config);
+							
+					Document document = new Document();
 					
-					if (!indexDir.exists()) 
-						indexDir.mkdirs();
-					
-					Log.e("Articles Index Directory", indexDir.toString());
-					indexHelper(appDir+"/"+eachDir+"/",indexDir);		
-					}
-				}
-			}			
-		}					
-	}
-	
-	// Helper method for indexing articles
-	private static void indexHelper(String sourceDir,File indexDir) throws CorruptIndexException, LockObtainFailedException, IOException{
-		Set<String> set = new HashSet<String>(Arrays.asList(StopWords.SMART_STOP_WORDS));
-		analyzer = new EnglishAnalyzer(Version.LUCENE_36,set);
-		
-		IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_36, analyzer);
-		// Only create the index for the first time and subsequent learning will update the index
-		config.setOpenMode(OpenMode.CREATE_OR_APPEND);
-		
-		IndexWriter indexWriter = new IndexWriter(
-				FSDirectory.open(indexDir),
-				config);
-		
-		File dir = new File(sourceDir);
-		File[] files = dir.listFiles();
-		for (File file : files) {
-			if (!file.isDirectory() && file.exists() && file.canRead() 
-					&& file.length() > 0.0 && file.isFile() && file.getName().endsWith(SettingsActivity.suffix)) {
-				
-				if (SettingsActivity.hashedArticles.contains(file.getName()) == false)
-					SettingsActivity.hashedArticles.add(file.getName());
-				else 
-					continue;
-				
-				Document document = new Document();
-				
-				document.add(new Field(FIELD_CONTENTS, new FileReader(file)));
-				document.add(new Field("filename",file.getName(), Field.Store.YES, Field.Index.ANALYZED));
-									
-				if (document != null)
-					indexWriter.addDocument(document);
-			}
-		}
-		
-		indexWriter.close();
-	}
-	
-	// Helper method for indexing User's preference
-	private static void indexHelper(File indexDir, IndexWriterConfig config, String content) throws CorruptIndexException, LockObtainFailedException, IOException{
-		IndexWriter indexWriter = new IndexWriter(
-				FSDirectory.open(indexDir),
-				config);
-						
-				Document document = new Document();
-				
-				//document.add(new Field(FIELD_CONTENTS, new FileReader(file)));				
-				document.add(new Field(FIELD_CONTENTS,content,Field.Store.YES, Field.Index.ANALYZED));
-									
-				if (document != null)
-					indexWriter.addDocument(document);
+					//document.add(new Field(FIELD_CONTENTS, new FileReader(file)));				
+					document.add(new Field(FIELD_CONTENTS,content,Field.Store.YES, Field.Index.ANALYZED));
+										
+					if (document != null)
+						indexWriter.addDocument(document);
 
-		indexWriter.close();
+			indexWriter.close();								
 	}
 
 
