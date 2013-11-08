@@ -192,10 +192,10 @@ public class SettingsActivity extends PreferenceActivity {
 						Date previousLearned = null;
 						if (((CustomPreference) preference).getText() == "") {
 							Log.d("custom pref", "empty pref");
-							//auth_facebook(-1L);
-							//new ShowProgress().execute();
-							if (isConnectedToInternet())
-								new FBTask().execute(-1L);
+
+							if (isConnectedToInternet()){
+								fetchFb(-1L);
+							}
 							else
 								Toast.makeText(getApplicationContext(),
 										"Please turn on your Data for personalization to work",
@@ -217,9 +217,10 @@ public class SettingsActivity extends PreferenceActivity {
 								return false;
 							}
 
-							//auth_facebook(getUnixTime(previousLearned));							
-							if (isConnectedToInternet())
-								new FBTask().execute(getUnixTime(previousLearned));
+				
+							if (isConnectedToInternet()){
+								fetchFb(getUnixTime(previousLearned));
+							}
 							else
 								Toast.makeText(getApplicationContext(),
 										"Please turn on your Data for personalization to work",
@@ -236,24 +237,25 @@ public class SettingsActivity extends PreferenceActivity {
 
 
 	private class FBTask extends
-			AsyncTask<Long, Void, String> {
+			AsyncTask<JSONObject, Void, String> {
 		Context context = getApplicationContext();
-		
 		ProgressDialog pd;
+		FBTask(ProgressDialog pd){
+			this.pd = pd;
+		}
+
 		
 		@Override
 		protected void onPreExecute() {
+
 			Log.d("Async", "fbPreExe");
-			this.pd = SettingsActivity.this.createDialog();	
+			//this.pd = SettingsActivity.this.createDialog();	
 		}
 		
 		@Override
-		protected String doInBackground(Long... params) {
-
-			JSONObject json = SettingsActivity.this.fetchFb(params[0]);
-			if (json==null)
-				return "";
-
+		protected String doInBackground(JSONObject... params) {
+		
+			JSONObject json = params[0];
 			try {
 				JSONArray conversations = json.getJSONObject("inbox").getJSONArray(
 						"data");
@@ -426,7 +428,7 @@ public class SettingsActivity extends PreferenceActivity {
 		
 		@Override
 		protected void onPreExecute() {
-			this.pd = SettingsActivity.this.createDialog();
+		//	this.pd = SettingsActivity.this.createDialog();
 		}
 		
 		@Override
@@ -464,7 +466,7 @@ public class SettingsActivity extends PreferenceActivity {
 			smsPreference.setText(reportDate);
 			smsLastLearnedDate = reportDate;		
 			
-			this.pd.dismiss();
+			//this.pd.dismiss();
 			
 			Toast.makeText(context, "Finish learning your preference!", Toast.LENGTH_LONG).show();
 		}
@@ -535,7 +537,7 @@ public class SettingsActivity extends PreferenceActivity {
 	 */
 	private class OnTokenAcquired implements AccountManagerCallback<Bundle> {
 		Context context = getApplicationContext();
-
+		
 		@Override
 		public void run(AccountManagerFuture<Bundle> result) {
 			try {
@@ -579,6 +581,7 @@ public class SettingsActivity extends PreferenceActivity {
 		
 		@Override
 		protected void onPreExecute() {
+			
 			this.pd = SettingsActivity.this.createDialog();
 		}
 		
@@ -649,7 +652,7 @@ public class SettingsActivity extends PreferenceActivity {
 	}
 	
 	
-	private JSONObject fetchFb(Long previousLearned){
+	public void fetchFb(Long previousLearned){
 		
 		FacebookHandle handle = new FacebookHandle(SettingsActivity.this, FB_APP_ID,
 				FB_PERMISSIONS);
@@ -661,18 +664,30 @@ public class SettingsActivity extends PreferenceActivity {
 					+ previousLearned + "))";
 		Log.d("url", url);
 		//aq.auth(handle).ajax(url, JSONObject.class, this, "facebookCb");
+		final ProgressDialog pd = this.createDialog();
+        aq.auth(handle).ajax(url, JSONObject.class, new AjaxCallback<JSONObject>() {
 
-		AjaxCallback<JSONObject> cb = new AjaxCallback<JSONObject>();           
-		cb.url(url).type(JSONObject.class);             
-		        
-		aq.auth(handle).sync(cb);
-		        
-		JSONObject json = cb.getResult();
-		Log.d("json", json.toString());
-		AjaxStatus status = cb.getStatus();
-		
-		return json;
+            @Override
+            public void callback(String url, JSONObject json, AjaxStatus status) {
+                    
+                    
+                    if(json != null){
+                            
+                            //successful ajax call, show status code and json content
+                            new FBTask(pd).execute(json);
+                    
+                    }else{
+                            
+                            //ajax error, show error code
+                            Toast.makeText(aq.getContext(), "JSON Error:" + status.getCode(), Toast.LENGTH_LONG).show();
+                    }
+            }
+    });
+
 	}
+
+	
+	
 	
 	private List<Domain> fetchTerms(){
 		if (!this.isConnectedToInternet())
