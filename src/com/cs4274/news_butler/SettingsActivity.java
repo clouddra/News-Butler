@@ -335,11 +335,13 @@ public class SettingsActivity extends PreferenceActivity {
 			
 			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
 			datasource.close();
+          indexSources( applicationDirectory, USER, content);
+
 			return content;
 		}
 		
 		protected void onPostExecute(String content){
-			new indexSourcesTask().execute(applicationDirectory, USER, content);
+			//new indexSourcesTask().execute(applicationDirectory, USER, content);
 					
 			CustomPreference fbPreference = (CustomPreference) findPreference("learn_facebook");
 			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -458,25 +460,6 @@ public class SettingsActivity extends PreferenceActivity {
 	}
 
 	/*
-	 * This method is invoked when any of the button SMS or Gmail is pressed
-	 * before and now pressed again, to learn them for user's preference
-	 */
-	public void learnSMSGmail() {
-		smsGmail = true;
-		if (isConnectedToInternet()) {
-			// new
-			// readSMSGmailTask().execute(username,userToken,applicationDirectory);
-			chooseAccount();
-		} else {
-			Toast.makeText(
-					getApplicationContext(),
-					"Please turn on your Data to enable better matching of News",
-					Toast.LENGTH_SHORT).show();
-		}
-	}
-
-
-	/*
 	 * AsyncTask to read SMS and call the indexing method
 	 */
 	private class readSMSTask extends AsyncTask<Long, Void, String> {
@@ -489,13 +472,15 @@ public class SettingsActivity extends PreferenceActivity {
 
 			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
 			datasource.close();
+          indexSources( applicationDirectory, USER, content);
+
 			return content;
 		}
 
 		@Override
 		protected void onPostExecute(String content) {
-			new indexSourcesTask().execute(applicationDirectory, USER, content);
-						
+			//new indexSourcesTask().execute(applicationDirectory, USER, content);
+			
 			CustomPreference smsPreference = (CustomPreference) findPreference("learn_sms");
 			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");		
 			Date today = Calendar.getInstance().getTime();
@@ -624,12 +609,14 @@ public class SettingsActivity extends PreferenceActivity {
 
 			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
 			datasource.close();
+          indexSources( applicationDirectory, USER, content);
+
 			return content;
 		}
 
 		@Override
 		protected void onPostExecute(String content) {
-			new indexSourcesTask().execute(applicationDirectory, USER, content);
+			//new indexSourcesTask().execute(applicationDirectory, USER, content );
 			
 			CustomPreference gmailPreference = (CustomPreference) findPreference("learn_gmail");
 			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");		
@@ -679,6 +666,29 @@ public class SettingsActivity extends PreferenceActivity {
 			}
 		}
 
+	}
+	
+   
+	/*
+	 * Method to index the sources
+	 */
+	public class indexSources(String applicationDirectory, String type, String content) {
+
+				IndexSources.createIndex(applicationDirectory, type, content);
+
+			try {
+				if (type.equalsIgnoreCase(USER)) {
+					File indexDir = new File(applicationDirectory + "/"+ IndexSources.USER_INDEX + "/");
+					userTopTerms = IndexSources.computeTopTermQuery(indexDir);
+					saveToInternalStorage(USER_TOP_TERMS_FILENAME, userTopTerms);
+					seeUserTopTerms();
+					
+					fetchTerms();
+
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 	}
 	
 	
