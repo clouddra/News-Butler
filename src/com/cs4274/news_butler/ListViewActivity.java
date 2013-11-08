@@ -69,7 +69,8 @@ public class ListViewActivity extends ListActivity implements
 	private AQuery aq;
 	private SearchView mSearchView;
 	private TextView mStatusView;
-
+	private ArrayList<NewsItem> newsItems = null;
+	
 	private static String[] ITEMS = { "Abbaye de Belloc",
 			"Abbaye du Mont des Cats", "Abertam", "Abondance", "Ackawi",
 			"Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu",
@@ -105,12 +106,14 @@ public class ListViewActivity extends ListActivity implements
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			}
-			
+			/*
 			if (userPreference.size()== 0)
 				asyncSearch("Singapore");
 			else if (userPreference.size() > 0) {
 				asyncSearch(userPreference.get(0));
 			}
+			*/
+			this.asyncSearch(userPreference);
 		}
 		
 	}
@@ -130,12 +133,14 @@ public class ListViewActivity extends ListActivity implements
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();
 				}
-				
+				/*
 				if (userPreference.size()== 0)
 					asyncSearch("Singapore");
 				else if (userPreference.size() > 0) {
 					asyncSearch(userPreference.get(0));
 				}
+				*/
+				this.asyncSearch(userPreference);
 			}
 		}
 	}
@@ -149,26 +154,20 @@ public class ListViewActivity extends ListActivity implements
 		/**
 		 * Simulate Refresh with 4 seconds sleep
 		 */
+		List<String> userPreference = new ArrayList<String>();
 		Log.d("refresh", "true");
 		if (SettingsActivity.smsLastLearnedDate != null || SettingsActivity.facebookLastLearnedDate != null
 				|| SettingsActivity.gmailLastLearnedDate != null) {
-			List<String> userPreference = new ArrayList<String>();
 			
 			try {
 				userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			}
+
 			
-			if (userPreference.size()== 0)
-				asyncSearch("Singapore");
-			else if (userPreference.size() > 0) {
-				asyncSearch(userPreference.get(0));
-			}
-		} else {
-			asyncSearch("Singapore");
 		}
-		
+		this.asyncSearch(userPreference);
 
 	}
 
@@ -215,6 +214,23 @@ public class ListViewActivity extends ListActivity implements
 		}
 	}
 
+	public void asyncSearch(List<String> queryTerms){
+		newsItems = new ArrayList<NewsItem>(); 
+		/* for testing
+		queryTerms = new ArrayList<String>(); 
+		queryTerms.add("soccer");
+		queryTerms.add("tennis");
+		*/
+		if (queryTerms == null || queryTerms.size()== 0)
+			asyncSearch("Singapore");
+		else {
+			
+			for (String query: queryTerms)
+			asyncSearch(query);
+		}
+
+	}
+	
 	public void asyncSearch(String query) {
 
 		String url;
@@ -249,10 +265,10 @@ public class ListViewActivity extends ListActivity implements
 	public void jsonCallback(String url, JSONObject json, AjaxStatus status) {
 
 		Log.d("check", "here");
-		ArrayList<NewsItem> temp = null;
+		ArrayList<NewsItem> temp  = new ArrayList<NewsItem>();
 		if (json != null) {
 			try {
-
+				
 				Log.d("json", json.getJSONObject("d").getJSONArray("results")
 						.optJSONObject(0).getJSONArray("News").toString());
 				JSONArray nl = json.getJSONObject("d").getJSONArray("results")
@@ -263,7 +279,7 @@ public class ListViewActivity extends ListActivity implements
 						}.getType());
 				Log.d("converting", "here");
 				if (temp != null)
-					System.out.println("nl size" + temp.size());
+					System.out.println("nl size" + newsItems.size());
 				else
 					Log.d("news list", "null");
 
@@ -275,7 +291,8 @@ public class ListViewActivity extends ListActivity implements
 		} else {
 			Log.d("json", "null");
 		}
-		ListViewAdapter adapter = new ListViewAdapter(this, temp);
+		newsItems.addAll(temp);
+		ListViewAdapter adapter = new ListViewAdapter(this, newsItems);
 		listView.setAdapter(adapter);
 		adapter.notifyDataSetChanged();
 		mPullToRefreshAttacher.setRefreshComplete();
@@ -295,10 +312,10 @@ public class ListViewActivity extends ListActivity implements
 		switch (item.getItemId()) {
 		case R.id.action_refresh:
 			mPullToRefreshAttacher.setRefreshing(true);
-			
+			List<String> userPreference = new ArrayList<String>();
 			if (SettingsActivity.smsLastLearnedDate != null || SettingsActivity.facebookLastLearnedDate != null
 					|| SettingsActivity.gmailLastLearnedDate != null) {
-				List<String> userPreference = new ArrayList<String>();
+				
 				
 				try {
 					userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
@@ -306,14 +323,10 @@ public class ListViewActivity extends ListActivity implements
 					e.printStackTrace();
 				}
 				
-				if (userPreference.size()== 0)
-					asyncSearch("Singapore");
-				else if (userPreference.size() > 0) {
-					asyncSearch(userPreference.get(0));
-				}
-			} else {
-				asyncSearch("Singapore");
-			}
+				
+
+			} 
+			this.asyncSearch(userPreference);
 			
 			return true;
 		case R.id.action_settings:

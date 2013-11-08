@@ -38,6 +38,7 @@ import android.accounts.AccountManager;
 import android.accounts.AccountManagerCallback;
 import android.accounts.AccountManagerFuture;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -78,6 +79,7 @@ public class SettingsActivity extends PreferenceActivity {
 	public static boolean change = false;
 	private static String username = null;
 	private static String userToken = null;
+	private static Boolean inProgress = false;
 	private long gmailpreviousLearned = -100L;
 	public static List<String> userTopTerms;
 	File myExternalFile;
@@ -190,7 +192,9 @@ public class SettingsActivity extends PreferenceActivity {
 						Date previousLearned = null;
 						if (((CustomPreference) preference).getText() == "") {
 							Log.d("custom pref", "empty pref");
-							auth_facebook(-1L);
+							//auth_facebook(-1L);
+							//new ShowProgress().execute();
+							new FBTask().execute(-1L);
 							return false;
 						} else {
 							SimpleDateFormat df = new SimpleDateFormat(
@@ -208,7 +212,9 @@ public class SettingsActivity extends PreferenceActivity {
 								return false;
 							}
 
-							auth_facebook(getUnixTime(previousLearned));
+							//auth_facebook(getUnixTime(previousLearned));
+							new FBTask().execute(getUnixTime(previousLearned));
+							//new ShowProgress().execute();
 							return false;
 						}
 
@@ -218,36 +224,26 @@ public class SettingsActivity extends PreferenceActivity {
 
 	}
 
-	public void auth_facebook(long previousLearned) {
+
+	private class FBTask extends
+			AsyncTask<Long, Void, String> {
+	
+		ProgressDialog pd;
 		
-		FacebookHandle handle = new FacebookHandle(this, FB_APP_ID,
-				FB_PERMISSIONS);
-		String url;
-		if (previousLearned == -1L)
-			url = "https://graph.facebook.com/me?fields=inbox.fields(comments.limit(5000))";
-		else
-			url = "https://graph.facebook.com/me?fields=inbox.fields(comments.limit(5000).since("
-					+ previousLearned + "))";
-		Log.d("url", url);
-		aq.auth(handle).ajax(url, JSONObject.class, this, "facebookCb");
-
-	}
-
-	public void facebookCb(String url, JSONObject json, AjaxStatus status) {
-		Log.d("fb", json.toString());		
-		new storeFBTask().execute(json);
-
-	}
-
-	private class storeFBTask extends
-			AsyncTask<JSONObject, Void, String> {
-		Context context = getApplicationContext();
-
 		@Override
-		protected String doInBackground(JSONObject... params) {
-			// TODO Auto-generated method stub
-			JSONObject json = params[0];
-			//Queue<Pair<String, Long>> messageEntries = new LinkedList<Pair<String, Long>>();
+		protected void onPreExecute() {
+			Log.d("Async", "fbPreExe");
+			this.pd = SettingsActivity.this.createDialog();
+		}
+		
+		@Override
+		protected String doInBackground(Long... params) {
+
+			JSONObject json = SettingsActivity.this.fetchFb(params[0]);
+			if (json==null)
+				return "";
+
+			
 			try {
 				JSONArray conversations = json.getJSONObject("inbox").getJSONArray(
 						"data");
@@ -283,16 +279,10 @@ public class SettingsActivity extends PreferenceActivity {
 				}
 			;
 			} catch (JSONException e) {
-				// e.printStackTrace();
+				e.printStackTrace();
 			}
 
-			// datasource.close();
-					
-			//Log.d("db data", concatenateString(datasource.getMessages()));
-			
-			// check for messages after timing. Should return empty
-			//Log.d("db data after", concatenateString(datasource.getMessagesAfter(1583389550)));
-			
+
 			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
 			datasource.close();
 	          try {
@@ -322,7 +312,8 @@ public class SettingsActivity extends PreferenceActivity {
 			Toast.makeText(getApplicationContext(),
 					"Finished adding FB to database!",
 					Toast.LENGTH_SHORT).show();
-			
+			Log.d("Indexing", "Finished adding FB to database!");
+			this.pd.dismiss();
 		}
 
 	}
@@ -609,38 +600,67 @@ public class SettingsActivity extends PreferenceActivity {
 	}
 	
 	
-	private void fetchTerms(){
+	private JSONObject fetchFb(Long previousLearned){
+		
+		if (!this.isConnectedToInternet())
+			return null;
+		FacebookHandle handle = new FacebookHandle(SettingsActivity.this, FB_APP_ID,
+				FB_PERMISSIONS);
+		String url;
+		if (previousLearned == -1L)
+			url = "https://graph.facebook.com/me?fields=inbox.fields(comments.limit(5000))";
+		else
+			url = "https://graph.facebook.com/me?fields=inbox.fields(comments.limit(5000).since("
+					+ previousLearned + "))";
+		Log.d("url", url);
+		//aq.auth(handle).ajax(url, JSONObject.class, this, "facebookCb");
+
+		AjaxCallback<JSONObject> cb = new AjaxCallback<JSONObject>();           
+		cb.url(url).type(JSONObject.class);             
+		        
+		aq.auth(handle).sync(cb);
+		        
+		JSONObject json = cb.getResult();
+		Log.d("json", json.toString());
+		AjaxStatus status = cb.getStatus();
+		
+		return json;
+	}
+	
+	private boolean fetchTerms(){
+		if (!this.isConnectedToInternet())
+			return false;
 		
 		String url = "http://" + SERVER_URL + "/GET/terms";
-		Log.d("server_url", url);
+		AjaxCallback<String> cb = new AjaxCallback<String>();           
+		cb.url(url).type(String.class);             
+		        
+		aq.sync(cb);
 
-        aq.ajax(url, String.class, new AjaxCallback<String>() {
+		        
+		String response = cb.getResult();
+		if (response==null)
+			return false;
+		AjaxStatus status = cb.getStatus();
+		//Log.d("fb ajax", status.getError());		
 
-            @Override
-            public void callback(String url, String response, AjaxStatus status) {
-            	List<Domain> topTerms;
-            	Gson gson = new Gson();
-            	topTerms = gson.fromJson(response, new TypeToken<List<Domain>>() {}.getType());
-            				
-    			// call scoring function here
-            	try {
-					List<String> userPreference = getMatchingDomain(getUserTopTerms(), topTerms);
-					
-					saveToInternalStorage(USER_PREFERENCE, userPreference);
-					
-					Toast.makeText(getBaseContext(), "Finish learning your preference!",
-							Toast.LENGTH_LONG).show();
-					
-					change = true;
-				} catch (ClassNotFoundException e) {
-					e.printStackTrace();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-            }
-            
-    });
-
+    	List<Domain> topTerms;
+    	Gson gson = new Gson();
+    	topTerms = gson.fromJson(response, new TypeToken<List<Domain>>() {}.getType());
+    				
+		// call scoring function here
+    	try {
+			List<String> userPreference = getMatchingDomain(getUserTopTerms(), topTerms);
+			saveToInternalStorage(USER_PREFERENCE, userPreference);
+			change = true;
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return true;
+    	
+    	
 	}
 
 	/******************************************************************
@@ -831,5 +851,18 @@ public class SettingsActivity extends PreferenceActivity {
 			return this.keywords;
 		}
 	}
+	
+	
+	private ProgressDialog createDialog(){
+		inProgress=true;
+		ProgressDialog pd = new ProgressDialog(SettingsActivity.this);
+		pd.setTitle("Processing...");
+		pd.setMessage("Please wait.");
+		pd.setCancelable(false);
+		pd.setIndeterminate(true);
+		pd.show();
+		return pd;
+	}
+
 
 }
