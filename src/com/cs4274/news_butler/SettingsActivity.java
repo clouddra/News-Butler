@@ -194,7 +194,12 @@ public class SettingsActivity extends PreferenceActivity {
 							Log.d("custom pref", "empty pref");
 							//auth_facebook(-1L);
 							//new ShowProgress().execute();
-							new FBTask().execute(-1L);
+							if (isConnectedToInternet())
+								new FBTask().execute(-1L);
+							else
+								Toast.makeText(getApplicationContext(),
+										"Please turn on your Data for personalization to work",
+										Toast.LENGTH_SHORT).show();
 							return false;
 						} else {
 							SimpleDateFormat df = new SimpleDateFormat(
@@ -212,8 +217,13 @@ public class SettingsActivity extends PreferenceActivity {
 								return false;
 							}
 
-							//auth_facebook(getUnixTime(previousLearned));
-							new FBTask().execute(getUnixTime(previousLearned));
+							//auth_facebook(getUnixTime(previousLearned));							
+							if (isConnectedToInternet())
+								new FBTask().execute(getUnixTime(previousLearned));
+							else
+								Toast.makeText(getApplicationContext(),
+										"Please turn on your Data for personalization to work",
+										Toast.LENGTH_SHORT).show();
 							//new ShowProgress().execute();
 							return false;
 						}
@@ -227,13 +237,14 @@ public class SettingsActivity extends PreferenceActivity {
 
 	private class FBTask extends
 			AsyncTask<Long, Void, String> {
-	
+		Context context = getApplicationContext();
+		
 		ProgressDialog pd;
 		
 		@Override
 		protected void onPreExecute() {
 			Log.d("Async", "fbPreExe");
-			this.pd = SettingsActivity.this.createDialog();
+			this.pd = SettingsActivity.this.createDialog();	
 		}
 		
 		@Override
@@ -243,7 +254,6 @@ public class SettingsActivity extends PreferenceActivity {
 			if (json==null)
 				return "";
 
-			
 			try {
 				JSONArray conversations = json.getJSONObject("inbox").getJSONArray(
 						"data");
@@ -287,6 +297,15 @@ public class SettingsActivity extends PreferenceActivity {
 			datasource.close();
 	          try {
 				indexSources( applicationDirectory, content);
+				List<Domain> topTerms = fetchTerms();
+				
+				if (topTerms != null) {		
+					List<String> userPreference = getMatchingDomain(getUserTopTerms(), topTerms);
+					if (userPreference.size()>0) {
+						saveToInternalStorage(USER_PREFERENCE, userPreference);
+						change = true;
+					}
+				}			
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -294,9 +313,7 @@ public class SettingsActivity extends PreferenceActivity {
 			return content;
 		}
 		
-		protected void onPostExecute(String content){
-			//new indexSourcesTask().execute(applicationDirectory, USER, content);
-					
+		protected void onPostExecute(String content){					
 			CustomPreference fbPreference = (CustomPreference) findPreference("learn_facebook");
 			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 			
@@ -309,11 +326,9 @@ public class SettingsActivity extends PreferenceActivity {
 			fbPreference.setText(reportDate);
 			facebookLastLearnedDate = reportDate;
 			
-			Toast.makeText(getApplicationContext(),
-					"Finished adding FB to database!",
-					Toast.LENGTH_SHORT).show();
-			Log.d("Indexing", "Finished adding FB to database!");
 			this.pd.dismiss();
+			
+			Toast.makeText(context, "Finish learning your preference!", Toast.LENGTH_LONG).show();
 		}
 
 	}
@@ -406,7 +421,14 @@ public class SettingsActivity extends PreferenceActivity {
 	 */
 	private class readSMSTask extends AsyncTask<Long, Void, String> {
 		Context context = getApplicationContext();
-
+		
+		ProgressDialog pd;
+		
+		@Override
+		protected void onPreExecute() {
+			this.pd = SettingsActivity.this.createDialog();
+		}
+		
 		@Override
 		protected String doInBackground(Long... params) {
 			final ReadSMS ReadSMS = new ReadSMS();
@@ -415,7 +437,17 @@ public class SettingsActivity extends PreferenceActivity {
 			String content = concatenateString(datasource.getMessagesAddWeightRecent(getTodayDateLong()));
 			datasource.close();
 	          try {
-				indexSources( applicationDirectory, content);
+				indexSources( applicationDirectory, content);				
+				
+				List<Domain> topTerms = fetchTerms();
+				
+				if (topTerms != null) {		
+					List<String> userPreference = getMatchingDomain(getUserTopTerms(), topTerms);
+					if (userPreference.size()>0) {
+						saveToInternalStorage(USER_PREFERENCE, userPreference);
+						change = true;
+					}
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -424,15 +456,17 @@ public class SettingsActivity extends PreferenceActivity {
 		}
 
 		@Override
-		protected void onPostExecute(String content) {
-			//new indexSourcesTask().execute(applicationDirectory, USER, content);
-			
+		protected void onPostExecute(String content) {		
 			CustomPreference smsPreference = (CustomPreference) findPreference("learn_sms");
 			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");		
 			Date today = Calendar.getInstance().getTime();
 			String reportDate = df.format(today);
 			smsPreference.setText(reportDate);
 			smsLastLearnedDate = reportDate;		
+			
+			this.pd.dismiss();
+			
+			Toast.makeText(context, "Finish learning your preference!", Toast.LENGTH_LONG).show();
 		}
 
 	}
@@ -540,7 +574,14 @@ public class SettingsActivity extends PreferenceActivity {
 	 */
 	private class readGmailTask extends AsyncTask<String, Void, String> {
 		Context context = getApplicationContext();
-
+		
+		ProgressDialog pd;
+		
+		@Override
+		protected void onPreExecute() {
+			this.pd = SettingsActivity.this.createDialog();
+		}
+		
 		@Override
 		protected String doInBackground(String... params) {
 			ReadGMail gmailClass = new ReadGMail();
@@ -556,6 +597,15 @@ public class SettingsActivity extends PreferenceActivity {
 			datasource.close();
 	          try {
 				indexSources( applicationDirectory, content);
+				List<Domain> topTerms = fetchTerms();
+				
+				if (topTerms != null) {		
+					List<String> userPreference = getMatchingDomain(getUserTopTerms(), topTerms);
+					if (userPreference.size()>0) {
+						saveToInternalStorage(USER_PREFERENCE, userPreference);
+						change = true;
+					}
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -564,15 +614,17 @@ public class SettingsActivity extends PreferenceActivity {
 		}
 
 		@Override
-		protected void onPostExecute(String content) {
-			//new indexSourcesTask().execute(applicationDirectory, USER, content );
-			
+		protected void onPostExecute(String content) {	
 			CustomPreference gmailPreference = (CustomPreference) findPreference("learn_gmail");
 			DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");		
 			Date today = Calendar.getInstance().getTime();
 			String reportDate = df.format(today);
 			gmailPreference.setText(reportDate);
 			gmailLastLearnedDate = reportDate;
+			
+			this.pd.dismiss();
+			
+			Toast.makeText(context, "Finish learning your preference!", Toast.LENGTH_LONG).show();
 		}
 
 	}
@@ -590,9 +642,6 @@ public class SettingsActivity extends PreferenceActivity {
 					userTopTerms = IndexSources.computeTopTermQuery(indexDir);
 					saveToInternalStorage(USER_TOP_TERMS_FILENAME, userTopTerms);
 					seeUserTopTerms();
-					
-					fetchTerms();
-
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -602,8 +651,6 @@ public class SettingsActivity extends PreferenceActivity {
 	
 	private JSONObject fetchFb(Long previousLearned){
 		
-		if (!this.isConnectedToInternet())
-			return null;
 		FacebookHandle handle = new FacebookHandle(SettingsActivity.this, FB_APP_ID,
 				FB_PERMISSIONS);
 		String url;
@@ -627,9 +674,9 @@ public class SettingsActivity extends PreferenceActivity {
 		return json;
 	}
 	
-	private boolean fetchTerms(){
+	private List<Domain> fetchTerms(){
 		if (!this.isConnectedToInternet())
-			return false;
+			return null;
 		
 		String url = "http://" + SERVER_URL + "/GET/terms";
 		AjaxCallback<String> cb = new AjaxCallback<String>();           
@@ -640,7 +687,7 @@ public class SettingsActivity extends PreferenceActivity {
 		        
 		String response = cb.getResult();
 		if (response==null)
-			return false;
+			return null;
 		AjaxStatus status = cb.getStatus();
 		//Log.d("fb ajax", status.getError());		
 
@@ -648,19 +695,7 @@ public class SettingsActivity extends PreferenceActivity {
     	Gson gson = new Gson();
     	topTerms = gson.fromJson(response, new TypeToken<List<Domain>>() {}.getType());
     				
-		// call scoring function here
-    	try {
-			List<String> userPreference = getMatchingDomain(getUserTopTerms(), topTerms);
-			saveToInternalStorage(USER_PREFERENCE, userPreference);
-			change = true;
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return true;
-    	
-    	
+		return topTerms;    	   	
 	}
 
 	/******************************************************************
@@ -756,7 +791,7 @@ public class SettingsActivity extends PreferenceActivity {
 	 * Method to get the matching domain for the user's preference
 	 */
 	private List<String> getMatchingDomain(List<String> userTopTerms,
-			List<Domain> domainList) throws ClassNotFoundException {
+			List<Domain> domainList) throws ClassNotFoundException, IOException {
 		
 		List<String> topMatchingList = new ArrayList<String>();
 		Vector<Integer> domainScore = new Vector<Integer>(domainList.size());
@@ -830,7 +865,8 @@ public class SettingsActivity extends PreferenceActivity {
 
 		if (secondMatchScore / bestMatchScore >= SECOND_PREFERENCE_PERCENTAGE)
 			topMatchingList.add(domainNames.get(secondMatch));
-
+		
+		
 		return topMatchingList;
 	}
 	
