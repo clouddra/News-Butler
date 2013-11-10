@@ -86,7 +86,8 @@ public class SettingsActivity extends PreferenceActivity {
 
 	public static final String FB_APP_ID = "514365765304596";
 	public static final String FB_PERMISSIONS = "read_mailbox";
-	public static final String SERVER_URL ="42.60.140.137:5000";
+	public static final String SERVER_IP_ADDRESS ="42.60.140.137:5000";
+	public static final String ALTERNATIVE_DOWNLOAD_URL = "https://raw.github.com/benthian89/NewsButler_JSON/master/articleTerms.json";
 	private AQuery aq;
 	private SQLiteHelper datasource;
 
@@ -692,22 +693,42 @@ public class SettingsActivity extends PreferenceActivity {
 		if (!this.isConnectedToInternet())
 			return null;
 		
-		String url = "http://" + SERVER_URL + "/GET/terms";
-		AjaxCallback<String> cb = new AjaxCallback<String>();           
-		cb.url(url).type(String.class);             
-		        
+		boolean github = false;
+		
+		String url = "http://" + SERVER_IP_ADDRESS + "/GET/terms";
+		
+		AjaxCallback<String> cb = new AjaxCallback<String>();   		
+		cb.url(url).type(String.class);             	        
 		aq.sync(cb);
 
-		        
 		String response = cb.getResult();
-		if (response==null)
+		String githubResponse = null;
+		
+		// if no response from app server, get an older version from github server		
+		if ( response == null ) {
+			AjaxCallback<String> ncb = new AjaxCallback<String>();  
+			ncb.url(ALTERNATIVE_DOWNLOAD_URL).type(String.class);
+			aq.sync(ncb);
+			Log.e("FETCH TERMS", "GITHUB");
+			Log.e("FETCH TERMS", ncb.getResult());
+			github = true;
+			githubResponse = ncb.getResult();
+		}
+				
+		
+		// if cannot get the articles JSON file, return empty list
+		if ( response == null && githubResponse == null ) 
 			return null;
+		
 		AjaxStatus status = cb.getStatus();
 		//Log.d("fb ajax", status.getError());		
 
     	List<Domain> topTerms;
     	Gson gson = new Gson();
-    	topTerms = gson.fromJson(response, new TypeToken<List<Domain>>() {}.getType());
+    	if (github == false)
+    		topTerms = gson.fromJson(response, new TypeToken<List<Domain>>() {}.getType());
+    	else 
+    		topTerms = gson.fromJson(githubResponse, new TypeToken<List<Domain>>() {}.getType());
     				
 		return topTerms;    	   	
 	}
