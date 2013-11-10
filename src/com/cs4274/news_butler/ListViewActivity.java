@@ -54,6 +54,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.app.ActionBar;
 import android.content.Intent;
+import android.content.SharedPreferences;
 
 import uk.co.senab.actionbarpulltorefresh.library.PullToRefreshAttacher;
 /**
@@ -71,6 +72,14 @@ public class ListViewActivity extends ListActivity implements
 	private TextView mStatusView;
 	private ArrayList<NewsItem> newsItems = null;
 	
+	private static final String CONTROL = "control";
+	private static final String SMS_LAST_LEARNED = "smslastlearned";
+	private static final String FACEBOOK_LAST_LEARNED = "facebooklastlearned";
+	private static final String GMAIL_LAST_LEARNED = "gmaillastlearned";	
+	
+	public static String smsLastLearned = null;
+	public static String facebookLastLearned = null;
+	public static String gmailLastLearned = null;
 
 	private PullToRefreshAttacher mPullToRefreshAttacher;
 
@@ -88,6 +97,12 @@ public class ListViewActivity extends ListActivity implements
 		// Set the Refreshable View to be the ListView and the refresh listener
 		// to be this.
 		mPullToRefreshAttacher.addRefreshableView(listView, this);
+		
+		SharedPreferences control = getSharedPreferences(CONTROL, 0);
+		smsLastLearned = control.getString(SMS_LAST_LEARNED, null);
+		facebookLastLearned = control.getString(FACEBOOK_LAST_LEARNED, null);
+		gmailLastLearned = control.getString(GMAIL_LAST_LEARNED, null);
+			
 		
 		if (SettingsActivity.smsLastLearnedDate != null || SettingsActivity.facebookLastLearnedDate != null
 				|| SettingsActivity.gmailLastLearnedDate != null) {
@@ -148,8 +163,8 @@ public class ListViewActivity extends ListActivity implements
 		 */
 		List<String> userPreference = new ArrayList<String>();
 		Log.d("refresh", "true");
-		if (SettingsActivity.smsLastLearnedDate != null || SettingsActivity.facebookLastLearnedDate != null
-				|| SettingsActivity.gmailLastLearnedDate != null) {
+		if (smsLastLearned != null || facebookLastLearned != null
+				|| gmailLastLearned != null) {
 			
 			try {
 				userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
@@ -306,18 +321,14 @@ public class ListViewActivity extends ListActivity implements
 		case R.id.action_refresh:
 			mPullToRefreshAttacher.setRefreshing(true);
 			List<String> userPreference = new ArrayList<String>();
-			if (SettingsActivity.smsLastLearnedDate != null || SettingsActivity.facebookLastLearnedDate != null
-					|| SettingsActivity.gmailLastLearnedDate != null) {
-				
-				
+			if (smsLastLearned != null || facebookLastLearned != null
+					|| gmailLastLearned != null) {
+
 				try {
 					userPreference = readFromInternalStorage(SettingsActivity.USER_PREFERENCE);
 				} catch (ClassNotFoundException e) {
 					e.printStackTrace();
 				}
-				
-				
-
 			} 
 			this.asyncSearch(userPreference);
 			
