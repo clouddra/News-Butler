@@ -1,8 +1,7 @@
 News-Butler
 ===========
+A proof-of-concept Android news app which learns the preferences of user.
 
-CS4274 Project
-===========
 
 \server contain 3 files
   \articles -- web_article scraped by Lucene 
